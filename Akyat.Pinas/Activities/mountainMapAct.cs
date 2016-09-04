@@ -68,11 +68,11 @@ namespace Akyat.Pinas.Activities
                 map.UiSettings.ZoomControlsEnabled = true;
                 map.UiSettings.CompassEnabled = true;
                 map.MoveCamera(cameraUpdate);
-                markerBatulao.InvokeIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
-                markerMakiling.InvokeIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
-                markerTalamitam.InvokeIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
-                markerUlap.InvokeIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
-                markerCristobal.InvokeIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+                markerBatulao.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+                markerMakiling.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+                markerTalamitam.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+                markerUlap.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+                markerCristobal.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
                 map.AddMarker(markerTalamitam);
                 map.AddMarker(markerBatulao);
                 map.AddMarker(markerMakiling);

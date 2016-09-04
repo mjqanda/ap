@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <ImageView
+        android:src="@drawable/your"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imageVieasdw1"
+        android:layout_marginBottom="19.5dp" />
+    <TextView
+        android:text="TYPE HERE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:textColor="#FFFF00" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="217.5dp"
+        android:id="@+id/txtItinerary" />
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd" />
+</LinearLayout>

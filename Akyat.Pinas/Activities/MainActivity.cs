@@ -7,7 +7,7 @@ using Android.Widget;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity(Label = "Akyat.Pinas", Theme = "@style/Theme.NoTitle")]
+    [Activity(Label = "Akyat.Pinas", Theme = "@style/Theme.NoTitle" ,Icon = "@drawable/Icon")]
     public class MainActivity : Activity
     {
 
