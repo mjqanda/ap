@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent" 
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="@drawable/EMNavigation">
@@ -22,10 +22,10 @@
             <ImageView
                 android:layout_width="243.0dp"
                 android:layout_height="139.5dp"
-                android:src="@drawable/batulao"
+                android:src="@drawable/daraitan"
                 android:layout_marginLeft="67dp" />
             <TextView
-                android:text="MT. BATULAO"
+                android:text="MT. DARAITAN"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Nasugbu, Batangas"
+                android:text="Tanay, Rizal and General Nakar, Quezon"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,14 +49,21 @@
                 android:gravity="center"
                 android:paddingTop="25dp" />
             <TextView
-                android:text="Evercrest Golf Course, Nasugbu"
+                android:text="Major jumpoff: Brgy. Daraitan (village centre), Tanay"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+          <TextView
+                android:text="Minor jumpoff: Sitio Cablao Brgy. Pagsangahan, General Nakar"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="LLA: 14.0408 N 120.8011 E 811 MASL"
+                android:text="LLA: 14°36′48.5′′N 121°26′19.5′′ E, 739 MASL (+600)"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,21 +71,29 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Days required / Hours to summit: 1 day / 2-4 hours"
+                android:text="Days required / Hours to summit: 1 day / 2.5-4 hours "
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 3 with 60-70 degrees assault"
+                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 1-3"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="The cool weather in Mt. Batulao is a pleasant escape from the city. The moment you arrive at the Evercrest Golf Course – the jumpoff – you will feel the same coolness felt by the visitors of Tagaytay. And this temperature will be with you all the way, especially during the months of January and February, where it is usually dry and cool. There are days, on the other hand, when Mt. Batulao can feel like a desert – very hot and humid – owing to the exposed nature of its trails, which also makes it prone to muddiness during the wet season (June to October). On the other hand, Mt. Batulao is usually visited by winds that make any climb – hot or cool – refreshing. This combination of elements make Mt. Batulao a very interesting destination."
+                android:text="The hike up is a (mostly) straightforward 600-meter ascent that might feel steep to those not used to hiking. There are, however, plenty of holds and the trail is well-maintained. The forest environment is similar in characteristics with Mt. Pinagbanderahan, which also lies in the Sierra Madre – but Daraitan has more rewarding limestone viewpoints and a much more challenging hike."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+          <TextView
+                android:text="At the summit, one can see the Sierra Madre mountains (E, NE), the meandering Daraitan River, and a glimpse of Laguna de Bay with its outlying mountains (i.e. Makiling and Sembrano) and the mountain within it: Mt. Tagapo. There is space for several tents if you wish to stay overnight. From the summit, instead of returning all the way to the barangay, a recommended route to take is the trail to Tinipak River. Though the trail itself is very similar to the ascending trail, Tinipak River, with its beautiful limestone boulders, is a great highlight and must not be missed! This is also a popular camping ground which gives the option of exploring the springs, natural pools, and caves in the area."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +107,7 @@
                 android:layout_marginTop="35dp"
                 android:layout_gravity="center_horizontal" />
             <TextView
-                android:text="Old to New Trail"
+                android:text="Mt. Daraitan + Tinipak River Dayhike"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,169 +115,77 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0400 ETD Coastal Mall bus terminal to Nasugbu, Batangas"
+                android:text="0400 Take jeepney from EDSA-Shaw to Tanay, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0715 Arrival at Evercrest"
+                android:text="0530 ETA Tanay, Rizal. Take jeep to Sampaloc, Tanay"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="0615 ETA Sampaloc, Tanay. Take tricycle to Brgy. Daraitan"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 Arrival at Fork. Take the left, downward trail that enters some woodland"
+                android:text="0700 Arrival at Daraitan River. Cross with raft and take trike to barangay hall"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0900 Arrival at Camp 1. Register. "
+                android:text="0730 ETA Barangay Hall; Register and secure guides"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1015 Arrival at Camp 8, commence final assault"
+                android:text="0800 Start trek up Mt. Daraitan"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1100 Arrival at summit; lunch"
+                android:text="1130 ETA summit. Explore the viewpoints / Lunch"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1200 Start descent via New Trail, which is opposite the Old Trail at the summit"
+                android:text="1300 Start descent to Tinipak River"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1300 Arrival at New Trail Campsite. Register again."
+                android:text="1500 Arrival at Tinipak River. Explore the area"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1530 Back at Evercrest; clean-up at nearby sari-sari store"
+                android:text="1630 Proceed to Brgy. Daritan via riverside trail "
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1600 ETD for Tagaytay by jeepney"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1630 ETA Tagaytay"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="New to Old Trail"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center"
-                android:paddingTop="15dp" />
-            <TextView
-                android:text="0400 ETD Coastal Mall bus terminal to Nasugbu, Batangas"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="0715 Arrival at Evercrest"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="0730 Start trek"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="0845 Arrival at Fork. Take the middle/slightly right upward trail"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="0930 Arrival at New Trail Campsite. Rest / Register."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1030 Arrival at summit; early lunch"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1200 Start descent via Old Trail, which is opposite the New Trail at the summit"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1300 Arrival at New Trail Campsite. Register again."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1530 Back at Evercrest; clean-up at nearby sari-sari store"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1600 ETD for Tagaytay by jeepney "
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1630 ETA Tagaytay "
+                android:text="1800 Head back to Tanay, Rizal via tricycle"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

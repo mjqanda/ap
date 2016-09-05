@@ -81,14 +81,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\addItineraryAct.cs" />
+    <Compile Include="MountainsActivities\ayaasAct.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\MountainListsAct.cs" />
     <Compile Include="Activities\LeaveNoTraceAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Mountain.cs" />
     <Compile Include="Activities\mountainMapAct.cs" />
+    <Compile Include="MountainsActivities\balagbagAct.cs" />
+    <Compile Include="MountainsActivities\banahawAct.cs" />
     <Compile Include="MountainsActivities\batulaoAct.cs" />
     <Compile Include="MountainsActivities\cristobalAct.cs" />
+    <Compile Include="MountainsActivities\daguldolAct.cs" />
+    <Compile Include="MountainsActivities\daraitanAct.cs" />
     <Compile Include="MountainsActivities\makilingAct.cs" />
     <Compile Include="MountainsActivities\talamitamAct.cs" />
     <Compile Include="MountainsActivities\ulapAct.cs" />
@@ -128,6 +133,21 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddItiLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ayaasLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\balagbagLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\banahawLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\daguldolLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\daraitanLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -219,6 +239,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\your.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ayaas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\balagbag.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\banahaw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\daguldol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\daraitan.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />

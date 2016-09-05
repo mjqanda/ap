@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/EMNavigation">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="19.5dp" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="243.0dp"
+                android:layout_height="139.5dp"
+                android:src="@drawable/balagbag"
+                android:layout_marginLeft="67dp" />
+            <TextView
+                android:text="MT. BALAGBAG"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="Rodriguez, Rizal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="Jump-off Point"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="#FFFF00"
+                android:gravity="center"
+                android:paddingTop="25dp" />
+            <TextView
+                android:text="First jumpoff: Sitio Karahume, Brgy. Macabud, Rodriguez"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+          <TextView
+                android:text="Second jumpoff: Sitio Balagbag, Brgy. San Isidro, Rodriguez"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="LLA: 777 MASL (unverified)"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="Days required / Hours to summit: 1 day / 1-2 hours"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="Specs: Minor climb, Difficulty 3/9, Trail class 1-2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="The trail is very easy and wide, and Mt. Balagbag is also a favorite of mountain bikers. Although locals recall a past when the mountain was covered with trees, it is now barren, and hikers who will trek it summer will find sun exposure as the only difficulty in this trek. Hence, dimtrekking (hiking very early in the morning or late afternoon) is recommended."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+          <TextView
+                android:text="Additional features of Mt. Balagbag include some small waterfalls and rivers along the way, as well as the possibility of traversing to San Jose Del Monte, Bulacan or other barangays of Rodriguez, Rizal. Along the way to Mt. Balabag, there is also the Veterans’ Peak or Veterans’ Summit which is more of a local tourist spot. There are security concerns regarding Balagbag at the moment, but it has the potential to be a nice and near hiking spot from Manila."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:src="@drawable/itenerary"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:text="Dayhike"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="0500 From Cubao, take jeep to Jolibee Tungko"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="0600 From Jolibee Tungko, take jeep to Karahume or Licao-Licao"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="0700 Explore the waterfalls from Karahume"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1030 Head off to the summit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1200 Arrival at summit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1300 Head down to Licao-Licao"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1500 Back at jumpoff; take jeepney to Rodriguez then QC"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1800 Back in Quezon City"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

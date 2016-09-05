@@ -22,10 +22,10 @@
             <ImageView
                 android:layout_width="243.0dp"
                 android:layout_height="139.5dp"
-                android:src="@drawable/batulao"
+                android:src="@drawable/banahaw"
                 android:layout_marginLeft="67dp" />
             <TextView
-                android:text="MT. BATULAO"
+                android:text="Mt. Banahaw"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Nasugbu, Batangas"
+                android:text="Quezon Province"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,14 +49,14 @@
                 android:gravity="center"
                 android:paddingTop="25dp" />
             <TextView
-                android:text="Evercrest Golf Course, Nasugbu"
+                android:text="Major jump-off: Brgy. Kinabuhayan, Dolores"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="LLA: 14.0408 N 120.8011 E 811 MASL"
+                android:text="Elevation: 2158 MASL"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,21 +64,21 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Days required / Hours to summit: 1 day / 2-4 hours"
+                android:text="Days required /Hours to summit: Level 2-3 days / 6-7 hours"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 3 with 60-70 degrees assault"
+                android:text="Specs: Major climb, Difficulty 5/9, Trail class 3"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="The cool weather in Mt. Batulao is a pleasant escape from the city. The moment you arrive at the Evercrest Golf Course – the jumpoff – you will feel the same coolness felt by the visitors of Tagaytay. And this temperature will be with you all the way, especially during the months of January and February, where it is usually dry and cool. There are days, on the other hand, when Mt. Batulao can feel like a desert – very hot and humid – owing to the exposed nature of its trails, which also makes it prone to muddiness during the wet season (June to October). On the other hand, Mt. Batulao is usually visited by winds that make any climb – hot or cool – refreshing. This combination of elements make Mt. Batulao a very interesting destination."
+                android:text="Mt. Banahaw is the grandest of the Southern Tagalog mountains. Towering high over the provinces of Laguna and Quezon, its significance in religion and folklore makes it not only a physical, but also a cultural landmark. It is home to Rizalistas and other cults, some of whom believe the mountain as the “New Jerusalem”. To a wider populace, it is a sacred mountain, visited every Holy Week by devotees, some of whom made it a pledge to regularly climb Banahaw. Thus it is not surprising that places in the mountain have religious names, such as “Kweba ng Dios Ama” (Cave of the God the Father) and “Kalbaryo” (Calvary). At its foot village of Kinabuhayan, all sorts of amulets, magical stones, and healing herbs are peddled, together with souvenir shirts."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:layout_marginTop="35dp"
                 android:layout_gravity="center_horizontal" />
             <TextView
-                android:text="Old to New Trail"
+                android:text="Day 1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,91 +100,77 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0400 ETD Coastal Mall bus terminal to Nasugbu, Batangas"
+                android:text="0400 ETD Lucena-bound bus from Mania; alight at San Pablo"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0715 Arrival at Evercrest"
+                android:text="0630 ETA San Pablo highway, take jeep to jump-off"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="0700 ETA Brgy. Kinabuhayan, Dolores, Quezon"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 Arrival at Fork. Take the left, downward trail that enters some woodland"
+                android:text="0800 Start trek. Will pass by Cristalino Falls."
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0900 Arrival at Camp 1. Register. "
+                android:text="0930 ETA Kweba ng Dios Ama"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1015 Arrival at Camp 8, commence final assault"
+                android:text="1200 lunch along the trail"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1100 Arrival at summit; lunch"
+                android:text="1330 ETA tall cave"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1200 Start descent via New Trail, which is opposite the Old Trail at the summit"
+                android:text="1600 Approach Durungawan 1 (first peak); set camp below"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1300 Arrival at New Trail Campsite. Register again."
+                android:text="1630 Explore peak area"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1530 Back at Evercrest; clean-up at nearby sari-sari store"
+                android:text="1730 Retire to campsite; dinner"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1600 ETD for Tagaytay by jeepney"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1630 ETA Tagaytay"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="New to Old Trail"
+                android:text="Day 2"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -192,77 +178,42 @@
                 android:gravity="center"
                 android:paddingTop="15dp" />
             <TextView
-                android:text="0400 ETD Coastal Mall bus terminal to Nasugbu, Batangas"
+                android:text="0700 Explore Durungawan 2-3; beware that trails are steep"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0715 Arrival at Evercrest"
+                android:text="0900 start descent via Tatlong Tangke route (fork after the forest)"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="1130 ETA Kapatagan"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 Arrival at Fork. Take the middle/slightly right upward trail"
+                android:text="1215 ETA Tatlong Tangke. You may bathe here, and have lunch."
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0930 Arrival at New Trail Campsite. Rest / Register."
+                android:text="1430 ETA Kinabuhayan; take jeep to San Pablo"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1030 Arrival at summit; early lunch"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1200 Start descent via Old Trail, which is opposite the New Trail at the summit"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1300 Arrival at New Trail Campsite. Register again."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1530 Back at Evercrest; clean-up at nearby sari-sari store"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1600 ETD for Tagaytay by jeepney "
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1630 ETA Tagaytay "
+                android:text="1600 Back in San Pan Pablo; take bus back to Manila"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -30,7 +30,7 @@ namespace Akyat.Pinas.Activities
                 EditText txtItinerary = FindViewById<EditText>(Resource.Id.txtItinerary);
                 DBItineraryRepository dbr = new DBItineraryRepository();
 
-                string result = dbr.InsertRecord(name,txtItinerary.Text);
+                string result = dbr.InsertRecord(txtItinerary.Text);
                 Toast.MakeText(this, result, ToastLength.Short).Show();
             });
 

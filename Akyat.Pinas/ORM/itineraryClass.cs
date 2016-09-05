@@ -15,11 +15,14 @@ using System.IO;
 using SQLite;
 namespace Akyat.Pinas.ORM
 {
+   
     [Table("Itinerary")]
+
+  
+
     public class itineraryClass
     {
-        [PrimaryKey,AutoIncrement,Column("_Id")]
-
+        [PrimaryKey, AutoIncrement, Column("_Id")]
         public int Id { get; set; }
 
         [MaxLength(50)]

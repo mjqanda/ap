@@ -39,7 +39,7 @@ namespace Akyat.Pinas.ORM
             }
         }
         // insert record
-        public string InsertRecord(string name, string itinerary)
+        public string InsertRecord(string itinerary)
         {
             try
             {
@@ -49,9 +49,9 @@ namespace Akyat.Pinas.ORM
                 var db = new SQLiteConnection(dbPath);
                 itineraryClass item = new itineraryClass();
 
-                item.MountainName = name;
+             
                item.Itinerary = itinerary;
-                db.Insert(name);
+                
                 db.Insert(itinerary);
                 return "Record Added";
             }

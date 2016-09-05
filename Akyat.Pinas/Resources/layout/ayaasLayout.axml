@@ -22,10 +22,10 @@
             <ImageView
                 android:layout_width="243.0dp"
                 android:layout_height="139.5dp"
-                android:src="@drawable/batulao"
+                android:src="@drawable/ayaas"
                 android:layout_marginLeft="67dp" />
             <TextView
-                android:text="MT. BATULAO"
+                android:text="MT. AYAAS"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Nasugbu, Batangas"
+                android:text="Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,14 +49,21 @@
                 android:gravity="center"
                 android:paddingTop="25dp" />
             <TextView
-                android:text="Evercrest Golf Course, Nasugbu"
+                android:text="Major jumpoff: Brgy. Wawa, Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="LLA: 14.0408 N 120.8011 E 811 MASL"
+                android:text="Minor jumpoff: Brgy. Mascap, Rodriguez, Rizal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="LLA: 14°45′3.38′′ N, 121°12′27.5′ 627 MASL (+570)"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,21 +71,29 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Days required / Hours to summit: 1 day / 2-4 hours"
+                android:text="Days required / Hours to summit: 1 day / 3-4 hours"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 3 with 60-70 degrees assault"
+                android:text="Specs: Minor, Difficulty 3/9, Trail class 1-3 with river trekking"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="The cool weather in Mt. Batulao is a pleasant escape from the city. The moment you arrive at the Evercrest Golf Course – the jumpoff – you will feel the same coolness felt by the visitors of Tagaytay. And this temperature will be with you all the way, especially during the months of January and February, where it is usually dry and cool. There are days, on the other hand, when Mt. Batulao can feel like a desert – very hot and humid – owing to the exposed nature of its trails, which also makes it prone to muddiness during the wet season (June to October). On the other hand, Mt. Batulao is usually visited by winds that make any climb – hot or cool – refreshing. This combination of elements make Mt. Batulao a very interesting destination."
+                android:text="Mt. Ayaas is a pleasant addition to the outdoor destinations of Rodriguez, Rizal. While Pamitinan, Binacayan, and Hapunang Banoi are practicality look-alikes, Mt. Ayaas is a mountain made distinctive by its river trekking and grassland slopes. Moreover, it is arguably the most challenging of the hikes in the area – even though all of them are relatively easy and are, as of July 2015, rated as Difficulty 3/9."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="Just like the other mountains in the area, the hike up Mt. Ayaas originates from Brgy. Wawa proper. Passing through Wawa Dam and the magnificent gorge. The first half involves mostly river trekking, and the difficulty is highly weather-dependent, as the rocks are very slippery when wet – and the water level is high such that it is inevitable that you yourself will get wet."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +107,7 @@
                 android:layout_marginTop="35dp"
                 android:layout_gravity="center_horizontal" />
             <TextView
-                android:text="Old to New Trail"
+                android:text="MT. AYAAS DAYHIKE"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,70 +115,70 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0400 ETD Coastal Mall bus terminal to Nasugbu, Batangas"
+                android:text="0400 Take van from Cubao to Eastwood, Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0715 Arrival at Evercrest"
+                android:text="0530 ETA Rodriguez, Rizal; take trike or jeep to brgy. Wawa"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="0600 Arrival at Brgy. Wawa. Register at barangay hall / tourism office"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 Arrival at Fork. Take the left, downward trail that enters some woodland"
+                android:text="0630 Start trek up Mt. Ayaas"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0900 Arrival at Camp 1. Register. "
+                android:text="0730 ETA waterfalls"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1015 Arrival at Camp 8, commence final assault"
+                android:text="0830 End of river trekking"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1100 Arrival at summit; lunch"
+                android:text="0930 Arrival at transmission tower. Final assault"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1200 Start descent via New Trail, which is opposite the Old Trail at the summit"
+                android:text="1030 ETA summit"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1300 Arrival at New Trail Campsite. Register again."
+                android:text="1100 Start descent"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1530 Back at Evercrest; clean-up at nearby sari-sari store"
+                android:text="1400 Back at Brgy. Wawa.  Tidy up then take outbound trike"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -177,14 +192,14 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1630 ETA Tagaytay"
+                android:text="1630 Back in Manila."
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="New to Old Trail"
+                android:text="MT. AYAAS TRAVERSE"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -192,77 +207,84 @@
                 android:gravity="center"
                 android:paddingTop="15dp" />
             <TextView
-                android:text="0400 ETD Coastal Mall bus terminal to Nasugbu, Batangas"
+                android:text="0400 Take van from Cubao to Eastwood, Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0715 Arrival at Evercrest"
+                android:text="0530 ETA Rodriguez, Rizal; take trike or jeep to brgy. Wawa"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="0600 Arrival at Brgy. Wawa. Register at barangay hall / tourism office"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 Arrival at Fork. Take the middle/slightly right upward trail"
+                android:text="0630 Start trek up Mt. Ayaas"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0930 Arrival at New Trail Campsite. Rest / Register."
+                android:text="0730 ETA waterfalls"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1030 Arrival at summit; early lunch"
+                android:text="0830 End of river trekking"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1200 Start descent via Old Trail, which is opposite the New Trail at the summit"
+                android:text="0930 Arrival at transmission tower. Final assault"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1300 Arrival at New Trail Campsite. Register again."
+                android:text="1030 ETA summit"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1530 Back at Evercrest; clean-up at nearby sari-sari store"
+                android:text="1100 Traverse to Mascap"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1600 ETD for Tagaytay by jeepney "
+                android:text="1400 ETA Mascap, take trike to Montalban"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1630 ETA Tagaytay "
+                android:text="1500 ETA Montalban,  Tidy up then take outbound trike."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1730 Back in Manila."
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

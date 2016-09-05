@@ -1543,196 +1543,211 @@ namespace Akyat.Pinas
 			public const int abc_textfield_search_material = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int background = 2130837573;
+			public const int ayaas = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int batulao = 2130837574;
+			public const int background = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int btn_bg_transparent = 2130837575;
+			public const int balagbag = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int clickables = 2130837576;
+			public const int banahaw = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int common_full_open_on_phone = 2130837577;
+			public const int batulao = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int common_google_signin_btn_icon_dark = 2130837578;
+			public const int btn_bg_transparent = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int common_google_signin_btn_icon_dark_disabled = 2130837579;
+			public const int clickables = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int common_google_signin_btn_icon_dark_focused = 2130837580;
+			public const int common_full_open_on_phone = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int common_google_signin_btn_icon_dark_normal = 2130837581;
+			public const int common_google_signin_btn_icon_dark = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int common_google_signin_btn_icon_dark_pressed = 2130837582;
+			public const int common_google_signin_btn_icon_dark_disabled = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int common_google_signin_btn_icon_light = 2130837583;
+			public const int common_google_signin_btn_icon_dark_focused = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int common_google_signin_btn_icon_light_disabled = 2130837584;
+			public const int common_google_signin_btn_icon_dark_normal = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int common_google_signin_btn_icon_light_focused = 2130837585;
+			public const int common_google_signin_btn_icon_dark_pressed = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int common_google_signin_btn_icon_light_normal = 2130837586;
+			public const int common_google_signin_btn_icon_light = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int common_google_signin_btn_icon_light_pressed = 2130837587;
+			public const int common_google_signin_btn_icon_light_disabled = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int common_google_signin_btn_text_dark = 2130837588;
+			public const int common_google_signin_btn_icon_light_focused = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int common_google_signin_btn_text_dark_disabled = 2130837589;
+			public const int common_google_signin_btn_icon_light_normal = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int common_google_signin_btn_text_dark_focused = 2130837590;
+			public const int common_google_signin_btn_icon_light_pressed = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int common_google_signin_btn_text_dark_normal = 2130837591;
+			public const int common_google_signin_btn_text_dark = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int common_google_signin_btn_text_dark_pressed = 2130837592;
+			public const int common_google_signin_btn_text_dark_disabled = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int common_google_signin_btn_text_light = 2130837593;
+			public const int common_google_signin_btn_text_dark_focused = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int common_google_signin_btn_text_light_disabled = 2130837594;
+			public const int common_google_signin_btn_text_dark_normal = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int common_google_signin_btn_text_light_focused = 2130837595;
+			public const int common_google_signin_btn_text_dark_pressed = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int common_google_signin_btn_text_light_normal = 2130837596;
+			public const int common_google_signin_btn_text_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int common_google_signin_btn_text_light_pressed = 2130837597;
+			public const int common_google_signin_btn_text_light_disabled = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int common_ic_googleplayservices = 2130837598;
+			public const int common_google_signin_btn_text_light_focused = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int common_plus_signin_btn_icon_dark = 2130837599;
+			public const int common_google_signin_btn_text_light_normal = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int common_plus_signin_btn_icon_dark_disabled = 2130837600;
+			public const int common_google_signin_btn_text_light_pressed = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int common_plus_signin_btn_icon_dark_focused = 2130837601;
+			public const int common_ic_googleplayservices = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int common_plus_signin_btn_icon_dark_normal = 2130837602;
+			public const int common_plus_signin_btn_icon_dark = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int common_plus_signin_btn_icon_dark_pressed = 2130837603;
+			public const int common_plus_signin_btn_icon_dark_disabled = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int common_plus_signin_btn_icon_light = 2130837604;
+			public const int common_plus_signin_btn_icon_dark_focused = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int common_plus_signin_btn_icon_light_disabled = 2130837605;
+			public const int common_plus_signin_btn_icon_dark_normal = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int common_plus_signin_btn_icon_light_focused = 2130837606;
+			public const int common_plus_signin_btn_icon_dark_pressed = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int common_plus_signin_btn_icon_light_normal = 2130837607;
+			public const int common_plus_signin_btn_icon_light = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int common_plus_signin_btn_icon_light_pressed = 2130837608;
+			public const int common_plus_signin_btn_icon_light_disabled = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int common_plus_signin_btn_text_dark = 2130837609;
+			public const int common_plus_signin_btn_icon_light_focused = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int common_plus_signin_btn_text_dark_disabled = 2130837610;
+			public const int common_plus_signin_btn_icon_light_normal = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int common_plus_signin_btn_text_dark_focused = 2130837611;
+			public const int common_plus_signin_btn_icon_light_pressed = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int common_plus_signin_btn_text_dark_normal = 2130837612;
+			public const int common_plus_signin_btn_text_dark = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int common_plus_signin_btn_text_dark_pressed = 2130837613;
+			public const int common_plus_signin_btn_text_dark_disabled = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int common_plus_signin_btn_text_light = 2130837614;
+			public const int common_plus_signin_btn_text_dark_focused = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int common_plus_signin_btn_text_light_disabled = 2130837615;
+			public const int common_plus_signin_btn_text_dark_normal = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int common_plus_signin_btn_text_light_focused = 2130837616;
+			public const int common_plus_signin_btn_text_dark_pressed = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int common_plus_signin_btn_text_light_normal = 2130837617;
+			public const int common_plus_signin_btn_text_light = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int common_plus_signin_btn_text_light_pressed = 2130837618;
+			public const int common_plus_signin_btn_text_light_disabled = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int cristobal = 2130837619;
+			public const int common_plus_signin_btn_text_light_focused = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int EDIT = 2130837620;
+			public const int common_plus_signin_btn_text_light_normal = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int edit_text_style = 2130837621;
+			public const int common_plus_signin_btn_text_light_pressed = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int EMNavigation = 2130837622;
+			public const int cristobal = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_action_search = 2130837623;
+			public const int daguldol = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int Icon = 2130837624;
+			public const int daraitan = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int itenerary = 2130837625;
+			public const int EDIT = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int lnt = 2130837626;
+			public const int edit_text_style = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int makiling = 2130837627;
+			public const int EMNavigation = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int mountainMapTitle = 2130837628;
-			
-			// aapt resource value: 0x7f020084
-			public const int notification_template_icon_bg = 2130837636;
+			public const int ic_action_search = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int plusButton = 2130837629;
+			public const int Icon = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int splash = 2130837630;
+			public const int itenerary = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int splash_screen = 2130837631;
+			public const int lnt = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int talamitam = 2130837632;
+			public const int makiling = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ulap = 2130837633;
+			public const int mountainMapTitle = 2130837633;
+			
+			// aapt resource value: 0x7f020089
+			public const int notification_template_icon_bg = 2130837641;
 			
 			// aapt resource value: 0x7f020082
-			public const int yellowbg = 2130837634;
+			public const int plusButton = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int your = 2130837635;
+			public const int splash = 2130837635;
+			
+			// aapt resource value: 0x7f020084
+			public const int splash_screen = 2130837636;
+			
+			// aapt resource value: 0x7f020085
+			public const int talamitam = 2130837637;
+			
+			// aapt resource value: 0x7f020086
+			public const int ulap = 2130837638;
+			
+			// aapt resource value: 0x7f020087
+			public const int yellowbg = 2130837639;
+			
+			// aapt resource value: 0x7f020088
+			public const int your = 2130837640;
 			
 			static Drawable()
 			{
@@ -2284,73 +2299,88 @@ namespace Akyat.Pinas
 			public const int AddItiLayout = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int batulaoLayout = 2130903066;
+			public const int ayaasLayout = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int cristobalLayout = 2130903067;
+			public const int balagbagLayout = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int itineraryLayout = 2130903068;
+			public const int banahawLayout = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int leaveNoTrace = 2130903069;
+			public const int batulaoLayout = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int Main = 2130903070;
+			public const int cristobalLayout = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int makilingLayout = 2130903071;
+			public const int daguldolLayout = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int ml_model = 2130903072;
+			public const int daraitanLayout = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int mList = 2130903073;
+			public const int itineraryLayout = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int mountainMap = 2130903074;
+			public const int leaveNoTrace = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int notification_media_action = 2130903075;
+			public const int Main = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int notification_media_cancel_action = 2130903076;
+			public const int makilingLayout = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int notification_template_big_media = 2130903077;
+			public const int ml_model = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int notification_template_big_media_narrow = 2130903078;
+			public const int mList = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_template_lines = 2130903079;
+			public const int mountainMap = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_template_media = 2130903080;
+			public const int notification_media_action = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_template_part_chronometer = 2130903081;
+			public const int notification_media_cancel_action = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_part_time = 2130903082;
+			public const int notification_template_big_media = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int select_dialog_item_material = 2130903083;
+			public const int notification_template_big_media_narrow = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int select_dialog_multichoice_material = 2130903084;
+			public const int notification_template_lines = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int select_dialog_singlechoice_material = 2130903085;
+			public const int notification_template_media = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int support_simple_spinner_dropdown_item = 2130903086;
+			public const int notification_template_part_chronometer = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int talamitamLayout = 2130903087;
+			public const int notification_template_part_time = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int ulapLayout = 2130903088;
+			public const int select_dialog_item_material = 2130903088;
+			
+			// aapt resource value: 0x7f030031
+			public const int select_dialog_multichoice_material = 2130903089;
+			
+			// aapt resource value: 0x7f030032
+			public const int select_dialog_singlechoice_material = 2130903090;
+			
+			// aapt resource value: 0x7f030033
+			public const int support_simple_spinner_dropdown_item = 2130903091;
+			
+			// aapt resource value: 0x7f030034
+			public const int talamitamLayout = 2130903092;
+			
+			// aapt resource value: 0x7f030035
+			public const int ulapLayout = 2130903093;
 			
 			static Layout()
 			{
