@@ -13,31 +13,36 @@ using Akyat.Pinas.ORM;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity(Theme = "@style/Theme.NoTitle", Label = "addItineraryAct")]
-    public class addItineraryAct : Activity
+    [Activity(Theme = "@style/Theme.NoTitle", Label = "editItiAct")]
+    public class editItiAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.AddItiLayout);
+            SetContentView(Resource.Layout.editItiLayout);
             // Create your application here
+
             string name = Intent.GetStringExtra("name");
 
+            string editThis = Intent.GetStringExtra("editThis");
 
-            Button btnAdd = FindViewById<Button>(Resource.Id.btnAdd);
-            btnAdd.Click += ((sender, e) =>
+            EditText editItinerary = FindViewById<EditText>(Resource.Id.txtEditItinerary);
+            editItinerary.Text = editThis;
+
+            Button btnUpdate = FindViewById<Button>(Resource.Id.btnSave);
+
+            btnUpdate.Click += (sender, e) =>
             {
-                EditText txtItinerary = FindViewById<EditText>(Resource.Id.txtItinerary);
                 DBItineraryRepository dbr = new DBItineraryRepository();
 
-                string result = dbr.InsertRecord(name, txtItinerary.Text);
+                string result = dbr.UpdateRecord(name, editItinerary.Text);
                 Toast.MakeText(this, result, ToastLength.Short).Show();
 
                 var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", name);
                 StartActivity(intent);
+            };
 
-            });
 
         }
     }

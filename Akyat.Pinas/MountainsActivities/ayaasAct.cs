@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Akyat.Pinas.ORM;
 
 namespace Akyat.Pinas.MountainActivities
 {
@@ -20,6 +21,22 @@ namespace Akyat.Pinas.MountainActivities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ayaasLayout);
             // Create your application here
+
+
+            Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
+            btnItinerary.Click += ((sender, e) =>
+            {
+                DBItineraryRepository dbr = new DBItineraryRepository();
+                var result = dbr.CreateDB();
+                Toast.MakeText(this, result, ToastLength.Short).Show();
+
+
+
+                var intent = new Intent(this, typeof(itineraryAct));
+                intent.PutExtra("name", "Ayaas");
+                StartActivity(intent);
+
+            });
         }
     }
 }

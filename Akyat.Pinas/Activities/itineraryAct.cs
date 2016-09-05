@@ -23,6 +23,20 @@ namespace Akyat.Pinas.ORM
             // Create your application here
 
             string name = Intent.GetStringExtra("name");
+
+            TextView txtItinerary = FindViewById<TextView>(Resource.Id.txtItineraryRecord);
+            try { 
+            DBItineraryRepository dbr = new DBItineraryRepository();
+                var result = dbr.GetRecord(name);
+
+                txtItinerary.Text = result;
+
+            }
+            catch (Exception ex)
+            {
+                Toast.MakeText(this,ex.Message , ToastLength.Short).Show();
+            }
+
             Button btnAddIti = FindViewById<Button>(Resource.Id.btnAddIti);
             btnAddIti.Click += ((sender, e) =>
             {
@@ -35,6 +49,15 @@ namespace Akyat.Pinas.ORM
                 StartActivity(intent);
             });
 
+
+
+            txtItinerary.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(editItiAct));
+                intent.PutExtra("editThis", txtItinerary.Text);
+                intent.PutExtra("name", name);
+                StartActivity(intent);
+            };
 
         }
     }

@@ -22,13 +22,11 @@ namespace Akyat.Pinas.ORM
 
     public class itineraryClass
     {
-        [PrimaryKey, AutoIncrement, Column("_Id")]
-        public int Id { get; set; }
-
-        [MaxLength(50)]
+      
+        [PrimaryKey, MaxLength(50)]
         public string MountainName { get; set; }
 
-        [MaxLength(100000)]
+        [MaxLength(10000)]
         public string Itinerary { get; set; }
     }
 }

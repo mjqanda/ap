@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
+    android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="@drawable/EMNavigation">
@@ -85,7 +85,7 @@
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-          <TextView
+            <TextView
                 android:text="The summit area is windy, as expected from a coastal mountain. Grasslands make for a ‘picnic ground’ feel; there are some rock formations also. In one viewpoint, called Biliran ng Limatik (20 minutes from Niyugan campsite), the nearby mountains such as Maculot (NW), Malipunyo (NNW), and more distant Mt. Banahaw (NE) can be seen; and also Mindoro (and perhaps Verde Island, SE), Tayabas Bay (SW) and a faint island, Marinduque (SSW). Visible also is Naguiling Peak in the same range – a pristine, promising destination."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
@@ -93,12 +93,13 @@
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="75dp"
-                android:src="@drawable/itenerary"
-                android:layout_marginTop="35dp"
-                android:layout_gravity="center_horizontal" />
+             <Button
+             android:layout_width="200dp"
+             android:layout_height="75dp"
+             android:paddingTop="25dp"
+             android:background="@drawable/itenerary"
+             android:layout_marginLeft="67dp"
+             android:id="@+id/btnItinerary" />
             <TextView
                 android:text="Day 1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -241,7 +242,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-          <TextView
+            <TextView
                 android:text="1700 Rent jeep back to Lipa or Batangas City en route to Manila"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"

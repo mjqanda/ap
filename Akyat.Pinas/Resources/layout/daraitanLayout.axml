@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
+    android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="@drawable/EMNavigation">
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-          <TextView
+            <TextView
                 android:text="Minor jumpoff: Sitio Cablao Brgy. Pagsangahan, General Nakar"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
@@ -92,7 +92,7 @@
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-          <TextView
+            <TextView
                 android:text="At the summit, one can see the Sierra Madre mountains (E, NE), the meandering Daraitan River, and a glimpse of Laguna de Bay with its outlying mountains (i.e. Makiling and Sembrano) and the mountain within it: Mt. Tagapo. There is space for several tents if you wish to stay overnight. From the summit, instead of returning all the way to the barangay, a recommended route to take is the trail to Tinipak River. Though the trail itself is very similar to the ascending trail, Tinipak River, with its beautiful limestone boulders, is a great highlight and must not be missed! This is also a popular camping ground which gives the option of exploring the springs, natural pools, and caves in the area."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
@@ -100,12 +100,13 @@
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="75dp"
-                android:src="@drawable/itenerary"
-                android:layout_marginTop="35dp"
-                android:layout_gravity="center_horizontal" />
+             <Button
+             android:layout_width="200dp"
+             android:layout_height="75dp"
+             android:paddingTop="25dp"
+             android:background="@drawable/itenerary"
+             android:layout_marginLeft="67dp"
+             android:id="@+id/btnItinerary" />
             <TextView
                 android:text="Mt. Daraitan + Tinipak River Dayhike"
                 android:textAppearance="?android:attr/textAppearanceMedium"

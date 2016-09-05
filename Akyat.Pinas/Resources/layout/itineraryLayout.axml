@@ -10,25 +10,40 @@
         android:layout_height="100dp"
         android:id="@+id/imageViewasdas1"
         android:layout_marginBottom="19.5dp" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:minWidth="25px"
-        android:minHeight="25px">
-        <Button
-            android:layout_width="75.0dp"
-            android:layout_height="75.0dp"
-            android:id="@+id/btnAddIti"
-            android:background="@drawable/plusbutton"
-            android:layout_marginLeft="50dp" />
-        <TextView
-            android:text="ADD YOUR ITINERARY"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:paddingTop="25dp"
-            android:paddingLeft="130dp"
-            android:textColor="#FFFF00" />
-    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fillViewport="false">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <Button
+                android:layout_width="75.0dp"
+                android:layout_height="75.0dp"
+                android:id="@+id/btnAddIti"
+                android:background="@drawable/plusbutton"
+                android:layout_marginLeft="50dp" />
+            <TextView
+                android:text="ADD YOUR ITINERARY"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:paddingTop="25dp"
+                android:paddingLeft="130dp"
+                android:textColor="#FFFF00" />
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtItineraryRecord"
+                android:textColor="#FFFF00"
+                android:paddingTop="130dp"
+                android:paddingLeft="50dp" />
+        </RelativeLayout>
+    </ScrollView>
 </LinearLayout>

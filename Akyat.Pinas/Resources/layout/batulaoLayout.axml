@@ -85,12 +85,13 @@
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-            <ImageView
+            <Button
                 android:layout_width="200dp"
                 android:layout_height="75dp"
-                android:src="@drawable/itenerary"
-                android:layout_marginTop="35dp"
-                android:layout_gravity="center_horizontal" />
+                android:paddingTop="25dp"
+                android:background="@drawable/itenerary"
+                android:layout_marginLeft="67dp"
+                android:id="@+id/btnItinerary" />
             <TextView
                 android:text="Old to New Trail"
                 android:textAppearance="?android:attr/textAppearanceMedium"

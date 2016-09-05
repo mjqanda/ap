@@ -92,6 +92,10 @@ namespace Akyat.Pinas.Activities
             GoogleMap map = mapFrag.Map;
 
             
+          
+
+
+
             if (map != null)
             {
                 map.MapType = GoogleMap.MapTypeTerrain;

@@ -15,6 +15,8 @@ namespace Akyat.Pinas.MountainsActivities
             SetContentView(Resource.Layout.makilingLayout);
 
             //create database and table
+
+
             Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
             btnItinerary.Click += ((sender, e) =>
             {
