@@ -69,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView9"
+                  android:gravity="center"
                 android:textColor="#FFFF00"
                 android:paddingTop="3dp" />
             <TextView
@@ -85,6 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4"
+                  android:gravity="center"
                 android:textColor="#FFFF00" />
             <TextView
                 android:text="  4. Leave What You Find"
@@ -100,6 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView5"
+                  android:gravity="center"
                 android:textColor="#FFFF00" />
             <TextView
                 android:text="  5. Minimize Campfire Impacts"
@@ -115,6 +118,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView6"
+                  android:gravity="center"
                 android:textColor="#FFFF00" />
             <TextView
                 android:text="  6. Respect Wildlife and Farm Animals"
@@ -122,6 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView7"
+             
                 android:textColor="#FFFF00"
                 android:textStyle="bold" />
             <TextView
@@ -130,6 +135,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView7"
+                     android:gravity="center"
                 android:textColor="#FFFF00" />
             <TextView
                 android:text="  7. Be Considerate of Other Visitors"
@@ -145,6 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView8"
+                     android:gravity="center"
                 android:textColor="#FFFF00" />
         </LinearLayout>
     </ScrollView>

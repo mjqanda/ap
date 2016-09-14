@@ -86,6 +86,80 @@ namespace Akyat.Pinas.ORM
             return "record updated";
         }
 
+        public string CreateDBChecklist()
+        {
+            var output = "";
+            output += "";
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+
+            var db = new SQLiteConnection(dbPath);
+            output += "";
+            return output;
+        }
+
+        public string CreateTableChecklist()
+        {
+            try
+            {
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+
+                var db = new SQLiteConnection(dbPath);
+
+                db.CreateTable<checklistClass>();
+                string result = "";
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return "Error: " + ex.Message;
+
+            }
+        }
+
+        public string InsertRecordChecklist(string name, string value)
+        {
+            try
+            {
+
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+
+                var db = new SQLiteConnection(dbPath);
+                checklistClass item = new checklistClass();
+
+                item.ChecklistName = name;
+                item.Value = value;
+
+                db.Insert(item);
+                return "Checklist Saved";
+            }
+            catch (Exception ex)
+            {
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+                var db = new SQLiteConnection(dbPath);
+
+                var item = db.Get<checklistClass>(name);
+
+                item.Value = value;
+                db.Update(item);
+                return "Checklist Saved";
+            }
+        }
+
+        public string GetRecordChecklist(string name)
+        {
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+            var db = new SQLiteConnection(dbPath);
+          string outputValue;
+
+            var item = db.Get<checklistClass>(name);
+
+
+            outputValue = item.Value;
+
+            return outputValue;
+        }
+
+
 
     }
 }
