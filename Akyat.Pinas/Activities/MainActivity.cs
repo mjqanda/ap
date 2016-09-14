@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using Akyat.Pinas.ORM;
+using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Views;
@@ -25,12 +26,28 @@ namespace Akyat.Pinas.Activities
             Button btnNoTrace = FindViewById<Button>(Resource.Id.btnLeaveNoTrace);
             Button btnMountainMap = FindViewById<Button>(Resource.Id.btnMountainMap);
             Button btnSettings = FindViewById<Button>(Resource.Id.btnSettings);
+
             btnMountainList.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof (MountainListsAct));
                 StartActivity(intent);
             };
+
+            btnThingsToBring.Click += (sender, e) =>
+            {
+                DBItineraryRepository dbr = new DBItineraryRepository();
+                var result = dbr.CreateDBChecklist();
+              var resultTable = dbr.CreateTableChecklist();
+
+                Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
+                var intent = new Intent(this, typeof(T2BAct));
+                StartActivity(intent);
+            };
+
+
+
             btnNoTrace.Click += (sender, e) =>
+
             {
                 var intent = new Intent(this, typeof(LeaveNoTraceAct));
                 StartActivity(intent);

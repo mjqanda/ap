@@ -3,13 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/EMNavigation"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@drawable/EMNavigation">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/imageView1"
         android:layout_marginBottom="19.5dp" />
     <ScrollView
         android:layout_width="fill_parent"
@@ -23,10 +22,10 @@
             <ImageView
                 android:layout_width="243.0dp"
                 android:layout_height="139.5dp"
-                android:background="@drawable/makiling"
+                android:src="@drawable/daguldol"
                 android:layout_marginLeft="67dp" />
             <TextView
-                android:text="MT. MAKILING"
+                android:text="MT. DAGULDOL"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +33,7 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Los Baños, Laguna"
+                android:text="San Juan, Batangas"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,14 +49,14 @@
                 android:gravity="center"
                 android:paddingTop="25dp" />
             <TextView
-                android:text="Station 1, UP College of Forestry"
+                android:text="Major jump-off: Brgy. Hugom, San Juan"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="LLA: 14.13°N 121.20°E, 1090 MASL (Peak 2)"
+                android:text="LLA: 13°40.380N 121°19.160E, 672 MASL (+ 672 m)"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,21 +64,21 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Hours to summit / days required: 1-2 days / 4-5 hours"
+                android:text="Days required / Hours to summit: 1-2 days / 5 hours"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 3"
+                android:text="Specs: Minor climb, Difficulty 3/9, Trail class 1-3"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Since its adoption as a protected area by the University of the Philippines, Mt. Makiling has become one of the “mainstay” destinations for mountaineers, as well as scientists and tourists. The forest, which was restored during the 1910s, remains in pristine condition; a plethora of birds, reptiles, and other fauna continue to thrive in Makiling. Due to its popularity, the trails leading to Peak 2 are well-established, and no guide is necessary to climb the mountain. Although extensive damage was wrought by typhoon ‘Milenyo’ in 2006, as of the 2009 climbing season the UPLB trail has recovered and is now open for climbing. Since the popularisation of the MakTrav dayhike from 2008 onwards, most hikers opt for that option that comes from Sto. Tomas. However, the traditional trail from UPLB remains a good choice for a dayhike."
+                android:text="A nice trek in southern Batangas is the coastal mountain of San Juan, Mt. Daguldul. The name ‘Daguldul’ or ‘Daguldol’ has been used since olden days. It has an onomatopoeic feeling – that of suspense and grandness. Maybe it describes the grandeur of the range and the abrupt rolling of its slopes.Actually a small mountain range, Mt. Daguldul has several ‘gems’ to offer. First, there is the unique seascape that greets the hiker on the intial beach trail. Then, there is trail, moderate in difficulty, passing by woodlands and light forests. In some parts, the greenery is total. Of course there is the peak, which, although not really spectacular in terms of views, has a refreshing feel. Finally, there are excellent sidetrip choices such as the unique Naambon Falls and the acclaimed Laiya beach."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,22 +86,22 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="If climbing via UPLB, one should also visit the Mudsprings, the so-called ‘crater’ of Mt. Makiling where one could see pools of boiling mud. Don’t be surprised by the sulfuric smell when you are there. Another sidetrip is Flatrocks, very near the jump-off. It is a river with slabs of flat rocks. Just be vigilant during the rainy season; flash floods do occur. Several years ago picnic-goers in Flatrocks were swept by a flash flood. They were found dead days later, downriver. This is a rare case, however. Mt. Makiling is a protected area, very safe for mountaineers so long as proper coordination (i.e. registration) is done at the Ranger Station."
+                android:text="The summit area is windy, as expected from a coastal mountain. Grasslands make for a ‘picnic ground’ feel; there are some rock formations also. In one viewpoint, called Biliran ng Limatik (20 minutes from Niyugan campsite), the nearby mountains such as Maculot (NW), Malipunyo (NNW), and more distant Mt. Banahaw (NE) can be seen; and also Mindoro (and perhaps Verde Island, SE), Tayabas Bay (SW) and a faint island, Marinduque (SSW). Visible also is Naguiling Peak in the same range – a pristine, promising destination."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="75dp"
-                android:paddingTop="25dp"
-                android:background="@drawable/itenerary"
-                android:layout_marginLeft="67dp"
-                android:id="@+id/btnItinerary" />
+             <Button
+             android:layout_width="200dp"
+             android:layout_height="75dp"
+             android:paddingTop="25dp"
+             android:background="@drawable/itenerary"
+             android:layout_marginLeft="67dp"
+             android:id="@+id/btnItinerary" />
             <TextView
-                android:text="0430 Assembly at LRT-Buendia, board Sta. Cruz bus"
+                android:text="Day 1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,105 +109,141 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0630 ETA Los Baños Crossing, walk to corner beside Robinson’s Place for jeep to Forestry, or rent any passing jeep"
+                android:text="0600 Take Lipa-bound bus from Manila(Buendia, Cubao)"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0700 ETA jump-off point, College of Forestry, register"
+                android:text="0830 At Lipa, charter jeep to Brgy. Hugom"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="1130 ETA Brgy. Hugom; Arrange for Guides. Lunch"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 ETA Nursery, you can buy drinks here."
+                android:text="1300 Start Trek – Beach Front"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0900 Head off to Peak 2. Take note of the stations to mark your progress."
+                android:text="1530 ETA Mang Lizardo’s place"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1015 ETA last campsite."
+                android:text="1730 ETA Niyugan Campsite, Set Camp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1130 reach the so-called ’90 degrees’ at Stn. 27. Use the ropes."
+                android:text="1900 Dinner / Socials"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1200 ETA Peak 2 (station 30), lunch"
+                android:text="Day 2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center"
+                android:paddingTop="15dp" />
+            <TextView
+                android:text="0500 Wake up call"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1300 Start descent"
+                android:text="0520 Start Trek going to summit"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1600 ETA road to Nursery, proceed to Mudspring as a sidetrip."
+                android:text="0540 ETA summit"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1620 Arrive at Mudspring, take pictures."
+                android:text="0700 ETD from summit"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1645 Back at Nursery, start walk back to jump-off"
+                android:text="0730 Breakfast"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1800 Back at jump-off; walk down the road and wait for jeepney"
+                android:text="0830 Break Camp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1830 Dinner at Grove, Los Baños "
+                android:text="0900 Start Descent"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1930 Head back to Los Baños Crossing, take Buendia or Cubao."
+                android:text="1000 Back at Mang Lizardo’s place"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1100 Take Naambon Falls sidetrip (1 hr)"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1200 Resume descent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1300 Back at Brgy. Hugom; head to beach resorts"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1700 Rent jeep back to Lipa or Batangas City en route to Manila"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

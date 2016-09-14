@@ -11,34 +11,32 @@ using Android.Views;
 using Android.Widget;
 using Akyat.Pinas.ORM;
 
-namespace Akyat.Pinas.Activities
+namespace Akyat.Pinas.MountainActivities
 {
-    [Activity(Theme = "@style/Theme.NoTitle", Label = "addItineraryAct")]
-    public class addItineraryAct : Activity
+    [Activity(Theme = "@style/Theme.NoTitle", Label = "ayaasAct")]
+    public class ayaasAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.AddItiLayout);
+            SetContentView(Resource.Layout.ayaasLayout);
             // Create your application here
-            string name = Intent.GetStringExtra("name");
 
 
-            Button btnAdd = FindViewById<Button>(Resource.Id.btnAdd);
-            btnAdd.Click += ((sender, e) =>
+            Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
+            btnItinerary.Click += ((sender, e) =>
             {
-                EditText txtItinerary = FindViewById<EditText>(Resource.Id.txtItinerary);
                 DBItineraryRepository dbr = new DBItineraryRepository();
-
-                string result = dbr.InsertRecord(name, txtItinerary.Text);
+                var result = dbr.CreateDB();
                 Toast.MakeText(this, result, ToastLength.Short).Show();
 
-                var intent = new Intent(this, typeof(itineraryAct));
-                intent.PutExtra("name", name);
-                StartActivity(intent);
-                Finish();
-            });
 
+
+                var intent = new Intent(this, typeof(itineraryAct));
+                intent.PutExtra("name", "Ayaas");
+                StartActivity(intent);
+
+            });
         }
     }
 }

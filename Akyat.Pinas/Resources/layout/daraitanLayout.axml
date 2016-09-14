@@ -3,13 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/EMNavigation"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@drawable/EMNavigation">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/imageView1"
         android:layout_marginBottom="19.5dp" />
     <ScrollView
         android:layout_width="fill_parent"
@@ -23,10 +22,10 @@
             <ImageView
                 android:layout_width="243.0dp"
                 android:layout_height="139.5dp"
-                android:background="@drawable/makiling"
+                android:src="@drawable/daraitan"
                 android:layout_marginLeft="67dp" />
             <TextView
-                android:text="MT. MAKILING"
+                android:text="MT. DARAITAN"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +33,7 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Los Baños, Laguna"
+                android:text="Tanay, Rizal and General Nakar, Quezon"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,14 +49,21 @@
                 android:gravity="center"
                 android:paddingTop="25dp" />
             <TextView
-                android:text="Station 1, UP College of Forestry"
+                android:text="Major jumpoff: Brgy. Daraitan (village centre), Tanay"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="LLA: 14.13°N 121.20°E, 1090 MASL (Peak 2)"
+                android:text="Minor jumpoff: Sitio Cablao Brgy. Pagsangahan, General Nakar"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="LLA: 14°36′48.5′′N 121°26′19.5′′ E, 739 MASL (+600)"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,21 +71,21 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Hours to summit / days required: 1-2 days / 4-5 hours"
+                android:text="Days required / Hours to summit: 1 day / 2.5-4 hours "
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 3"
+                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 1-3"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Since its adoption as a protected area by the University of the Philippines, Mt. Makiling has become one of the “mainstay” destinations for mountaineers, as well as scientists and tourists. The forest, which was restored during the 1910s, remains in pristine condition; a plethora of birds, reptiles, and other fauna continue to thrive in Makiling. Due to its popularity, the trails leading to Peak 2 are well-established, and no guide is necessary to climb the mountain. Although extensive damage was wrought by typhoon ‘Milenyo’ in 2006, as of the 2009 climbing season the UPLB trail has recovered and is now open for climbing. Since the popularisation of the MakTrav dayhike from 2008 onwards, most hikers opt for that option that comes from Sto. Tomas. However, the traditional trail from UPLB remains a good choice for a dayhike."
+                android:text="The hike up is a (mostly) straightforward 600-meter ascent that might feel steep to those not used to hiking. There are, however, plenty of holds and the trail is well-maintained. The forest environment is similar in characteristics with Mt. Pinagbanderahan, which also lies in the Sierra Madre – but Daraitan has more rewarding limestone viewpoints and a much more challenging hike."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,22 +93,22 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="If climbing via UPLB, one should also visit the Mudsprings, the so-called ‘crater’ of Mt. Makiling where one could see pools of boiling mud. Don’t be surprised by the sulfuric smell when you are there. Another sidetrip is Flatrocks, very near the jump-off. It is a river with slabs of flat rocks. Just be vigilant during the rainy season; flash floods do occur. Several years ago picnic-goers in Flatrocks were swept by a flash flood. They were found dead days later, downriver. This is a rare case, however. Mt. Makiling is a protected area, very safe for mountaineers so long as proper coordination (i.e. registration) is done at the Ranger Station."
+                android:text="At the summit, one can see the Sierra Madre mountains (E, NE), the meandering Daraitan River, and a glimpse of Laguna de Bay with its outlying mountains (i.e. Makiling and Sembrano) and the mountain within it: Mt. Tagapo. There is space for several tents if you wish to stay overnight. From the summit, instead of returning all the way to the barangay, a recommended route to take is the trail to Tinipak River. Though the trail itself is very similar to the ascending trail, Tinipak River, with its beautiful limestone boulders, is a great highlight and must not be missed! This is also a popular camping ground which gives the option of exploring the springs, natural pools, and caves in the area."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="75dp"
-                android:paddingTop="25dp"
-                android:background="@drawable/itenerary"
-                android:layout_marginLeft="67dp"
-                android:id="@+id/btnItinerary" />
+             <Button
+             android:layout_width="200dp"
+             android:layout_height="75dp"
+             android:paddingTop="25dp"
+             android:background="@drawable/itenerary"
+             android:layout_marginLeft="67dp"
+             android:id="@+id/btnItinerary" />
             <TextView
-                android:text="0430 Assembly at LRT-Buendia, board Sta. Cruz bus"
+                android:text="Mt. Daraitan + Tinipak River Dayhike"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,105 +116,77 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0630 ETA Los Baños Crossing, walk to corner beside Robinson’s Place for jeep to Forestry, or rent any passing jeep"
+                android:text="0400 Take jeepney from EDSA-Shaw to Tanay, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0700 ETA jump-off point, College of Forestry, register"
+                android:text="0530 ETA Tanay, Rizal. Take jeep to Sampaloc, Tanay"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="0615 ETA Sampaloc, Tanay. Take tricycle to Brgy. Daraitan"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 ETA Nursery, you can buy drinks here."
+                android:text="0700 Arrival at Daraitan River. Cross with raft and take trike to barangay hall"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0900 Head off to Peak 2. Take note of the stations to mark your progress."
+                android:text="0730 ETA Barangay Hall; Register and secure guides"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1015 ETA last campsite."
+                android:text="0800 Start trek up Mt. Daraitan"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1130 reach the so-called ’90 degrees’ at Stn. 27. Use the ropes."
+                android:text="1130 ETA summit. Explore the viewpoints / Lunch"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1200 ETA Peak 2 (station 30), lunch"
+                android:text="1300 Start descent to Tinipak River"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1300 Start descent"
+                android:text="1500 Arrival at Tinipak River. Explore the area"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1600 ETA road to Nursery, proceed to Mudspring as a sidetrip."
+                android:text="1630 Proceed to Brgy. Daritan via riverside trail "
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1620 Arrive at Mudspring, take pictures."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1645 Back at Nursery, start walk back to jump-off"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1800 Back at jump-off; walk down the road and wait for jeepney"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1830 Dinner at Grove, Los Baños "
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1930 Head back to Los Baños Crossing, take Buendia or Cubao."
+                android:text="1800 Head back to Tanay, Rizal via tricycle"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

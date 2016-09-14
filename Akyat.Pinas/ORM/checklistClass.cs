@@ -15,18 +15,14 @@ using System.IO;
 using SQLite;
 namespace Akyat.Pinas.ORM
 {
-   
-    [Table("Itinerary")]
-
-  
-
-    public class itineraryClass
+    [Table("Checklist")]
+    public class checklistClass
     {
-      
-        [PrimaryKey, MaxLength(50)]
-        public string MountainName { get; set; }
 
-        [MaxLength(10000)]
-        public string Itinerary { get; set; }
+        [PrimaryKey, MaxLength(50)]
+        public string ChecklistName { get; set; }
+
+        [MaxLength(1)]
+        public string Value { get; set; }
     }
 }

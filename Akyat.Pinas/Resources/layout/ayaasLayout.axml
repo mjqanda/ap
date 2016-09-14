@@ -3,13 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/EMNavigation"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@drawable/EMNavigation">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/imageView1"
         android:layout_marginBottom="19.5dp" />
     <ScrollView
         android:layout_width="fill_parent"
@@ -23,10 +22,10 @@
             <ImageView
                 android:layout_width="243.0dp"
                 android:layout_height="139.5dp"
-                android:background="@drawable/makiling"
+                android:src="@drawable/ayaas"
                 android:layout_marginLeft="67dp" />
             <TextView
-                android:text="MT. MAKILING"
+                android:text="MT. AYAAS"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +33,7 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Los Baños, Laguna"
+                android:text="Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,14 +49,21 @@
                 android:gravity="center"
                 android:paddingTop="25dp" />
             <TextView
-                android:text="Station 1, UP College of Forestry"
+                android:text="Major jumpoff: Brgy. Wawa, Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="LLA: 14.13°N 121.20°E, 1090 MASL (Peak 2)"
+                android:text="Minor jumpoff: Brgy. Mascap, Rodriguez, Rizal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="LLA: 14°45′3.38′′ N, 121°12′27.5′ 627 MASL (+570)"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,21 +71,21 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Hours to summit / days required: 1-2 days / 4-5 hours"
+                android:text="Days required / Hours to summit: 1 day / 3-4 hours"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 3"
+                android:text="Specs: Minor, Difficulty 3/9, Trail class 1-3 with river trekking"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Since its adoption as a protected area by the University of the Philippines, Mt. Makiling has become one of the “mainstay” destinations for mountaineers, as well as scientists and tourists. The forest, which was restored during the 1910s, remains in pristine condition; a plethora of birds, reptiles, and other fauna continue to thrive in Makiling. Due to its popularity, the trails leading to Peak 2 are well-established, and no guide is necessary to climb the mountain. Although extensive damage was wrought by typhoon ‘Milenyo’ in 2006, as of the 2009 climbing season the UPLB trail has recovered and is now open for climbing. Since the popularisation of the MakTrav dayhike from 2008 onwards, most hikers opt for that option that comes from Sto. Tomas. However, the traditional trail from UPLB remains a good choice for a dayhike."
+                android:text="Mt. Ayaas is a pleasant addition to the outdoor destinations of Rodriguez, Rizal. While Pamitinan, Binacayan, and Hapunang Banoi are practicality look-alikes, Mt. Ayaas is a mountain made distinctive by its river trekking and grassland slopes. Moreover, it is arguably the most challenging of the hikes in the area – even though all of them are relatively easy and are, as of July 2015, rated as Difficulty 3/9."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,22 +93,22 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="If climbing via UPLB, one should also visit the Mudsprings, the so-called ‘crater’ of Mt. Makiling where one could see pools of boiling mud. Don’t be surprised by the sulfuric smell when you are there. Another sidetrip is Flatrocks, very near the jump-off. It is a river with slabs of flat rocks. Just be vigilant during the rainy season; flash floods do occur. Several years ago picnic-goers in Flatrocks were swept by a flash flood. They were found dead days later, downriver. This is a rare case, however. Mt. Makiling is a protected area, very safe for mountaineers so long as proper coordination (i.e. registration) is done at the Ranger Station."
+                android:text="Just like the other mountains in the area, the hike up Mt. Ayaas originates from Brgy. Wawa proper. Passing through Wawa Dam and the magnificent gorge. The first half involves mostly river trekking, and the difficulty is highly weather-dependent, as the rocks are very slippery when wet – and the water level is high such that it is inevitable that you yourself will get wet."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="75dp"
-                android:paddingTop="25dp"
-                android:background="@drawable/itenerary"
-                android:layout_marginLeft="67dp"
-                android:id="@+id/btnItinerary" />
+          <Button
+              android:layout_width="200dp"
+              android:layout_height="75dp"
+              android:paddingTop="25dp"
+              android:background="@drawable/itenerary"
+              android:layout_marginLeft="67dp"
+              android:id="@+id/btnItinerary" />
             <TextView
-                android:text="0430 Assembly at LRT-Buendia, board Sta. Cruz bus"
+                android:text="MT. AYAAS DAYHIKE"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,105 +116,176 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0630 ETA Los Baños Crossing, walk to corner beside Robinson’s Place for jeep to Forestry, or rent any passing jeep"
+                android:text="0400 Take van from Cubao to Eastwood, Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0700 ETA jump-off point, College of Forestry, register"
+                android:text="0530 ETA Rodriguez, Rizal; take trike or jeep to brgy. Wawa"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="0600 Arrival at Brgy. Wawa. Register at barangay hall / tourism office"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 ETA Nursery, you can buy drinks here."
+                android:text="0630 Start trek up Mt. Ayaas"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0900 Head off to Peak 2. Take note of the stations to mark your progress."
+                android:text="0730 ETA waterfalls"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1015 ETA last campsite."
+                android:text="0830 End of river trekking"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1130 reach the so-called ’90 degrees’ at Stn. 27. Use the ropes."
+                android:text="0930 Arrival at transmission tower. Final assault"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1200 ETA Peak 2 (station 30), lunch"
+                android:text="1030 ETA summit"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1300 Start descent"
+                android:text="1100 Start descent"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1600 ETA road to Nursery, proceed to Mudspring as a sidetrip."
+                android:text="1400 Back at Brgy. Wawa.  Tidy up then take outbound trike"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1620 Arrive at Mudspring, take pictures."
+                android:text="1600 ETD for Tagaytay by jeepney"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1645 Back at Nursery, start walk back to jump-off"
+                android:text="1630 Back in Manila."
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1800 Back at jump-off; walk down the road and wait for jeepney"
+                android:text="MT. AYAAS TRAVERSE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center"
+                android:paddingTop="15dp" />
+            <TextView
+                android:text="0400 Take van from Cubao to Eastwood, Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1830 Dinner at Grove, Los Baños "
+                android:text="0530 ETA Rodriguez, Rizal; take trike or jeep to brgy. Wawa"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1930 Head back to Los Baños Crossing, take Buendia or Cubao."
+                android:text="0600 Arrival at Brgy. Wawa. Register at barangay hall / tourism office"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="0630 Start trek up Mt. Ayaas"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="0730 ETA waterfalls"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="0830 End of river trekking"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="0930 Arrival at transmission tower. Final assault"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1030 ETA summit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1100 Traverse to Mascap"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1400 ETA Mascap, take trike to Montalban"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1500 ETA Montalban,  Tidy up then take outbound trike."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="1730 Back in Manila."
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

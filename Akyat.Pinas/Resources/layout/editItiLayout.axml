@@ -21,11 +21,11 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="217.5dp"
-        android:id="@+id/txtItinerary"
-        android:background="@drawable/btn_bg_transparent" />
+        android:id="@+id/txtEditItinerary" 
+    android:background="@drawable/btn_bg_transparent"/>
     <Button
-        android:text="Add"
+        android:text="Save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAdd" />
+        android:id="@+id/btnSave" />
 </LinearLayout>

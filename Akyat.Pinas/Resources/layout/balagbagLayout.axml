@@ -3,13 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/EMNavigation"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@drawable/EMNavigation">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/imageView1"
         android:layout_marginBottom="19.5dp" />
     <ScrollView
         android:layout_width="fill_parent"
@@ -23,10 +22,10 @@
             <ImageView
                 android:layout_width="243.0dp"
                 android:layout_height="139.5dp"
-                android:background="@drawable/makiling"
+                android:src="@drawable/balagbag"
                 android:layout_marginLeft="67dp" />
             <TextView
-                android:text="MT. MAKILING"
+                android:text="MT. BALAGBAG"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +33,7 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Los Baños, Laguna"
+                android:text="Rodriguez, Rizal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,14 +49,21 @@
                 android:gravity="center"
                 android:paddingTop="25dp" />
             <TextView
-                android:text="Station 1, UP College of Forestry"
+                android:text="First jumpoff: Sitio Karahume, Brgy. Macabud, Rodriguez"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="LLA: 14.13°N 121.20°E, 1090 MASL (Peak 2)"
+                android:text="Second jumpoff: Sitio Balagbag, Brgy. San Isidro, Rodriguez"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:gravity="center" />
+            <TextView
+                android:text="LLA: 777 MASL (unverified)"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,21 +71,21 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Hours to summit / days required: 1-2 days / 4-5 hours"
+                android:text="Days required / Hours to summit: 1 day / 1-2 hours"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Specs: Minor climb, Difficulty 4/9, Trail class 3"
+                android:text="Specs: Minor climb, Difficulty 3/9, Trail class 1-2"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="Since its adoption as a protected area by the University of the Philippines, Mt. Makiling has become one of the “mainstay” destinations for mountaineers, as well as scientists and tourists. The forest, which was restored during the 1910s, remains in pristine condition; a plethora of birds, reptiles, and other fauna continue to thrive in Makiling. Due to its popularity, the trails leading to Peak 2 are well-established, and no guide is necessary to climb the mountain. Although extensive damage was wrought by typhoon ‘Milenyo’ in 2006, as of the 2009 climbing season the UPLB trail has recovered and is now open for climbing. Since the popularisation of the MakTrav dayhike from 2008 onwards, most hikers opt for that option that comes from Sto. Tomas. However, the traditional trail from UPLB remains a good choice for a dayhike."
+                android:text="The trail is very easy and wide, and Mt. Balagbag is also a favorite of mountain bikers. Although locals recall a past when the mountain was covered with trees, it is now barren, and hikers who will trek it summer will find sun exposure as the only difficulty in this trek. Hence, dimtrekking (hiking very early in the morning or late afternoon) is recommended."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,22 +93,22 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="If climbing via UPLB, one should also visit the Mudsprings, the so-called ‘crater’ of Mt. Makiling where one could see pools of boiling mud. Don’t be surprised by the sulfuric smell when you are there. Another sidetrip is Flatrocks, very near the jump-off. It is a river with slabs of flat rocks. Just be vigilant during the rainy season; flash floods do occur. Several years ago picnic-goers in Flatrocks were swept by a flash flood. They were found dead days later, downriver. This is a rare case, however. Mt. Makiling is a protected area, very safe for mountaineers so long as proper coordination (i.e. registration) is done at the Ranger Station."
+                android:text="Additional features of Mt. Balagbag include some small waterfalls and rivers along the way, as well as the possibility of traversing to San Jose Del Monte, Bulacan or other barangays of Rodriguez, Rizal. Along the way to Mt. Balabag, there is also the Veterans’ Peak or Veterans’ Summit which is more of a local tourist spot. There are security concerns regarding Balagbag at the moment, but it has the potential to be a nice and near hiking spot from Manila."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="75dp"
-                android:paddingTop="25dp"
-                android:background="@drawable/itenerary"
-                android:layout_marginLeft="67dp"
-                android:id="@+id/btnItinerary" />
+             <Button
+             android:layout_width="200dp"
+             android:layout_height="75dp"
+             android:paddingTop="25dp"
+             android:background="@drawable/itenerary"
+             android:layout_marginLeft="67dp"
+             android:id="@+id/btnItinerary" />
             <TextView
-                android:text="0430 Assembly at LRT-Buendia, board Sta. Cruz bus"
+                android:text="Dayhike"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,105 +116,56 @@
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0630 ETA Los Baños Crossing, walk to corner beside Robinson’s Place for jeep to Forestry, or rent any passing jeep"
+                android:text="0500 From Cubao, take jeep to Jolibee Tungko"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0700 ETA jump-off point, College of Forestry, register"
+                android:text="0600 From Jolibee Tungko, take jeep to Karahume or Licao-Licao"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0730 Start trek"
+                android:text="0700 Explore the waterfalls from Karahume"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0845 ETA Nursery, you can buy drinks here."
+                android:text="1030 Head off to the summit"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="0900 Head off to Peak 2. Take note of the stations to mark your progress."
+                android:text="1200 Arrival at summit"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1015 ETA last campsite."
+                android:text="1300 Head down to Licao-Licao"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1130 reach the so-called ’90 degrees’ at Stn. 27. Use the ropes."
+                android:text="1500 Back at jumpoff; take jeepney to Rodriguez then QC"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
             <TextView
-                android:text="1200 ETA Peak 2 (station 30), lunch"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1300 Start descent"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1600 ETA road to Nursery, proceed to Mudspring as a sidetrip."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1620 Arrive at Mudspring, take pictures."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1645 Back at Nursery, start walk back to jump-off"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1800 Back at jump-off; walk down the road and wait for jeepney"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1830 Dinner at Grove, Los Baños "
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:gravity="center" />
-            <TextView
-                android:text="1930 Head back to Los Baños Crossing, take Buendia or Cubao."
+                android:text="1800 Back in Quezon City"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
