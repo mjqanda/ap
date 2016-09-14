@@ -103,7 +103,6 @@ namespace Akyat.Pinas.Activities
                 map.UiSettings.CompassEnabled = true;
                 map.MoveCamera(cameraUpdate);
 
-                
 
                 map.AddMarker(markerTalamitam);
                 map.AddMarker(markerBatulao);
