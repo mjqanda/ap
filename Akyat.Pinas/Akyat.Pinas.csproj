@@ -29,9 +29,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
     <BundleAssemblies>False</BundleAssemblies>
     <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
     <Debugger>Xamarin</Debugger>
@@ -87,11 +87,7 @@
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Mountain.cs" />
     <Compile Include="Activities\mountainMapAct.cs" />
-    <Compile Include="MountainsActivities\batulaoAct.cs" />
-    <Compile Include="MountainsActivities\cristobalAct.cs" />
     <Compile Include="MountainsActivities\makilingAct.cs" />
-    <Compile Include="MountainsActivities\talamitamAct.cs" />
-    <Compile Include="MountainsActivities\ulapAct.cs" />
     <Compile Include="MountainsAdapter.cs" />
     <Compile Include="MyAnimation.cs" />
     <Compile Include="Activities\itineraryAct.cs" />
