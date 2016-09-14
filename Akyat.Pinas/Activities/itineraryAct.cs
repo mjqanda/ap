@@ -47,6 +47,7 @@ namespace Akyat.Pinas.ORM
                 var intent = new Intent(this, typeof(addItineraryAct));
                 intent.PutExtra("name", name);
                 StartActivity(intent);
+                Finish();
             });
 
 
@@ -57,6 +58,7 @@ namespace Akyat.Pinas.ORM
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivity(intent);
+                Finish();
             };
 
         }

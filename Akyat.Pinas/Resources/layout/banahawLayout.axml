@@ -85,13 +85,13 @@
                 android:paddingTop="15dp"
                 android:textColor="#FFFF00"
                 android:gravity="center" />
-          <Button
-             android:layout_width="200dp"
-             android:layout_height="75dp"
-             android:paddingTop="25dp"
-             android:background="@drawable/itenerary"
-             android:layout_marginLeft="67dp"
-             android:id="@+id/btnItinerary" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/itenerary"
+                android:layout_marginLeft="67dp"
+                android:id="@+id/btnItinerary" />
             <TextView
                 android:text="Day 1"
                 android:textAppearance="?android:attr/textAppearanceMedium"

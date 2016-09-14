@@ -82,6 +82,7 @@
   <ItemGroup>
     <Compile Include="Activities\addItineraryAct.cs" />
     <Compile Include="Activities\editItiAct.cs" />
+    <Compile Include="Activities\T2BAct.cs" />
     <Compile Include="MountainsActivities\ayaasAct.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\MountainListsAct.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="MountainsAdapter.cs" />
     <Compile Include="MyAnimation.cs" />
     <Compile Include="Activities\itineraryAct.cs" />
+    <Compile Include="ORM\checklistClass.cs" />
     <Compile Include="ORM\DBItineraryRepository.cs" />
     <Compile Include="ORM\itineraryClass.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -152,6 +154,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\editItiLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\T2BLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -258,6 +263,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\daraitan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\backgroundT2B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MAPbackground.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />
