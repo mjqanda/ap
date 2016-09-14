@@ -106,6 +106,7 @@ namespace Akyat.Pinas.Activities
                 
 
 
+
                 map.AddMarker(markerTalamitam);
                 map.AddMarker(markerBatulao);
                 map.AddMarker(markerMakiling);
