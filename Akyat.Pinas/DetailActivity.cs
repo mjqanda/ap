@@ -2,6 +2,8 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 using Akyat.Pinas;
+using Akyat.Pinas.ORM;
+using Android.Content;
 
 namespace Akyat.Pinas
 {
@@ -48,7 +50,23 @@ namespace Akyat.Pinas
             dtrail2.Text = trail02;
             dite1.Text = ite01;
             dite2.Text = ite02;
-           
+
+
+            Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
+            btnItinerary.Click += ((sender, e) =>
+            {
+                DBItineraryRepository dbr = new DBItineraryRepository();
+                var result = dbr.CreateDB();
+                Toast.MakeText(this, result, ToastLength.Short).Show();
+
+
+
+                var intent = new Intent(this, typeof(itineraryAct));
+                intent.PutExtra("name", "Makiling");
+                StartActivity(intent);
+
+            });
+
 
         }
     }

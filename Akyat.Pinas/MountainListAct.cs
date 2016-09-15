@@ -23,9 +23,7 @@ namespace Akyat.Pinas
         private bool mAnimatedDown;
         private bool mIsAnimating;
         private MountainsAdapter mAdapter;
-        private bool MountainsAscending;
-        private bool MaslAscending;
-        private bool DifficultyAscending;
+    
 
       
 
