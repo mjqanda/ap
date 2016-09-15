@@ -1,22 +1,27 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
 namespace Akyat.Pinas
 {
     class Mountain
     {
         public string MtName { get; set; }
-        public string MASL { get; set; }
-        public string Difficulty { get; set;}
-        public int ImgResourceId { get; set; }
-    }
+        public int Masl { get; set; }
+        public int Difficulty { get; set; }
+        public int MtImg { get; set; }
+        public string Region { get; set; } 
+        public string Location01 { get; set; }
+        public string Location02 { get; set; }
+        public string Description01 { get; set; }
+        public string Description02 { get; set; }
+        public string Trail01 { get; set; }
+        public string Trail02 { get; set; }
+        public string Itenerary01 { get; set; }
+        public string Iterenary02 { get; set; }
+
+}
+
+    
 }

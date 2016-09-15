@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">Akyat.Pinas</string>
+    <string name="ApplicationName">akyatpinas</string>
+    <string name="action_1">Sort Name(A-Z)</string>
+    <string name="action_2">Sort Name(Z-A) </string>
+    <string name="action_3">Sort Elevation(from Shortest)</string>
+    <string name="action_4">Sort Elevation(from Highest)</string>
+    <string name="action_5">Sort Difficulty(from Easiest)</string>
+    <string name="action_6">Sort Difficulty(from Most Difficult)</string>
+    <string name="action_7">Sort Luzon-Visayas-Mindanao</string>
+
 </resources>

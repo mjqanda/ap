@@ -14,7 +14,7 @@ using Android.Widget;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, Icon = "@drawable/icon")]
+   // [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true, Icon = "@drawable/icon")]
     public class SplashActivity : AppCompatActivity
     {
 
@@ -41,7 +41,7 @@ namespace Akyat.Pinas.Activities
             startupWork.ContinueWith(t =>
             {
                 Log.Debug(TAG, "Work is finished - start Activity1.");
-                StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+                StartActivity(new Intent(Application.Context, typeof(MainMenuAct)));
             }, TaskScheduler.FromCurrentSynchronizationContext());
 
             startupWork.Start();

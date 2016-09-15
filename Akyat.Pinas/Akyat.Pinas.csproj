@@ -29,9 +29,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
     <BundleAssemblies>False</BundleAssemblies>
     <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
     <Debugger>Xamarin</Debugger>
@@ -82,24 +82,18 @@
   <ItemGroup>
     <Compile Include="Activities\addItineraryAct.cs" />
     <Compile Include="Activities\editItiAct.cs" />
-    <Compile Include="Activities\T2BAct.cs" />
-    <Compile Include="MountainsActivities\ayaasAct.cs" />
-    <Compile Include="Activities\MainActivity.cs" />
-    <Compile Include="Activities\MountainListsAct.cs" />
+    <Compile Include="Activities\MainMenuAct.cs" />
     <Compile Include="Activities\LeaveNoTraceAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
+    <Compile Include="Activities\ThingsToBringAct.cs" />
+    <Compile Include="DetailActivity.cs" />
+    <Compile Include="ExtMethods.cs" />
+    <Compile Include="MountainListAct.cs" />
     <Compile Include="Mountain.cs" />
-    <Compile Include="Activities\mountainMapAct.cs" />
-    <Compile Include="MountainsActivities\balagbagAct.cs" />
-    <Compile Include="MountainsActivities\banahawAct.cs" />
-    <Compile Include="MountainsActivities\batulaoAct.cs" />
-    <Compile Include="MountainsActivities\cristobalAct.cs" />
-    <Compile Include="MountainsActivities\daguldolAct.cs" />
-    <Compile Include="MountainsActivities\daraitanAct.cs" />
+    <Compile Include="Activities\MountainMapAct.cs" />
     <Compile Include="MountainsActivities\makilingAct.cs" />
-    <Compile Include="MountainsActivities\talamitamAct.cs" />
-    <Compile Include="MountainsActivities\ulapAct.cs" />
     <Compile Include="MountainsAdapter.cs" />
+    <Compile Include="MountainsData.cs" />
     <Compile Include="MyAnimation.cs" />
     <Compile Include="Activities\itineraryAct.cs" />
     <Compile Include="ORM\checklistClass.cs" />
@@ -115,9 +109,6 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\mList.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\ml_model.axml" />
     <AndroidResource Include="Resources\layout\leaveNoTrace.axml">
       <SubType>Designer</SubType>
@@ -128,40 +119,19 @@
     <AndroidResource Include="Resources\layout\makilingLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\talamitamLayout.axml" />
-    <AndroidResource Include="Resources\layout\ulapLayout.axml" />
-    <AndroidResource Include="Resources\layout\batulaoLayout.axml" />
-    <AndroidResource Include="Resources\layout\cristobalLayout.axml" />
     <AndroidResource Include="Resources\layout\itineraryLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddItiLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ayaasLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\balagbagLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\banahawLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\daguldolLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\daraitanLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\editItiLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\T2BLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\layout\thingsToBringLayout.axml" />
+    <AndroidResource Include="Resources\layout\editItiLayout.axml" />
+    <AndroidResource Include="Resources\layout\detailLayout.axml" />
+    <AndroidResource Include="Resources\layout\mountainListLayout.axml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml">
+    <AndroidResource Include="Resources\layout\mainMenuLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -176,12 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\btn_bg_transparent.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\clickables.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\EMNavigation.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_action_search.png" />
@@ -211,9 +175,6 @@
     <AndroidResource Include="Resources\menu\actionbar.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lnt.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\yellowbg.png" />
   </ItemGroup>
   <ItemGroup>
@@ -229,9 +190,6 @@
     <AndroidResource Include="Resources\values\NoTitleTheme.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\itenerary.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\splash.png" />
   </ItemGroup>
   <ItemGroup>
@@ -241,34 +199,37 @@
     <AndroidResource Include="Resources\drawable\splash_screen.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\plusButton.PNG" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\your.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ayaas.jpg" />
+    <AndroidResource Include="Resources\values\themes.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\balagbag.JPG" />
+    <AndroidResource Include="Resources\drawable\mtListBG.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\banahaw.jpg" />
+    <AndroidResource Include="Resources\drawable\ic_action_overflow.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\daguldol.jpg" />
+    <AndroidResource Include="Resources\drawable\jumpoff.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\daraitan.jpg" />
+    <AndroidResource Include="Resources\drawable\itenerarybtn.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\backgroundT2B.jpg" />
+    <AndroidResource Include="Resources\drawable\mainmenubg.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MAPbackground.jpg" />
+    <AndroidResource Include="Resources\drawable\leaventbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\things2bbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\youriterenarybg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />
