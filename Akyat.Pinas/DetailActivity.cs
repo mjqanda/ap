@@ -62,7 +62,7 @@ namespace Akyat.Pinas
 
 
                 var intent = new Intent(this, typeof(itineraryAct));
-                intent.PutExtra("name", "Makiling");
+                intent.PutExtra("name", name);
                 StartActivity(intent);
 
             });
