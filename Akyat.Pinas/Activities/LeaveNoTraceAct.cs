@@ -4,7 +4,7 @@ using Android.Views;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity( Label = "LeaveNoTraceAct")]
+    [Activity( Label = "LeaveNoTraceAct" )]
     public class LeaveNoTraceAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

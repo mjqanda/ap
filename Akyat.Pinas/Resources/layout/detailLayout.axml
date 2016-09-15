@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/mtListBG">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fillViewport="false"
+        android:layout_marginTop="115.5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/mtimg"
+                android:layout_width="320.0dp"
+                android:layout_height="178.5dp"
+                android:src="@drawable/batulao"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/mtname"
+                    android:text="MT. BATULAO"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/mtlocation1"
+                    android:text="mtlocation1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/mtimg"
+                    android:layout_width="225.0dp"
+                    android:layout_height="29.0dp"
+                    android:src="@drawable/jumpoff"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="21.0dp" />
+                <TextView
+                    android:id="@+id/mtlocation2"
+                    android:text="mtlocation2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/description1"
+                    android:text="description1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp"
+                    android:textColor="#000"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/description2"
+                    android:text="description2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:textColor="#000"
+                    android:gravity="center" />
+                <Button
+                    android:layout_width="215.0dp"
+                    android:layout_height="48.0dp"
+                    android:paddingTop="25dp"
+                    android:background="@drawable/itenerarybtn"
+                    android:id="@+id/btnItinerary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40.5dp" />
+                <TextView
+                    android:id="@+id/trail1"
+                    android:text="trail1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp"
+                    android:textColor="#000"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/iterenary1"
+                    android:text="iterenary1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+                <TextView
+                    android:id="@+id/trail2"
+                    android:text="trail2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:paddingTop="15dp" />
+                <TextView
+                    android:id="@+id/iterenary2"
+                    android:text="iterenary2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

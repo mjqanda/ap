@@ -8,8 +8,8 @@ using Android.Widget;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity(Label = "Akyat.Pinas", Theme = "@style/Theme.NoTitle" ,Icon = "@drawable/Icon")]
-    public class MainActivity : Activity
+    [Activity( Theme = "@style/Theme.NoTitle", Label="AP", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainMenuAct : Activity
     {
 
         protected override void OnCreate(Bundle bundle)
@@ -17,7 +17,7 @@ namespace Akyat.Pinas.Activities
             base.OnCreate(bundle);
             RequestWindowFeature(WindowFeatures.NoTitle);
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.mainMenuLayout);
 
             // Get our button from the layout resource,
             // and attach an event to it
@@ -29,7 +29,7 @@ namespace Akyat.Pinas.Activities
 
             btnMountainList.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof (MountainListsAct));
+                var intent = new Intent(this, typeof (MountainListAct));
                 StartActivity(intent);
             };
 
@@ -44,8 +44,7 @@ namespace Akyat.Pinas.Activities
                 StartActivity(intent);
             };
 
-
-
+            
             btnNoTrace.Click += (sender, e) =>
 
             {
@@ -54,7 +53,7 @@ namespace Akyat.Pinas.Activities
             };
             btnMountainMap.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(mountainMapAct));
+                var intent = new Intent(this, typeof(MountainMapAct));
                 StartActivity(intent);
             };
 

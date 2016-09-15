@@ -2,264 +2,262 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/backgroundT2B">
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="108.0dp"
-        android:background="@drawable/btn_bg_transparent"
-        android:layout_marginBottom="19.5dp" />
-   
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:fillViewport="false">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:text="Personal Equipment"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:textStyle="bold"
-                android:paddingTop="15dp" />
-            <CheckBox
-                android:text="backpack"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbBackpack" />
-            <CheckBox
-                android:text="boots"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbBoots" />
-            <CheckBox
-                android:text="plastic bags and trash bag"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbPlasticBags" />
-            <CheckBox
-                android:text="toiletries"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbToiletries" />
-            <CheckBox
-                android:text="outdoor clothes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbOutdoorClothes" />
-            <CheckBox
-                android:text="trail food"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbTrailFood" />
-            <CheckBox
-                android:text="packed lunch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbPackedLunch" />
-            <CheckBox
-                android:text="trail water and sports drink"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbTrailWater" />
-            <CheckBox
-                android:text="first aid kit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbFirstAidKit" />
-            <CheckBox
-                android:text="survival kit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbSurvivalKit" />
-            <CheckBox
-                android:text="mess kit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbMessKit" />
-            <CheckBox
-                android:text="drinking cup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbDrinkingCup" />
-            <CheckBox
-                android:text="spoon and fork"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbSpoonFork" />
-            <CheckBox
-                android:text="dog tag / identification"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbIdentification" />
-            <CheckBox
-                android:text="whistle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbWhistle" />
-            <CheckBox
-                android:text="raingear"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbRainGear" />
-            <CheckBox
-                android:text="windbreakter / jacket"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbJacket" />
-            <CheckBox
-                android:text="sun protection"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbSunProtection" />
-            <CheckBox
-                android:text="head lamp / flashlight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbFlashlight" />
-            <CheckBox
-                android:text="folding knife / multitool"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbMultitool" />
-            <CheckBox
-                android:text="mobile phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbMobilePhone" />
-            <CheckBox
-                android:text="camera and batteries"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbCameraBatteries" />
-            <CheckBox
-                android:text="trekking pole"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbTrekkingPole" />
-            <TextView
-                android:text="Camp Equipment"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:textStyle="bold"
-                android:paddingTop="15dp" />
-            <CheckBox
-                android:text="sleeping bag / blanket"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbBlanket" />
-            <CheckBox
-                android:text="extra clothes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbExtraClothes" />
-            <CheckBox
-                android:text="sandals / slippers"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbSandals" />
-            <CheckBox
-                android:text="camp water and container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbCampWater" />
-            <CheckBox
-                android:text="pre-cooked food"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbPrecookedFood" />
-            <CheckBox
-                android:text="rice and eggs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbRiceEggs" />
-            <CheckBox
-                android:text="tying strings"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbTyingString" />
-            <CheckBox
-                android:text="stove fuel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbStoveFuel" />
-            <CheckBox
-                android:text="lighter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbLighter" />
-          <CheckBox
-              android:text="waterproofed matches"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/cbMatches" />
-            <TextView
-                android:text="Group Equipment"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
-                android:textStyle="bold"
-                android:paddingTop="15dp" />
-            <CheckBox
-                android:text="bolo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbBolo" />
-            <CheckBox
-                android:text="map and compass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbMapCompass" />
-            <CheckBox
-                android:text="stove"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbStove" />
-            <CheckBox
-                android:text="cook set"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbCookset" />
-            <CheckBox
-                android:text="club flag"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbFlag" />
-            <CheckBox
-                android:text="tent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbTent" />
-            <CheckBox
-                android:text="groundsheet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbGroundsheet" />
-            <CheckBox
-                android:text="rope"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbRope" />
-            <CheckBox
-                android:text="trowel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbTrowel" />
+    android:layout_height="match_parent">
+  <!--android:background="@drawable/backgroundT2B"-->
 
-          <Button
-                android:text="SAVE"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnSave" />
-          
-        </LinearLayout>
-    </ScrollView>
+  <Button
+      android:layout_width="fill_parent"
+      android:layout_height="108.0dp"
+      android:background="@drawable/btn_bg_transparent"
+      android:layout_marginBottom="19.5dp" />
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <TextView
+          android:text="Personal Equipment"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFF00"
+          android:textStyle="bold"
+          android:paddingTop="15dp" />
+      <CheckBox
+          android:text="backpack"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbBackpack" />
+      <CheckBox
+          android:text="boots"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbBoots" />
+      <CheckBox
+          android:text="plastic bags and trash bag"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbPlasticBags" />
+      <CheckBox
+          android:text="toiletries"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbToiletries" />
+      <CheckBox
+          android:text="outdoor clothes"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbOutdoorClothes" />
+      <CheckBox
+          android:text="trail food"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbTrailFood" />
+      <CheckBox
+          android:text="packed lunch"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbPackedLunch" />
+      <CheckBox
+          android:text="trail water and sports drink"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbTrailWater" />
+      <CheckBox
+          android:text="first aid kit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbFirstAidKit" />
+      <CheckBox
+          android:text="survival kit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbSurvivalKit" />
+      <CheckBox
+          android:text="mess kit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbMessKit" />
+      <CheckBox
+          android:text="drinking cup"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbDrinkingCup" />
+      <CheckBox
+          android:text="spoon and fork"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbSpoonFork" />
+      <CheckBox
+          android:text="dog tag / identification"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbIdentification" />
+      <CheckBox
+          android:text="whistle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbWhistle" />
+      <CheckBox
+          android:text="raingear"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbRainGear" />
+      <CheckBox
+          android:text="windbreakter / jacket"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbJacket" />
+      <CheckBox
+          android:text="sun protection"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbSunProtection" />
+      <CheckBox
+          android:text="head lamp / flashlight"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbFlashlight" />
+      <CheckBox
+          android:text="folding knife / multitool"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbMultitool" />
+      <CheckBox
+          android:text="mobile phone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbMobilePhone" />
+      <CheckBox
+          android:text="camera and batteries"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbCameraBatteries" />
+      <CheckBox
+          android:text="trekking pole"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbTrekkingPole" />
+      <TextView
+          android:text="Camp Equipment"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFF00"
+          android:textStyle="bold"
+          android:paddingTop="15dp" />
+      <CheckBox
+          android:text="sleeping bag / blanket"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbBlanket" />
+      <CheckBox
+          android:text="extra clothes"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbExtraClothes" />
+      <CheckBox
+          android:text="sandals / slippers"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbSandals" />
+      <CheckBox
+          android:text="camp water and container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbCampWater" />
+      <CheckBox
+          android:text="pre-cooked food"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbPrecookedFood" />
+      <CheckBox
+          android:text="rice and eggs"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbRiceEggs" />
+      <CheckBox
+          android:text="tying strings"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbTyingString" />
+      <CheckBox
+          android:text="stove fuel"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbStoveFuel" />
+      <CheckBox
+          android:text="lighter"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbLighter" />
+      <CheckBox
+          android:text="waterproofed matches"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbMatches" />
+      <TextView
+          android:text="Group Equipment"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#FFFF00"
+          android:textStyle="bold"
+          android:paddingTop="15dp" />
+      <CheckBox
+          android:text="bolo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbBolo" />
+      <CheckBox
+          android:text="map and compass"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbMapCompass" />
+      <CheckBox
+          android:text="stove"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbStove" />
+      <CheckBox
+          android:text="cook set"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbCookset" />
+      <CheckBox
+          android:text="club flag"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbFlag" />
+      <CheckBox
+          android:text="tent"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbTent" />
+      <CheckBox
+          android:text="groundsheet"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbGroundsheet" />
+      <CheckBox
+          android:text="rope"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbRope" />
+      <CheckBox
+          android:text="trowel"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/cbTrowel" />
+      <Button
+          android:text="SAVE"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnSave" />
+    </LinearLayout>
+  </ScrollView>
 </LinearLayout>

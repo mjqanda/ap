@@ -15,10 +15,9 @@ using Android.Gms.Maps.Model;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity(Theme = "@style/Theme.NoTitle", Label = "mountainMapAct")]
-    public class mountainMapAct : Activity
+    [Activity(Theme = "@style/Theme.NoTitle", Label = "MountainMapAct")]
+    public class MountainMapAct : Activity
     {
-        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -90,11 +89,7 @@ namespace Akyat.Pinas.Activities
 
             MapFragment mapFrag = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
             GoogleMap map = mapFrag.Map;
-
             
-          
-
-
 
             if (map != null)
             {
@@ -102,7 +97,6 @@ namespace Akyat.Pinas.Activities
                 map.UiSettings.ZoomControlsEnabled = true;
                 map.UiSettings.CompassEnabled = true;
                 map.MoveCamera(cameraUpdate);
-
 
                 map.AddMarker(markerTalamitam);
                 map.AddMarker(markerBatulao);

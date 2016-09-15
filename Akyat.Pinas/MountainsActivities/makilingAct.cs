@@ -32,7 +32,6 @@ namespace Akyat.Pinas.MountainsActivities
                 
             });
             // Create your application here
-
         }
 
       
