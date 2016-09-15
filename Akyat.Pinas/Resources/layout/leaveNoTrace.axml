@@ -15,18 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <JustifiedXamarin.JustifiedTextView
-                android:text="Seven Principles of "
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:gravity="center"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:layout_marginTop="12.5dp" />
             <TextView
-                android:text="Leave No Trace "
+                android:text="THE SEVEN\n LEAVE NO TRACE\n PRINCIPLES"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,119 +25,165 @@
                 android:textColor="#000"
                 android:textStyle="bold" />
             <TextView
-                android:text="  1. Plan Ahead and Prepare"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:textColor="#000"
-                android:paddingTop="15dp"
-                android:textStyle="bold" />
-            <TextView
-                android:text="      Plan ahead by considering your goals and those of your group. Prepare by gathering local information, communicating expectations, and acquiring the technical skills, first aid knowledge, and equipment to make the trip a success. Build Leave No Trace into your plans by picking an appropriate journey for your group and allowing plenty of time to travel and camp.  Be prepared to sit tight or turn back if you sense danger or sustain an injury. That way, you won’t have to abandon Leave No Trace techniques for the sake of safety. For instance, poor planning or disregard for weather conditions can transform an easy bushwalk into a risky encounter with extremes in temperatures. Cold and wet or suffering from heat stress, it’s tempting to think that the impacts of cutting vegetation for shade or shelters are justifiable.  Prevention by obtaining knowledge ahead of time is often an easier solution."
+                android:text="Outdoor Ethics for Hikers"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:id="@+id/textView9"
-                android:textColor="#000"
-                android:paddingTop="3dp" />
-            <TextView
-                android:text="  2. Travel and Camp on Durable Surfaces"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:textColor="#000"
-                android:textStyle="bold" />
-            <TextView
-                android:text="      What effect does a footstep have? The answer is, it depends!  A footstep means different things to a young tree or pasture, to leaf litter or fragile soil, to a gravelly river bank or rain forest moss. Unfortunately, trampling causes vegetation damage and soil erosion in virtually every environment. Recovery that takes a year in some environments might take 25 years in others.  Avoid non-durable surfaces such as soft plants, riparian zones, muddy sites, and fragile soil layers. When travelling along a shoreline, walk on durable surfaces and spread out while when travelling on the tops watch out for smaller plants and boggy areas. Above all avoid travelling, particularly by bike or in large groups when the tracks are wet. One group travelling on a wet day can do years of damage to a track."
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView9"
-                android:gravity="center"
-                android:textColor="#000"
-                android:paddingTop="3dp" />
-            <TextView
-                android:text="  3. Dispose of Waste Properly"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4"
-                android:textColor="#000"
-                android:textStyle="bold" />
-            <TextView
-                android:text="     Pack it in, pack it out”. Any user of our outdoors has a responsibility to clean up before he or she leaves. Inspect your campsite and rest areas for rubbish or spilled foods. Pack out all rubbish and kitchen waste, including leftover food.  Lead by example. Pick up any rubbish you see not just your own."
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4"
                 android:gravity="center"
                 android:textColor="#000" />
+            <ImageView
+                android:src="@drawable/lnticon1"
+                android:layout_width="145px"
+                android:layout_height="145px"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp" />
             <TextView
-                android:text="  4. Leave What You Find"
+                android:text="1. PLAN AHEAD AND PREPARE"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView5"
                 android:textColor="#000"
-                android:textStyle="bold" />
-            <TextView
-                android:text="People visit natural areas for many reasons, among them to explore nature’s mysteries and surprises.  When we leave rocks, shells, plants, feathers, fossils, artefacts and other objects of interest as we find them, we pass the gift of discovery on to those who follow.  Leaving what you find should be your first thought when you find something interesting or attractive.   There may be times and places when it is OK to collect something (for example for a child to collect some seashells or pretty rocks on a beach).  But remember, we humans are very good at taking without thinking and there should be places where we show self-control.  Mostly it is better to hold back and leave what we find, rather than have a shelf full of lifeless and dusty unvalued souvenirs.   Particularly, never disturb culturally sensitive sites."
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView5"
-                android:gravity="center"
-                android:textColor="#000" />
-            <TextView
-                android:text="  5. Minimize Campfire Impacts"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView6"
+                android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:textColor="#000" />
+                android:layout_marginTop="0.0dp" />
             <TextView
-                android:text="      Fires destroy important natural areas each year, including surprisingly wetlands. Many of these fires are either carelessly or accidentally set by uninformed campers and travellers.  Setting controlled fires is a practice and science of experienced land managers and is based on weather, sources of ignition, and fuel. The intent is to encourage pasture in appropriate areas. In contrast, large uncontrolled wildfires set unintentionally can spread rapidly and result in the critical loss of natural habitat, property and human life.  Along with the destructive nature of fire, the natural appearance of many areas has been compromised by the careless use of campfires and the demand for firewood. Campfires are beautiful by night. But the enormous rings of soot-scarred rocks – overflowing with ashes, partly burned logs, food and rubbish – are unsightly. Surrounding areas have been stripped of their natural beauty as every scrap of dry wood has been torched.  Leave No Trace educates people on whether a fire is appropriate, and techniques that can be used to minimise the harm they cause."
+                android:text="Know before you go! Learn everything you can about the area you plan to visit and the regulation for its use."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView6"
-                android:gravity="center"
+                android:gravity="center_horizontal|left"
                 android:textColor="#000" />
+            <ImageView
+                android:src="@drawable/lnticon2"
+                android:layout_width="145px"
+                android:layout_height="145px"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp" />
             <TextView
-                android:text="  6. Respect Wildlife and Farm Animals"
+                android:text="2. TRAVEL AND CAMP ON DURABLE SURFACES"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView7"
                 android:textColor="#000"
-                android:textStyle="bold" />
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0.0dp" />
             <TextView
-                android:text="      Encounters with wildlife inspire tall tales and long moments of wonder. Unfortunately, wildlife in New Zealand faces threats from loss and fragmentation of habitat, invasive species, pollution, over-exploitation, poaching and disease.  Our parks and reserves offer a last refuge from some, but not all, of these problems. Consequently, wild animals and marine life need people who will promote their survival rather than add to the difficulties they already face.To do this we need to be aware of and 'in-tune' with wildlife. We need to know when and where wildlife is particularly vulnerable, such as at breeding times, so we can avoid causing extra stresses. We need to share the outdoors not invade it."
+                android:text="Use established campsites and trails, where available. Avoid sites just beginning to show impacts. Keep camps small and at least 200 feet from water, occupied campsites, and trails."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView7"
-                android:gravity="center"
+                android:gravity="center_horizontal|left"
                 android:textColor="#000" />
+            <ImageView
+                android:src="@drawable/lnticon3"
+                android:layout_width="145px"
+                android:layout_height="145px"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp" />
             <TextView
-                android:text="  7. Be Considerate of Other Visitors"
+                android:text="3. DISPOSE OF WASTE PROPERLY"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView8"
                 android:textColor="#000"
-                android:textStyle="bold" />
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0.0dp" />
             <TextView
-                android:text="      Today, we must consider the rights of traditional land owners as well as share the wilderness with people of all recreational persuasions. There is simply not enough country for every category of enthusiast to have exclusive use of land, wilderness, trails, bush, lakes, rivers, and campgrounds. Consider others, and what they might be trying to get out of their outdoor experience. It is as easy as that."
+                android:text="Pack it in, pack it out! Bury human waste in a cathole 6-8 inches deep and at least 200 feet from water. Wash yourself and your dishes at least 200 feet from water."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView8"
-                android:gravity="center"
+                android:gravity="center_horizontal|left"
+                android:textColor="#000" />
+            <ImageView
+                android:src="@drawable/lnticon4"
+                android:layout_width="145px"
+                android:layout_height="145px"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp" />
+            <TextView
+                android:text="4. LEAVE WHAT YOU FIND"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0.0dp" />
+            <TextView
+                android:text="Do not damage, deface, or remove natural objects or cultural artifacts. Leave them for others to enjoy. Don't build structures, dig trenches, or alter natural features."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:textColor="#000" />
+            <ImageView
+                android:src="@drawable/lnticon5"
+                android:layout_width="145px"
+                android:layout_height="145px"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp" />
+            <TextView
+                android:text="5. MINIMIZE USE AND IMPACTS OF FIRE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0.0dp" />
+            <TextView
+                android:text="Use a lightweight stove, instead of a fire. If you build a fire, use only small dead wood found the ground and use existing fire rings."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:textColor="#000" />
+            <ImageView
+                android:src="@drawable/lnticon6"
+                android:layout_width="145px"
+                android:layout_height="145px"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp" />
+            <TextView
+                android:text="6. RESPECT WILDFIRE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0.0dp" />
+            <TextView
+                android:text="Watch wildlife from a distance and never approach, feed, or follow it. Seal food tightly and store it out of reach. Control pets at all times or consider leaving them at home."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:textColor="#000" />
+            <ImageView
+                android:src="@drawable/lnticon7"
+                android:layout_width="145px"
+                android:layout_height="145px"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp" />
+            <TextView
+                android:text="7. BE CONSIDERATE OF OTHER VISITORS"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0.0dp" />
+            <TextView
+                android:text="Don't disturb others. Preserve the natural quiet. When you meet horses on the trail, step off the downhill side and speak softly as they pass."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
                 android:textColor="#000" />
         </LinearLayout>
     </ScrollView>
