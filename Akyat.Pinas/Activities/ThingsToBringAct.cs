@@ -14,12 +14,12 @@ using Akyat.Pinas.ORM;
 namespace Akyat.Pinas.Activities
 {
     [Activity(Theme = "@style/Theme.NoTitle", Label = "T2BAct")]
-    public class T2BAct : Activity
+    public class ThingsToBringAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.T2BLayout);
+            SetContentView(Resource.Layout.thingsToBringLayout);
             // Create your application here
             DBItineraryRepository dbr = new DBItineraryRepository();
             // instantiate names and values
@@ -151,17 +151,7 @@ namespace Akyat.Pinas.Activities
             CheckBox cbgroundsheet = FindViewById<CheckBox>(Resource.Id.cbGroundsheet);
             CheckBox cbrope = FindViewById<CheckBox>(Resource.Id.cbRope);
             CheckBox cbtrowel = FindViewById<CheckBox>(Resource.Id.cbBackpack);
-
-
-
-
-
-
-
-
-
-
-
+            
 
 
             //getting the value of the checkbox from database

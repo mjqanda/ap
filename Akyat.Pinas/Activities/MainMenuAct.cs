@@ -40,7 +40,7 @@ namespace Akyat.Pinas.Activities
               var resultTable = dbr.CreateTableChecklist();
 
                 Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
-                var intent = new Intent(this, typeof(T2BAct));
+                var intent = new Intent(this, typeof(ThingsToBringAct));
                 StartActivity(intent);
             };
 

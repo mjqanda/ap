@@ -1708,7 +1708,7 @@ namespace Akyat.Pinas
 			public const int jumpoff = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int lnt = 2130837628;
+			public const int leaventbg = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
 			public const int mainmenubg = 2130837629;
@@ -1722,8 +1722,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f020080
 			public const int mtListBG = 2130837632;
 			
-			// aapt resource value: 0x7f020088
-			public const int notification_template_icon_bg = 2130837640;
+			// aapt resource value: 0x7f020089
+			public const int notification_template_icon_bg = 2130837641;
 			
 			// aapt resource value: 0x7f020081
 			public const int plusButton = 2130837633;
@@ -1738,13 +1738,16 @@ namespace Akyat.Pinas
 			public const int talamitam = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ulap = 2130837637;
+			public const int things2bbg = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int yellowbg = 2130837638;
+			public const int ulap = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int your = 2130837639;
+			public const int yellowbg = 2130837639;
+			
+			// aapt resource value: 0x7f020088
+			public const int your = 2130837640;
 			
 			static Drawable()
 			{
@@ -2551,10 +2554,10 @@ namespace Akyat.Pinas
 			public const int support_simple_spinner_dropdown_item = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int T2BLayout = 2130903090;
+			public const int talamitamLayout = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int talamitamLayout = 2130903091;
+			public const int thingsToBringLayout = 2130903091;
 			
 			// aapt resource value: 0x7f030034
 			public const int ulapLayout = 2130903092;

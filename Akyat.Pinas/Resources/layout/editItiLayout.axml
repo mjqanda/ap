@@ -3,13 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
-    <ImageView
-        android:src="@drawable/your"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/imageVieasdw1"
-        android:layout_marginBottom="19.5dp" />
+    android:background="@drawable/youriterenarybg">
     <TextView
         android:text="TYPE HERE"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -17,12 +11,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
         android:gravity="center"
-        android:textColor="#FFFF00" />
+        android:textColor="#000"
+        android:layout_marginTop="131.5dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="217.5dp"
-        android:id="@+id/txtEditItinerary" 
-    android:background="@drawable/btn_bg_transparent"/>
+        android:id="@+id/txtEditItinerary"
+        android:background="@drawable/btn_bg_transparent" />
     <Button
         android:text="Save"
         android:layout_width="match_parent"

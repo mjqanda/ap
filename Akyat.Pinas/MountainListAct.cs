@@ -102,8 +102,8 @@ namespace Akyat.Pinas
             int id = item.ItemId;
             if (id == Resource.Id.action1)
             {
-                filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
-                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                List<Mountain> SortAtoZ = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, SortAtoZ);
                 mListView.Adapter = mAdapter;
             }
             else if (id == Resource.Id.action2)
