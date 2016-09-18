@@ -160,6 +160,77 @@ namespace Akyat.Pinas.ORM
         }
 
 
+        public string CreateDBSettings()
+        {
+            var output = "";
+            output += "";
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+
+            var db = new SQLiteConnection(dbPath);
+            output += "";
+            return output;
+        }
+        public string CreateTableSettings()
+        {
+            try
+            {
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+
+                var db = new SQLiteConnection(dbPath);
+
+                db.CreateTable<settingsClass>();
+                string result = "";
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return "Error: " + ex.Message;
+
+            }
+        }
+        public string InsertRecordSettings(string type, string value)
+        {
+            try
+            {
+
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+
+                var db = new SQLiteConnection(dbPath);
+                settingsClass item = new settingsClass();
+
+                item.Maptype = type;
+                item.Value = value;
+
+                db.Insert(item);
+                return "Settings Saved";
+            }
+            catch (Exception ex)
+            {
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+                var db = new SQLiteConnection(dbPath);
+
+                var item = db.Get<settingsClass>(type);
+
+                item.Value = value;
+                db.Update(item);
+                return "Settings Saved";
+            }
+        }
+
+        public string GetRecordSettings(string type)
+        {
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+            var db = new SQLiteConnection(dbPath);
+            string outputValue;
+
+            var item = db.Get<settingsClass>(type);
+
+
+            outputValue = item.Value;
+
+            return outputValue;
+        }
+
 
     }
 }

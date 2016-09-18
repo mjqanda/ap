@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingsbg">
+    <ImageButton
+        android:background="@drawable/btn_bg_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="116.5dp"
+        android:id="@+id/imageButton1" />
+    <TextView
+        android:text="Preffered map type:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textColor="@android:color/black" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Terrain"
+            android:id="@+id/rbTerrain"
+            android:textColor="@android:color/black" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:id="@+id/rbNormal"
+            android:textColor="@android:color/black" />
+        <RadioButton
+            android:text="Satellite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSatellite"
+            android:textColor="@android:color/black" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hybrid"
+            android:id="@+id/rbHybrid"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave" />
+</LinearLayout>
