@@ -14,7 +14,7 @@ using Akyat.Pinas.Activities;
 namespace Akyat.Pinas.ORM
 {
     [Activity(Theme = "@style/Theme.NoTitle", Label = "Activity1")]
-    public class itineraryAct : Activity
+    public class ItineraryAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -44,7 +44,7 @@ namespace Akyat.Pinas.ORM
                 var resultTable = dbr.CreateTable();
                 Toast.MakeText(this, resultTable, ToastLength.Short).Show();
 
-                var intent = new Intent(this, typeof(addItineraryAct));
+                var intent = new Intent(this, typeof(AddItineraryAct));
                 intent.PutExtra("name", name);
                 StartActivity(intent);
                 Finish();
@@ -54,7 +54,7 @@ namespace Akyat.Pinas.ORM
 
             txtItinerary.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(editItiAct));
+                var intent = new Intent(this, typeof(EditItiAct));
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivity(intent);

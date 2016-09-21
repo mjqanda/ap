@@ -37,8 +37,8 @@
                     android:paddingTop="15dp"
                     android:gravity="center" />
                 <TextView
-                    android:id="@+id/mtlocation1"
-                    android:text="mtlocation1"
+                    android:id="@+id/locationtxt"
+                    android:text="locationtxt"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -52,16 +52,16 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="21.0dp" />
                 <TextView
-                    android:id="@+id/mtlocation2"
-                    android:text="mtlocation2"
+                    android:id="@+id/jumpofftxt"
+                    android:text="jumpofftxt"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#000"
                     android:gravity="center" />
                 <TextView
-                    android:id="@+id/description1"
-                    android:text="description1"
+                    android:id="@+id/descriptiontxt"
+                    android:text="descriptiontxt"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -69,8 +69,8 @@
                     android:textColor="#000"
                     android:gravity="center" />
                 <TextView
-                    android:id="@+id/description2"
-                    android:text="description2"
+                    android:id="@+id/backgroundtxt"
+                    android:text="backgroundtxt"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -86,33 +86,17 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="40.5dp" />
                 <TextView
-                    android:id="@+id/trail1"
-                    android:text="trail1"
+                    android:id="@+id/itinerarytxt"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="46.5dp"
                     android:paddingTop="25dp"
                     android:textColor="#000"
-                    android:gravity="center" />
-                <TextView
-                    android:id="@+id/iterenary1"
-                    android:text="iterenary1"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000" />
-                <TextView
-                    android:id="@+id/trail2"
-                    android:text="trail2"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
                     android:gravity="center"
-                    android:paddingTop="15dp" />
+                    android:text="itinerarytxt" />
                 <TextView
-                    android:id="@+id/iterenary2"
-                    android:text="iterenary2"
+                    android:id="@+id/practicalitiestxt"
+                    android:text="practicalitiestxt"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -16,7 +16,7 @@ using SQLite;
 namespace Akyat.Pinas.ORM
 {
     [Table("Checklist")]
-    public class checklistClass
+    public class ChecklistClass
     {
 
         [PrimaryKey, MaxLength(50)]

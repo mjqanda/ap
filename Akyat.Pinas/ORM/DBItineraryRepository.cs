@@ -105,7 +105,7 @@ namespace Akyat.Pinas.ORM
 
                 var db = new SQLiteConnection(dbPath);
 
-                db.CreateTable<checklistClass>();
+                db.CreateTable<ChecklistClass>();
                 string result = "";
                 return result;
             }
@@ -124,7 +124,7 @@ namespace Akyat.Pinas.ORM
                 string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
 
                 var db = new SQLiteConnection(dbPath);
-                checklistClass item = new checklistClass();
+                ChecklistClass item = new ChecklistClass();
 
                 item.ChecklistName = name;
                 item.Value = value;
@@ -137,7 +137,7 @@ namespace Akyat.Pinas.ORM
                 string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
                 var db = new SQLiteConnection(dbPath);
 
-                var item = db.Get<checklistClass>(name);
+                var item = db.Get<ChecklistClass>(name);
 
                 item.Value = value;
                 db.Update(item);
@@ -151,7 +151,7 @@ namespace Akyat.Pinas.ORM
             var db = new SQLiteConnection(dbPath);
           string outputValue;
 
-            var item = db.Get<checklistClass>(name);
+            var item = db.Get<ChecklistClass>(name);
 
 
             outputValue = item.Value;

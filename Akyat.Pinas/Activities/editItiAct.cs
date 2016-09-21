@@ -14,7 +14,7 @@ using Akyat.Pinas.ORM;
 namespace Akyat.Pinas.Activities
 {
     [Activity(Theme = "@style/Theme.NoTitle", Label = "editItiAct")]
-    public class editItiAct : Activity
+    public class EditItiAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -38,7 +38,7 @@ namespace Akyat.Pinas.Activities
                 string result = dbr.UpdateRecord(name, editItinerary.Text);
                 Toast.MakeText(this, result, ToastLength.Short).Show();
 
-                var intent = new Intent(this, typeof(itineraryAct));
+                var intent = new Intent(this, typeof(ItineraryAct));
                 intent.PutExtra("name", name);
                 StartActivity(intent);
                 Finish();

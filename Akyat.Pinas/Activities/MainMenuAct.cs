@@ -46,7 +46,6 @@ namespace Akyat.Pinas.Activities
 
             
             btnNoTrace.Click += (sender, e) =>
-
             {
                 var intent = new Intent(this, typeof(LeaveNoTraceAct));
                 StartActivity(intent);

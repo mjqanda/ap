@@ -7,12 +7,13 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/bg"
         android:id="@+id/llContainer">
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:background="#E2E2E2"
+            android:background="#000"
             android:weightSum="100" />
         <View
             android:layout_height="2dp"
