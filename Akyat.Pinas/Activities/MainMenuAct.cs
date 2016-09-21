@@ -25,7 +25,7 @@ namespace Akyat.Pinas.Activities
             Button btnThingsToBring = FindViewById<Button>(Resource.Id.btnThingsToBring);
             Button btnNoTrace = FindViewById<Button>(Resource.Id.btnLeaveNoTrace);
             Button btnMountainMap = FindViewById<Button>(Resource.Id.btnMountainMap);
-            Button btnSettings = FindViewById<Button>(Resource.Id.btnSettings);
+            Button btnSettings = FindViewById<Button>(Resource.Id.btnSetting);
 
             btnMountainList.Click += (sender, e) =>
             {
@@ -50,11 +50,26 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(LeaveNoTraceAct));
                 StartActivity(intent);
             };
+
             btnMountainMap.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(MountainMapAct));
                 StartActivity(intent);
             };
+
+
+            btnSettings.Click += (sender, e) =>
+            {
+               DBItineraryRepository dbr = new DBItineraryRepository();
+           
+                var result = dbr.CreateDBSettings();
+               var resultTable = dbr.CreateTableSettings();
+
+              Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
+                var intent = new Intent(this, typeof(SettingsAct));
+                StartActivity(intent);
+            };
+
 
         }
     }

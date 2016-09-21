@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
-
+using Akyat.Pinas.ORM;
 
 namespace Akyat.Pinas.Activities
 {
@@ -24,6 +24,38 @@ namespace Akyat.Pinas.Activities
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.mountainMap);
+            //settings database getting records
+            DBItineraryRepository dbr = new DBItineraryRepository();
+            
+            var terrain = "terrain";
+            var terrainValue = "1";
+            var normal = "normal";
+            var normalValue = "0";
+            var satellite = "satellite";
+            var satelliteValue = "0";
+            var hybrid = "toiletries";
+            var hybridValue = "0";
+
+            try
+            {
+                var terrainResult = dbr.GetRecordSettings(terrain);
+                terrainValue = terrainResult;
+                var normalResult = dbr.GetRecordSettings(normal);
+                normalValue = normalResult;
+                var satelliteResult = dbr.GetRecordSettings(satellite);
+                satelliteValue = satelliteResult;
+                var hybridResult = dbr.GetRecordSettings(hybrid);
+                hybridValue = hybridResult;
+
+            }
+            catch (Exception ex)
+            {
+                Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
+            }
+
+           
+
+
 
             // Create your application here
 
@@ -93,7 +125,25 @@ namespace Akyat.Pinas.Activities
 
             if (map != null)
             {
-                map.MapType = GoogleMap.MapTypeTerrain;
+
+
+                if (terrainValue == "1")
+                {
+                    map.MapType = GoogleMap.MapTypeTerrain;
+                }
+                else if (normalValue == "1")
+                {
+                    map.MapType = GoogleMap.MapTypeNormal;
+                }
+                else if (satelliteValue == "1")
+                {
+                    map.MapType = GoogleMap.MapTypeSatellite;
+                }
+                else if (hybridValue == "1")
+                {
+                    map.MapType = GoogleMap.MapTypeHybrid;
+                }
+               
                 map.UiSettings.ZoomControlsEnabled = true;
                 map.UiSettings.CompassEnabled = true;
                 map.MoveCamera(cameraUpdate);
