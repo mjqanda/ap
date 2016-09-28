@@ -14,6 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+           
             <TextView
                 android:text="Personal Equipment"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -248,6 +249,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbTrowel" />
+          <TextView
+               android:text="Others:"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#FFFF00"
+               android:textStyle="bold"
+               android:paddingTop="15dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtOthers" 
+                android:background="@drawable/btn_bg_transparent" />
             <Button
                 android:text="SAVE"
                 android:layout_width="match_parent"

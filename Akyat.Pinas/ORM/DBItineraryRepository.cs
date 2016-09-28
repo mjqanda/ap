@@ -4,6 +4,7 @@ using System;
 using System.Data;
 using System.IO;
 using SQLite;
+
 namespace Akyat.Pinas.ORM
 {
     class DBItineraryRepository
@@ -57,7 +58,20 @@ namespace Akyat.Pinas.ORM
             }
             catch(Exception ex)
             {
-                return "You have already added your Itinerary";
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
+                var db = new SQLiteConnection(dbPath);
+
+                var item = db.Get<itineraryClass>(name);
+
+                item.Itinerary = itinerary;
+                db.Update(item);
+                return "record updated";
+
+
+
+
+
+
             }
         }
 
@@ -155,6 +169,29 @@ namespace Akyat.Pinas.ORM
 
 
             outputValue = item.Value;
+
+            return outputValue;
+        }
+        public string GetRecordPapel()
+        {
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+            var db = new SQLiteConnection(dbPath);
+            string outputValue = "";
+
+
+             var items = db.Query<checklistClass>("SELECT ChecklistName FROM Checklist WHERE Value = 1");
+            var other = db.Query<checklistClass>("SELECT Value From Checklist WHERE ChecklistName = ?", "others");
+            
+
+            foreach (var item in items)
+            {
+              outputValue += item.ChecklistName + "\n";
+               
+            }
+            foreach(var item in other)
+            { 
+            outputValue += "Others: " + "\n" + item.Value;
+            }
 
             return outputValue;
         }

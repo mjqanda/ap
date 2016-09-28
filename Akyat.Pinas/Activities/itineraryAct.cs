@@ -47,18 +47,18 @@ namespace Akyat.Pinas.ORM
                 var intent = new Intent(this, typeof(addItineraryAct));
                 intent.PutExtra("name", name);
                 StartActivity(intent);
-                Finish();
+             
             });
 
 
 
             txtItinerary.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(editItiAct));
+                var intent = new Intent(this, typeof(addItineraryAct));
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivity(intent);
-                Finish();
+               
             };
 
         }

@@ -22,7 +22,16 @@ namespace Akyat.Pinas.Activities
             SetContentView(Resource.Layout.AddItiLayout);
             // Create your application here
             string name = Intent.GetStringExtra("name");
+            string editThis = "";
 
+
+
+          editThis = Intent.GetStringExtra("editThis");
+
+
+
+            EditText editItinerary = FindViewById<EditText>(Resource.Id.txtItinerary);
+            editItinerary.Text = editThis;
 
             Button btnAdd = FindViewById<Button>(Resource.Id.btnAdd);
             btnAdd.Click += ((sender, e) =>

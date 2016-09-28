@@ -3,24 +3,53 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/youriterenarybg">
-    <TextView
-        android:text="TYPE HERE"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    android:background="@drawable/itinerarybg">
+    <ImageView
+        android:src="@drawable/btn_bg_transparent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:gravity="center"
-        android:textColor="#000"
-        android:layout_marginTop="127.5dp" />
-    <EditText
+        android:layout_height="108.0dp"
+        android:id="@+id/imageView1"
+        android:layout_marginBottom="4.5dp" />
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="217.5dp"
-        android:id="@+id/txtItinerary"
-        android:background="@drawable/btn_bg_transparent" />
+        android:layout_height="31.5dp">
+        <Button
+            android:layout_width="29.0dp"
+            android:layout_height="24.5dp"
+            android:id="@+id/btnAdd"
+            android:background="@drawable/plusbutton"
+            android:layout_marginLeft="25dp" />
+        <TextView
+            android:text="save"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="28.0dp"
+            android:id="@+id/textView1"
+            android:paddingLeft="60dp"
+            android:textColor="#000" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="380.5dp"
+        android:layout_height="418.0dp"
+        android:padding="10dp"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <EditText
+                android:gravity="top|left"
+                android:layout_width="match_parent"
+                android:layout_height="374.5dp"
+                android:padding="10dp"
+                android:id="@+id/txtItinerary"
+                android:background="@drawable/btn_bg_transparent" />
+        </LinearLayout>
+    </ScrollView>
     <Button
-        android:text="Add"
+        android:text="save"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnAdd" />
+        android:layout_height="wrap_content" />
 </LinearLayout>

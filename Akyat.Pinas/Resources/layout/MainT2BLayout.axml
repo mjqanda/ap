@@ -3,31 +3,20 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/itinerarybg">
+    android:background="@drawable/maint2bg"
+    android:minWidth="25px"
+    android:minHeight="25px">
     <ImageView
         android:src="@drawable/btn_bg_transparent"
         android:layout_width="match_parent"
-        android:layout_height="108.0dp"
-        android:id="@+id/imageView1"
-        android:layout_marginBottom="4.5dp" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="31.5dp">
-        <Button
-            android:layout_width="29.0dp"
-            android:layout_height="24.5dp"
-            android:id="@+id/btnAddIti"
-            android:background="@drawable/plusbutton"
-            android:layout_marginLeft="25dp" />
-        <TextView
-            android:text="ADD/EDIT YOUR ITINERARY"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="28.0dp"
-            android:id="@+id/textView1"
-            android:paddingLeft="60dp"
-            android:textColor="#000" />
-    </RelativeLayout>
+        android:layout_height="116.0dp"
+        android:id="@+id/imageView1" />
+    <ImageButton
+        android:layout_width="154.0dp"
+        android:layout_height="38.5dp"
+        android:id="@+id/imageButtonAdd"
+        android:background="@drawable/addttb"
+        android:layout_marginLeft="10dp" />
     <ScrollView
         android:layout_width="380.5dp"
         android:layout_height="418.0dp"
@@ -43,7 +32,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtItineraryRecord"
+                android:id="@+id/txtList"
                 android:textColor="@android:color/black"
                 android:padding="10dp" />
         </LinearLayout>
