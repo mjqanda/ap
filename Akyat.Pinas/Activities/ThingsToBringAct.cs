@@ -30,25 +30,25 @@ namespace Akyat.Pinas.Activities
             var plasticbag = "plasticbag";
             var plasticbagValue = "0";
             var toiletries = "toiletries";
-            var toiletriesValue = "0";
+             var toiletriesValue = "0";
             var outdoorclothes = "outdoorclothes";
-            var outdoorclothesValue = "0";
+             var outdoorclothesValue = "0";
             var trailfood = "trailfood";
             var trailfoodValue = "0";
             var packedlunch = "packedlunch";
-            var packedlunchValue = "0";
+             var packedlunchValue = "0";
             var trailwater = "trailwater";
             var trailwaterValue = "0";
             var firstaidkit = "firstaidkit";
             var firstaidkitValue = "0";
             var survivalkit = "survivalkit";
-            var survivalkitValue = "0";
+             var survivalkitValue = "0";
             var messkit = "messkit";
             var messkitValue = "0";
             var drinkingcup = "drinkingcup";
             var drinkingcupValue = "0";
             var spoonfork = "spoonfork";
-            var spoonforkValue = "0";
+             var spoonforkValue = "0";
             var identification = "identification";
             var identificationValue = "0";
             var whistle = "whistle";
@@ -60,7 +60,7 @@ namespace Akyat.Pinas.Activities
             var sunprotection = "sunprotection";
             var sunprotectionValue = "0";
             var flashlight = "flashlight";
-            var flashlightValue = "0";
+             var flashlightValue = "0";
             var multitool = "multitool";
             var multitoolValue = "0";
             var mobilephone = "mobilephone";
@@ -69,9 +69,9 @@ namespace Akyat.Pinas.Activities
             var camerabatteriesValue = "0";
             var trekkingpole = "trekkingpole";
             var trekkingpoleValue = "0";
-
+           
             var blanket = "blanket";
-            var blanketValue = "0";
+             var blanketValue = "0";
             var extraclothes = "extraclothes";
             var extraclothesValue = "0";
             var sandals = "sandals";
@@ -79,7 +79,7 @@ namespace Akyat.Pinas.Activities
             var campwater = "campwater";
             var campwaterValue = "0";
             var precookfood = "precookfood";
-            var precookfoodValue = "0";
+             var precookfoodValue = "0";
             var rice = "rice";
             var riceValue = "0";
             var tyingstring = "tyingstring";
@@ -95,7 +95,7 @@ namespace Akyat.Pinas.Activities
             var mapcompass = "mapcompass";
             var mapcompassValue = "0";
             var stove = "stove";
-            var stoveValue = "0";
+             var stoveValue = "0";
             var cookset = "cookset";
             var cooksetValue = "0";
             var flag = "flag";
@@ -105,9 +105,11 @@ namespace Akyat.Pinas.Activities
             var groundsheet = "groundsheet";
             var groundsheetValue = "0";
             var rope = "rope";
-            var ropeValue = "0";
+                var ropeValue = "0";
             var trowel = "trowel";
             var trowelValue = "0";
+            var others = "others";
+            var othersValue = "";
 
             CheckBox cbbackpack = FindViewById<CheckBox>(Resource.Id.cbBackpack);
             CheckBox cbboots = FindViewById<CheckBox>(Resource.Id.cbBoots);
@@ -152,14 +154,14 @@ namespace Akyat.Pinas.Activities
             CheckBox cbrope = FindViewById<CheckBox>(Resource.Id.cbRope);
             CheckBox cbtrowel = FindViewById<CheckBox>(Resource.Id.cbBackpack);
 
-
+            EditText txtOthers = FindViewById<EditText>(Resource.Id.txtOthers);
 
             //getting the value of the checkbox from database
 
             try
             {
-                var backpackResult = dbr.GetRecordChecklist(backpack);
-                backpackValue = backpackResult;
+              var backpackResult = dbr.GetRecordChecklist(backpack);
+                  backpackValue = backpackResult;
                 var bootsResult = dbr.GetRecordChecklist(boots);
                 bootsValue = bootsResult;
                 var plasticbagResult = dbr.GetRecordChecklist(plasticbag);
@@ -173,7 +175,7 @@ namespace Akyat.Pinas.Activities
                 var firstaidkitResult = dbr.GetRecordChecklist(firstaidkit);
                 firstaidkitValue = firstaidkitResult;
                 var survivalkitResult = dbr.GetRecordChecklist(survivalkit);
-                survivalkitValue = survivalkitResult;
+                 survivalkitValue = survivalkitResult;
                 var messkitResult = dbr.GetRecordChecklist(messkit);
                 messkitValue = messkitResult;
                 var drinkingcupResult = dbr.GetRecordChecklist(drinkingcup);
@@ -187,7 +189,7 @@ namespace Akyat.Pinas.Activities
                 var raingearResult = dbr.GetRecordChecklist(raingear);
                 raingearValue = raingearResult;
                 var jacketResult = dbr.GetRecordChecklist(jacket);
-                jacketValue = jacketResult;
+               jacketValue =jacketResult;
                 var packedlunchResult = dbr.GetRecordChecklist(packedlunch);
                 packedlunchValue = packedlunchResult;
                 var trailwaterResult = dbr.GetRecordChecklist(trailwater);
@@ -202,7 +204,7 @@ namespace Akyat.Pinas.Activities
                 mobilephoneValue = mobilephoneResult;
                 var trekkingpoleResult = dbr.GetRecordChecklist(trekkingpole);
                 trekkingpoleValue = trekkingpoleResult;
-
+               
                 var blanketResult = dbr.GetRecordChecklist(blanket);
                 blanketValue = blanketResult;
                 var camerabatteriesResult = dbr.GetRecordChecklist(camerabatteries);
@@ -244,6 +246,8 @@ namespace Akyat.Pinas.Activities
                 var trowelResult = dbr.GetRecordChecklist(trowel);
                 trowelValue = trowelResult;
 
+                var othersResult = dbr.GetRecordChecklist(others);
+                othersValue = othersResult;
 
             }
             catch (Exception ex)
@@ -254,7 +258,7 @@ namespace Akyat.Pinas.Activities
             //implementing the value
             if (backpackValue == "0")
             {
-                cbbackpack.Checked = false;
+                cbbackpack.Checked = false ;
             }
             else if (backpackValue == "1")
             {
@@ -630,7 +634,7 @@ namespace Akyat.Pinas.Activities
                 cbtrowel.Checked = true;
             }
 
-
+            txtOthers.Text = othersValue;
 
 
 
@@ -1032,8 +1036,8 @@ namespace Akyat.Pinas.Activities
                 }
 
                 var result = dbr.InsertRecordChecklist(backpack, backpackValue);
-                dbr.InsertRecordChecklist(boots, bootsValue);
-                dbr.InsertRecordChecklist(plasticbag, plasticbagValue);
+                             dbr.InsertRecordChecklist(boots, bootsValue);
+                             dbr.InsertRecordChecklist(plasticbag, plasticbagValue);
                 dbr.InsertRecordChecklist(toiletries, toiletriesValue);
                 dbr.InsertRecordChecklist(outdoorclothes, outdoorclothesValue);
                 dbr.InsertRecordChecklist(trailfood, trailfoodValue);
@@ -1073,15 +1077,15 @@ namespace Akyat.Pinas.Activities
                 dbr.InsertRecordChecklist(groundsheet, groundsheetValue);
                 dbr.InsertRecordChecklist(rope, ropeValue);
                 dbr.InsertRecordChecklist(trowel, trowelValue);
-
+                dbr.InsertRecordChecklist(others, txtOthers.Text);
 
 
                 Toast.MakeText(this, result, ToastLength.Short).Show();
-                var intent = new Intent(this, typeof(MainMenuAct));
+                var intent = new Intent(this, typeof(MainT2B));
                 StartActivity(intent);
                 Finish();
             };
-
+            
         }
     }
 }
