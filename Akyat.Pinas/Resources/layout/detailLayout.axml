@@ -58,7 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#000"
-                    android:gravity="center" />
+                    android:gravity="center_horizontal" />
                 <TextView
                     android:id="@+id/descriptiontxt"
                     android:text="descriptiontxt"
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="25dp"
                     android:textColor="#000"
-                    android:gravity="center" />
+                    android:gravity="center_horizontal|left" />
                 <TextView
                     android:id="@+id/backgroundtxt"
                     android:text="backgroundtxt"
@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="15dp"
                     android:textColor="#000"
-                    android:gravity="center" />
+                    android:gravity="center_horizontal|left" />
                 <Button
                     android:layout_width="215.0dp"
                     android:layout_height="48.0dp"
@@ -87,20 +87,22 @@
                     android:layout_marginTop="40.5dp" />
                 <TextView
                     android:id="@+id/itinerarytxt"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="itinerarytxt"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
-                    android:layout_height="46.5dp"
-                    android:paddingTop="25dp"
+                    android:layout_height="wrap_content"
                     android:textColor="#000"
-                    android:gravity="center"
-                    android:text="itinerarytxt" />
+                    android:gravity="center_horizontal|left"
+                    android:layout_marginTop="27.5dp" />
                 <TextView
                     android:id="@+id/practicalitiestxt"
                     android:text="practicalitiestxt"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000" />
+                    android:gravity="center_horizontal|left"
+                    android:textColor="#000"
+                    android:layout_marginTop="29.0dp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

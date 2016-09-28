@@ -104,9 +104,6 @@ namespace Akyat.Pinas
             else if (id == Resource.Id.action2)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.MtName).ToList());
-                //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
-                //mAdapter.NotifyDataSetChanged();
-                //mListView.Adapter = mAdapter;
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
                 
@@ -115,34 +112,30 @@ namespace Akyat.Pinas
             else if (id == Resource.Id.action3)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Masl)).ToList();
-                //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
-                //mAdapter.NotifyDataSetChanged();
-                //mListView.Adapter = mAdapter;
-                
-                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
                 mAdapter.Update(filteredMountains);
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged()); 
 
             }
             else if (id == Resource.Id.action4)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Masl)).ToList();
-                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
                 mAdapter.Update(filteredMountains);
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged()); 
                 
             }
             else if (id == Resource.Id.action5)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Difficulty)).ToList();
-                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
                 mAdapter.Update(filteredMountains);
-                
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+
             }
             else if (id == Resource.Id.action6)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Difficulty)).ToList();
-                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
                 mAdapter.Update(filteredMountains);
-                
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+
             }
             else if (id == Resource.Id.action7)
             {

@@ -21,7 +21,7 @@ namespace Akyat.Pinas
                 MtName = "MANABU PEAK",
                 Masl = 760,
                 Difficulty = 2,
-                MtImg00 = Resource.Drawable.batulao,
+                MtImg00 = Resource.Drawable.manabu,
                 Location = "STO. TOMAS, BATANGAS",
                 JumpOff = "Sulok, Brgy. Sta. Cruz, Sto. Tomas",
                 Description =
@@ -41,7 +41,7 @@ namespace Akyat.Pinas
                 MtName = "APO",
                 Masl = 2956,
                 Difficulty = 7,
-                MtImg00 = Resource.Drawable.batulao,
+                MtImg00 = Resource.Drawable.apo,
                 Location = "KIDAPAWAN CITY AND MAGPET, NORTH COTABATO",
                 JumpOff = "(Entry point) Brgy. Ilomavis, Kidapawan(Exit point) Brgy. Kisandal, Magpet",
                 Description ="LLA: 7°0'30 N, 125°16'33 E, 2,956\nDays required: 3 day\nHours to summit: 10 - 11 hrs\nSpecs: Major climb, Difficulty: 7 / 9\nTrail class: 3\nFeatures: Mossy forest, lake, sulfuric rocks\n\n",
@@ -55,7 +55,7 @@ namespace Akyat.Pinas
                 MtName = "BANOI",
                 Masl = 960,
                 Difficulty = 3,
-                MtImg00 = Resource.Drawable.batulao,
+                MtImg00 = Resource.Drawable.banoi,
                 Location = "LOBO, BATANGAS",
                 JumpOff = "Sitio Malabnig, Brgy. Balatbat, Lobo",
                 Description =
@@ -104,7 +104,7 @@ namespace Akyat.Pinas
                 MtName = "GUITING-GUITING",
                 Masl = 2058,
                 Difficulty = 9,
-                MtImg00 = Resource.Drawable.batulao,
+                MtImg00 = Resource.Drawable.guiting,
                 Location = "SIBUYAN ISLAND, ROMBLON",
                 JumpOff = "Brgy. Tampayan, Magdiwang, Sibuyan",
                 Description ="LLA: 12°24'50 N, 122°32'4'4 E, 2058 MASL\nDays required: 3 days\nHours to summit: 10-13 hrs\nSpecs: Major climb, Difficulty: 9/9\nTrail class: 5 with rock climbing/ scrambling\nFeatures: Rock formations, knife edge\n\n",
@@ -118,14 +118,14 @@ namespace Akyat.Pinas
                 MtName = "HALCON",
                 Masl = 2582,
                 Difficulty = 9,
-                MtImg00 = Resource.Drawable.ulap,
+                MtImg00 = Resource.Drawable.halcon,
                 Location = "BACO, ORIENTAL MINDORO",
                 JumpOff = "Brgy. Lantuyan, Baco",
                 Description ="LLA: 13°15.749 N 120°59.703 E, 2582 MASL\nDays required: 3.5 - 4 days\nHours to summit: 15 - 18 hrs\nSpecs: Major climb, Difficulty: 9 / 9\nTrail class: 2-4\nFeatures: River crossings, Mossy forest, rocky ridges\n\n",
                 Background ="Mt. Halcon, home of many endemic flora and fauna in the Philippines located in Baco, Oriental Mindoro. The mountain is 2582 MASL in Mindoro Island just south of Luzon. Mt. Halcon is one of the majestic mountains and also the best hiking destination in the Philippines, featuring long and often steep through dense jungle and crystal clear waters from its rivers.\n\nBefore attempting to hike Mt.Halcon, Group hikes are required to be safe and must be oriented or experienced mountaineers.First hikers must secure a permit that they are allowed to hike in the mountain and sending an advance party to get permits on a weekday is like a prudent option rather than going directly to the place.If going there directly, best arrive on weekdays and allow on extra day for contingencies.\n\nDuring rainy season, climbing may have to be aborted when flash floods sets in making the trail crossing rivers unpassable.Another factor that adds up to the difficulty of climbing is the presence of the \"limatik\" on almost 90% of the trail.These small leeches silently clings to your body and makes their way to any exposed skin where they begin sucking your blood.Nature will always be a factor in the success of this climb.\n\n",
                 Itinerary ="3 Days Lantuyan or Bayanan trail (Summit Assault)\n\nDay \n\n00600 Assembly at Buendia corner Taft\n0630 ETD Manila to Batangas City\n0930 ETA Batangas Pier, take ferry to Calapan\n1015 ETA Calapan Pier, Hire tricycle to Calapan Market Place\n1030 ETA Calapan Market Place, Ride jeepney bound for Baco\n1130 ETA Baco Municipal Hall, Arrange for permit\n1200 Lunch in Baco/ Buy final supplies\n1400 ETD Baco Municipal Hall to jump-off\n1500 ETA jump-off.Register/ Arrange for guides\n1600 Free Time, Setup Camp, Make Final Preparation\n\nDay 1 (exact landmarks vary depending on choice of trail)\n\n0600 Breakfast / Prepare for the hike\n0700 Start Trek\n1200 Lunch along the jump-off\n1300 Resume Trek\n1700 ETA Aplaya campsite\n1830 Dinner / Prepare for packed lunch the next day\n2000 Light’s Out\n\nDay 2\n\n0300 Wake-up call/ Light snacks\n0400 Start summit assault\n0700 Breakfast/ 15-minute break at Camp 1 or 2\n1000 Arrival at ridgeline\n1100 ETA summit (allow up to 1300H)/ Lunch\n1200 Start descent\n1500 Dulungan River break / swimming\n1800 Back at Aplaya campsite\n1900 Dinner / socials\n\nDay 3 (exact landmarks vary depending on choice of trail)\n\n0600 Breakfast / Break camp\n0800 Start descent\n1200 Lunch along the trail\n1600 Back at the jump-off.End of trek!\n1700 Take tricycle back to Baco then jeep back to Calapan\n1900 ETA Calapan.Dinner\n2100 Take ferry back to Batangas\n2300 ETA Batangas.Take bus back to Manila\n0130 (+1 day) ETA Manila",
                 Practicalities = "Transportation\nPublic (1) Bus,Cubao or LRT-Buendia to Batangas Pier (P170,2.5 - 3 hrs) (2) Ferry,Batangas Pier to Calapan,Oriental Mindoro (P180-300,2 - 2.5 hrs) (3) Rented jeepney,Calapan to Baco Municipality and back (P2500-3000 for round trip,40minutes to Baco and 30 mins to the trailhead) Approximately 6-7 hrs time because of various stops and delays\n\nRegistration\n(1) Logbook at the Tourism Office in Baco\n(2) Logbook at the Police Station in Baco\n(3) Logbooks and possible minor fees at the jump-off/ villages\n\nGuides\nAvailable; required; Ratio of 1:7 P500 per day\nPorters: same rate as guides,maximum 15kg\n\nContact Numbers\nHalcon (Jojo – Baco Tourism Office) – 09198821442\n\nCampsites\n(1) Emergency campsites\n(2) Aplaya campsite\n(3) Camp 1\n(4) Camp 2\n(5) Summit camp\n\nWater sources\nAvailable in Aplaya camp,Camp 1 and Camp 2 and some parts of the trail\n\nCell phone signal\nSporadic in Aplaya camp\nAvailable at the summit and in some parts of the trail\n\nRope Segments\nNone but there are parts where ropes might help beginners\n\nSidetrips\nPuerto Galera (one jeepney ride from Calapan)\nOther Mindoro mountains eg.Mt.Malasimbo\n\nAlternate trails\nNone\n\nDayhikable\nNo\n\nFacilities at jump-off\nSari-sari stores\nWash up places\n\nEstimated budget\n1500-2200 per pax for group of 7 (3 days)\n\n"},
-
+            
         };
     }
 

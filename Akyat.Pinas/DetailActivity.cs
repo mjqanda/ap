@@ -16,16 +16,8 @@ namespace Akyat.Pinas
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.detailLayout);
-            
-            tmtname = FindViewById<TextView>(Resource.Id.mtname);
-            mtimg = FindViewById<ImageView>(Resource.Id.mtimg);
-            tmtloc = FindViewById<TextView>(Resource.Id.locationtxt);
-            tjumpoff = FindViewById<TextView>(Resource.Id.jumpofftxt);
-            tdesc = FindViewById<TextView>(Resource.Id.descriptiontxt);
-            tbackground = FindViewById<TextView>(Resource.Id.backgroundtxt);
-            titinerary = FindViewById<TextView>(Resource.Id.itinerarytxt);
-            tpracticalities = FindViewById<TextView>(Resource.Id.practicalitiestxt);
-          
+
+            FindViews();
 
             Android.Content.Intent i = this.Intent;
             string iname = i.Extras.GetString("MTNAME");
@@ -63,7 +55,18 @@ namespace Akyat.Pinas
                 StartActivity(intent);
 
             });
+        }
 
+        private void FindViews()
+        {
+            tmtname = FindViewById<TextView>(Resource.Id.mtname);
+            mtimg = FindViewById<ImageView>(Resource.Id.mtimg);
+            tmtloc = FindViewById<TextView>(Resource.Id.locationtxt);
+            tjumpoff = FindViewById<TextView>(Resource.Id.jumpofftxt);
+            tdesc = FindViewById<TextView>(Resource.Id.descriptiontxt);
+            tbackground = FindViewById<TextView>(Resource.Id.backgroundtxt);
+            titinerary = FindViewById<TextView>(Resource.Id.itinerarytxt);
+            tpracticalities = FindViewById<TextView>(Resource.Id.practicalitiestxt);
 
         }
     }

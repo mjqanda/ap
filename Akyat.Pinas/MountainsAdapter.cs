@@ -42,7 +42,6 @@ namespace Akyat.Pinas
             mtList.Clear();
             mtList.AddRange(mLists);
             NotifyDataSetChanged();
-
         }
 
 

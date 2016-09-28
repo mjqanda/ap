@@ -51,4 +51,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnSave" />
+    <CheckBox
+        android:text="Click Sounds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sound"
+        android:textColor="#000"
+        android:layout_marginLeft="45.5dp" />
 </LinearLayout>

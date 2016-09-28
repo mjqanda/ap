@@ -16,11 +16,10 @@ namespace Akyat.Pinas.Activities
         {
             base.OnCreate(bundle);
             RequestWindowFeature(WindowFeatures.NoTitle);
-            // Set our view from the "main" layout resource
+         
             SetContentView(Resource.Layout.mainMenuLayout);
-
-            // Get our button from the layout resource,
-            // and attach an event to it
+            //view.playSoundEffect(SoundEffectConstants.CLICK);
+            
             Button btnMountainList = FindViewById<Button>(Resource.Id.btnMountainList);
             Button btnThingsToBring = FindViewById<Button>(Resource.Id.btnThingsToBring);
             Button btnNoTrace = FindViewById<Button>(Resource.Id.btnLeaveNoTrace);
@@ -37,7 +36,7 @@ namespace Akyat.Pinas.Activities
             {
                 DBItineraryRepository dbr = new DBItineraryRepository();
                 var result = dbr.CreateDBChecklist();
-              var resultTable = dbr.CreateTableChecklist();
+                var resultTable = dbr.CreateTableChecklist();
 
                 Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
                 var intent = new Intent(this, typeof(ThingsToBringAct));
@@ -53,19 +52,17 @@ namespace Akyat.Pinas.Activities
 
             btnMountainMap.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(MountainMapAct));
-                StartActivity(intent);
+                var i = new Intent(this, typeof(MountainMapAct));
+                StartActivity(i);
             };
 
 
             btnSettings.Click += (sender, e) =>
             {
-               DBItineraryRepository dbr = new DBItineraryRepository();
-           
+                DBItineraryRepository dbr = new DBItineraryRepository();
                 var result = dbr.CreateDBSettings();
-               var resultTable = dbr.CreateTableSettings();
-
-              Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
+                var resultTable = dbr.CreateTableSettings();
+                Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
                 var intent = new Intent(this, typeof(SettingsAct));
                 StartActivity(intent);
             };
