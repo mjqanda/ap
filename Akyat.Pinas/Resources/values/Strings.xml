@@ -9,5 +9,5 @@
     <string name="action_5">Sort Difficulty(from Easiest)</string>
     <string name="action_6">Sort Difficulty(from Most Difficult)</string>
     <string name="action_7">Sort Luzon-Visayas-Mindanao</string>
-
+  <string name="PoweredBy">V1.0 Powered by suchith. Tap for more</string>
 </resources>

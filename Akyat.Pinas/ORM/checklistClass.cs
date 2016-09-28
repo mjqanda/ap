@@ -22,7 +22,7 @@ namespace Akyat.Pinas.ORM
         [PrimaryKey, MaxLength(50)]
         public string ChecklistName { get; set; }
 
-        [MaxLength(1)]
+        [MaxLength(50)]
         public string Value { get; set; }
     }
 }

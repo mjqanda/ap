@@ -108,6 +108,8 @@ namespace Akyat.Pinas.Activities
                 var ropeValue = "0";
             var trowel = "trowel";
             var trowelValue = "0";
+            var others = "others";
+            var othersValue = "";
 
             CheckBox cbbackpack = FindViewById<CheckBox>(Resource.Id.cbBackpack);
             CheckBox cbboots = FindViewById<CheckBox>(Resource.Id.cbBoots);
@@ -151,8 +153,8 @@ namespace Akyat.Pinas.Activities
             CheckBox cbgroundsheet = FindViewById<CheckBox>(Resource.Id.cbGroundsheet);
             CheckBox cbrope = FindViewById<CheckBox>(Resource.Id.cbRope);
             CheckBox cbtrowel = FindViewById<CheckBox>(Resource.Id.cbBackpack);
-            
 
+            EditText txtOthers = FindViewById<EditText>(Resource.Id.txtOthers);
 
             //getting the value of the checkbox from database
 
@@ -244,6 +246,8 @@ namespace Akyat.Pinas.Activities
                 var trowelResult = dbr.GetRecordChecklist(trowel);
                 trowelValue = trowelResult;
 
+                var othersResult = dbr.GetRecordChecklist(others);
+                othersValue = othersResult;
 
             }
             catch (Exception ex)
@@ -630,7 +634,7 @@ namespace Akyat.Pinas.Activities
                 cbtrowel.Checked = true;
             }
 
-
+            txtOthers.Text = othersValue;
 
 
 
@@ -1073,11 +1077,11 @@ namespace Akyat.Pinas.Activities
                 dbr.InsertRecordChecklist(groundsheet, groundsheetValue);
                 dbr.InsertRecordChecklist(rope, ropeValue);
                 dbr.InsertRecordChecklist(trowel, trowelValue);
-
+                dbr.InsertRecordChecklist(others, txtOthers.Text);
 
 
                 Toast.MakeText(this, result, ToastLength.Short).Show();
-                var intent = new Intent(this, typeof(MainMenuAct));
+                var intent = new Intent(this, typeof(MainT2B));
                 StartActivity(intent);
                 Finish();
             };

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maint2bg"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:src="@drawable/btn_bg_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="116.0dp"
+        android:id="@+id/imageView1" />
+    <ImageButton
+        android:layout_width="154.0dp"
+        android:layout_height="38.5dp"
+        android:id="@+id/imageButtonAdd"
+        android:background="@drawable/addttb"
+        android:layout_marginLeft="10dp" />
+    <ScrollView
+        android:layout_width="380.5dp"
+        android:layout_height="418.0dp"
+        android:padding="10dp"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtList"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -26,7 +26,7 @@ namespace Akyat.Pinas.Activities
             Button btnNoTrace = FindViewById<Button>(Resource.Id.btnLeaveNoTrace);
             Button btnMountainMap = FindViewById<Button>(Resource.Id.btnMountainMap);
             Button btnSettings = FindViewById<Button>(Resource.Id.btnSetting);
-
+           
             btnMountainList.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof (MountainListAct));
@@ -40,7 +40,7 @@ namespace Akyat.Pinas.Activities
               var resultTable = dbr.CreateTableChecklist();
 
                 Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
-                var intent = new Intent(this, typeof(ThingsToBringAct));
+                var intent = new Intent(this, typeof(MainT2B));
                 StartActivity(intent);
             };
 

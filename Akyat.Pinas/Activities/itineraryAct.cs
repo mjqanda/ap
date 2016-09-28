@@ -45,20 +45,21 @@ namespace Akyat.Pinas.ORM
                 Toast.MakeText(this, resultTable, ToastLength.Short).Show();
 
                 var intent = new Intent(this, typeof(addItineraryAct));
+                intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivity(intent);
-                Finish();
+             
             });
 
 
 
             txtItinerary.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(editItiAct));
+                var intent = new Intent(this, typeof(addItineraryAct));
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivity(intent);
-                Finish();
+               
             };
 
         }
