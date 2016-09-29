@@ -50,7 +50,7 @@ namespace Akyat.Pinas
 
 
 
-                var intent = new Intent(this, typeof(ItineraryAct));
+                var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", iname);
                 StartActivity(intent);
 

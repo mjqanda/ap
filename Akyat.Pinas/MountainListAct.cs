@@ -36,13 +36,13 @@ namespace Akyat.Pinas
             mSearch = FindViewById<EditText>(Resource.Id.etSearch);
             mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
 
-            mSearch.Alpha = 0;
-            mContainer.BringToFront();
             mSearch.TextChanged += mSearch_TextChanged;
             //mListView.FastScrollEnabled = true;
             mMountains = MountainsData.MountainList;
             mListView.ItemClick += mListView_ItemClick;
-           
+
+            mSearch.Alpha = 0;
+            mContainer.BringToFront();
 
             mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
             mListView.Adapter = mAdapter;
@@ -73,15 +73,26 @@ namespace Akyat.Pinas
        
         void mSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
         {
-
+            bool hastye;
+            bool hastn;
+            
             List<Mountain> searchedMountains = (from mountain in mMountains
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 //|| mountain.Masl.Contains(mSearch.Text)
                                                 select mountain).ToList();
 
-            mAdapter.Update(searchedMountains);         
-            RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
-            
+            //if(hastye)
+            //{
+                
+                mAdapter.Update(searchedMountains);
+                mListView.Adapter = mAdapter;
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+                
+        //    }
+        //else
+        //    {
+                
+        //    }
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -147,6 +158,7 @@ namespace Akyat.Pinas
             {
                 case Resource.Id.search:
                     //Search icon has been clicked
+                    mSearch.Visibility = ViewStates.Visible;
                     if (mIsAnimating)
                     {
                         return true;

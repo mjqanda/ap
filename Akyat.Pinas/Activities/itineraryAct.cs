@@ -44,7 +44,7 @@ namespace Akyat.Pinas.ORM
                 var resultTable = dbr.CreateTable();
                 Toast.MakeText(this, resultTable, ToastLength.Short).Show();
 
-                var intent = new Intent(this, typeof(addItineraryAct));
+                var intent = new Intent(this, typeof(AddItineraryAct));
                 intent.PutExtra("name", name);
                 StartActivity(intent);
              
@@ -54,7 +54,7 @@ namespace Akyat.Pinas.ORM
 
             txtItinerary.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(addItineraryAct));
+                var intent = new Intent(this, typeof(AddItineraryAct));
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivity(intent);

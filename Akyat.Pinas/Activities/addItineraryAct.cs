@@ -42,7 +42,7 @@ namespace Akyat.Pinas.Activities
                 string result = dbr.InsertRecord(name, txtItinerary.Text);
                 Toast.MakeText(this, result, ToastLength.Short).Show();
 
-                var intent = new Intent(this, typeof(ItineraryAct));
+                var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", name);
                 StartActivity(intent);
                 Finish();

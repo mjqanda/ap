@@ -10,8 +10,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:background="@drawable/ttbp"
         android:fillViewport="false"
-        android:layout_marginTop="115.5dp">
+        android:layout_marginTop="120.0dp"
+        android:layout_marginLeft="13.0dp"
+        android:layout_marginRight="13.0dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

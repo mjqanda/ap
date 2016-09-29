@@ -44,7 +44,12 @@ namespace Akyat.Pinas
             NotifyDataSetChanged();
         }
 
-
+        public void src(List<Mountain> mLists)
+        {
+            
+            mtList.AddRange(mLists);
+            NotifyDataSetChanged();
+        }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             View row = convertView;

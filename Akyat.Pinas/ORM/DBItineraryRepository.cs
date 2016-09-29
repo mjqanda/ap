@@ -179,8 +179,8 @@ namespace Akyat.Pinas.ORM
             string outputValue = "";
 
 
-             var items = db.Query<checklistClass>("SELECT ChecklistName FROM Checklist WHERE Value = 1");
-            var other = db.Query<checklistClass>("SELECT Value From Checklist WHERE ChecklistName = ?", "others");
+             var items = db.Query<ChecklistClass>("SELECT ChecklistName FROM Checklist WHERE Value = 1");
+            var other = db.Query<ChecklistClass>("SELECT Value From Checklist WHERE ChecklistName = ?", "others");
             
 
             foreach (var item in items)
