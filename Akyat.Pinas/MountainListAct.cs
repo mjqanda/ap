@@ -73,26 +73,13 @@ namespace Akyat.Pinas
        
         void mSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
         {
-            bool hastye;
-            bool hastn;
-            
             List<Mountain> searchedMountains = (from mountain in mMountains
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 //|| mountain.Masl.Contains(mSearch.Text)
                                                 select mountain).ToList();
-
-            //if(hastye)
-            //{
-                
                 mAdapter.Update(searchedMountains);
                 mListView.Adapter = mAdapter;
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
-                
-        //    }
-        //else
-        //    {
-                
-        //    }
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

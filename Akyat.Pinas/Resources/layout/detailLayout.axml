@@ -84,7 +84,7 @@
                     android:layout_width="215.0dp"
                     android:layout_height="48.0dp"
                     android:paddingTop="25dp"
-                    android:background="@drawable/itenerarybtn"
+                    android:background="@drawable/yourIt"
                     android:id="@+id/btnItinerary"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="40.5dp" />
