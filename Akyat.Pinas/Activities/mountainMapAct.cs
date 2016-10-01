@@ -126,7 +126,7 @@ namespace Akyat.Pinas.Activities
 
             if (map != null)
             {
-
+                map.MapType = GoogleMap.MapTypeTerrain;
 
                 if (terrainValue == "1")
                 {

@@ -1087,7 +1087,7 @@ namespace Akyat.Pinas.Activities
 
 
                 Toast.MakeText(this, result, ToastLength.Short).Show();
-                var intent = new Intent(this, typeof(MainActivity));
+                var intent = new Intent(this, typeof(MainMenuAct));
                 StartActivity(intent);
                 Finish();
             };

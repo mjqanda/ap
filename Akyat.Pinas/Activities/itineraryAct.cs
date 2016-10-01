@@ -40,28 +40,55 @@ namespace Akyat.Pinas.ORM
             Button btnAddIti = FindViewById<Button>(Resource.Id.btnAddIti);
             btnAddIti.Click += ((sender, e) =>
             {
-                DBItineraryRepository dbr = new DBItineraryRepository();
-                var resultTable = dbr.CreateTable();
-                Toast.MakeText(this, resultTable, ToastLength.Short).Show();
-
-                var intent = new Intent(this, typeof(addItineraryAct));
+                
+                var intent = new Intent(this, typeof(AddItineraryAct));
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
-                StartActivity(intent);
-             
+                StartActivityForResult(intent, 1);
+
             });
 
 
 
             txtItinerary.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(addItineraryAct));
+                var intent = new Intent(this, typeof(AddItineraryAct));
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
-                StartActivity(intent);
-               
-            };
+                StartActivityForResult(intent, 1);
 
+            };
+           
+
+
+
+    }
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+
+
+            //when regester activity retrun data, it will be execute 
+
+            if (requestCode == 1 && resultCode == Result.Ok)
+            {
+
+                TextView txtItinerary = FindViewById<TextView>(Resource.Id.txtItineraryRecord);
+                string name = data.GetStringExtra("name");
+                try
+                {
+
+                    DBItineraryRepository dbr = new DBItineraryRepository();
+                    var result = dbr.GetRecord(name);
+
+                    txtItinerary.Text = result;
+
+                }
+                catch (Exception ex)
+                {
+                    Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
+                }
+            }
         }
     }
 }

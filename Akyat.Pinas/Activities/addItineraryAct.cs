@@ -13,8 +13,8 @@ using Akyat.Pinas.ORM;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity(Theme = "@style/Theme.NoTitle", Label = "addItineraryAct")]
-    public class addItineraryAct : Activity
+    [Activity(Theme = "@style/Theme.NoTitle", Label = "AddItineraryAct")]
+    public class AddItineraryAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -44,7 +44,9 @@ namespace Akyat.Pinas.Activities
 
                 var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", name);
-                StartActivity(intent);
+                SetResult(Result.Ok, intent);
+
+               
                 Finish();
             });
 

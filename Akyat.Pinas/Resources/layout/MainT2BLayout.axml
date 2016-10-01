@@ -6,17 +6,13 @@
     android:background="@drawable/maint2bg"
     android:minWidth="25px"
     android:minHeight="25px">
-    <ImageView
-        android:src="@drawable/btn_bg_transparent"
-        android:layout_width="match_parent"
-        android:layout_height="116.0dp"
-        android:id="@+id/imageView1" />
     <ImageButton
         android:layout_width="154.0dp"
         android:layout_height="38.5dp"
         android:id="@+id/imageButtonAdd"
         android:background="@drawable/addttb"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="115.0dp" />
     <ScrollView
         android:layout_width="380.5dp"
         android:layout_height="418.0dp"
