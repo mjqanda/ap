@@ -38,7 +38,14 @@ namespace Akyat.Pinas.Activities
             RadioButton rbNormal = FindViewById<RadioButton>(Resource.Id.rbNormal);
             RadioButton rbSatellite = FindViewById<RadioButton>(Resource.Id.rbSatellite);
             RadioButton rbHybrid = FindViewById<RadioButton>(Resource.Id.rbHybrid);
+            //CheckBox cbsounds = FindViewById<CheckBox>(Resource.Id.sound);
 
+            //cbsounds.Click += (o,e) => {
+            //    if (cbsounds.Checked)
+            //        Toast.MakeText(this, "All Sounds Enabled!", ToastLength.Short).Show();
+            //    else
+            //        Toast.MakeText(this, "All Sounds Disabled", ToastLength.Short).Show();
+            //};
             //getting record from database
             try
             {
@@ -121,10 +128,11 @@ namespace Akyat.Pinas.Activities
                 dbr.InsertRecordSettings(hybrid, hybridValue);
 
                 Toast.MakeText(this, result, ToastLength.Short).Show();
-                var intent = new Intent(this, typeof(MainMenuAct));
-                StartActivity(intent);
+                
                 Finish();
             };
         }
+
+        
     }
 }
