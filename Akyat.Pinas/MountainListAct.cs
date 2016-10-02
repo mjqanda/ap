@@ -23,9 +23,6 @@ namespace Akyat.Pinas
         private bool mAnimatedDown;
         private bool mIsAnimating;
         private MountainsAdapter mAdapter;
-    
-
-      
 
         protected override void OnCreate(Bundle bundle)
         {

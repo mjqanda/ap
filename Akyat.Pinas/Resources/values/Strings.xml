@@ -9,5 +9,6 @@
     <string name="action_5">Sort Difficulty(from Easiest)</string>
     <string name="action_6">Sort Difficulty(from Most Difficult)</string>
     <string name="action_7">Sort Luzon-Visayas-Mindanao</string>
+  <string name="styled_welcome_message">We are <b><i>so</i></b> glad to see you.</string>
 
 </resources>

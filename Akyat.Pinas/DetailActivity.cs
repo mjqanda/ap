@@ -48,8 +48,6 @@ namespace Akyat.Pinas
                 var result = dbr.CreateDB();
                 Toast.MakeText(this, result, ToastLength.Short).Show();
 
-
-
                 var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", iname);
                 StartActivity(intent);
