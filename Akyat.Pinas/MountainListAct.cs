@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
 using Akyat.Pinas;
+using Android.Graphics;
 
 namespace Akyat.Pinas
 {
@@ -27,7 +28,7 @@ namespace Akyat.Pinas
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
+            
             SetContentView(Resource.Layout.mountainListLayout);
             mListView = FindViewById<ListView>(Resource.Id.listView);
             mSearch = FindViewById<EditText>(Resource.Id.etSearch);
@@ -74,9 +75,11 @@ namespace Akyat.Pinas
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 //|| mountain.Masl.Contains(mSearch.Text)
                                                 select mountain).ToList();
-                mAdapter.Update(searchedMountains);
-                mListView.Adapter = mAdapter;
-                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+            
+            //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
+            //mListView.Adapter = mAdapter;
+            mAdapter.Update(searchedMountains);
+            RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

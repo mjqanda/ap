@@ -110,11 +110,15 @@
     <Compile Include="ORM\SQLiteAsync.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\PorterBold.ttf" />
+    <AndroidAsset Include="Assets\REFSAN.TTF" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\ml_model.axml" />
+    <AndroidResource Include="Resources\layout\ml_model.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\leaveNoTrace.axml">
       <SubType>Designer</SubType>
     </AndroidResource>

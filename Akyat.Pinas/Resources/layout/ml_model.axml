@@ -27,7 +27,8 @@
             android:textColor="#000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/mtnametxt" />
+            android:id="@+id/mtnametxt"
+            android:layout_marginTop="4.5dp" />
         <TextView
             android:text="Small Text"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -35,7 +36,8 @@
             android:layout_height="wrap_content"
             android:textColor="#000"
             android:gravity="center"
-            android:id="@+id/masltxt" />
+            android:id="@+id/masltxt"
+            android:layout_marginTop="3.5dp" />
         <TextView
             android:text="Small Text"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -43,6 +45,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#000"
+            android:layout_marginTop="3.5dp"
             android:id="@+id/difficultytxt" />
     </LinearLayout>
 </LinearLayout>
