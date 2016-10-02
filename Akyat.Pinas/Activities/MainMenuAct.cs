@@ -8,7 +8,7 @@ using Android.Widget;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity( Theme = "@style/Theme.NoTitle", Label="AP", MainLauncher = true, Icon = "@drawable/Icon")]
+    [Activity( Theme = "@style/Theme.NoTitle", Label="AP")]
     public class MainMenuAct : Activity
     {
 
