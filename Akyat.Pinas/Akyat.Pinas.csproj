@@ -108,9 +108,6 @@
     <Compile Include="Activities\WeatherAct.cs" />
     <Compile Include="DetailActivity.cs" />
     <Compile Include="ExtMethods.cs" />
-    <Compile Include="Model\ForecastAdapterClass.cs" />
-    <Compile Include="Model\GooglePlaceClass.cs" />
-    <Compile Include="Model\YahooWetherClass.cs" />
     <Compile Include="MountainListAct.cs" />
     <Compile Include="Mountain.cs" />
     <Compile Include="Activities\MountainMapAct.cs" />
@@ -159,12 +156,6 @@
     <AndroidResource Include="Resources\layout\MainT2BLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\myWebViewLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\forecastCustomLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\mainMenuLayout.axml">
@@ -193,25 +184,7 @@
     <AndroidResource Include="Resources\drawable\batulao.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ulap.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cristobal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\makiling.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\talamitam.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\EDIT.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\menu\actionbar.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\yellowbg.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="GeolocatorPlugin">
@@ -232,9 +205,6 @@
     </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\mountainMapTitle.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\NoTitleTheme.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -247,16 +217,7 @@
     <AndroidResource Include="Resources\drawable\splash_screen.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\plusButton.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\your.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\themes.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_action_overflow.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\jumpoff.png" />
