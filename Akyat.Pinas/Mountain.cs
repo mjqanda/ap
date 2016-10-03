@@ -10,7 +10,6 @@ namespace Akyat.Pinas
         public string MtName { get; set; }
         public int Masl { get; set; }
         public int Difficulty { get; set; }
-        public string Island { get; set; }
         public int MtImg00 { get; set; }
         public int MtImg01 { get; set; }
         public int MtImg02 { get; set; }
@@ -28,4 +27,6 @@ namespace Akyat.Pinas
         public string Itinerary { get; set; }
         public string Practicalities { get; set; }
     }
+
+    
 }

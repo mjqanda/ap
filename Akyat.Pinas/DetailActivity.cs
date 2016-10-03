@@ -4,7 +4,6 @@ using Android.Widget;
 using Akyat.Pinas;
 using Akyat.Pinas.ORM;
 using Android.Content;
-using Android.Graphics;
 
 namespace Akyat.Pinas
 {
@@ -19,14 +18,6 @@ namespace Akyat.Pinas
             SetContentView(Resource.Layout.detailLayout);
 
             FindViews();
-            Typeface tf = Typeface.CreateFromAsset(Assets, "REFSAN.TTF");
-            tmtname.SetTypeface(tf, TypefaceStyle.Normal);
-            tmtloc.SetTypeface(tf, TypefaceStyle.Normal);
-            tjumpoff.SetTypeface(tf, TypefaceStyle.Normal);
-            tdesc.SetTypeface(tf, TypefaceStyle.Normal);
-            tbackground.SetTypeface(tf, TypefaceStyle.Normal);
-            titinerary.SetTypeface(tf, TypefaceStyle.Normal);
-            
 
             Android.Content.Intent i = this.Intent;
             string iname = i.Extras.GetString("MTNAME");
@@ -49,15 +40,19 @@ namespace Akyat.Pinas
             tpracticalities.Text = ipracticalities;
          
 
+
             Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
             btnItinerary.Click += ((sender, e) =>
             {
                 DBItineraryRepository dbr = new DBItineraryRepository();
-                var result = dbr.CreateDB();
+                var result = dbr.CreateTable();
                 Toast.MakeText(this, result, ToastLength.Short).Show();
+
+
 
                 var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", iname);
+              
                 StartActivity(intent);
 
             });
@@ -73,8 +68,7 @@ namespace Akyat.Pinas
             tbackground = FindViewById<TextView>(Resource.Id.backgroundtxt);
             titinerary = FindViewById<TextView>(Resource.Id.itinerarytxt);
             tpracticalities = FindViewById<TextView>(Resource.Id.practicalitiestxt);
-        }
 
-        
+        }
     }
 }

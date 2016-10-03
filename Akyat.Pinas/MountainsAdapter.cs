@@ -52,29 +52,26 @@ namespace Akyat.Pinas
         }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            Typeface tf = Typeface.CreateFromAsset(mContext.Assets, "REFSAN.TTF");
             View row = convertView;
             //added txt to every mountain
+            var masl = " MASL"; var diff = "Difficulty: "; var mt = "Mt. "; var over = "/9";
             if (row == null)
             {
                row = LayoutInflater.From(mContext).Inflate(mRowLayout, parent, false);
                // convertView = context.LayoutInflater.Inflate(Resource.Layout.ml_model, null);
             }
             TextView mtnametxt = row.FindViewById<TextView>(Resource.Id.mtnametxt);
-            mtnametxt.Text = "Mt. "+mtList[position].MtName;
+            mtnametxt.Text = mt+mtList[position].MtName;
                 
             TextView Masltxt = row.FindViewById<TextView>(Resource.Id.masltxt);
-            Masltxt.Text = mtList[position].Masl+" MASL";
+            Masltxt.Text = mtList[position].Masl+masl;
 
             TextView Difficultytxt = row.FindViewById<TextView>(Resource.Id.difficultytxt);
-            Difficultytxt.Text =  "Difficulty: "+mtList[position].Difficulty+"/9";
+            Difficultytxt.Text =  diff+mtList[position].Difficulty+over;
 
             ImageView Mtimg = row.FindViewById<ImageView>(Resource.Id.mtimg);
             Mtimg.SetImageResource(mtList[position].MtImg00);
-            
-            mtnametxt.SetTypeface(tf, TypefaceStyle.Bold);
-            Masltxt.SetTypeface(tf, TypefaceStyle.Bold);
-            Difficultytxt.SetTypeface(tf, TypefaceStyle.Bold);
+
             
             return row;
         }

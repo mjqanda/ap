@@ -8,7 +8,9 @@ using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
 using Akyat.Pinas;
-using Android.Graphics;
+using SQLite;
+using Akyat.Pinas.ORM;
+using System.IO;
 
 namespace Akyat.Pinas
 {
@@ -24,6 +26,9 @@ namespace Akyat.Pinas
         private bool mAnimatedDown;
         private bool mIsAnimating;
         private MountainsAdapter mAdapter;
+    
+
+      
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -57,12 +62,7 @@ namespace Akyat.Pinas
             mt = mMountains[pos];
             i = new Intent(this, typeof(DetailActivity));
             
-            i.PutExtra("IMG00", mt.MtImg00);
-            i.PutExtra("IMG01", mt.MtImg01);
-            i.PutExtra("IMG02", mt.MtImg02);
-            i.PutExtra("IMG03", mt.MtImg03);
-            i.PutExtra("IMG04", mt.MtImg04);
-            i.PutExtra("IMG05", mt.MtImg05);
+            i.PutExtra("IMG", mt.MtImg00);
             i.PutExtra("MTNAME", mt.MtName);
             i.PutExtra("LOCATION", mt.Location);
             i.PutExtra("JUMPOFF", mt.JumpOff);
@@ -80,13 +80,11 @@ namespace Akyat.Pinas
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 //|| mountain.Masl.Contains(mSearch.Text)
                                                 select mountain).ToList();
-           
-            //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
-            //mListView.Adapter = mAdapter;
-            mAdapter.Update(searchedMountains);
-            RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+                mAdapter.Update(searchedMountains);
+                mListView.Adapter = mAdapter;
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
         }
-
+        
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.actionbar, menu);

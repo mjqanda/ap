@@ -4,7 +4,7 @@ using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-
+using System;
 
 namespace Akyat.Pinas.Activities
 {
@@ -45,7 +45,7 @@ namespace Akyat.Pinas.Activities
 
             
                 var intent = new Intent(this, typeof(MainT2B));
-               
+           
                 StartActivity(intent);
             };
 
@@ -53,14 +53,14 @@ namespace Akyat.Pinas.Activities
             btnNoTrace.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(LeaveNoTraceAct));
-                
+        
                 StartActivity(intent);
             };
 
             btnMountainMap.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(MountainMapAct));
-             
+          
                 StartActivity(intent);
             };
 
@@ -69,7 +69,7 @@ namespace Akyat.Pinas.Activities
             {
                 
                 var resultTable = dbr.CreateTableSettings();
-              
+            
                 var intent = new Intent(this, typeof(SettingsAct));
                
                 StartActivity(intent);

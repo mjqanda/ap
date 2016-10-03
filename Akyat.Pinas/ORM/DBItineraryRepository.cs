@@ -54,7 +54,7 @@ namespace Akyat.Pinas.ORM
                item.Itinerary = itinerary;
                 
                 db.Insert(item);
-                return "Record Added";
+                return "Itinerary Added";
             }
             catch(Exception ex)
             {
@@ -65,7 +65,13 @@ namespace Akyat.Pinas.ORM
 
                 item.Itinerary = itinerary;
                 db.Update(item);
-                return "record updated";
+                return "Itinerary Updated";
+
+
+
+
+
+
             }
         }
 
@@ -91,14 +97,14 @@ namespace Akyat.Pinas.ORM
 
             item.Itinerary = itinerary;
             db.Update(item);
-            return "record updated";
+            return "Itinerary Updated";
         }
 
         public string CreateDBChecklist()
         {
             var output = "";
             output += "";
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
 
             var db = new SQLiteConnection(dbPath);
             output += "";
@@ -109,7 +115,7 @@ namespace Akyat.Pinas.ORM
         {
             try
             {
-                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
 
                 var db = new SQLiteConnection(dbPath);
 
@@ -129,7 +135,7 @@ namespace Akyat.Pinas.ORM
             try
             {
 
-                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
 
                 var db = new SQLiteConnection(dbPath);
                 ChecklistClass item = new ChecklistClass();
@@ -142,7 +148,7 @@ namespace Akyat.Pinas.ORM
             }
             catch (Exception ex)
             {
-                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
                 var db = new SQLiteConnection(dbPath);
 
                 var item = db.Get<ChecklistClass>(name);
@@ -155,7 +161,7 @@ namespace Akyat.Pinas.ORM
 
         public string GetRecordChecklist(string name)
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
             var db = new SQLiteConnection(dbPath);
           string outputValue;
 
@@ -168,7 +174,7 @@ namespace Akyat.Pinas.ORM
         }
         public string GetRecordPapel()
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormChecklist.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
             var db = new SQLiteConnection(dbPath);
             string outputValue = "";
 
@@ -195,7 +201,7 @@ namespace Akyat.Pinas.ORM
         {
             var output = "";
             output += "";
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
 
             var db = new SQLiteConnection(dbPath);
             output += "";
@@ -205,7 +211,7 @@ namespace Akyat.Pinas.ORM
         {
             try
             {
-                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
 
                 var db = new SQLiteConnection(dbPath);
 
@@ -224,7 +230,7 @@ namespace Akyat.Pinas.ORM
             try
             {
 
-                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
 
                 var db = new SQLiteConnection(dbPath);
                 settingsClass item = new settingsClass();
@@ -237,7 +243,7 @@ namespace Akyat.Pinas.ORM
             }
             catch (Exception ex)
             {
-                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
                 var db = new SQLiteConnection(dbPath);
 
                 var item = db.Get<settingsClass>(type);
@@ -250,7 +256,7 @@ namespace Akyat.Pinas.ORM
 
         public string GetRecordSettings(string type)
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormSettings.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
             var db = new SQLiteConnection(dbPath);
             string outputValue;
 
@@ -263,5 +269,24 @@ namespace Akyat.Pinas.ORM
         }
 
 
-    }
+       
+            
+        }
+        
+
+
+
+
+
+
+
+
+
+
+    
 }
+
+
+
+
+

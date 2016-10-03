@@ -14,186 +14,218 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-           
             <TextView
                 android:text="Personal Equipment"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
+                android:textColor="#000"
                 android:textStyle="bold"
                 android:paddingTop="15dp" />
             <CheckBox
-                android:text="backpack"
+                android:text="Backpack"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbBackpack" />
             <CheckBox
-                android:text="boots"
+                android:text="Boots"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbBoots" />
             <CheckBox
-                android:text="plastic bags and trash bag"
+                android:text="Plastic bags and trash bag"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbPlasticBags" />
             <CheckBox
-                android:text="toiletries"
+                android:text="Toiletries"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbToiletries" />
             <CheckBox
-                android:text="outdoor clothes"
+                android:text="Outdoor clothes"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbOutdoorClothes" />
             <CheckBox
-                android:text="trail food"
+                android:text="Trail food"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbTrailFood" />
             <CheckBox
-                android:text="packed lunch"
+                android:text="Packed lunch"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbPackedLunch" />
             <CheckBox
-                android:text="trail water and sports drink"
+                android:text="Trail water and sports drink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#000"
                 android:id="@+id/cbTrailWater" />
             <CheckBox
-                android:text="first aid kit"
+                android:text="Frst aid kit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#000"
                 android:id="@+id/cbFirstAidKit" />
             <CheckBox
-                android:text="survival kit"
+                android:text="Survival kit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#000"
                 android:id="@+id/cbSurvivalKit" />
             <CheckBox
-                android:text="mess kit"
+                android:text="Mess kit"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbMessKit" />
             <CheckBox
-                android:text="drinking cup"
+                android:text="Drinking cup"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbDrinkingCup" />
             <CheckBox
-                android:text="spoon and fork"
+                android:text="Spoon and fork"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbSpoonFork" />
             <CheckBox
-                android:text="dog tag / identification"
+                android:text="Dog tag / identification"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbIdentification" />
             <CheckBox
-                android:text="whistle"
+                android:text="Whistle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#000"
                 android:id="@+id/cbWhistle" />
             <CheckBox
-                android:text="raingear"
+                android:text="Raingear"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbRainGear" />
             <CheckBox
-                android:text="windbreakter / jacket"
+                android:text="Windbreakter / jacket"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbJacket" />
             <CheckBox
-                android:text="sun protection"
+                android:text="Sun protection"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbSunProtection" />
             <CheckBox
-                android:text="head lamp / flashlight"
+                android:text="Head lamp / flashlight"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbFlashlight" />
             <CheckBox
-                android:text="folding knife / multitool"
+                android:text="Folding knife / multitool"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbMultitool" />
             <CheckBox
-                android:text="mobile phone"
+                android:text="Mobile phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#000"
                 android:id="@+id/cbMobilePhone" />
             <CheckBox
-                android:text="camera and batteries"
+                android:text="Camera and batteries"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbCameraBatteries" />
             <CheckBox
-                android:text="trekking pole"
+                android:text="Trekking pole"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#000"
                 android:id="@+id/cbTrekkingPole" />
             <TextView
                 android:text="Camp Equipment"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
+                android:textColor="#000"
                 android:textStyle="bold"
                 android:paddingTop="15dp" />
             <CheckBox
-                android:text="sleeping bag / blanket"
+                android:text="Sleeping bag / blanket"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbBlanket" />
             <CheckBox
-                android:text="extra clothes"
+                android:text="Extra clothes"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbExtraClothes" />
             <CheckBox
-                android:text="sandals / slippers"
+                android:text="Sandals / slippers"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbSandals" />
             <CheckBox
-                android:text="camp water and container"
+                android:text="Camp water and container"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbCampWater" />
             <CheckBox
-                android:text="pre-cooked food"
+                android:text="Pre-cooked food"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbPrecookedFood" />
             <CheckBox
-                android:text="rice and eggs"
+                android:text="Rice and eggs"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbRiceEggs" />
             <CheckBox
-                android:text="tying strings"
+                android:text="Tying strings"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbTyingString" />
             <CheckBox
-                android:text="stove fuel"
+                android:text="Stove fuel"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbStoveFuel" />
             <CheckBox
-                android:text="lighter"
+                android:text="Lighter"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbLighter" />
             <CheckBox
-                android:text="waterproofed matches"
+                android:text="Waterproofed matches"
                 android:layout_width="match_parent"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbMatches" />
             <TextView
@@ -201,72 +233,85 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFF00"
+                android:textColor="#000"
                 android:textStyle="bold"
                 android:paddingTop="15dp" />
             <CheckBox
-                android:text="bolo"
+                android:text="Bolo"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbBolo" />
             <CheckBox
-                android:text="map and compass"
+                android:text="Map and compass"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbMapCompass" />
             <CheckBox
-                android:text="stove"
+                android:text="Stove"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbStove" />
             <CheckBox
-                android:text="cook set"
+                android:text="Cook set"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbCookset" />
             <CheckBox
-                android:text="club flag"
+                android:text="Club flag"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbFlag" />
             <CheckBox
-                android:text="tent"
+                android:text="Tent"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbTent" />
             <CheckBox
-                android:text="groundsheet"
+                android:text="Groundsheet"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbGroundsheet" />
             <CheckBox
-                android:text="rope"
+                android:text="Rope"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbRope" />
             <CheckBox
-                android:text="trowel"
+                android:text="Towel"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cbTrowel" />
-          <TextView
-               android:text="Others:"
-               android:textAppearance="?android:attr/textAppearanceMedium"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textColor="#FFFF00"
-               android:textStyle="bold"
-               android:paddingTop="15dp" />
+            <TextView
+                android:text="Others:"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="15dp" />
             <EditText
                 android:layout_width="match_parent"
+                android:textColor="#000"
+                android:hint="Type Others....."
                 android:layout_height="wrap_content"
-                android:id="@+id/txtOthers" 
+                android:id="@+id/txtOthers"
                 android:background="@drawable/btn_bg_transparent" />
             <Button
-                android:text="SAVE"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnSave" />
+                android:layout_width="149.0dp"
+                android:layout_height="33.5dp"
+                android:background="@drawable/savebtn"
+                android:id="@+id/btnSave"
+                android:layout_marginTop="17.5dp"
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
