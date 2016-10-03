@@ -2618,9 +2618,6 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f050033
 			public const int Hello = 2131034163;
 			
-			// aapt resource value: 0x7f05003c
-			public const int PoweredBy = 2131034172;
-			
 			// aapt resource value: 0x7f05001f
 			public const int abc_action_bar_home_description = 2131034143;
 			
@@ -2794,6 +2791,9 @@ namespace Akyat.Pinas
 			
 			// aapt resource value: 0x7f050032
 			public const int status_bar_notification_info_overflow = 2131034162;
+			
+			// aapt resource value: 0x7f05003c
+			public const int styled_welcome_message = 2131034172;
 			
 			static String()
 			{
