@@ -26,7 +26,6 @@ namespace Akyat.Pinas
             mContext = context;
             mRowLayout = rowLayout;
             mtList = mList;
-
         }
 
         public override int Count => mtList.Count;
