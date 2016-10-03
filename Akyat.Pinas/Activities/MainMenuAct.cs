@@ -34,6 +34,7 @@ namespace Akyat.Pinas.Activities
             btnMountainList.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof (MountainListAct));
+               
                 StartActivity(intent);
             };
 
@@ -42,8 +43,9 @@ namespace Akyat.Pinas.Activities
                
                 var resultTable = dbr.CreateTableChecklist();
 
-                Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
+            
                 var intent = new Intent(this, typeof(MainT2B));
+               
                 StartActivity(intent);
             };
 
@@ -51,13 +53,15 @@ namespace Akyat.Pinas.Activities
             btnNoTrace.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(LeaveNoTraceAct));
+                
                 StartActivity(intent);
             };
 
             btnMountainMap.Click += (sender, e) =>
             {
-                var i = new Intent(this, typeof(MountainMapAct));
-                StartActivity(i);
+                var intent = new Intent(this, typeof(MountainMapAct));
+             
+                StartActivity(intent);
             };
 
 
@@ -65,8 +69,9 @@ namespace Akyat.Pinas.Activities
             {
                 
                 var resultTable = dbr.CreateTableSettings();
-                Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
+              
                 var intent = new Intent(this, typeof(SettingsAct));
+               
                 StartActivity(intent);
             };
 

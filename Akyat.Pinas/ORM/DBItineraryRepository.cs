@@ -54,7 +54,7 @@ namespace Akyat.Pinas.ORM
                item.Itinerary = itinerary;
                 
                 db.Insert(item);
-                return "Record Added";
+                return "Itinerary Added";
             }
             catch(Exception ex)
             {
@@ -65,7 +65,7 @@ namespace Akyat.Pinas.ORM
 
                 item.Itinerary = itinerary;
                 db.Update(item);
-                return "record updated";
+                return "Itinerary Updated";
 
 
 
@@ -97,7 +97,7 @@ namespace Akyat.Pinas.ORM
 
             item.Itinerary = itinerary;
             db.Update(item);
-            return "record updated";
+            return "Itinerary Updated";
         }
 
         public string CreateDBChecklist()
@@ -269,5 +269,24 @@ namespace Akyat.Pinas.ORM
         }
 
 
+       
+            
+        }
+        
+
+
+
+
+
+
+
+
+
+
     }
 }
+
+
+
+
+
