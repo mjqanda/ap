@@ -12,7 +12,7 @@
         android:id="@+id/imageButtonAdd"
         android:background="@drawable/addttb"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="129.0dp" />
+        android:layout_marginTop="115.0dp" />
     <ScrollView
         android:layout_width="380.5dp"
         android:layout_height="418.0dp"

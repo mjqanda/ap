@@ -18,4 +18,9 @@
         android:layout_height="217.5dp"
         android:id="@+id/txtEditItinerary"
         android:background="@drawable/btn_bg_transparent" />
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave" />
 </LinearLayout>

@@ -42,10 +42,38 @@ namespace Akyat.Pinas.Activities
             add.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(ThingsToBringAct));
-                StartActivity(intent);
+                StartActivityForResult(intent, 1);
             };
 
 
+        }
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+
+
+            //when regester activity retrun data, it will be execute 
+
+            if (requestCode == 1 && resultCode == Result.Ok)
+            {
+
+                TextView txtList = FindViewById<TextView>(Resource.Id.txtList);
+               
+                try
+                {
+
+                    DBItineraryRepository dbr = new DBItineraryRepository();
+                    string result = dbr.GetRecordPapel();
+                  string  output = result;
+                    txtList.Text = output;
+                }
+                catch (Exception ex)
+                {
+                    Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
+                }
+                
+
+
+            }
         }
     }
 }

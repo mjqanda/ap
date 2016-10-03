@@ -40,4 +40,5 @@
         android:layout_height="85dp"
         android:id="@+id/btnSetting"
         android:background="@drawable/btn_bg_transparent" />
+
 </LinearLayout>

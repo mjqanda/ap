@@ -13,7 +13,7 @@
 
       <stroke
         android:width="3dp"
-        android:color="#d2d2d2">
+        android:color="#008A2E">
       </stroke>
 
       <corners
@@ -37,7 +37,7 @@
 
       <stroke
        android:width="3dp"
-       android:color="#f4ff79">
+       android:color="#D2D2D2">
       </stroke>
       
       <corners
