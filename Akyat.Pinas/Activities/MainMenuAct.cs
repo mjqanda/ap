@@ -39,7 +39,7 @@ namespace Akyat.Pinas.Activities
                 var result = dbr.CreateDBChecklist();
                 var resultTable = dbr.CreateTableChecklist();
 
-                Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
+                
                 var intent = new Intent(this, typeof(MainT2B));
                 StartActivity(intent);
             };
@@ -63,7 +63,7 @@ namespace Akyat.Pinas.Activities
                 DBItineraryRepository dbr = new DBItineraryRepository();
                 var result = dbr.CreateDBSettings();
                 var resultTable = dbr.CreateTableSettings();
-                Toast.MakeText(this, result + resultTable, ToastLength.Short).Show();
+               
                 var intent = new Intent(this, typeof(SettingsAct));
                 StartActivity(intent);
             };

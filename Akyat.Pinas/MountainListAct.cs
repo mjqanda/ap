@@ -57,7 +57,12 @@ namespace Akyat.Pinas
             mt = mMountains[pos];
             i = new Intent(this, typeof(DetailActivity));
             
-            i.PutExtra("IMG", mt.MtImg00);
+            i.PutExtra("IMG00", mt.MtImg00);
+            i.PutExtra("IMG01", mt.MtImg01);
+            i.PutExtra("IMG02", mt.MtImg02);
+            i.PutExtra("IMG03", mt.MtImg03);
+            i.PutExtra("IMG04", mt.MtImg04);
+            i.PutExtra("IMG05", mt.MtImg05);
             i.PutExtra("MTNAME", mt.MtName);
             i.PutExtra("LOCATION", mt.Location);
             i.PutExtra("JUMPOFF", mt.JumpOff);
@@ -75,7 +80,7 @@ namespace Akyat.Pinas
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 //|| mountain.Masl.Contains(mSearch.Text)
                                                 select mountain).ToList();
-            
+           
             //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
             //mListView.Adapter = mAdapter;
             mAdapter.Update(searchedMountains);

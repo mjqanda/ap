@@ -66,12 +66,6 @@ namespace Akyat.Pinas.ORM
                 item.Itinerary = itinerary;
                 db.Update(item);
                 return "record updated";
-
-
-
-
-
-
             }
         }
 
