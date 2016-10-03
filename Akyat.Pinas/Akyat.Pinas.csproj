@@ -159,9 +159,6 @@
     <AndroidResource Include="Resources\layout\MainT2BLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\weatherCheckLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\myWebViewLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -259,9 +256,6 @@
     <AndroidResource Include="Resources\values\themes.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\mtListBG.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_action_overflow.png" />
   </ItemGroup>
   <ItemGroup>
@@ -269,15 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\itenerarybtn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\mainmenubg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\leaventbg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\things2bbg.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MountainsActivities\" />
@@ -307,16 +292,18 @@
     <AndroidResource Include="Resources\drawable\lnticon6.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\settingsbg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\MainT2Bg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\itineraryBG.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="PluginsHelp\GeolocatorReadme.txt" />
+    <AndroidResource Include="Resources\drawable-nodpi\actionbarbg.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\itineraryBG.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\leaventbg.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\mainmenubg.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\MainT2Bg.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\mtListBG.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\settingsbg.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\things2bbg.png" />
+    <AndroidResource Include="Resources\drawable\aboutbtn.png" />
+    <AndroidResource Include="Resources\drawable\savebtn.png" />
+    <AndroidResource Include="Resources\drawable\yourIt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />
