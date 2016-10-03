@@ -44,7 +44,9 @@ namespace Akyat.Pinas.Activities
 
                 var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", name);
-                StartActivity(intent);
+                SetResult(Result.Ok, intent);
+
+               
                 Finish();
             });
 

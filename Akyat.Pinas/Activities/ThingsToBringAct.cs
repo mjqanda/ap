@@ -1082,7 +1082,7 @@ namespace Akyat.Pinas.Activities
 
                 Toast.MakeText(this, result, ToastLength.Short).Show();
                 var intent = new Intent(this, typeof(MainT2B));
-                StartActivity(intent);
+                SetResult(Result.Ok, intent);
                 Finish();
             };
             

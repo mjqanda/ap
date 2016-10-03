@@ -128,8 +128,7 @@ namespace Akyat.Pinas.Activities
                 dbr.InsertRecordSettings(hybrid, hybridValue);
 
                 Toast.MakeText(this, result, ToastLength.Short).Show();
-                var intent = new Intent(this, typeof(MainMenuAct));
-                StartActivity(intent);
+                
                 Finish();
             };
         }

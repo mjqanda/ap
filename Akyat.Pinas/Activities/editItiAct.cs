@@ -14,7 +14,7 @@ using Akyat.Pinas.ORM;
 namespace Akyat.Pinas.Activities
 {
     [Activity(Theme = "@style/Theme.NoTitle", Label = "editItiAct")]
-    public class EditItiAct : Activity
+    public class editItiAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {

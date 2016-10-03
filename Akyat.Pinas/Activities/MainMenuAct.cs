@@ -8,7 +8,7 @@ using Android.Widget;
 
 namespace Akyat.Pinas.Activities
 {
-    [Activity( Theme = "@style/Theme.NoTitle", Label="AP", MainLauncher = true, Icon = "@drawable/Icon")]
+    [Activity( Theme = "@style/Theme.NoTitle", Label="AP")]
     public class MainMenuAct : Activity
     {
 
@@ -19,7 +19,11 @@ namespace Akyat.Pinas.Activities
          
             SetContentView(Resource.Layout.mainMenuLayout);
             //view.playSoundEffect(SoundEffectConstants.CLICK);
-            
+
+            DBItineraryRepository dbr = new DBItineraryRepository();
+            var result = dbr.CreateDB();
+
+
             Button btnMountainList = FindViewById<Button>(Resource.Id.btnMountainList);
             Button btnThingsToBring = FindViewById<Button>(Resource.Id.btnThingsToBring);
             Button btnNoTrace = FindViewById<Button>(Resource.Id.btnLeaveNoTrace);
@@ -30,17 +34,18 @@ namespace Akyat.Pinas.Activities
             btnMountainList.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof (MountainListAct));
+               
                 StartActivity(intent);
             };
 
             btnThingsToBring.Click += (sender, e) =>
             {
-                DBItineraryRepository dbr = new DBItineraryRepository();
-                var result = dbr.CreateDBChecklist();
+               
                 var resultTable = dbr.CreateTableChecklist();
 
-                
+            
                 var intent = new Intent(this, typeof(MainT2B));
+               
                 StartActivity(intent);
             };
 
@@ -48,23 +53,25 @@ namespace Akyat.Pinas.Activities
             btnNoTrace.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(LeaveNoTraceAct));
+                
                 StartActivity(intent);
             };
 
             btnMountainMap.Click += (sender, e) =>
             {
-                var i = new Intent(this, typeof(MountainMapAct));
-                StartActivity(i);
+                var intent = new Intent(this, typeof(MountainMapAct));
+             
+                StartActivity(intent);
             };
 
 
             btnSettings.Click += (sender, e) =>
             {
-                DBItineraryRepository dbr = new DBItineraryRepository();
-                var result = dbr.CreateDBSettings();
+                
                 var resultTable = dbr.CreateTableSettings();
-               
+              
                 var intent = new Intent(this, typeof(SettingsAct));
+               
                 StartActivity(intent);
             };
 
