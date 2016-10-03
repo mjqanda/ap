@@ -6,9 +6,11 @@
     android:minWidth="25px"
     android:minHeight="25px">
     <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="155dp"
+        android:src="@drawable/batulao"
+        android:layout_width="wrap_content"
         android:layout_height="70.0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         android:id="@+id/mtimg" />
     <LinearLayout
         android:orientation="vertical"
@@ -16,13 +18,13 @@
         android:layout_height="match_parent"
         android:minWidth="25px"
         android:minHeight="25px"
-        android:background="@drawable/yellowbg"
+        android:background="#f4ff79"
         android:layout_marginBottom="0.0dp">
         <TextView
             android:text="Small Text"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:gravity="center"
-            android:textColor="#000000"
+            android:textColor="#000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/mtnametxt" />
@@ -31,7 +33,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="#000"
             android:gravity="center"
             android:id="@+id/masltxt" />
         <TextView
@@ -40,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textColor="#000000"
+            android:textColor="#000"
             android:id="@+id/difficultytxt" />
     </LinearLayout>
 </LinearLayout>

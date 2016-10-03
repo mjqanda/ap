@@ -10,18 +10,23 @@ namespace Akyat.Pinas
         public string MtName { get; set; }
         public int Masl { get; set; }
         public int Difficulty { get; set; }
-        public int MtImg { get; set; }
-        public string Region { get; set; } 
-        public string Location01 { get; set; }
-        public string Location02 { get; set; }
-        public string Description01 { get; set; }
-        public string Description02 { get; set; }
-        public string Trail01 { get; set; }
-        public string Trail02 { get; set; }
-        public string Itenerary01 { get; set; }
-        public string Iterenary02 { get; set; }
-
-}
+        public int MtImg00 { get; set; }
+        public int MtImg01 { get; set; }
+        public int MtImg02 { get; set; }
+        public int MtImg03 { get; set; }
+        public int MtImg04 { get; set; }
+        public int MtImg05 { get; set; }
+        public int MtImg06 { get; set; }
+        public int MtImg07 { get; set; }
+        public int MtImg08 { get; set; }
+        public int MtImg09 { get; set; }
+        public string Location { get; set; } 
+        public string JumpOff { get; set; }
+        public string Description { get; set; }
+        public string Background { get; set; }
+        public string Itinerary { get; set; }
+        public string Practicalities { get; set; }
+    }
 
     
 }

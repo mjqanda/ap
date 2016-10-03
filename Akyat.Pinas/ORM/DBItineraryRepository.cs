@@ -283,7 +283,7 @@ namespace Akyat.Pinas.ORM
 
 
 
-    }
+    
 }
 
 

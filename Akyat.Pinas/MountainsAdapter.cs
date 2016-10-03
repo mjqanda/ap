@@ -18,6 +18,7 @@ namespace Akyat.Pinas
         private Context mContext;
         private int mRowLayout;
         private List<Mountain> mtList;
+        Activity context;
 
 
         public MountainsAdapter(Context context, int rowLayout, List<Mountain> mList)
@@ -36,7 +37,19 @@ namespace Akyat.Pinas
             return position;
         }
 
+        public  void Update(List<Mountain> mLists)
+        {
+            mtList.Clear();
+            mtList.AddRange(mLists);
+            NotifyDataSetChanged();
+        }
 
+        public void src(List<Mountain> mLists)
+        {
+            
+            mtList.AddRange(mLists);
+            NotifyDataSetChanged();
+        }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             View row = convertView;
@@ -44,7 +57,8 @@ namespace Akyat.Pinas
             var masl = " MASL"; var diff = "Difficulty: "; var mt = "Mt. "; var over = "/9";
             if (row == null)
             {
-                row = LayoutInflater.From(mContext).Inflate(mRowLayout, parent, false);
+               row = LayoutInflater.From(mContext).Inflate(mRowLayout, parent, false);
+               // convertView = context.LayoutInflater.Inflate(Resource.Layout.ml_model, null);
             }
             TextView mtnametxt = row.FindViewById<TextView>(Resource.Id.mtnametxt);
             mtnametxt.Text = mt+mtList[position].MtName;
@@ -56,11 +70,9 @@ namespace Akyat.Pinas
             Difficultytxt.Text =  diff+mtList[position].Difficulty+over;
 
             ImageView Mtimg = row.FindViewById<ImageView>(Resource.Id.mtimg);
-            Mtimg.SetImageResource(mtList[position].MtImg);
+            Mtimg.SetImageResource(mtList[position].MtImg00);
 
-            mtnametxt.SetTextColor(Color.Black);
-            Masltxt.SetTextColor(Color.Black);
-            Difficultytxt.SetTextColor(Color.Black);
+            
             return row;
         }
     }

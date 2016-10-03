@@ -35,7 +35,7 @@
             android:textColor="@android:color/black" />
         <RadioButton
             android:text="Satellite"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rbSatellite"
             android:textColor="@android:color/black" />
@@ -47,8 +47,18 @@
             android:textColor="@android:color/black" />
     </RadioGroup>
     <Button
-        android:text="Save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSave" />
+        android:layout_width="179.0dp"
+        android:layout_height="42.0dp"
+        android:background="@drawable/savebtn"
+        android:id="@+id/btnSave"
+        android:layout_marginTop="17.5dp"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:layout_width="240.5dp"
+        android:layout_height="48.0dp"
+        android:paddingTop="25dp"
+        android:background="@drawable/aboutbtn"
+        android:id="@+id/btnAbout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="115.5dp" />
 </LinearLayout>
