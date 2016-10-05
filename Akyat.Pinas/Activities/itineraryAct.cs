@@ -35,7 +35,6 @@ namespace Akyat.Pinas.ORM
             }
             catch (Exception ex)
             {
-                Toast.MakeText(this,ex.Message , ToastLength.Short).Show();
             }
 
             Button btnAddIti = FindViewById<Button>(Resource.Id.btnAddIti);

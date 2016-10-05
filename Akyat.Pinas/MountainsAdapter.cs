@@ -13,7 +13,7 @@ using Android.Graphics;
 
 namespace Akyat.Pinas
 {
-    class MountainsAdapter : BaseAdapter<Mountain>
+    sealed class MountainsAdapter : BaseAdapter<Mountain>
     {
         private Context mContext;
         private int mRowLayout;
@@ -43,37 +43,51 @@ namespace Akyat.Pinas
             mtList.AddRange(mLists);
             NotifyDataSetChanged();
         }
-
-        public void src(List<Mountain> mLists)
+        public void IUpdate(List<Mountain> mLists)
+        {
+         
+            mtList.Clear();
+            mtList.AddRange(mLists);
+            NotifyDataSetChanged();
+            
+        }
+        public void ShowAll(List<Mountain> mLists)
         {
             
-            mtList.AddRange(mLists);
+            this.mtList = mLists;
+            //mtList.Clear();
+            
             NotifyDataSetChanged();
         }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
+            Typeface tf = Typeface.CreateFromAsset(mContext.Assets, "REFSAN.TTF");
             View row = convertView;
             //added txt to every mountain
-            var masl = " MASL"; var diff = "Difficulty: "; var mt = "Mt. "; var over = "/9";
             if (row == null)
             {
-               row = LayoutInflater.From(mContext).Inflate(mRowLayout, parent, false);
-               // convertView = context.LayoutInflater.Inflate(Resource.Layout.ml_model, null);
+                row = LayoutInflater.From(mContext).Inflate(mRowLayout, parent, false);
+                //convertView = context.LayoutInflater.Inflate(Resource.Layout.ml_model, null);
             }
             TextView mtnametxt = row.FindViewById<TextView>(Resource.Id.mtnametxt);
-            mtnametxt.Text = mt+mtList[position].MtName;
-                
+            mtnametxt.Text = "Mt. " + mtList[position].MtName;
+
             TextView Masltxt = row.FindViewById<TextView>(Resource.Id.masltxt);
-            Masltxt.Text = mtList[position].Masl+masl;
+            Masltxt.Text = mtList[position].Masl + " MASL";
 
             TextView Difficultytxt = row.FindViewById<TextView>(Resource.Id.difficultytxt);
-            Difficultytxt.Text =  diff+mtList[position].Difficulty+over;
+            Difficultytxt.Text = "Difficulty: " + mtList[position].Difficulty + "/9";
 
             ImageView Mtimg = row.FindViewById<ImageView>(Resource.Id.mtimg);
             Mtimg.SetImageResource(mtList[position].MtImg00);
 
-            
+            mtnametxt.SetTypeface(tf, TypefaceStyle.Bold);
+            Masltxt.SetTypeface(tf, TypefaceStyle.Bold);
+            Difficultytxt.SetTypeface(tf, TypefaceStyle.Bold);
+
+            NotifyDataSetChanged();
             return row;
         }
+
     }
 }

@@ -26,9 +26,7 @@ namespace Akyat.Pinas
         private bool mAnimatedDown;
         private bool mIsAnimating;
         private MountainsAdapter mAdapter;
-    
-
-      
+        private Context context;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -43,10 +41,10 @@ namespace Akyat.Pinas
             //mListView.FastScrollEnabled = true;
             mMountains = MountainsData.MountainList;
             mListView.ItemClick += mListView_ItemClick;
-
+            //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
             mSearch.Alpha = 0;
             mContainer.BringToFront();
-
+            
             mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
             mListView.Adapter = mAdapter;
         }
@@ -62,7 +60,12 @@ namespace Akyat.Pinas
             mt = mMountains[pos];
             i = new Intent(this, typeof(DetailActivity));
             
-            i.PutExtra("IMG", mt.MtImg00);
+            i.PutExtra("IMG0", mt.MtImg00);
+            i.PutExtra("IMG1", mt.MtImg01);
+            i.PutExtra("IMG2", mt.MtImg02);
+            i.PutExtra("IMG3", mt.MtImg03);
+            i.PutExtra("IMG4", mt.MtImg04);
+            i.PutExtra("IMG5", mt.MtImg05);
             i.PutExtra("MTNAME", mt.MtName);
             i.PutExtra("LOCATION", mt.Location);
             i.PutExtra("JUMPOFF", mt.JumpOff);
@@ -78,11 +81,27 @@ namespace Akyat.Pinas
         {
             List<Mountain> searchedMountains = (from mountain in mMountains
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
-                                                //|| mountain.Masl.Contains(mSearch.Text)
                                                 select mountain).ToList();
-                mAdapter.Update(searchedMountains);
-                mListView.Adapter = mAdapter;
-                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+
+            //mListView.Invalidate();
+           // mAdapter.GetView(context,Resource.Layout.ml_model,searchedMountains);
+            //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
+            //mListView.Adapter = mAdapter;
+          
+            //RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+            //mListView.Adapter = mAdapter;
+
+
+            //List<Mountain> searchedMountains = (from mountain in mMountains
+            //                          where mountain.MtName.ToUpper().Contains(mSearch.Text.ToUpper())
+            //                          select mountain).ToList();
+
+
+            //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
+            mAdapter.Update(searchedMountains);
+            //mListView.Adapter = mAdapter;
+            //mListView.InvalidateViews();
+            RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
         }
         
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -107,7 +126,6 @@ namespace Akyat.Pinas
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.MtName).ToList());
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
-                
 
             }
             else if (id == Resource.Id.action3)
@@ -138,9 +156,41 @@ namespace Akyat.Pinas
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
 
             }
-            else if (id == Resource.Id.action7)
+            else if (id == Resource.Id.action7) //show LUZON
             {
-                Toast.MakeText(this, "Coming Soon", ToastLength.Short).Show();
+                List<Mountain> filteredMountains = (from mountain in mMountains
+                                                    where mountain.Island == 1
+                                                    orderby mountain.MtName
+                                                    select mountain).ToList();
+                
+                mAdapter.Update(filteredMountains);
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+            }
+            else if (id == Resource.Id.action8) //show Visayas
+            {
+                List<Mountain> filteredMountains = (mMountains.Where(mountain => mountain.Island == 2)
+                    .OrderBy(mountain => mountain.MtName)).ToList();
+
+                mAdapter.Update(filteredMountains);
+                //  InvalidateOptionsMenu();
+                //mAdapter.Reinstantiate(filteredMountains);
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+            }
+            else if (id == Resource.Id.action9) //show Mindanao
+            {
+                List<Mountain> filteredMountains = (from mountain in mMountains 
+                                                    where mountain.Island == 3
+                                                    orderby mountain.MtName
+                                                    select mountain).ToList();
+                //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mAdapter.Update(filteredMountains);
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+            }
+            else if (id == Resource.Id.actionall)
+            {
+                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
+                mAdapter.ShowAll(filteredMountains);
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
 
 
@@ -149,7 +199,7 @@ namespace Akyat.Pinas
                 case Resource.Id.search:
                     //Search icon has been clicked
                     mSearch.Visibility = ViewStates.Visible;
-                    if (mIsAnimating)
+                    if (mIsAnimating)   
                     {
                         return true;
                     }

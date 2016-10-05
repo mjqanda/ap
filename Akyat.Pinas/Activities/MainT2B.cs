@@ -28,12 +28,12 @@ namespace Akyat.Pinas.Activities
 
             try
             {
-               string result = dbr.GetRecordPapel();
+                string result = dbr.GetRecordPapel();
                 output = result;
             }
             catch (Exception ex)
             {
-                Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
+                
             }
 
             txtList.Text = output;

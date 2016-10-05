@@ -160,8 +160,8 @@ namespace Akyat.Pinas.Activities
 
             try
             {
-              var backpackResult = dbr.GetRecordChecklist(backpack);
-                  backpackValue = backpackResult;
+                var backpackResult = dbr.GetRecordChecklist(backpack);
+                backpackValue = backpackResult;
                 var bootsResult = dbr.GetRecordChecklist(boots);
                 bootsValue = bootsResult;
                 var plasticbagResult = dbr.GetRecordChecklist(plasticbag);
@@ -175,7 +175,7 @@ namespace Akyat.Pinas.Activities
                 var firstaidkitResult = dbr.GetRecordChecklist(firstaidkit);
                 firstaidkitValue = firstaidkitResult;
                 var survivalkitResult = dbr.GetRecordChecklist(survivalkit);
-                 survivalkitValue = survivalkitResult;
+                survivalkitValue = survivalkitResult;
                 var messkitResult = dbr.GetRecordChecklist(messkit);
                 messkitValue = messkitResult;
                 var drinkingcupResult = dbr.GetRecordChecklist(drinkingcup);
@@ -189,7 +189,7 @@ namespace Akyat.Pinas.Activities
                 var raingearResult = dbr.GetRecordChecklist(raingear);
                 raingearValue = raingearResult;
                 var jacketResult = dbr.GetRecordChecklist(jacket);
-               jacketValue =jacketResult;
+                jacketValue = jacketResult;
                 var packedlunchResult = dbr.GetRecordChecklist(packedlunch);
                 packedlunchValue = packedlunchResult;
                 var trailwaterResult = dbr.GetRecordChecklist(trailwater);
@@ -204,7 +204,7 @@ namespace Akyat.Pinas.Activities
                 mobilephoneValue = mobilephoneResult;
                 var trekkingpoleResult = dbr.GetRecordChecklist(trekkingpole);
                 trekkingpoleValue = trekkingpoleResult;
-               
+
                 var blanketResult = dbr.GetRecordChecklist(blanket);
                 blanketValue = blanketResult;
                 var camerabatteriesResult = dbr.GetRecordChecklist(camerabatteries);
@@ -252,7 +252,7 @@ namespace Akyat.Pinas.Activities
             }
             catch (Exception ex)
             {
-                Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
+                
             }
 
             //implementing the value

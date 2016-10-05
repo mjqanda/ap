@@ -38,6 +38,9 @@ namespace Akyat.Pinas.Activities
             RadioButton rbNormal = FindViewById<RadioButton>(Resource.Id.rbNormal);
             RadioButton rbSatellite = FindViewById<RadioButton>(Resource.Id.rbSatellite);
             RadioButton rbHybrid = FindViewById<RadioButton>(Resource.Id.rbHybrid);
+            Button aboutbuttonn = FindViewById<Button>(Resource.Id.btnAbout);
+
+            aboutbuttonn.Click += Aboutbuttonn_Click;    
             //CheckBox cbsounds = FindViewById<CheckBox>(Resource.Id.sound);
 
             //cbsounds.Click += (o,e) => {
@@ -61,7 +64,7 @@ namespace Akyat.Pinas.Activities
             }
             catch (Exception ex)
             {
-                Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
+                
             }
 
 
@@ -133,6 +136,9 @@ namespace Akyat.Pinas.Activities
             };
         }
 
-        
+        private void Aboutbuttonn_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(AboutUsAct));
+        }
     }
 }

@@ -48,4 +48,21 @@
      android:showAsAction="never"
      android:title="@string/action_7"
     />
+  <item
+    android:id="@+id/action8"
+    android:orderInCategory="107"
+    android:showAsAction="never"
+    android:title="@string/action_8"
+    />
+  <item
+    android:id="@+id/action9"
+    android:orderInCategory="108"
+    android:showAsAction="never"
+    android:title="@string/action_9"/>
+    <item
+    android:id="@+id/actionall"
+    android:orderInCategory="108"
+    android:showAsAction="never"
+    android:title="@string/actionAll"
+    />
 </menu>

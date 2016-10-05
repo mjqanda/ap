@@ -8,7 +8,10 @@
     <string name="action_4">Sort Elevation(from Highest)</string>
     <string name="action_5">Sort Difficulty(from Easiest)</string>
     <string name="action_6">Sort Difficulty(from Most Difficult)</string>
-    <string name="action_7">Sort Luzon-Visayas-Mindanao</string>
-  <string name="styled_welcome_message">We are <b><i>so</i></b> glad to see you.</string>
+    <string name="action_7">Show All Luzon</string>
+    <string name="action_8">Show All Visayas</string>
+    <string name="action_9">Show All Mindanao</string>
+    <string name="actionAll">Show All Mountains</string>
+    <string name="styled_welcome_message">We are <b><i>so</i></b> glad to see you.</string>
 
 </resources>

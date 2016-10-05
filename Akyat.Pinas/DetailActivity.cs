@@ -4,6 +4,7 @@ using Android.Widget;
 using Akyat.Pinas;
 using Akyat.Pinas.ORM;
 using Android.Content;
+using Android.Graphics;
 
 namespace Akyat.Pinas
 {
@@ -11,17 +12,30 @@ namespace Akyat.Pinas
     public class DetailActivity : Activity
     {
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities;
-        private ImageView mtimg;
+        private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.detailLayout);
 
             FindViews();
+            Typeface tf = Typeface.CreateFromAsset(Assets, "REFSAN.TTF");
+            tmtname.SetTypeface(tf, TypefaceStyle.Normal);
+            tmtloc.SetTypeface(tf, TypefaceStyle.Normal);
+            tjumpoff.SetTypeface(tf, TypefaceStyle.Normal);
+            tdesc.SetTypeface(tf, TypefaceStyle.Normal);
+            tbackground.SetTypeface(tf, TypefaceStyle.Normal);
+            titinerary.SetTypeface(tf, TypefaceStyle.Normal);
+
 
             Android.Content.Intent i = this.Intent;
             string iname = i.Extras.GetString("MTNAME");
-            int iimg = i.Extras.GetInt("IMG");
+            int iimg0 = i.Extras.GetInt("IMG0");
+            int iimg1 = i.Extras.GetInt("IMG1");
+            int iimg2 = i.Extras.GetInt("IMG2");
+            int iimg3 = i.Extras.GetInt("IMG3");
+            int iimg4 = i.Extras.GetInt("IMG4");
+            int iimg5 = i.Extras.GetInt("IMG5");
             string ilocation = i.Extras.GetString("LOCATION");
             string ijumpoff = i.Extras.GetString("JUMPOFF");
             string idescription = i.Extras.GetString("DESCRIPTION");
@@ -31,7 +45,12 @@ namespace Akyat.Pinas
            
 
             tmtname.Text = iname;
-            mtimg.SetImageResource(iimg);
+            mtimg0.SetImageResource(iimg0);
+            mtimg1.SetImageResource(iimg1);
+            mtimg2.SetImageResource(iimg2);
+            mtimg3.SetImageResource(iimg3);
+            mtimg4.SetImageResource(iimg4);
+            mtimg5.SetImageResource(iimg5);
             tmtloc.Text = ilocation;
             tjumpoff.Text = ijumpoff;
             tdesc.Text = idescription;
@@ -46,10 +65,7 @@ namespace Akyat.Pinas
             {
                 DBItineraryRepository dbr = new DBItineraryRepository();
                 var result = dbr.CreateTable();
-                Toast.MakeText(this, result, ToastLength.Short).Show();
-
-
-
+                
                 var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", iname);
               
@@ -61,7 +77,12 @@ namespace Akyat.Pinas
         private void FindViews()
         {
             tmtname = FindViewById<TextView>(Resource.Id.mtname);
-            mtimg = FindViewById<ImageView>(Resource.Id.mtimg);
+            mtimg0 = FindViewById<ImageView>(Resource.Id.mtimg00); 
+            mtimg1 = FindViewById<ImageView>(Resource.Id.mtimg01);
+            mtimg2 = FindViewById<ImageView>(Resource.Id.mtimg02);
+            mtimg3 = FindViewById<ImageView>(Resource.Id.mtimg03);
+            mtimg4 = FindViewById<ImageView>(Resource.Id.mtimg04);
+            mtimg5 = FindViewById<ImageView>(Resource.Id.mtimg05);
             tmtloc = FindViewById<TextView>(Resource.Id.locationtxt);
             tjumpoff = FindViewById<TextView>(Resource.Id.jumpofftxt);
             tdesc = FindViewById<TextView>(Resource.Id.descriptiontxt);

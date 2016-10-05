@@ -10,6 +10,7 @@ namespace Akyat.Pinas
         public string MtName { get; set; }
         public int Masl { get; set; }
         public int Difficulty { get; set; }
+        public int Island { get; set; }
         public int MtImg00 { get; set; }
         public int MtImg01 { get; set; }
         public int MtImg02 { get; set; }

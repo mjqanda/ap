@@ -4,18 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/settingsbg">
-    <ImageButton
-        android:background="@drawable/btn_bg_transparent"
-        android:layout_width="match_parent"
-        android:layout_height="116.5dp"
-        android:id="@+id/imageButton1" />
+    <Button
+        android:layout_width="240.5dp"
+        android:layout_height="48.0dp"
+        android:paddingTop="25dp"
+        android:background="@drawable/aboutbtn"
+        android:id="@+id/btnAbout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="126.0dp" />
     <TextView
         android:text="Preffered map type:"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16.5dp" />
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,12 +57,4 @@
         android:id="@+id/btnSave"
         android:layout_marginTop="17.5dp"
         android:layout_gravity="center_horizontal" />
-    <Button
-        android:layout_width="240.5dp"
-        android:layout_height="48.0dp"
-        android:paddingTop="25dp"
-        android:background="@drawable/aboutbtn"
-        android:id="@+id/btnAbout"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="115.5dp" />
 </LinearLayout>
