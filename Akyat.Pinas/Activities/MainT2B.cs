@@ -70,8 +70,6 @@ namespace Akyat.Pinas.Activities
                 {
                     Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
                 }
-                
-
 
             }
         }

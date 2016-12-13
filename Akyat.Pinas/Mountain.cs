@@ -27,7 +27,8 @@ namespace Akyat.Pinas
         public string Background { get; set; }
         public string Itinerary { get; set; }
         public string Practicalities { get; set; }
+        public string Attire { get; set; }
+        public string Ttb { get; set; }
+        public string Note { get; set; }
     }
-
-    
 }

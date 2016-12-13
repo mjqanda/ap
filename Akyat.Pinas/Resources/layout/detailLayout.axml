@@ -14,11 +14,14 @@
         android:fillViewport="false"
         android:layout_marginTop="120.0dp"
         android:layout_marginLeft="13.0dp"
-        android:layout_marginRight="13.0dp">
+        android:layout_marginRight="13.0dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/linearLayout3">
             <ImageView
                 android:id="@+id/mtimg00"
                 android:layout_width="320.0dp"
@@ -28,7 +31,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:id="@+id/linearLayout1">
                 <TextView
                     android:id="@+id/mtname"
                     android:text="MT. BATULAO"
@@ -52,7 +56,8 @@
                     android:layout_height="29.0dp"
                     android:src="@drawable/jumpoff"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="21.0dp" />
+                    android:layout_marginTop="21.0dp"
+                    android:id="@+id/imageView1" />
                 <TextView
                     android:id="@+id/jumpofftxt"
                     android:text="jumpofftxt"
@@ -79,6 +84,46 @@
                     android:paddingTop="15dp"
                     android:textColor="#000"
                     android:gravity="center_horizontal|left" />
+                <TextView
+                    android:text=""
+                    android:textColor="#000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notetxt" />
+                <TextView
+                    android:text="Suggested Attire:"
+                    android:textColor="#000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sgatxt" />
+                <TextView
+                    android:text="attiretxt"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/attiretxt" />
+                <TextView
+                    android:text="Suggested things to bring:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sgttxt" />
+                <TextView
+                    android:text="ttbtxt"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:textColor="#000"
+                    android:id="@+id/ttbtxt" />
                 <Button
                     android:layout_width="215.0dp"
                     android:layout_height="48.0dp"
@@ -112,7 +157,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#000"
-                    android:layout_marginTop="23.5dp" />
+                    android:layout_marginTop="23.5dp"
+                    android:id="@+id/textView1" />
                 <ImageView
                     android:id="@+id/mtimg01"
                     android:layout_width="320.0dp"

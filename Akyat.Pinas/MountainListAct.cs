@@ -73,7 +73,9 @@ namespace Akyat.Pinas
             i.PutExtra("BACKGROUND", mt.Background);
             i.PutExtra("ITINERARY", mt.Itinerary);
             i.PutExtra("PRACTICALITIES", mt.Practicalities);
-            
+            i.PutExtra("ATTIRE", mt.Attire);
+            i.PutExtra("TTB", mt.Ttb);
+
             StartActivity(i);
         }
        

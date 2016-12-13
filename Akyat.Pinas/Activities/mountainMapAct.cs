@@ -72,8 +72,7 @@ namespace Akyat.Pinas.Activities
             markerAltoPeak.SetPosition(new LatLng(11.1061, 124.7097));
             markerAltoPeak.SetTitle("Mt. AltoPeak");
             markerAltoPeak.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
-
-           
+            
 
             MarkerOptions markerApo = new MarkerOptions();
             markerApo.SetPosition(new LatLng(7.030, 125.1633));
@@ -84,8 +83,7 @@ namespace Akyat.Pinas.Activities
             markerArayat.SetPosition(new LatLng(15.20, 120.742));
             markerArayat.SetTitle("Mt. Arayat");
             markerArayat.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
-
-          
+            
 
             MarkerOptions markerDULANGDULANG = new MarkerOptions();
             markerDULANGDULANG.SetPosition(new LatLng(8.09798, 124.9605));
@@ -93,8 +91,6 @@ namespace Akyat.Pinas.Activities
             markerDULANGDULANG.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
 
            
-
-
             MarkerOptions markerBINACAYAN = new MarkerOptions();
             markerBINACAYAN.SetPosition(new LatLng(14.43305, 121.11261));
             markerBINACAYAN.SetTitle("Mt. Binacayan");
@@ -165,8 +161,6 @@ namespace Akyat.Pinas.Activities
             markerManabuPeak.SetTitle("Mt. Manabu Peak");
             markerManabuPeak.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
            
-           
-         
 
             MarkerOptions markerMatutum = new MarkerOptions();
             markerMatutum.SetPosition(new LatLng(6.22 , 125.065));
@@ -193,18 +187,22 @@ namespace Akyat.Pinas.Activities
             markerPulag.SetPosition(new LatLng(16.3458 , 120.5315));
             markerPulag.SetTitle("Mt. Pulag");
             markerPulag.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+
             MarkerOptions markerTaalVolcano = new MarkerOptions();
             markerTaalVolcano.SetPosition(new LatLng(14.00 , 120.591));
             markerTaalVolcano.SetTitle("Mt. Taal Volcano");
             markerTaalVolcano.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+
             MarkerOptions markerTarakRidge = new MarkerOptions();
             markerTarakRidge.SetPosition(new LatLng(14.30357 , 120.30));
             markerTarakRidge.SetTitle("Mt. Tarak Ridge");
             markerTarakRidge.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+
             MarkerOptions markerTayakHill = new MarkerOptions();
             markerTayakHill.SetPosition(new LatLng(14.0688 , 121.420));
             markerTayakHill.SetTitle("Mt. Tayak Hill");
             markerTayakHill.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
+
            
             MarkerOptions markerTalamitam = new MarkerOptions();
             markerTalamitam.SetPosition(new LatLng(14.1078900, 120.7597300));

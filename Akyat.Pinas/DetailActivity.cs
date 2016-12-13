@@ -11,12 +11,13 @@ namespace Akyat.Pinas
     [Activity(Label = "DetailActivity", Theme = "@style/Theme.NoTitle")]
     public class DetailActivity : Activity
     {
-        private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities;
+        private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,tttb,tsga,tsgt,tnote;
         private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.detailLayout);
+
 
             FindViews();
             Typeface tf = Typeface.CreateFromAsset(Assets, "REFSAN.TTF");
@@ -26,6 +27,13 @@ namespace Akyat.Pinas
             tdesc.SetTypeface(tf, TypefaceStyle.Normal);
             tbackground.SetTypeface(tf, TypefaceStyle.Normal);
             titinerary.SetTypeface(tf, TypefaceStyle.Normal);
+            tpracticalities.SetTypeface(tf, TypefaceStyle.Normal);
+            tattire.SetTypeface(tf, TypefaceStyle.Normal);
+            tttb.SetTypeface(tf, TypefaceStyle.Normal);
+            tsga.SetTypeface(tf, TypefaceStyle.Normal);
+            tsgt.SetTypeface(tf, TypefaceStyle.Normal);
+            tnote.SetTypeface(tf, TypefaceStyle.Normal);
+
 
 
             Android.Content.Intent i = this.Intent;
@@ -42,7 +50,9 @@ namespace Akyat.Pinas
             string ibackground = i.Extras.GetString("BACKGROUND");
             string iitinerary = i.Extras.GetString("ITINERARY");
             string ipracticalities = i.Extras.GetString("PRACTICALITIES");
-           
+            string iattire = i.Extras.GetString("ATTIRE");
+            string ittb = i.Extras.GetString("TTB");
+            string inote = i.Extras.GetString("NOTE");
 
             tmtname.Text = iname;
             mtimg0.SetImageResource(iimg0);
@@ -57,6 +67,9 @@ namespace Akyat.Pinas
             tbackground.Text = ibackground;
             titinerary.Text = iitinerary;
             tpracticalities.Text = ipracticalities;
+            tattire.Text = iattire;
+            tttb.Text = ittb;
+            tnote.Text = inote;
          
 
 
@@ -89,7 +102,11 @@ namespace Akyat.Pinas
             tbackground = FindViewById<TextView>(Resource.Id.backgroundtxt);
             titinerary = FindViewById<TextView>(Resource.Id.itinerarytxt);
             tpracticalities = FindViewById<TextView>(Resource.Id.practicalitiestxt);
-
+            tattire = FindViewById<TextView>(Resource.Id.attiretxt);
+            tttb = FindViewById<TextView>(Resource.Id.ttbtxt);
+            tsga = FindViewById<TextView>(Resource.Id.sgatxt);
+            tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
+            tnote = FindViewById<TextView>(Resource.Id.notetxt);
         }
     }
 }
