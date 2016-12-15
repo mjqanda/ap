@@ -16,11 +16,12 @@ using Android.Locations;
 using Android.Util;
 using System.Collections.Generic;
 using System.Linq;
+using static Android.Gms.Maps.GoogleMap;
 
 namespace Akyat.Pinas.Activities
 {
     [Activity(Theme = "@style/Theme.NoTitle", Label = "MountainMapAct")]
-    public class MountainMapAct : Activity, ILocationListener
+    public class MountainMapAct : Activity, ILocationListener ,IOnInfoWindowClickListener
     {
         static readonly string TAG = "X:" + typeof(MountainMapAct).Name;
         TextView _addressText;
@@ -32,8 +33,12 @@ namespace Akyat.Pinas.Activities
 
  Double latitude;
    Double longitude;
+
+
         
-         public void OnLocationChanged(Location location)
+
+
+        public void OnLocationChanged(Location location)
         {
             _currentLocation = location;
 
@@ -48,6 +53,10 @@ namespace Akyat.Pinas.Activities
                 _locationText = string.Format("{0:f6},{1:f6}", _currentLocation.Latitude, _currentLocation.Longitude);
                 latitude = _currentLocation.Latitude;
             longitude = _currentLocation.Longitude;
+
+                MapFragment mapFrag = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
+                GoogleMap map = mapFrag.Map;
+                map.SetOnInfoWindowClickListener(this);
 
                 MarkerOptions markerAltoPeak = new MarkerOptions();
                 markerAltoPeak.SetPosition(new LatLng(11.1061, 124.7097));
@@ -120,7 +129,7 @@ namespace Akyat.Pinas.Activities
                 markerKitanglad.SetPosition(new LatLng(8.82, 124.470));
                 markerKitanglad.SetTitle("Mt. Kitanglad");
                 markerKitanglad.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
-
+               
                 MarkerOptions markerLubog = new MarkerOptions();
                 markerLubog.SetPosition(new LatLng(14.50104, 121.14129));
                 markerLubog.SetTitle("Mt. Lubog");
@@ -222,11 +231,9 @@ namespace Akyat.Pinas.Activities
                 yourLocation.SetSnippet(_locationText);
                 yourLocation.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueRed));
 
-                MapFragment mapFrag = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
-                GoogleMap map = mapFrag.Map;
+              
 
-
-                    map.Clear();
+                map.Clear();
                     
                     map.AddMarker(yourLocation);
 
@@ -343,9 +350,10 @@ namespace Akyat.Pinas.Activities
                 Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
             }
 
-           
 
-
+            MapFragment mapFrag = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
+            GoogleMap map = mapFrag.Map;
+            map.SetOnInfoWindowClickListener(this);
 
             // Create your application here
 
@@ -557,12 +565,12 @@ namespace Akyat.Pinas.Activities
             //    markerDaguldol.SetTitle("Mt. Daguldol");
             //  markerDaguldol.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow));
 
+        
 
 
+            
 
-            MapFragment mapFrag = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
-            GoogleMap map = mapFrag.Map;
-          
+
             if (map != null)
             {
 
@@ -631,10 +639,24 @@ namespace Akyat.Pinas.Activities
               
             }
 
+
+
+
+         
+
+    }
+
+
+        void IOnInfoWindowClickListener.OnInfoWindowClick(Marker marker)
+        {
+            var intent = new Intent(this, typeof(MountainListAct));
+            intent.PutExtra("mtName", "ALTO PEAK");
+            StartActivity(intent);
+            
+
         }
 
        
-
 
 
         void InitializeLocationManager()
@@ -657,6 +679,6 @@ namespace Akyat.Pinas.Activities
             Log.Debug(TAG, "Using " + _locationProvider + ".");
         }
 
-      
+        
     }
 }
