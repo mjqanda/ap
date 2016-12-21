@@ -229,9 +229,9 @@ namespace Akyat.Pinas.Activities
                 yourLocation.SetPosition(new LatLng(latitude, longitude));
                 yourLocation.SetTitle("Your Location");
                 yourLocation.SetSnippet(_locationText);
-                yourLocation.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueRed));
 
-              
+                yourLocation.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.findlocation));
+
 
                 map.Clear();
                     
@@ -537,7 +537,7 @@ namespace Akyat.Pinas.Activities
             yourLocation.SetPosition(new LatLng(latitude, longitude));
             yourLocation.SetTitle("Your Location");
             yourLocation.SetSnippet(_locationText);
-            yourLocation.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueRed));
+            yourLocation.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.findlocation));
 
 
             //   MarkerOptions markerDaraitan = new MarkerOptions();
