@@ -31,22 +31,53 @@ namespace Akyat.Pinas
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            
-            SetContentView(Resource.Layout.mountainListLayout);
-            mListView = FindViewById<ListView>(Resource.Id.listView);
-            mSearch = FindViewById<EditText>(Resource.Id.etSearch);
-            mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
 
-            mSearch.TextChanged += mSearch_TextChanged;
-            //mListView.FastScrollEnabled = true;
-            mMountains = MountainsData.MountainList;
-            mListView.ItemClick += mListView_ItemClick;
-            //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
-            mSearch.Alpha = 0;
-            mContainer.BringToFront();
+
+
+            int position = Intent.GetIntExtra("mtDataPos" , 177);
+
             
-            mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
-            mListView.Adapter = mAdapter;
+           if (position == 177 )
+            { 
+                SetContentView(Resource.Layout.mountainListLayout);
+                mListView = FindViewById<ListView>(Resource.Id.listView);
+                mSearch = FindViewById<EditText>(Resource.Id.etSearch);
+                mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
+
+                mSearch.TextChanged += mSearch_TextChanged;
+                //mListView.FastScrollEnabled = true;
+                mMountains = MountainsData.MountainList;
+                mListView.ItemClick += mListView_ItemClick;
+                //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
+                mSearch.Alpha = 0;
+                mContainer.BringToFront();
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
+                mListView.Adapter = mAdapter;
+            }
+           else
+                {
+                SetContentView(Resource.Layout.mountainListLayout);
+                mListView = FindViewById<ListView>(Resource.Id.listView);
+                mSearch = FindViewById<EditText>(Resource.Id.etSearch);
+                mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
+
+                mSearch.TextChanged += mSearch_TextChanged;
+                //mListView.FastScrollEnabled = true;
+                mMountains = MountainsData.MountainList;
+                mListView.ItemClick += mListView_ItemClick;
+                //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
+                mSearch.Alpha = 0;
+                mContainer.BringToFront();
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
+                mListView.Adapter = mAdapter;
+                OpenDetailActivitys(position);
+
+            }
+
+
+
         }
 
         private void mListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -54,6 +85,9 @@ namespace Akyat.Pinas
             int itemPosition = e.Position;
             OpenDetailActivity(itemPosition);
         }
+
+
+
 
         private void OpenDetailActivity(int pos)
         {
@@ -77,8 +111,33 @@ namespace Akyat.Pinas
             i.PutExtra("TTB", mt.Ttb);
 
             StartActivity(i);
+      
+            
         }
-       
+        private void OpenDetailActivitys(int pos)
+        {
+            mt = mMountains[pos];
+            i = new Intent(this, typeof(DetailActivity));
+
+            i.PutExtra("IMG0", mt.MtImg00);
+            i.PutExtra("IMG1", mt.MtImg01);
+            i.PutExtra("IMG2", mt.MtImg02);
+            i.PutExtra("IMG3", mt.MtImg03);
+            i.PutExtra("IMG4", mt.MtImg04);
+            i.PutExtra("IMG5", mt.MtImg05);
+            i.PutExtra("MTNAME", mt.MtName);
+            i.PutExtra("LOCATION", mt.Location);
+            i.PutExtra("JUMPOFF", mt.JumpOff);
+            i.PutExtra("DESCRIPTION", mt.Description);
+            i.PutExtra("BACKGROUND", mt.Background);
+            i.PutExtra("ITINERARY", mt.Itinerary);
+            i.PutExtra("PRACTICALITIES", mt.Practicalities);
+            i.PutExtra("ATTIRE", mt.Attire);
+            i.PutExtra("TTB", mt.Ttb);
+
+            StartActivity(i);
+            Finish();
+        }
         void mSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
         {
             List<Mountain> searchedMountains = (from mountain in mMountains
