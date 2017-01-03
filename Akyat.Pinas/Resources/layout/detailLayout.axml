@@ -95,6 +95,7 @@
                 <TextView
                     android:text="Suggested Attire:"
                     android:textColor="#000"
+                    android:textStyle="bold"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:paddingTop="15dp"
@@ -112,6 +113,7 @@
                     android:text="Suggested things to bring:"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
+                    android:textStyle="bold"
                     android:textColor="#000"
                     android:paddingTop="15dp"
                     android:layout_height="wrap_content"
