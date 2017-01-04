@@ -30,8 +30,8 @@ namespace Akyat.Pinas
             tpracticalities.SetTypeface(tf, TypefaceStyle.Normal);
             tattire.SetTypeface(tf, TypefaceStyle.Normal);
             tttb.SetTypeface(tf, TypefaceStyle.Normal);
-            tsga.SetTypeface(tf, TypefaceStyle.Normal);
-            tsgt.SetTypeface(tf, TypefaceStyle.Normal);
+            tsga.SetTypeface(tf, TypefaceStyle.Bold);
+            tsgt.SetTypeface(tf, TypefaceStyle.Bold);
             tnote.SetTypeface(tf, TypefaceStyle.Normal);
 
 
