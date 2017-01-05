@@ -113,6 +113,7 @@
     <Compile Include="MountainsData.cs" />
     <Compile Include="MyAnimation.cs" />
     <Compile Include="Activities\itineraryAct.cs" />
+    <Compile Include="MyDialogFragment.cs" />
     <Compile Include="ORM\checklistClass.cs" />
     <Compile Include="ORM\DBItineraryRepository.cs" />
     <Compile Include="ORM\itineraryClass.cs" />
@@ -157,6 +158,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\aboutUsLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_dialog.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
