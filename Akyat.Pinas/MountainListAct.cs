@@ -170,6 +170,17 @@ namespace Akyat.Pinas
             MenuInflater.Inflate(Resource.Menu.actionbar, menu);
             return base.OnCreateOptionsMenu(menu);
         }
+        public override void OnBackPressed()
+        {
+          
+            var intent = new Intent(this, typeof(Activities.MainMenuAct));
+           
+            StartActivity(intent);
+            List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
+            mAdapter.Update(filteredMountains);
+            RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+            intent.SetFlags(ActivityFlags.ClearTop);
+        }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
