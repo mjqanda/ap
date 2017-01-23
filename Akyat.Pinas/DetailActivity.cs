@@ -86,12 +86,12 @@ namespace Akyat.Pinas
 
             });
 
-           // mtimg0.Click += Mtimg0_Click;
+            mtimg0.Click += Mtimg0_Click;
             mtimg1.Click += Mtimg1_Click;
-            //mtimg2.Click += Mtimg2_Click;
-            //mtimg3.Click += Mtimg3_Click;
-            //mtimg4.Click += Mtimg4_Click;
-            //mtimg5.Click += Mtimg5_Click;
+            mtimg2.Click += Mtimg2_Click;
+          mtimg3.Click += Mtimg3_Click;
+            mtimg4.Click += Mtimg4_Click;
+           mtimg5.Click += Mtimg5_Click;
         }
 
         //private void Mtimg5_Click(object sender, System.EventArgs e)
@@ -167,31 +167,53 @@ namespace Akyat.Pinas
         //    newFragment.Show(ft, "dialog");
         //}
 
-     
+        private void Mtimg0_Click(object sender, System.EventArgs e)
+        {
+            Intent i = this.Intent;
+            int iimg0 = i.Extras.GetInt("IMG0");
+            OpenFragment(iimg0);
+        }
         private void Mtimg1_Click(object sender, System.EventArgs e)
         {
             //eto yung may error null sya
-            OpenFragment(mt.MtImg09);
+            Intent i = this.Intent;
+            int iimg1 = i.Extras.GetInt("IMG1");
+            OpenFragment(iimg1);
 
         }
-
-        private void Mtimg0_Click(object sender, System.EventArgs e)
+        private void Mtimg2_Click(object sender, System.EventArgs e)
         {
-            FragmentTransaction ft = FragmentManager.BeginTransaction();
-            DialogFragment newFragment = MyDialogFragment.newInstance();
+            //eto yung may error null sya
+            Intent i = this.Intent;
+            int iimg2 = i.Extras.GetInt("IMG2");
+            OpenFragment(iimg2);
 
-            //Declare String and get the Id
-            string imgName = "IMG0"; //Change with the name of the image you want to pass
-            int imgId = Resources.GetIdentifier(imgName, "drawable", PackageName);
-
-            //Pass it with the Bundle class
-            Bundle bundle = new Bundle();
-            bundle.PutInt("imgId", imgId);
-            newFragment.Arguments = bundle;
-
-            //Show the Fragment
-            newFragment.Show(ft, "dialog");
         }
+        private void Mtimg3_Click(object sender, System.EventArgs e)
+        {
+            //eto yung may error null sya
+            Intent i = this.Intent;
+            int iimg3 = i.Extras.GetInt("IMG3");
+            OpenFragment(iimg3);
+
+        }
+        private void Mtimg4_Click(object sender, System.EventArgs e)
+        {
+            //eto yung may error null sya
+            Intent i = this.Intent;
+            int iimg4 = i.Extras.GetInt("IMG4");
+            OpenFragment(iimg4);
+
+        }
+        private void Mtimg5_Click(object sender, System.EventArgs e)
+        {
+            //eto yung may error null sya
+            Intent i = this.Intent;
+            int iimg5 = i.Extras.GetInt("IMG5");
+            OpenFragment(iimg5);
+
+        }
+
 
         private void FindViews()
         {
@@ -215,23 +237,7 @@ namespace Akyat.Pinas
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
         }
 
-        private void Fragment()
-        {
-            FragmentTransaction ft = FragmentManager.BeginTransaction();
-            DialogFragment newFragment = MyDialogFragment.newInstance();
-
-            //Declare String and get the Id
-            string imgName = "IMG2"; //Change with the name of the image you want to pass
-            int imgId = Resources.GetIdentifier("IMG2", "drawable", PackageName);
-
-            //Pass it with the Bundle class
-            Bundle bundle = new Bundle();
-            bundle.PutInt("imgId", imgId);
-            newFragment.Arguments = bundle;
-
-            //Show the Fragment
-            newFragment.Show(ft, "dialog");
-        }
+     
 
         private void OpenFragment(int img1)
         {
