@@ -209,55 +209,55 @@ namespace Akyat.Pinas.Activities
               .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
              
-                Marker markerPamitinan = map.AddMarker(new MarkerOptions()
+                markerPamitinan = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(14.43517, 121.11292))
              .SetTitle("Mt. Pamitinan")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerPicoDeLoro = map.AddMarker(new MarkerOptions()
+              markerPicoDeLoro = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(14.12855, 120.38785))
                 .SetTitle("Mt. Pico De Loro")
              .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerPulag = map.AddMarker(new MarkerOptions()
+              markerPulag = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(16.3458, 120.5315))
                .SetTitle("Mt. Pulag")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
-                Marker markerTaalVolcano = map.AddMarker(new MarkerOptions()
+             markerTaalVolcano = map.AddMarker(new MarkerOptions()
                 .SetPosition(new LatLng(14.00, 120.591))
                 .SetTitle("Mt. Taal Volcano")
          .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
-                Marker markerTarakRidge = map.AddMarker(new MarkerOptions()
+                markerTarakRidge = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(14.30357, 120.30))
                 .SetTitle("Mt. Tarak Ridge")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
-                Marker markerTayakHill = map.AddMarker(new MarkerOptions()
+              markerTayakHill = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(14.0688, 121.420))
                .SetTitle("Mt. Tayak Hill")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerTalamitam = map.AddMarker(new MarkerOptions()
+              markerTalamitam = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(14.1078900, 120.7597300))
             .SetTitle("Mt. Talamitam")
                 .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
 
-                Marker markerBatulao = map.AddMarker(new MarkerOptions()
+               markerBatulao = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(14.0408, 120.8011))
               .SetTitle("Mt. Batulao")
                 .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerMakiling = map.AddMarker(new MarkerOptions()
+               markerMakiling = map.AddMarker(new MarkerOptions()
        .SetPosition(new LatLng(14.13, 121.2))
              .SetTitle("Mt. Makiling")
              .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerCristobal = map.AddMarker(new MarkerOptions()
+              markerCristobal = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(14.0635, 121.4113))
                .SetTitle("Mt. Cristobal")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerUlap = map.AddMarker(new MarkerOptions()
+               markerUlap = map.AddMarker(new MarkerOptions()
                 .SetPosition(new LatLng(16.29, 120.6309))
               .SetTitle("Mt. Ulap")
                 .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
@@ -506,55 +506,55 @@ namespace Akyat.Pinas.Activities
                  .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
 
-                Marker markerPamitinan = map.AddMarker(new MarkerOptions()
+               markerPamitinan = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(14.43517, 121.11292))
              .SetTitle("Mt. Pamitinan")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerPicoDeLoro = map.AddMarker(new MarkerOptions()
+              markerPicoDeLoro = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(14.12855, 120.38785))
                 .SetTitle("Mt. Pico De Loro")
              .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerPulag = map.AddMarker(new MarkerOptions()
+                markerPulag = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(16.3458, 120.5315))
                .SetTitle("Mt. Pulag")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
-                Marker markerTaalVolcano = map.AddMarker(new MarkerOptions()
+                markerTaalVolcano = map.AddMarker(new MarkerOptions()
                 .SetPosition(new LatLng(14.00, 120.591))
                 .SetTitle("Mt. Taal Volcano")
          .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
-                Marker markerTarakRidge = map.AddMarker(new MarkerOptions()
+               markerTarakRidge = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(14.30357, 120.30))
                 .SetTitle("Mt. Tarak Ridge")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
-                Marker markerTayakHill = map.AddMarker(new MarkerOptions()
+               markerTayakHill = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(14.0688, 121.420))
                .SetTitle("Mt. Tayak Hill")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerTalamitam = map.AddMarker(new MarkerOptions()
+                 markerTalamitam = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(14.1078900, 120.7597300))
             .SetTitle("Mt. Talamitam")
                 .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
 
-                Marker markerBatulao = map.AddMarker(new MarkerOptions()
+                markerBatulao = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(14.0408, 120.8011))
               .SetTitle("Mt. Batulao")
                 .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerMakiling = map.AddMarker(new MarkerOptions()
+                markerMakiling = map.AddMarker(new MarkerOptions()
        .SetPosition(new LatLng(14.13, 121.2))
              .SetTitle("Mt. Makiling")
              .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerCristobal = map.AddMarker(new MarkerOptions()
+                markerCristobal = map.AddMarker(new MarkerOptions()
                .SetPosition(new LatLng(14.0635, 121.4113))
                .SetTitle("Mt. Cristobal")
                .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
 
-                Marker markerUlap = map.AddMarker(new MarkerOptions()
+                markerUlap = map.AddMarker(new MarkerOptions()
                 .SetPosition(new LatLng(16.29, 120.6309))
               .SetTitle("Mt. Ulap")
                 .SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueYellow)));
@@ -562,7 +562,7 @@ namespace Akyat.Pinas.Activities
 
 
 
-                Marker yourLocation = map.AddMarker(new MarkerOptions()
+                 yourLocation = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(latitude, longitude))
                .SetTitle("Your Location")
                .SetSnippet(_locationText)
