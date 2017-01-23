@@ -2788,11 +2788,11 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b007e
 			public const int imageButtonAdd = 2131427454;
 			
+			// aapt resource value: 0x7f0b0075
+			public const int imageFragment = 2131427445;
+			
 			// aapt resource value: 0x7f0b005c
 			public const int imageView1 = 2131427420;
-			
-			// aapt resource value: 0x7f0b0075
-			public const int img = 2131427445;
 			
 			// aapt resource value: 0x7f0b0093
 			public const int info = 2131427475;

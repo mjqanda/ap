@@ -15,8 +15,9 @@ namespace Akyat.Pinas
     [Activity(Label = "MyDialogFragment")]
     public class MyDialogFragment : DialogFragment
     {
+        ImageView imgf;
 
-        static public MyDialogFragment newInstance()
+        public static MyDialogFragment newInstance()
         {
             MyDialogFragment f = new MyDialogFragment();
             return f;
@@ -32,6 +33,13 @@ namespace Akyat.Pinas
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View v = inflater.Inflate(Resource.Layout.fragment_dialog, container, false);
+
+            imgf = v.FindViewById<ImageView>(Resource.Id.imageFragment);
+
+            int image = this.Arguments.GetInt("IMG1");
+
+            imgf.SetImageResource(image);
+
             return v;
         }
     }
