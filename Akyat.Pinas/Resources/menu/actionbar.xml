@@ -10,59 +10,71 @@
     android:id="@+id/action1"
     android:orderInCategory="100"
     android:showAsAction="never"
-    android:title="@string/action_1"
+    android:title="Sort Name(A-Z)"
     />
   <item
     android:id="@+id/action2"
     android:orderInCategory="101"
     android:showAsAction="never"
-    android:title="@string/action_2"
+    android:title="Sort Name(Z-A)"
     />
   <item
     android:id="@+id/action3"
     android:orderInCategory="102"
     android:showAsAction="never"
-    android:title="@string/action_3"
+    android:title="Sort Elevation(from Shortest)"
     />
   <item
     android:id="@+id/action4"
     android:orderInCategory="103"
     android:showAsAction="never"
-    android:title="@string/action_4"
+    android:title="Sort Elevation(from Highest)"
     />
   <item
      android:id="@+id/action5"
      android:orderInCategory="104"
      android:showAsAction="never"
-     android:title="@string/action_5"
+     android:title="Sort Difficulty(from Easiest)"
     />
   <item
      android:id="@+id/action6"
      android:orderInCategory="105"
      android:showAsAction="never"
-     android:title="@string/action_6"
+     android:title="Sort Difficulty(from Most Difficult)"
     />
   <item
      android:id="@+id/action7"
      android:orderInCategory="106"
      android:showAsAction="never"
-     android:title="@string/action_7"
+     android:title="Show All Luzon"
     />
   <item
     android:id="@+id/action8"
     android:orderInCategory="107"
     android:showAsAction="never"
-    android:title="@string/action_8"
+    android:title="Show All Visayas"
     />
   <item
     android:id="@+id/action9"
     android:orderInCategory="108"
     android:showAsAction="never"
-    android:title="@string/action_9"/>
-    <item
+    android:title="Show All Mindanao"/>
+  <!--<item
     android:id="@+id/actionall"
     android:orderInCategory="108"
     android:showAsAction="never"
-    android:title="@string/actionAll"
+    android:title="Show all mountains"/>-->
+    <item
+    android:id="@+id/action10"
+    android:orderInCategory="108"
+    android:showAsAction="never"
+    android:title="Sort DayHike Mountains(Minor)"
     />
+  <item
+   android:id="@+id/action11"
+   android:orderInCategory="109"
+   android:showAsAction="never"
+   android:title="Sort Overnight Mountains(Major)"
+    />
+ 
 </menu>

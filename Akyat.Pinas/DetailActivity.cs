@@ -14,8 +14,8 @@ namespace Akyat.Pinas
     {
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,tttb,tsga,tsgt,tnote;
         private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5;
-        private Mountain mt;
-        private List<Mountain> mMountains;
+        private VideoView video;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -35,7 +35,6 @@ namespace Akyat.Pinas
             tsga.SetTypeface(tf, TypefaceStyle.Bold);
             tsgt.SetTypeface(tf, TypefaceStyle.Bold);
             tnote.SetTypeface(tf, TypefaceStyle.Normal);
-            
 
             Android.Content.Intent i = this.Intent;
             string iname = i.Extras.GetString("MTNAME");
@@ -83,89 +82,15 @@ namespace Akyat.Pinas
                 intent.PutExtra("name", iname);
               
                 StartActivity(intent);
-
             });
 
             mtimg0.Click += Mtimg0_Click;
             mtimg1.Click += Mtimg1_Click;
             mtimg2.Click += Mtimg2_Click;
-          mtimg3.Click += Mtimg3_Click;
+            mtimg3.Click += Mtimg3_Click;
             mtimg4.Click += Mtimg4_Click;
-           mtimg5.Click += Mtimg5_Click;
+            mtimg5.Click += Mtimg5_Click;
         }
-
-        //private void Mtimg5_Click(object sender, System.EventArgs e)
-        //{
-        //    FragmentTransaction ft = FragmentManager.BeginTransaction();
-        //    DialogFragment newFragment = MyDialogFragment.newInstance();
-
-        //    //Declare String and get the Id
-        //    string imgName = "IMG5"; //Change with the name of the image you want to pass
-        //    int imgId = Resources.GetIdentifier(imgName, "drawable", PackageName);
-
-        //    //Pass it with the Bundle class
-        //    Bundle bundle = new Bundle();
-        //    bundle.PutInt("imgId", imgId);
-        //    newFragment.Arguments = bundle;
-
-        //    //Show the Fragment
-        //    newFragment.Show(ft, "dialog");
-        //}
-
-        //private void Mtimg4_Click(object sender, System.EventArgs e)
-        //{
-        //    FragmentTransaction ft = FragmentManager.BeginTransaction();
-        //    DialogFragment newFragment = MyDialogFragment.newInstance();
-
-        //    //Declare String and get the Id
-        //    string imgName = "IMG4"; //Change with the name of the image you want to pass
-        //    int imgId = Resources.GetIdentifier(imgName, "drawable", PackageName);
-
-        //    //Pass it with the Bundle class
-        //    Bundle bundle = new Bundle();
-        //    bundle.PutInt("imgId", imgId);
-        //    newFragment.Arguments = bundle;
-
-        //    //Show the Fragment
-        //    newFragment.Show(ft, "dialog");
-        //}
-
-        //private void Mtimg3_Click(object sender, System.EventArgs e)
-        //{
-
-        //    FragmentTransaction ft = FragmentManager.BeginTransaction();
-        //    DialogFragment newFragment = MyDialogFragment.newInstance();
-
-        //    //Declare String and get the Id
-        //    string imgName = "IMG3"; //Change with the name of the image you want to pass
-        //    int imgId = Resources.GetIdentifier(imgName, "IMG3", PackageName);
-
-        //    //Pass it with the Bundle class
-        //    Bundle bundle = new Bundle();
-        //    bundle.PutInt("imgId", imgId);
-        //    newFragment.Arguments = bundle;
-
-        //    //Show the Fragment
-        //    newFragment.Show(ft, "dialog");
-        //}
-
-        //private void Mtimg2_Click(object sender, System.EventArgs e)
-        //{
-        //    FragmentTransaction ft = FragmentManager.BeginTransaction();
-        //    DialogFragment newFragment = MyDialogFragment.newInstance();
-
-        //    //Declare String and get the Id
-        //    string imgName = "IMG2"; //Change with the name of the image you want to pass
-        //    int imgId = Resources.GetIdentifier("IMG2", "drawable", PackageName);
-
-        //    //Pass it with the Bundle class
-        //    Bundle bundle = new Bundle();
-        //    bundle.PutInt("imgId", imgId);
-        //    newFragment.Arguments = bundle;
-
-        //    //Show the Fragment
-        //    newFragment.Show(ft, "dialog");
-        //}
 
         private void Mtimg0_Click(object sender, System.EventArgs e)
         {
@@ -175,7 +100,6 @@ namespace Akyat.Pinas
         }
         private void Mtimg1_Click(object sender, System.EventArgs e)
         {
-            //eto yung may error null sya
             Intent i = this.Intent;
             int iimg1 = i.Extras.GetInt("IMG1");
             OpenFragment(iimg1);
@@ -183,7 +107,6 @@ namespace Akyat.Pinas
         }
         private void Mtimg2_Click(object sender, System.EventArgs e)
         {
-            //eto yung may error null sya
             Intent i = this.Intent;
             int iimg2 = i.Extras.GetInt("IMG2");
             OpenFragment(iimg2);
@@ -191,7 +114,6 @@ namespace Akyat.Pinas
         }
         private void Mtimg3_Click(object sender, System.EventArgs e)
         {
-            //eto yung may error null sya
             Intent i = this.Intent;
             int iimg3 = i.Extras.GetInt("IMG3");
             OpenFragment(iimg3);
@@ -199,7 +121,6 @@ namespace Akyat.Pinas
         }
         private void Mtimg4_Click(object sender, System.EventArgs e)
         {
-            //eto yung may error null sya
             Intent i = this.Intent;
             int iimg4 = i.Extras.GetInt("IMG4");
             OpenFragment(iimg4);
@@ -207,13 +128,10 @@ namespace Akyat.Pinas
         }
         private void Mtimg5_Click(object sender, System.EventArgs e)
         {
-            //eto yung may error null sya
             Intent i = this.Intent;
             int iimg5 = i.Extras.GetInt("IMG5");
             OpenFragment(iimg5);
-
         }
-
 
         private void FindViews()
         {
@@ -235,21 +153,17 @@ namespace Akyat.Pinas
             tsga = FindViewById<TextView>(Resource.Id.sgatxt);
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
+            video = FindViewById<VideoView>(Resource.Id.videoView1);
         }
-
-     
 
         private void OpenFragment(int img1)
         {
-          //  FragmentTransaction ft = FragmentManager.BeginTransaction();
-
             Bundle b = new Bundle();
             b.PutInt("IMG1", img1);
 
             MyDialogFragment fragment = new MyDialogFragment();
             fragment.Arguments = b;
 
-          //fragment.Show(this.FragmentManager, "mTag");
             fragment.Show(this.FragmentManager, "dialog");
         }
     }

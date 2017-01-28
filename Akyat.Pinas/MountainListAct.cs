@@ -258,13 +258,25 @@ namespace Akyat.Pinas
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
-            else if (id == Resource.Id.actionall)
+            //else if (id == Resource.Id.actionall)
+            //{
+            //    List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
+            //    mAdapter.ShowAll(filteredMountains);
+            //    RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+            //}
+            else if (id == Resource.Id.action10)
             {
-                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
-                mAdapter.ShowAll(filteredMountains);
+                
+                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Difficulty)).ToList();
+                mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
-
+            else if (id == Resource.Id.action11)
+            {
+                List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Difficulty)).ToList();
+                mAdapter.Update(filteredMountains);
+                RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
+            }
 
             switch (item.ItemId)
             {
