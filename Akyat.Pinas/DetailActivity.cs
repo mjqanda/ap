@@ -20,7 +20,12 @@ namespace Akyat.Pinas
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.detailLayout);
-            
+            var videoView = FindViewById<VideoView>(Resource.Id.videoView1);
+
+            var uri = Android.Net.Uri.Parse("https://ia801507.us.archive.org/6/items/Vpico_201701/Vpico.mp4");
+            videoView.SetVideoURI(uri);
+            videoView.Start();
+
             FindViews();
             Typeface tf = Typeface.CreateFromAsset(Assets, "REFSAN.TTF");
             tmtname.SetTypeface(tf, TypefaceStyle.Normal);
@@ -70,7 +75,6 @@ namespace Akyat.Pinas
             tattire.Text = iattire;
             tttb.Text = ittb;
             tnote.Text = inote;
-
 
             Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
             btnItinerary.Click += ((sender, e) =>
@@ -153,7 +157,7 @@ namespace Akyat.Pinas
             tsga = FindViewById<TextView>(Resource.Id.sgatxt);
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
-            video = FindViewById<VideoView>(Resource.Id.videoView1);
+          //  video = FindViewById<VideoView>(Resource.Id.videoView1);
         }
 
         private void OpenFragment(int img1)

@@ -32,10 +32,7 @@ namespace Akyat.Pinas
         {
             base.OnCreate(bundle);
 
-
-
             int position = Intent.GetIntExtra("mtDataPos" , 177);
-
             
            if (position == 177 )
             { 
@@ -73,11 +70,7 @@ namespace Akyat.Pinas
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
                 mListView.Adapter = mAdapter;
                 OpenDetailActivitys(position);
-
             }
-
-
-
         }
 
         private void mListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -85,10 +78,6 @@ namespace Akyat.Pinas
             int itemPosition = e.Position;
             OpenDetailActivity(itemPosition);
         }
-
-
-
-
         private void OpenDetailActivity(int pos)
         {
             mt = mMountains[pos];
@@ -111,8 +100,6 @@ namespace Akyat.Pinas
             i.PutExtra("TTB", mt.Ttb);
 
             StartActivity(i);
-      
-            
         }
         private void OpenDetailActivitys(int pos)
         {

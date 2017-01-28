@@ -161,10 +161,10 @@
                     android:background="#000"
                     android:layout_marginTop="23.5dp"
                     android:id="@+id/textView1" />
-                <!--<VideoView
+            <VideoView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/videoView1" />-->
+                    android:id="@+id/videoView1" />
                 <TextView
                     android:text="Other Photos:"
                     android:textStyle="bold"
