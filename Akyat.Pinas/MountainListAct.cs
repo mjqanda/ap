@@ -140,15 +140,16 @@ namespace Akyat.Pinas
         }
         void mSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
         {
+         
             List<Mountain> searchedMountains = (from mountain in mMountains
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 select mountain).ToList();
 
             //mListView.Invalidate();
-           // mAdapter.GetView(context,Resource.Layout.ml_model,searchedMountains);
+            // mAdapter.GetView(context,Resource.Layout.ml_model,searchedMountains);
             //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
             //mListView.Adapter = mAdapter;
-          
+
             //RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             //mListView.Adapter = mAdapter;
 
@@ -157,9 +158,10 @@ namespace Akyat.Pinas
             //                          where mountain.MtName.ToUpper().Contains(mSearch.Text.ToUpper())
             //                          select mountain).ToList();
 
-
+          
             //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
             mAdapter.Update(searchedMountains);
+            
             //mListView.Adapter = mAdapter;
             //mListView.InvalidateViews();
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
@@ -180,6 +182,7 @@ namespace Akyat.Pinas
             mAdapter.Update(filteredMountains);
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             intent.SetFlags(ActivityFlags.ClearTop);
+            Finish();
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

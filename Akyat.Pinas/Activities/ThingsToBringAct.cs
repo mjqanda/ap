@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Akyat.Pinas.ORM;
+using System.IO;
+using SQLite;
 
 namespace Akyat.Pinas.Activities
 {
@@ -22,96 +24,99 @@ namespace Akyat.Pinas.Activities
             SetContentView(Resource.Layout.thingsToBringLayout);
             // Create your application here
             DBItineraryRepository dbr = new DBItineraryRepository();
+      
+            string name = Intent.GetStringExtra("name");
+
             // instantiate names and values
-            var backpack = "backpack";
+        
             var backpackValue = "0";
-            var boots = "boots";
+        
             var bootsValue = "0";
-            var plasticbag = "plasticbag";
+           
             var plasticbagValue = "0";
-            var toiletries = "toiletries";
+    
              var toiletriesValue = "0";
-            var outdoorclothes = "outdoorclothes";
+       
              var outdoorclothesValue = "0";
-            var trailfood = "trailfood";
+          
             var trailfoodValue = "0";
-            var packedlunch = "packedlunch";
+     
              var packedlunchValue = "0";
-            var trailwater = "trailwater";
+    
             var trailwaterValue = "0";
-            var firstaidkit = "firstaidkit";
+       
             var firstaidkitValue = "0";
-            var survivalkit = "survivalkit";
+            
              var survivalkitValue = "0";
-            var messkit = "messkit";
+
             var messkitValue = "0";
-            var drinkingcup = "drinkingcup";
+       
             var drinkingcupValue = "0";
-            var spoonfork = "spoonfork";
+           
              var spoonforkValue = "0";
-            var identification = "identification";
+          
             var identificationValue = "0";
-            var whistle = "whistle";
+            
             var whistleValue = "0";
-            var raingear = "raingear";
+            
             var raingearValue = "0";
-            var jacket = "jacket";
+           
             var jacketValue = "0";
-            var sunprotection = "sunprotection";
+          
             var sunprotectionValue = "0";
-            var flashlight = "flashlight";
+      
              var flashlightValue = "0";
-            var multitool = "multitool";
+        
             var multitoolValue = "0";
-            var mobilephone = "mobilephone";
+        
             var mobilephoneValue = "0";
-            var camerabatteries = "camera";
+        
             var camerabatteriesValue = "0";
-            var trekkingpole = "trekkingpole";
+         
             var trekkingpoleValue = "0";
            
-            var blanket = "blanket";
+        
              var blanketValue = "0";
-            var extraclothes = "extraclothes";
+          
             var extraclothesValue = "0";
-            var sandals = "sandals";
+      
             var sandalsValue = "0";
-            var campwater = "campwater";
+         
             var campwaterValue = "0";
-            var precookfood = "precookfood";
+          
              var precookfoodValue = "0";
-            var rice = "rice";
+        
             var riceValue = "0";
-            var tyingstring = "tyingstring";
+     
             var tyingstringValue = "0";
-            var stovefuel = "stovefuel";
+         
             var stovefuelValue = "0";
-            var lighter = "lighter";
+         
             var lighterValue = "0";
-            var matches = "matches";
+          
             var matchesValue = "0";
-            var bolo = "bolo";
+      
             var boloValue = "0";
-            var mapcompass = "mapcompass";
+          
             var mapcompassValue = "0";
-            var stove = "stove";
+        
              var stoveValue = "0";
-            var cookset = "cookset";
+            
             var cooksetValue = "0";
-            var flag = "flag";
+         
             var flagValue = "0";
-            var tent = "tent";
+          
             var tentValue = "0";
-            var groundsheet = "groundsheet";
+       
             var groundsheetValue = "0";
-            var rope = "rope";
+        
                 var ropeValue = "0";
-            var trowel = "trowel";
+     
             var trowelValue = "0";
-            var others = "others";
+          
             var othersValue = "";
 
-            CheckBox cbbackpack = FindViewById<CheckBox>(Resource.Id.cbBackpack);
+            CheckBox cbbackpacks = FindViewById<CheckBox>(Resource.Id.cbBackpacks);
             CheckBox cbboots = FindViewById<CheckBox>(Resource.Id.cbBoots);
             CheckBox cbplasticbags = FindViewById<CheckBox>(Resource.Id.cbPlasticBags);
             CheckBox cbtoiletries = FindViewById<CheckBox>(Resource.Id.cbToiletries);
@@ -152,7 +157,7 @@ namespace Akyat.Pinas.Activities
             CheckBox cbtent = FindViewById<CheckBox>(Resource.Id.cbTent);
             CheckBox cbgroundsheet = FindViewById<CheckBox>(Resource.Id.cbGroundsheet);
             CheckBox cbrope = FindViewById<CheckBox>(Resource.Id.cbRope);
-            CheckBox cbtrowel = FindViewById<CheckBox>(Resource.Id.cbBackpack);
+            CheckBox cbtrowel = FindViewById<CheckBox>(Resource.Id.cbTrowel);
 
             EditText txtOthers = FindViewById<EditText>(Resource.Id.txtOthers);
 
@@ -160,94 +165,57 @@ namespace Akyat.Pinas.Activities
 
             try
             {
-                var backpackResult = dbr.GetRecordChecklist(backpack);
-                backpackValue = backpackResult;
-                var bootsResult = dbr.GetRecordChecklist(boots);
-                bootsValue = bootsResult;
-                var plasticbagResult = dbr.GetRecordChecklist(plasticbag);
-                plasticbagValue = plasticbagResult;
-                var toiletriesResult = dbr.GetRecordChecklist(toiletries);
-                toiletriesValue = toiletriesResult;
-                var outdoorclothesResult = dbr.GetRecordChecklist(outdoorclothes);
-                outdoorclothesValue = outdoorclothesResult;
-                var trailfoodResult = dbr.GetRecordChecklist(trailfood);
-                trailfoodValue = trailfoodResult;
-                var firstaidkitResult = dbr.GetRecordChecklist(firstaidkit);
-                firstaidkitValue = firstaidkitResult;
-                var survivalkitResult = dbr.GetRecordChecklist(survivalkit);
-                survivalkitValue = survivalkitResult;
-                var messkitResult = dbr.GetRecordChecklist(messkit);
-                messkitValue = messkitResult;
-                var drinkingcupResult = dbr.GetRecordChecklist(drinkingcup);
-                drinkingcupValue = drinkingcupResult;
-                var spoonforkResult = dbr.GetRecordChecklist(spoonfork);
-                spoonforkValue = spoonforkResult;
-                var identificationResult = dbr.GetRecordChecklist(identification);
-                identificationValue = identificationResult;
-                var whistleResult = dbr.GetRecordChecklist(whistle);
-                whistleValue = whistleResult;
-                var raingearResult = dbr.GetRecordChecklist(raingear);
-                raingearValue = raingearResult;
-                var jacketResult = dbr.GetRecordChecklist(jacket);
-                jacketValue = jacketResult;
-                var packedlunchResult = dbr.GetRecordChecklist(packedlunch);
-                packedlunchValue = packedlunchResult;
-                var trailwaterResult = dbr.GetRecordChecklist(trailwater);
-                trailwaterValue = trailwaterResult;
-                var sunprotectionResult = dbr.GetRecordChecklist(sunprotection);
-                sunprotectionValue = sunprotectionResult;
-                var flashlightResult = dbr.GetRecordChecklist(flashlight);
-                flashlightValue = flashlightResult;
-                var multitoolResult = dbr.GetRecordChecklist(multitool);
-                multitoolValue = multitoolResult;
-                var mobilephoneResult = dbr.GetRecordChecklist(mobilephone);
-                mobilephoneValue = mobilephoneResult;
-                var trekkingpoleResult = dbr.GetRecordChecklist(trekkingpole);
-                trekkingpoleValue = trekkingpoleResult;
+                string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "ormItinerary.db3");
+                var db = new SQLiteConnection(dbPath);
+                string outputValue = "";
 
-                var blanketResult = dbr.GetRecordChecklist(blanket);
-                blanketValue = blanketResult;
-                var camerabatteriesResult = dbr.GetRecordChecklist(camerabatteries);
-                camerabatteriesValue = camerabatteriesResult;
-                var extraclothesResult = dbr.GetRecordChecklist(extraclothes);
-                extraclothesValue = extraclothesResult;
-                var sandalsResult = dbr.GetRecordChecklist(sandals);
-                sandalsValue = sandalsResult;
-                var campwaterResult = dbr.GetRecordChecklist(campwater);
-                campwaterValue = campwaterResult;
-                var precookfoodResult = dbr.GetRecordChecklist(precookfood);
-                precookfoodValue = precookfoodResult;
-                var riceResult = dbr.GetRecordChecklist(rice);
-                riceValue = riceResult;
-                var tyingstringResult = dbr.GetRecordChecklist(tyingstring);
-                tyingstringValue = tyingstringResult;
-                var stovefuelResult = dbr.GetRecordChecklist(stovefuel);
-                stovefuelValue = stovefuelResult;
-                var lighterResult = dbr.GetRecordChecklist(lighter);
-                lighterValue = lighterResult;
-                var matchesResult = dbr.GetRecordChecklist(matches);
-                matchesValue = matchesResult;
-                var boloResult = dbr.GetRecordChecklist(bolo);
-                boloValue = boloResult;
-                var mapcompassResult = dbr.GetRecordChecklist(mapcompass);
-                mapcompassValue = mapcompassResult;
-                var stoveResult = dbr.GetRecordChecklist(stove);
-                stoveValue = stoveResult;
-                var cooksetResult = dbr.GetRecordChecklist(cookset);
-                cooksetValue = cooksetResult;
-                var flagResult = dbr.GetRecordChecklist(flag);
-                flagValue = flagResult;
-                var tentResult = dbr.GetRecordChecklist(tent);
-                tentValue = tentResult;
-                var groundsheetResult = dbr.GetRecordChecklist(groundsheet);
-                groundsheetValue = groundsheetResult;
-                var ropeResult = dbr.GetRecordChecklist(rope);
-                ropeValue = ropeResult;
-                var trowelResult = dbr.GetRecordChecklist(trowel);
-                trowelValue = trowelResult;
+                var item = db.Get<ChecklistClass>(name);
 
-                var othersResult = dbr.GetRecordChecklist(others);
-                othersValue = othersResult;
+                backpackValue = item.backpackValue;
+                bootsValue = item.bootsValue;
+                plasticbagValue = item.plasticbagValue;
+                toiletriesValue = item.toiletriesValue;
+                outdoorclothesValue = item.outdoorclothesValue;
+                trailfoodValue = item.trailfoodValue;
+                packedlunchValue = item.packedlunchValue;
+                trailwaterValue = item.trailwaterValue;
+                firstaidkitValue = item.firstaidkitValue;
+                survivalkitValue = item.survivalkitValue;
+                messkitValue = item.messkitValue;
+                drinkingcupValue = item.drinkingcupValue;
+                spoonforkValue = item.spoonforkValue;
+                identificationValue = item.identificationValue;
+                whistleValue = item.whistleValue;
+                raingearValue = item.raingearValue;
+                jacketValue = item.jacketValue;
+                sunprotectionValue = item.sunprotectionValue;
+                flashlightValue = item.flashlightValue;
+                multitoolValue = item.multitoolValue;
+                mobilephoneValue = item.mobilephoneValue;
+                camerabatteriesValue = item.camerabatteriesValue;
+                trekkingpoleValue = item.trekkingpoleValue;
+                blanketValue = item.blanketValue;
+                extraclothesValue = item.extraclothesValue;
+                sandalsValue = item.sandalsValue;
+                campwaterValue = item.campwaterValue;
+                precookfoodValue = item.precookfoodValue;
+                riceValue = item.riceValue;
+                tyingstringValue = item.tyingstringValue;
+                stovefuelValue = item.stovefuelValue;
+                lighterValue = item.lighterValue;
+                matchesValue = item.matchesValue;
+                boloValue = item.boloValue;
+                mapcompassValue = item.mapcompassValue;
+                stoveValue = item.stoveValue;
+                cooksetValue = item.cooksetValue;
+                flagValue = item.flagValue;
+                tentValue = item.tentValue;
+                groundsheetValue = item.groundsheetValue;
+                ropeValue = item.ropeValue;
+                trowelValue = item.trowelValue;
+                othersValue = item.othersValue;
+                
+
 
             }
             catch (Exception ex)
@@ -256,13 +224,14 @@ namespace Akyat.Pinas.Activities
             }
 
             //implementing the value
+
             if (backpackValue == "0")
             {
-                cbbackpack.Checked = false ;
+                cbbackpacks.Checked = false;
             }
             else if (backpackValue == "1")
             {
-                cbbackpack.Checked = true;
+                cbbackpacks.Checked = true;
             }
 
             if (bootsValue == "0")
@@ -643,11 +612,11 @@ namespace Akyat.Pinas.Activities
             btnSave.Click += (sender, e) =>
             {
 
-                if (cbbackpack.Checked == true)
+                if (cbbackpacks.Checked == true)
                 {
                     backpackValue = "1";
                 }
-                else if (cbbackpack.Checked == false)
+                else if (cbbackpacks.Checked == false)
                 {
                     backpackValue = "0";
                 }
@@ -1035,53 +1004,55 @@ namespace Akyat.Pinas.Activities
                     trowelValue = "0";
                 }
 
-                var result = dbr.InsertRecordChecklist(backpack, backpackValue);
-                             dbr.InsertRecordChecklist(boots, bootsValue);
-                             dbr.InsertRecordChecklist(plasticbag, plasticbagValue);
-                dbr.InsertRecordChecklist(toiletries, toiletriesValue);
-                dbr.InsertRecordChecklist(outdoorclothes, outdoorclothesValue);
-                dbr.InsertRecordChecklist(trailfood, trailfoodValue);
-                dbr.InsertRecordChecklist(packedlunch, packedlunchValue);
-                dbr.InsertRecordChecklist(trailwater, trailwaterValue);
-                dbr.InsertRecordChecklist(firstaidkit, firstaidkitValue);
-                dbr.InsertRecordChecklist(survivalkit, survivalkitValue);
-                dbr.InsertRecordChecklist(messkit, messkitValue);
-                dbr.InsertRecordChecklist(drinkingcup, drinkingcupValue);
-                dbr.InsertRecordChecklist(spoonfork, spoonforkValue);
-                dbr.InsertRecordChecklist(identification, identificationValue);
-                dbr.InsertRecordChecklist(whistle, whistleValue);
-                dbr.InsertRecordChecklist(raingear, raingearValue);
-                dbr.InsertRecordChecklist(jacket, jacketValue);
-                dbr.InsertRecordChecklist(sunprotection, sunprotectionValue);
-                dbr.InsertRecordChecklist(flashlight, flashlightValue);
-                dbr.InsertRecordChecklist(multitool, multitoolValue);
-                dbr.InsertRecordChecklist(mobilephone, mobilephoneValue);
-                dbr.InsertRecordChecklist(camerabatteries, camerabatteriesValue);
-                dbr.InsertRecordChecklist(trekkingpole, trekkingpoleValue);
-                dbr.InsertRecordChecklist(blanket, blanketValue);
-                dbr.InsertRecordChecklist(extraclothes, extraclothesValue);
-                dbr.InsertRecordChecklist(sandals, sandalsValue);
-                dbr.InsertRecordChecklist(campwater, campwaterValue);
-                dbr.InsertRecordChecklist(precookfood, precookfoodValue);
-                dbr.InsertRecordChecklist(rice, riceValue);
-                dbr.InsertRecordChecklist(tyingstring, tyingstringValue);
-                dbr.InsertRecordChecklist(stovefuel, stovefuelValue);
-                dbr.InsertRecordChecklist(lighter, lighterValue);
-                dbr.InsertRecordChecklist(matches, matchesValue);
-                dbr.InsertRecordChecklist(bolo, boloValue);
-                dbr.InsertRecordChecklist(mapcompass, mapcompassValue);
-                dbr.InsertRecordChecklist(stove, stoveValue);
-                dbr.InsertRecordChecklist(cookset, cooksetValue);
-                dbr.InsertRecordChecklist(flag, flagValue);
-                dbr.InsertRecordChecklist(tent, tentValue);
-                dbr.InsertRecordChecklist(groundsheet, groundsheetValue);
-                dbr.InsertRecordChecklist(rope, ropeValue);
-                dbr.InsertRecordChecklist(trowel, trowelValue);
-                dbr.InsertRecordChecklist(others, txtOthers.Text);
+                var result = dbr.InsertRecordChecklist(name, backpackValue, bootsValue,plasticbagValue,
 
+                    toiletriesValue,
+                    outdoorclothesValue,
+                    trailfoodValue,
+                    packedlunchValue,
+                    trailwaterValue,
+                    firstaidkitValue,
+                    survivalkitValue,
+                    messkitValue,
+                    drinkingcupValue,
+                      spoonforkValue,
+                    identificationValue,
+                    whistleValue,
+                    raingearValue,
+                    jacketValue,
+                    sunprotectionValue,
+                    flashlightValue,
+                    multitoolValue,
+                    mobilephoneValue,
+                       camerabatteriesValue,
+                    trekkingpoleValue,
+                    blanketValue,
+                    extraclothesValue,
+                    sandalsValue,
+                    campwaterValue,
+                    precookfoodValue,
+                    riceValue,
+                    tyingstringValue,
+                    stovefuelValue,
+                    lighterValue,
+                    matchesValue,
+                    boloValue,
+                    mapcompassValue,
+                    stoveValue,
+                    cooksetValue,
+                    flagValue,
+                    tentValue,
+                     groundsheetValue,
+                     ropeValue,
+                     trowelValue,
+                     txtOthers.Text
+                    
+                    );
+             
 
                 Toast.MakeText(this, result, ToastLength.Short).Show();
-                var intent = new Intent(this, typeof(MainT2B));
+                var intent = new Intent(this, typeof(listsActivity));
+                intent.PutExtra("name", name);
                 SetResult(Result.Ok, intent);
                 Finish();
             };

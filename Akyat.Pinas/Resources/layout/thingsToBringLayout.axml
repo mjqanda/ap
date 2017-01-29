@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:textColor="#000"
                 android:layout_height="wrap_content"
-                android:id="@+id/cbBackpack" />
+                android:id="@+id/cbBackpacks" />
             <CheckBox
                 android:text="Boots"
                 android:textColor="#000"

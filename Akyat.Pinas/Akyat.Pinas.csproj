@@ -98,6 +98,7 @@
   <ItemGroup>
     <Compile Include="Activities\AboutUsAct.cs" />
     <Compile Include="Activities\addItineraryAct.cs" />
+    <Compile Include="Activities\listsActivity.cs" />
     <Compile Include="Activities\MainMenuAct.cs" />
     <Compile Include="Activities\LeaveNoTraceAct.cs" />
     <Compile Include="Activities\MainT2B.cs" />
@@ -161,6 +162,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\fragment_dialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\listsLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

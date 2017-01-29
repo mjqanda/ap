@@ -6,19 +6,22 @@
     android:background="@drawable/maint2bg"
     android:minWidth="25px"
     android:minHeight="25px">
-    <ImageButton
-        android:layout_width="154.0dp"
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="209.0dp"
         android:layout_height="38.5dp"
-        android:id="@+id/imageButtonAdd"
-        android:background="@drawable/addttb"
+        android:id="@+id/choose"
+        android:textColor="@android:color/black"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="115.0dp" />
+        android:layout_marginTop="125.0dp"
+        android:text="Choose a mountain:" />
     <ScrollView
         android:layout_width="380.5dp"
         android:layout_height="418.0dp"
         android:padding="10dp"
         android:fillViewport="false">
         <LinearLayout
+            android:id="@+id/layoutList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -28,9 +31,325 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtList"
+                android:id="@+id/AltoPeak"
+                android:text="Alto Peak"
                 android:textColor="@android:color/black"
                 android:padding="10dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Apo"
+                android:text="Apo"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/Arayat"
+               android:text="Arayat"
+               android:textColor="@android:color/black"
+               android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Banoi"
+                android:text="Banoi"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Batolusong"
+                android:text="Batolusong"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Batulao"
+                android:text="Batulao"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Binacayan"
+                android:text="Binacayan"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Candalaga"
+                android:text="Candalaga"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Cristobal"
+                android:text="Cristobal"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DulangDulang"
+                android:text="Dulang-Dulang"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/GuitingGuiting"
+                android:text="Guiting-Guiting"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Halcon"
+                android:text="Halcon"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Hamiguitan"
+                android:text="Hamiguitan"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/HibokHibok"
+                android:text="Hibok-Hibok"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Kalatungan"
+                android:text="Kalatungan"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Kanlaon"
+                android:text="Kanlaon"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Kitanglad"
+                android:text="Kitanglad"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Lubog"
+                android:text="Lubog"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Maculot"
+                android:text="Maculot"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Madjaas"
+                android:text="Madjaas"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Makiling"
+                android:text="Makiling"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ManabuPeak"
+                android:text="Manabu Peak"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Matalingajan"
+                android:text="Matalingajan"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Marami"
+                android:text="Marami"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Matutum"
+                android:text="Matutum"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Napulak"
+                android:text="Napulak"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/OsmenaPeak"
+                android:text="Osmena Peak"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Pamitinan"
+                android:text="Pamitinan"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PicoDeLoro"
+                android:text="Pico De Loro"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Pulag"
+                android:text="Pulag"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Romelo"
+                android:text="Romelo"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Taal"
+                android:text="Taal"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Talamitam"
+                android:text="Talamitam"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Talomo"
+                android:text="Talomo"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TarakRidge"
+                android:text="Tarak Ridge"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TayakHill"
+                android:text="Tayak Hill"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TresMarias"
+                android:text="Tres Marias"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ulap"
+                android:text="Ulap"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Victoria"
+                android:text="Victoria"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+          <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/WhitePeak"
+                android:text="White Peak"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+       
+         
+          
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

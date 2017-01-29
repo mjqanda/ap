@@ -36,6 +36,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof (MountainListAct));
                
                 StartActivity(intent);
+                Finish();
             };
 
             btnThingsToBring.Click += (sender, e) =>
