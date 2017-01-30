@@ -2,16 +2,6 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">akyatpinas</string>
-    <string name="action_1">Sort Name(A-Z)</string>
-    <string name="action_2">Sort Name(Z-A) </string>
-    <string name="action_3">Sort Elevation(from Shortest)</string>
-    <string name="action_4">Sort Elevation(from Highest)</string>
-    <string name="action_5">Sort Difficulty(from Easiest)</string>
-    <string name="action_6">Sort Difficulty(from Most Difficult)</string>
-    <string name="action_7">Show All Luzon</string>
-    <string name="action_8">Show All Visayas</string>
-    <string name="action_9">Show All Mindanao</string>
-    <string name="actionAll">Show All Mountains</string>
     <string name="styled_welcome_message">We are <b><i>so</i></b> glad to see you.</string>
 
 </resources>

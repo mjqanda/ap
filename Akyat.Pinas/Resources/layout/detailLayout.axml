@@ -153,6 +153,22 @@
                     android:textColor="#000"
                     android:layout_marginTop="29.0dp" />
                 <TextView
+                    android:text="Videos:"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:layout_marginTop="23.5dp"
+                    android:id="@+id/textView1" />
+                <ImageView
+                  android:id="@+id/vvimg"
+                  android:layout_width="320.0dp"
+                  android:layout_height="178.5dp"
+                  android:src="@drawable/play"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="22.5dp" />
+                <TextView
                     android:text="Other Photos:"
                     android:textStyle="bold"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -165,35 +181,35 @@
                     android:id="@+id/mtimg01"
                     android:layout_width="320.0dp"
                     android:layout_height="178.5dp"
-                    android:src="@drawable/batulao"
+                    android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="22.5dp" />
                 <ImageView
                     android:id="@+id/mtimg02"
                     android:layout_width="320.0dp"
                     android:layout_height="178.5dp"
-                    android:src="@drawable/batulao"
+                    android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
                 <ImageView
                     android:id="@+id/mtimg03"
                     android:layout_width="320.0dp"
                     android:layout_height="178.5dp"
-                    android:src="@drawable/batulao"
+                    android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
                 <ImageView
                     android:id="@+id/mtimg04"
                     android:layout_width="320.0dp"
                     android:layout_height="178.5dp"
-                    android:src="@drawable/batulao"
+                    android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
                 <ImageView
                     android:id="@+id/mtimg05"
                     android:layout_width="320.0dp"
                     android:layout_height="178.5dp"
-                    android:src="@drawable/batulao"
+                    android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
             </LinearLayout>
