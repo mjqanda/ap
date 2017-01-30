@@ -104,6 +104,7 @@
     <Compile Include="Activities\SettingsAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Activities\ThingsToBringAct.cs" />
+    <Compile Include="Activities\VideoFragment.cs" />
     <Compile Include="DetailActivity.cs" />
     <Compile Include="ExtMethods.cs" />
     <Compile Include="MountainListAct.cs" />
@@ -163,6 +164,9 @@
     <AndroidResource Include="Resources\layout\fragment_dialog.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\video_fragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\mainMenuLayout.axml">
@@ -188,7 +192,9 @@
     <AndroidResource Include="Resources\drawable\edit_text_style.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\menu\actionbar.xml" />
+    <AndroidResource Include="Resources\menu\actionbar.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="GeolocatorPlugin">
@@ -942,8 +948,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\findlocation.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-dpi\Vpico.MOV" />
+    <AndroidResource Include="Resources\drawable-dpi\play.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />

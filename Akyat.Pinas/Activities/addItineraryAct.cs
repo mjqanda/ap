@@ -24,11 +24,7 @@ namespace Akyat.Pinas.Activities
             string name = Intent.GetStringExtra("name");
             string editThis = "";
 
-
-
           editThis = Intent.GetStringExtra("editThis");
-
-
 
             EditText editItinerary = FindViewById<EditText>(Resource.Id.txtItinerary);
             editItinerary.Text = editThis;
@@ -45,8 +41,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", name);
                 SetResult(Result.Ok, intent);
-
-               
+                
                 Finish();
             });
 

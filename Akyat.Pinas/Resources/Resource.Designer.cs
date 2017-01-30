@@ -2236,184 +2236,184 @@ namespace Akyat.Pinas
 			public const int pico5 = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int plusButton = 2130837803;
+			public const int play = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int pulag = 2130837804;
+			public const int plusButton = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int pulag1 = 2130837805;
+			public const int pulag = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int pulag2 = 2130837806;
+			public const int pulag1 = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int pulag3 = 2130837807;
+			public const int pulag2 = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int pulag4 = 2130837808;
+			public const int pulag3 = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int romelo = 2130837809;
+			public const int pulag4 = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int romelo1 = 2130837810;
+			public const int romelo = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int romelo2 = 2130837811;
+			public const int romelo1 = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int romelo3 = 2130837812;
+			public const int romelo2 = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int romelo4 = 2130837813;
+			public const int romelo3 = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int romelo5 = 2130837814;
+			public const int romelo4 = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int savebtn = 2130837815;
+			public const int romelo5 = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int settingsbg = 2130837816;
+			public const int savebtn = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int splash = 2130837817;
+			public const int settingsbg = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int splash_screen = 2130837818;
+			public const int splash = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int taal = 2130837819;
+			public const int splash_screen = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int taal1 = 2130837820;
+			public const int taal = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int taal2 = 2130837821;
+			public const int taal1 = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int taal3 = 2130837822;
+			public const int taal2 = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int taal4 = 2130837823;
+			public const int taal3 = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int taal5 = 2130837824;
+			public const int taal4 = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int talamitam = 2130837825;
+			public const int taal5 = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int talamitam1 = 2130837826;
+			public const int talamitam = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int talamitam2 = 2130837827;
+			public const int talamitam1 = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int talamitam3 = 2130837828;
+			public const int talamitam2 = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int talamitam4 = 2130837829;
+			public const int talamitam3 = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int talomo = 2130837830;
+			public const int talamitam4 = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int talomo1 = 2130837831;
+			public const int talomo = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int talomo2 = 2130837832;
+			public const int talomo1 = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int talomo3 = 2130837833;
+			public const int talomo2 = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int talomo4 = 2130837834;
+			public const int talomo3 = 2130837834;
 			
 			// aapt resource value: 0x7f02014b
-			public const int tarak = 2130837835;
+			public const int talomo4 = 2130837835;
 			
 			// aapt resource value: 0x7f02014c
-			public const int tarak1 = 2130837836;
+			public const int tarak = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int tarak2 = 2130837837;
+			public const int tarak1 = 2130837837;
 			
 			// aapt resource value: 0x7f02014e
-			public const int tarak3 = 2130837838;
+			public const int tarak2 = 2130837838;
 			
 			// aapt resource value: 0x7f02014f
-			public const int tarak4 = 2130837839;
+			public const int tarak3 = 2130837839;
 			
 			// aapt resource value: 0x7f020150
-			public const int tarak5 = 2130837840;
+			public const int tarak4 = 2130837840;
 			
 			// aapt resource value: 0x7f020151
-			public const int tayak = 2130837841;
+			public const int tarak5 = 2130837841;
 			
 			// aapt resource value: 0x7f020152
-			public const int tayak1 = 2130837842;
+			public const int tayak = 2130837842;
 			
 			// aapt resource value: 0x7f020153
-			public const int tayak2 = 2130837843;
+			public const int tayak1 = 2130837843;
 			
 			// aapt resource value: 0x7f020154
-			public const int tayak3 = 2130837844;
+			public const int tayak2 = 2130837844;
 			
 			// aapt resource value: 0x7f020155
-			public const int tayak4 = 2130837845;
+			public const int tayak3 = 2130837845;
 			
 			// aapt resource value: 0x7f020156
-			public const int things2bbg = 2130837846;
+			public const int tayak4 = 2130837846;
 			
 			// aapt resource value: 0x7f020157
-			public const int tresmarias = 2130837847;
+			public const int things2bbg = 2130837847;
 			
 			// aapt resource value: 0x7f020158
-			public const int tresmarias1 = 2130837848;
+			public const int tresmarias = 2130837848;
 			
 			// aapt resource value: 0x7f020159
-			public const int tresmarias2 = 2130837849;
+			public const int tresmarias1 = 2130837849;
 			
 			// aapt resource value: 0x7f02015a
-			public const int tresmarias3 = 2130837850;
+			public const int tresmarias2 = 2130837850;
 			
 			// aapt resource value: 0x7f02015b
-			public const int ttbp = 2130837851;
+			public const int tresmarias3 = 2130837851;
 			
 			// aapt resource value: 0x7f02015c
-			public const int ulap = 2130837852;
+			public const int ttbp = 2130837852;
 			
 			// aapt resource value: 0x7f02015d
-			public const int ulap1 = 2130837853;
+			public const int ulap = 2130837853;
 			
 			// aapt resource value: 0x7f02015e
-			public const int ulap2 = 2130837854;
+			public const int ulap1 = 2130837854;
 			
 			// aapt resource value: 0x7f02015f
-			public const int ulap3 = 2130837855;
+			public const int ulap2 = 2130837855;
 			
 			// aapt resource value: 0x7f020160
-			public const int ulap4 = 2130837856;
+			public const int ulap3 = 2130837856;
 			
 			// aapt resource value: 0x7f020161
-			public const int ulap5 = 2130837857;
+			public const int ulap4 = 2130837857;
 			
 			// aapt resource value: 0x7f020162
-			public const int victoria = 2130837858;
+			public const int ulap5 = 2130837858;
 			
 			// aapt resource value: 0x7f020163
-			public const int victoria1 = 2130837859;
+			public const int victoria = 2130837859;
 			
 			// aapt resource value: 0x7f020164
-			public const int victoria2 = 2130837860;
+			public const int victoria1 = 2130837860;
 			
 			// aapt resource value: 0x7f020165
-			public const int victoria3 = 2130837861;
+			public const int victoria2 = 2130837861;
 			
 			// aapt resource value: 0x7f020166
-			public const int Vpico = 2130837862;
+			public const int victoria3 = 2130837862;
 			
 			// aapt resource value: 0x7f020167
 			public const int whitepeak = 2130837863;
@@ -2449,38 +2449,38 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0089
 			public const int action0 = 2131427465;
 			
-			// aapt resource value: 0x7f0b00c9
-			public const int action1 = 2131427529;
-			
-			// aapt resource value: 0x7f0b00d2
-			public const int action10 = 2131427538;
+			// aapt resource value: 0x7f0b00ca
+			public const int action1 = 2131427530;
 			
 			// aapt resource value: 0x7f0b00d3
-			public const int action11 = 2131427539;
+			public const int action10 = 2131427539;
 			
-			// aapt resource value: 0x7f0b00ca
-			public const int action2 = 2131427530;
+			// aapt resource value: 0x7f0b00d4
+			public const int action11 = 2131427540;
 			
 			// aapt resource value: 0x7f0b00cb
-			public const int action3 = 2131427531;
+			public const int action2 = 2131427531;
 			
 			// aapt resource value: 0x7f0b00cc
-			public const int action4 = 2131427532;
+			public const int action3 = 2131427532;
 			
 			// aapt resource value: 0x7f0b00cd
-			public const int action5 = 2131427533;
+			public const int action4 = 2131427533;
 			
 			// aapt resource value: 0x7f0b00ce
-			public const int action6 = 2131427534;
+			public const int action5 = 2131427534;
 			
 			// aapt resource value: 0x7f0b00cf
-			public const int action7 = 2131427535;
+			public const int action6 = 2131427535;
 			
 			// aapt resource value: 0x7f0b00d0
-			public const int action8 = 2131427536;
+			public const int action7 = 2131427536;
 			
 			// aapt resource value: 0x7f0b00d1
-			public const int action9 = 2131427537;
+			public const int action8 = 2131427537;
+			
+			// aapt resource value: 0x7f0b00d2
+			public const int action9 = 2131427538;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int action_bar = 2131427404;
@@ -2938,8 +2938,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b003e
 			public const int scrollView = 2131427390;
 			
-			// aapt resource value: 0x7f0b00c8
-			public const int search = 2131427528;
+			// aapt resource value: 0x7f0b00c9
+			public const int search = 2131427529;
 			
 			// aapt resource value: 0x7f0b0050
 			public const int search_badge = 2131427408;
@@ -3070,8 +3070,11 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b001d
 			public const int useLogo = 2131427357;
 			
+			// aapt resource value: 0x7f0b00c8
+			public const int videoView = 2131427528;
+			
 			// aapt resource value: 0x7f0b0070
-			public const int videoView1 = 2131427440;
+			public const int vvimg = 2131427440;
 			
 			// aapt resource value: 0x7f0b0012
 			public const int wide = 2131427346;
@@ -3275,6 +3278,9 @@ namespace Akyat.Pinas
 			
 			// aapt resource value: 0x7f030031
 			public const int thingsToBringLayout = 2130903089;
+			
+			// aapt resource value: 0x7f030032
+			public const int video_fragment = 2130903090;
 			
 			static Layout()
 			{

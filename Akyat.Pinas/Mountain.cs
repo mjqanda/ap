@@ -30,6 +30,6 @@ namespace Akyat.Pinas
         public string Attire { get; set; }
         public string Ttb { get; set; }
         public string Note { get; set; }
-        public int Vid { get; set; }
+        public string Vid { get; set; }
     }
 }

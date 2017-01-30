@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Android.App;
 using Android.OS;
@@ -13,18 +14,18 @@ namespace Akyat.Pinas
     public class DetailActivity : Activity
     {
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,tttb,tsga,tsgt,tnote;
-        private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5;
-        private VideoView video;
+        private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5, videoimg;
+        //private VideoView videoimg;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.detailLayout);
-            var videoView = FindViewById<VideoView>(Resource.Id.videoView1);
+            //var videoView = FindViewById<VideoView>(Resource.Id.videoView1);
 
-            var uri = Android.Net.Uri.Parse("https://ia801507.us.archive.org/6/items/Vpico_201701/Vpico.mp4");
-            videoView.SetVideoURI(uri);
-            videoView.Start();
+            //var uri = Android.Net.Uri.Parse("https://ia801507.us.archive.org/6/items/Vpico_201701/Vpico.mp4");
+            //videoView.SetVideoURI(uri);
+            //videoView.Start();
 
             FindViews();
             Typeface tf = Typeface.CreateFromAsset(Assets, "REFSAN.TTF");
@@ -94,8 +95,15 @@ namespace Akyat.Pinas
             mtimg3.Click += Mtimg3_Click;
             mtimg4.Click += Mtimg4_Click;
             mtimg5.Click += Mtimg5_Click;
+            videoimg.Click += Videoimg_Click;
         }
 
+        private void Videoimg_Click(object sender, System.EventArgs e)
+        {
+            //Intent i = this.Intent;
+            //int vidS =  .Extras.GetString("VID");
+            //VidFragment(vidS);
+        }
         private void Mtimg0_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
@@ -107,21 +115,18 @@ namespace Akyat.Pinas
             Intent i = this.Intent;
             int iimg1 = i.Extras.GetInt("IMG1");
             OpenFragment(iimg1);
-
         }
         private void Mtimg2_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
             int iimg2 = i.Extras.GetInt("IMG2");
             OpenFragment(iimg2);
-
         }
         private void Mtimg3_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
             int iimg3 = i.Extras.GetInt("IMG3");
             OpenFragment(iimg3);
-
         }
         private void Mtimg4_Click(object sender, System.EventArgs e)
         {
@@ -157,7 +162,7 @@ namespace Akyat.Pinas
             tsga = FindViewById<TextView>(Resource.Id.sgatxt);
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
-          //  video = FindViewById<VideoView>(Resource.Id.videoView1);
+            videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
         }
 
         private void OpenFragment(int img1)
@@ -166,6 +171,21 @@ namespace Akyat.Pinas
             b.PutInt("IMG1", img1);
 
             MyDialogFragment fragment = new MyDialogFragment();
+            fragment.Arguments = b;
+
+            fragment.Show(this.FragmentManager, "dialog");
+        }
+        private void VidFragment(string vid)
+        {
+            Bundle b = new Bundle();
+            b.PutString("VID", vid);
+
+
+
+            MyDialogFragment fragment = new MyDialogFragment();
+            var uri = Android.Net.Uri.Parse(vid);
+            //videof.SetVideoURI(uri);
+            //videof.Start();
             fragment.Arguments = b;
 
             fragment.Show(this.FragmentManager, "dialog");

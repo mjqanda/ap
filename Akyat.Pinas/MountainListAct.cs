@@ -98,7 +98,7 @@ namespace Akyat.Pinas
             i.PutExtra("PRACTICALITIES", mt.Practicalities);
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
-
+            i.PutExtra("VV", mt.Vid);
             StartActivity(i);
         }
         private void OpenDetailActivitys(int pos)
@@ -121,6 +121,7 @@ namespace Akyat.Pinas
             i.PutExtra("PRACTICALITIES", mt.Practicalities);
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
+            i.PutExtra("VV", mt.Vid);
 
             StartActivity(i);
             Finish();
@@ -151,7 +152,6 @@ namespace Akyat.Pinas
             //mListView.InvalidateViews();
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
         }
-        
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.actionbar, menu);
@@ -168,7 +168,6 @@ namespace Akyat.Pinas
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             intent.SetFlags(ActivityFlags.ClearTop);
         }
-
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
 
@@ -178,42 +177,36 @@ namespace Akyat.Pinas
                 List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
-
             }
             else if (id == Resource.Id.action2)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.MtName).ToList());
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
-
             }
             else if (id == Resource.Id.action3)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Masl)).ToList();
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged()); 
-
             }
             else if (id == Resource.Id.action4)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Masl)).ToList();
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged()); 
-                
             }
             else if (id == Resource.Id.action5)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Difficulty)).ToList();
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
-
             }
             else if (id == Resource.Id.action6)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Difficulty)).ToList();
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
-
             }
             else if (id == Resource.Id.action7) //show LUZON
             {
@@ -221,7 +214,6 @@ namespace Akyat.Pinas
                                                     where mountain.Island == 1
                                                     orderby mountain.MtName
                                                     select mountain).ToList();
-                
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
@@ -274,7 +266,6 @@ namespace Akyat.Pinas
                     {
                         return true;
                     }
-
                     if (!mAnimatedDown)
                     {
                         //Listview is up
@@ -285,7 +276,6 @@ namespace Akyat.Pinas
                         anim.AnimationEnd += anim_AnimationEndDown;
                         mContainer.Animate().TranslationYBy(mSearch.Height).SetDuration(500).Start();
                     }
-
                     else
                     {
                         //Listview is down
@@ -296,15 +286,12 @@ namespace Akyat.Pinas
                         anim.AnimationEnd += anim_AnimationEndUp;
                         mContainer.Animate().TranslationYBy(-mSearch.Height).SetDuration(500).Start();
                     }
-
                     mAnimatedDown = !mAnimatedDown;
                     return true;
-
                 default:
                     return base.OnOptionsItemSelected(item);
             }
         }
-
         void anim_AnimationEndUp(object sender, Android.Views.Animations.Animation.AnimationEndEventArgs e)
         {
             mIsAnimating = false;
@@ -312,18 +299,15 @@ namespace Akyat.Pinas
             InputMethodManager inputManager = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
             inputManager.HideSoftInputFromWindow(this.CurrentFocus.WindowToken, HideSoftInputFlags.NotAlways);
         }
-
         void anim_AnimationEndDown(object sender, Android.Views.Animations.Animation.AnimationEndEventArgs e)
         {
             mIsAnimating = false;
         }
-
         void anim_AnimationStartDown(object sender, Android.Views.Animations.Animation.AnimationStartEventArgs e)
         {
             mIsAnimating = true;
             mSearch.Animate().AlphaBy(1.0f).SetDuration(500).Start();
         }
-
         void anim_AnimationStartUp(object sender, Android.Views.Animations.Animation.AnimationStartEventArgs e)
         {
             mIsAnimating = true;
