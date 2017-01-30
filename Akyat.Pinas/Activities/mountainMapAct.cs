@@ -1,7 +1,4 @@
 using System;
-
-
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -17,6 +14,7 @@ using Android.Util;
 using System.Collections.Generic;
 using System.Linq;
 using static Android.Gms.Maps.GoogleMap;
+using CameraPosition = Android.Gms.Maps.Model.CameraPosition;
 
 namespace Akyat.Pinas.Activities
 {
@@ -33,9 +31,6 @@ namespace Akyat.Pinas.Activities
 
         Double latitude;
         Double longitude;
-
-
-
 
         Marker markerApo;
         Marker markerArayat;
@@ -270,33 +265,17 @@ namespace Akyat.Pinas.Activities
                .SetTitle("Your Location")
                .SetSnippet(_locationText)
   .SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.findlocation)));
-
-
-             
-
-           
-
             }
-
-
-
-
-
-
         }
-
-
 
         public void OnProviderDisabled(string provider)
         {
             throw new NotImplementedException();
         }
-
         public void OnProviderEnabled(string provider)
         {
             throw new NotImplementedException();
         }
-
         public void OnStatusChanged(string provider, [GeneratedEnum] Availability status, Bundle extras)
         {
 
@@ -321,8 +300,6 @@ namespace Akyat.Pinas.Activities
             //settings database getting records
 
             InitializeLocationManager();
-
-
 
 
             DBItineraryRepository dbr = new DBItineraryRepository();
@@ -367,10 +344,6 @@ namespace Akyat.Pinas.Activities
             builder.Zoom(6);
             CameraPosition cameraPosition = builder.Build();
             CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
-
-            
-
-
 
             if (map != null)
             {
@@ -814,11 +787,9 @@ namespace Akyat.Pinas.Activities
             }
             else if (marker.Equals(markerCANDALAGA))
             {
-
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 7);
                 StartActivity(intent);
-
             }
 
             else if (marker.Equals(markerCristobal))
@@ -827,21 +798,16 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 8);
                 StartActivity(intent);
-
             }
-
            
             else if (marker.Equals(markerBatulao))
             {
-
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 5);
                 StartActivity(intent);
-
             }
             else if (marker.Equals(markerBINACAYAN))
             {
-
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 6);
                 StartActivity(intent);
