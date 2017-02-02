@@ -95,7 +95,7 @@ namespace Akyat.Pinas
             mtimg3.Click += Mtimg3_Click;
             mtimg4.Click += Mtimg4_Click;
             mtimg5.Click += Mtimg5_Click;
-            //videoimg.Click += Videoimg_Click;
+           videoimg.Click += Videoimg_Click;
         }
 
         private void Videoimg_Click(object sender, System.EventArgs e)
@@ -103,6 +103,16 @@ namespace Akyat.Pinas
             //Intent i = this.Intent;
             //int vidS =  .Extras.GetString("VID");
             //VidFragment(vidS);
+            //string imgName = "bbb"; //Change with the name of the image you want to pass
+            //int imgId = Resources.GetIdentifier(imgName, "drawable", PackageName);
+
+            ////Pass it with the Bundle class
+            //Bundle bundle = new Bundle();
+            //bundle.PutInt("imgId", imgId);
+            //newFragment.Arguments = bundle;
+
+            ////Show the Fragment
+            //newFragment.Show(ft, "dialog");
         }
         private void Mtimg0_Click(object sender, System.EventArgs e)
         {
@@ -162,7 +172,7 @@ namespace Akyat.Pinas
             tsga = FindViewById<TextView>(Resource.Id.sgatxt);
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
-           // videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
+            videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
         }
 
         private void OpenFragment(int img1)

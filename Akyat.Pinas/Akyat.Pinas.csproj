@@ -105,6 +105,7 @@
     <Compile Include="Activities\SettingsAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Activities\ThingsToBringAct.cs" />
+    <Compile Include="Activities\VideoFragment.cs" />
     <Compile Include="DetailActivity.cs" />
     <Compile Include="ExtMethods.cs" />
     <Compile Include="MountainListAct.cs" />
@@ -167,6 +168,7 @@
     <AndroidResource Include="Resources\layout\listsLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\video_fragment.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\mainMenuLayout.axml">

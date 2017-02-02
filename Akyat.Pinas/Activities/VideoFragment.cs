@@ -16,6 +16,7 @@ namespace Akyat.Pinas.Activities
     public class VideoFragment : DialogFragment
     {
         VideoView videof;
+        private MediaController media_controller;
         public static MyDialogFragment newInstance()
         {
             MyDialogFragment f = new MyDialogFragment();
@@ -34,16 +35,19 @@ namespace Akyat.Pinas.Activities
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
             //          return base.OnCreateView(inflater, container, savedInstanceState);
-            View v = inflater.Inflate(Resource.Layout.video_fragment,container, false);
+            //View v = inflater.Inflate(Resource.Layout.video_fragment,container, false);
 
-            videof = v.FindViewById<VideoView>(Resource.Id.videoView);
+            //var videof = v.FindViewById<VideoView>(Resource.Id.videoView);
 
-            string vid = Arguments.GetString("VID");
-           
+           // string vid = Arguments.GetString("VID");
 
-            videof.SetVideoPath(vid);
+            //media_controller = new Android.Widget.MediaController(this);
+            //media_controller.SetMediaPlayer(videof);
+            //videof.SetMediaController(media_controller);
+            //videof.RequestFocus();
+
+           // videof.SetVideoPath(vid);
             
-            //videof.SetImageResource(image);
 
             return v;
         }

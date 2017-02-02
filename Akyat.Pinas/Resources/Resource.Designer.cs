@@ -2569,38 +2569,38 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b00b5
 			public const int action0 = 2131427509;
 			
-			// aapt resource value: 0x7f0b00f4
-			public const int action1 = 2131427572;
-			
-			// aapt resource value: 0x7f0b00fd
-			public const int action10 = 2131427581;
+			// aapt resource value: 0x7f0b00f5
+			public const int action1 = 2131427573;
 			
 			// aapt resource value: 0x7f0b00fe
-			public const int action11 = 2131427582;
+			public const int action10 = 2131427582;
 			
-			// aapt resource value: 0x7f0b00f5
-			public const int action2 = 2131427573;
+			// aapt resource value: 0x7f0b00ff
+			public const int action11 = 2131427583;
 			
 			// aapt resource value: 0x7f0b00f6
-			public const int action3 = 2131427574;
+			public const int action2 = 2131427574;
 			
 			// aapt resource value: 0x7f0b00f7
-			public const int action4 = 2131427575;
+			public const int action3 = 2131427575;
 			
 			// aapt resource value: 0x7f0b00f8
-			public const int action5 = 2131427576;
+			public const int action4 = 2131427576;
 			
 			// aapt resource value: 0x7f0b00f9
-			public const int action6 = 2131427577;
+			public const int action5 = 2131427577;
 			
 			// aapt resource value: 0x7f0b00fa
-			public const int action7 = 2131427578;
+			public const int action6 = 2131427578;
 			
 			// aapt resource value: 0x7f0b00fb
-			public const int action8 = 2131427579;
+			public const int action7 = 2131427579;
 			
 			// aapt resource value: 0x7f0b00fc
-			public const int action9 = 2131427580;
+			public const int action8 = 2131427580;
+			
+			// aapt resource value: 0x7f0b00fd
+			public const int action9 = 2131427581;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int action_bar = 2131427404;
@@ -3064,8 +3064,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b003e
 			public const int scrollView = 2131427390;
 			
-			// aapt resource value: 0x7f0b00f3
-			public const int search = 2131427571;
+			// aapt resource value: 0x7f0b00f4
+			public const int search = 2131427572;
 			
 			// aapt resource value: 0x7f0b0050
 			public const int search_badge = 2131427408;
@@ -3198,6 +3198,9 @@ namespace Akyat.Pinas
 			
 			// aapt resource value: 0x7f0b001d
 			public const int useLogo = 2131427357;
+			
+			// aapt resource value: 0x7f0b00f3
+			public const int videoView = 2131427571;
 			
 			// aapt resource value: 0x7f0b0070
 			public const int vvimg = 2131427440;
@@ -3407,6 +3410,9 @@ namespace Akyat.Pinas
 			
 			// aapt resource value: 0x7f030032
 			public const int thingsToBringLayout = 2130903090;
+			
+			// aapt resource value: 0x7f030033
+			public const int video_fragment = 2130903091;
 			
 			static Layout()
 			{
