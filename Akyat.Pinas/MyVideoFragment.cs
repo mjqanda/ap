@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Akyat.Pinas
 {
-    [Activity(Label = "MyVideoFragment")]
+    [Activity(Theme = "@style/Theme.NoTitle",Label = "MyVideoFragment")]
     public class MyVideoFragment : DialogFragment
     {
         VideoView imgf;
@@ -36,19 +36,12 @@ namespace Akyat.Pinas
 
             imgf = v.FindViewById<VideoView>(Resource.Id.videoFragment);
 
-
-         
-
-
+            
             string video = this.Arguments.GetString("VID");
 
             imgf.SetVideoURI(Android.Net.Uri.Parse(video));
-
-            media = new MediaController();
-            media.SetMediaPlayer(imgf);
-            imgf.SetMediaController(media);
-            imgf.RequestFocus();
-
+            imgf.Start();
+          
 
 
             return v;
