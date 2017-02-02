@@ -101,7 +101,7 @@ namespace Akyat.Pinas
         private void Videoimg_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
-           string vidS =  i.GetStringExtra("VV");
+           string vidS =  i.Extras.GetString("VV");
             VidFragment(vidS);
         }
         private void Mtimg0_Click(object sender, System.EventArgs e)

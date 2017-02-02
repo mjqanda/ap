@@ -16,7 +16,7 @@ namespace Akyat.Pinas
     public class MyVideoFragment : DialogFragment
     {
         VideoView imgf;
-
+        MediaController media;
         public static MyVideoFragment newInstance()
         {
             MyVideoFragment f = new MyVideoFragment();
@@ -32,14 +32,25 @@ namespace Akyat.Pinas
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            View v = inflater.Inflate(Resource.Layout.fragment_dialog, container, false);
+            View v = inflater.Inflate(Resource.Layout.fragmentVideoLayout, container, false);
 
             imgf = v.FindViewById<VideoView>(Resource.Id.videoFragment);
+
+
+         
+
 
             string video = this.Arguments.GetString("VID");
 
             imgf.SetVideoURI(Android.Net.Uri.Parse(video));
-           
+
+            media = new MediaController();
+            media.SetMediaPlayer(imgf);
+            imgf.SetMediaController(media);
+            imgf.RequestFocus();
+
+
+
             return v;
         }
     }
