@@ -115,6 +115,7 @@
     <Compile Include="MyAnimation.cs" />
     <Compile Include="Activities\itineraryAct.cs" />
     <Compile Include="MyDialogFragment.cs" />
+    <Compile Include="MyVideoFragment.cs" />
     <Compile Include="ORM\checklistClass.cs" />
     <Compile Include="ORM\DBItineraryRepository.cs" />
     <Compile Include="ORM\itineraryClass.cs" />
@@ -165,6 +166,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\listsLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragmentVideoLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

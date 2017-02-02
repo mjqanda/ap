@@ -4,11 +4,9 @@
     android:layout_height="match_parent"
     android:minWidth="2000dp"
     android:minHeight="2000dp">
-    
-    <ImageView
+    <VideoView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/imageFragment"
-        android:src="@drawable/batulao"
-        android:scaleType="fitCenter" />
+        android:id="@+id/videoFragment" />
+    
 </LinearLayout>

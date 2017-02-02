@@ -95,14 +95,14 @@ namespace Akyat.Pinas
             mtimg3.Click += Mtimg3_Click;
             mtimg4.Click += Mtimg4_Click;
             mtimg5.Click += Mtimg5_Click;
-            //videoimg.Click += Videoimg_Click;
+            videoimg.Click += Videoimg_Click;
         }
 
         private void Videoimg_Click(object sender, System.EventArgs e)
         {
-            //Intent i = this.Intent;
-            //int vidS =  .Extras.GetString("VID");
-            //VidFragment(vidS);
+            Intent i = this.Intent;
+           string vidS =  i.GetStringExtra("VV");
+            VidFragment(vidS);
         }
         private void Mtimg0_Click(object sender, System.EventArgs e)
         {
@@ -162,7 +162,7 @@ namespace Akyat.Pinas
             tsga = FindViewById<TextView>(Resource.Id.sgatxt);
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
-           // videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
+         videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
         }
 
         private void OpenFragment(int img1)
@@ -182,8 +182,8 @@ namespace Akyat.Pinas
 
 
 
-            MyDialogFragment fragment = new MyDialogFragment();
-            var uri = Android.Net.Uri.Parse(vid);
+            MyVideoFragment fragment = new MyVideoFragment();
+          //  var uri = vid;
             //videof.SetVideoURI(uri);
             //videof.Start();
             fragment.Arguments = b;
