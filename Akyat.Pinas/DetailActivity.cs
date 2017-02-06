@@ -102,7 +102,19 @@ namespace Akyat.Pinas
         {
             Intent i = this.Intent;
            string vidS =  i.Extras.GetString("VV");
+
+            if (vidS != null) { 
+                
             VidFragment(vidS);
+            }
+            else
+            {
+                Toast.MakeText(this,"Video not available", ToastLength.Short).Show();
+
+            }
+
+
+
         }
         private void Mtimg0_Click(object sender, System.EventArgs e)
         {
