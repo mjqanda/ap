@@ -175,10 +175,12 @@ namespace Akyat.Pinas
             List<Mountain> searchedMountains = (from mountain in mMountains
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 select mountain).ToList<Mountain>();
-           
-            mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
+
+              mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
+        
             mListView.Adapter = mAdapter;
             mMountainsTemp = searchedMountains.ToList();
+          
             mListView.ItemClick += SearchClick;
           
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());

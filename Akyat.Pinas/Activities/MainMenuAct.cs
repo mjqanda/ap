@@ -83,9 +83,9 @@ namespace Akyat.Pinas.Activities
 
         public override void OnBackPressed()
         {
-            Finish();
-          System.Environment.Exit(0);
- System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
+            RunOnUiThread(() => Android.OS.Process.KillProcess(Android.OS.Process.MyPid()));
+         //   Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+          //  System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
             
         }
 

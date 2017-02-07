@@ -37,13 +37,14 @@ namespace Akyat.Pinas
             return position;
         }
 
-      
 
+       
 
         public  void Update(List<Mountain> mLists)
         {
             mtList.Clear();
             mtList.AddRange(mLists);
+           
             NotifyDataSetChanged();
         }
         public void Iupdate(List<Mountain> mLists)
