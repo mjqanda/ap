@@ -10,7 +10,7 @@ using Android.Graphics;
 
 namespace Akyat.Pinas
 {
-    [Activity(Label = "DetailActivity", Theme = "@style/Theme.NoTitle")]
+    [Activity(Label = "DetailActivity", Theme = "@style/Theme.NoTitle", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
     public class DetailActivity : Activity
     {
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,tttb,tsga,tsgt,tnote;
@@ -95,24 +95,26 @@ namespace Akyat.Pinas
             mtimg3.Click += Mtimg3_Click;
             mtimg4.Click += Mtimg4_Click;
             mtimg5.Click += Mtimg5_Click;
-           videoimg.Click += Videoimg_Click;
+            videoimg.Click += Videoimg_Click;
         }
 
         private void Videoimg_Click(object sender, System.EventArgs e)
         {
-            //Intent i = this.Intent;
-            //int vidS =  .Extras.GetString("VID");
-            //VidFragment(vidS);
-            //string imgName = "bbb"; //Change with the name of the image you want to pass
-            //int imgId = Resources.GetIdentifier(imgName, "drawable", PackageName);
+            Intent i = this.Intent;
+           string vidS =  i.Extras.GetString("VV");
 
-            ////Pass it with the Bundle class
-            //Bundle bundle = new Bundle();
-            //bundle.PutInt("imgId", imgId);
-            //newFragment.Arguments = bundle;
+            if (vidS != null) { 
+                
+            VidFragment(vidS);
+            }
+            else
+            {
+                Toast.MakeText(this,"Video not available", ToastLength.Short).Show();
 
-            ////Show the Fragment
-            //newFragment.Show(ft, "dialog");
+            }
+
+
+
         }
         private void Mtimg0_Click(object sender, System.EventArgs e)
         {
@@ -172,7 +174,7 @@ namespace Akyat.Pinas
             tsga = FindViewById<TextView>(Resource.Id.sgatxt);
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
-            videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
+         videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
         }
 
         private void OpenFragment(int img1)
@@ -192,8 +194,8 @@ namespace Akyat.Pinas
 
 
 
-            MyDialogFragment fragment = new MyDialogFragment();
-            var uri = Android.Net.Uri.Parse(vid);
+            MyVideoFragment fragment = new MyVideoFragment();
+          //  var uri = vid;
             //videof.SetVideoURI(uri);
             //videof.Start();
             fragment.Arguments = b;

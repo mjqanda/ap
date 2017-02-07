@@ -105,7 +105,6 @@
     <Compile Include="Activities\SettingsAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Activities\ThingsToBringAct.cs" />
-    <Compile Include="Activities\VideoFragment.cs" />
     <Compile Include="DetailActivity.cs" />
     <Compile Include="ExtMethods.cs" />
     <Compile Include="MountainListAct.cs" />
@@ -116,6 +115,7 @@
     <Compile Include="MyAnimation.cs" />
     <Compile Include="Activities\itineraryAct.cs" />
     <Compile Include="MyDialogFragment.cs" />
+    <Compile Include="MyVideoFragment.cs" />
     <Compile Include="ORM\checklistClass.cs" />
     <Compile Include="ORM\DBItineraryRepository.cs" />
     <Compile Include="ORM\itineraryClass.cs" />
@@ -168,7 +168,9 @@
     <AndroidResource Include="Resources\layout\listsLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\video_fragment.axml" />
+    <AndroidResource Include="Resources\layout\fragmentVideoLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\mainMenuLayout.axml">
