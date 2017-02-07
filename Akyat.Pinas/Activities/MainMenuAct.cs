@@ -64,6 +64,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainMapAct));
           
                 StartActivity(intent);
+                Finish();
             };
 
 
