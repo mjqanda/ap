@@ -153,6 +153,14 @@ namespace Akyat.Pinas
             int iimg5 = i.Extras.GetInt("IMG5");
             OpenFragment(iimg5);
         }
+        public override void OnBackPressed()
+        {
+
+            var intent = new Intent(this, typeof(MountainListAct));
+            StartActivity(intent);
+            intent.SetFlags(ActivityFlags.ClearTop);
+            Finish();
+        }
 
         private void FindViews()
         {

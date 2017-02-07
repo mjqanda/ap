@@ -17,7 +17,8 @@ namespace Akyat.Pinas
     [Activity(Label = "MountainList!")]
     public class MountainListAct : Activity
     {
-        private List<Mountain> mMountains;
+        private List<Mountain> mMountains = new List<Mountain>();
+        private List<Mountain> mMountainsTemp = new List<Mountain>();
         private ListView mListView;
         private EditText mSearch;
         private LinearLayout mContainer;
@@ -44,6 +45,10 @@ namespace Akyat.Pinas
                 mSearch.TextChanged += mSearch_TextChanged;
                 //mListView.FastScrollEnabled = true;
                 mMountains = MountainsData.MountainList;
+                //
+             
+                 mMountainsTemp = mMountains.ToList();
+
                 mListView.ItemClick += mListView_ItemClick;
                 //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
                 mSearch.Alpha = 0;
@@ -58,7 +63,7 @@ namespace Akyat.Pinas
                 mListView = FindViewById<ListView>(Resource.Id.listView);
                 mSearch = FindViewById<EditText>(Resource.Id.etSearch);
                 mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
-
+                mMountainsTemp = mMountains.ToList();
                 mSearch.TextChanged += mSearch_TextChanged;
                 //mListView.FastScrollEnabled = true;
                 mMountains = MountainsData.MountainList;
@@ -78,11 +83,44 @@ namespace Akyat.Pinas
             int itemPosition = e.Position;
             OpenDetailActivity(itemPosition);
         }
+        private void SearchClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            int itemPosition = e.Position;
+            OpenDetailForSearch(itemPosition);
+        }
         private void OpenDetailActivity(int pos)
         {
             mt = mMountains[pos];
+            //mt = mMountainsTemp[pos];
+
             i = new Intent(this, typeof(DetailActivity));
             
+            i.PutExtra("IMG0", mt.MtImg00);
+            i.PutExtra("IMG1", mt.MtImg01);
+            i.PutExtra("IMG2", mt.MtImg02);
+            i.PutExtra("IMG3", mt.MtImg03);
+            i.PutExtra("IMG4", mt.MtImg04);
+            i.PutExtra("IMG5", mt.MtImg05);
+            i.PutExtra("MTNAME", mt.MtName);
+            i.PutExtra("LOCATION", mt.Location);
+            i.PutExtra("JUMPOFF", mt.JumpOff);
+            i.PutExtra("DESCRIPTION", mt.Description);
+            i.PutExtra("BACKGROUND", mt.Background);
+            i.PutExtra("ITINERARY", mt.Itinerary);
+            i.PutExtra("PRACTICALITIES", mt.Practicalities);
+            i.PutExtra("ATTIRE", mt.Attire);
+            i.PutExtra("TTB", mt.Ttb);
+            i.PutExtra("VV", mt.Vid);
+            StartActivity(i);
+        }
+
+        private void OpenDetailForSearch(int pos)
+        {
+            //mt = mMountains[pos];
+            mt = mMountainsTemp[pos];
+
+            i = new Intent(this, typeof(DetailActivity));
+
             i.PutExtra("IMG0", mt.MtImg00);
             i.PutExtra("IMG1", mt.MtImg01);
             i.PutExtra("IMG2", mt.MtImg02);
@@ -128,30 +166,16 @@ namespace Akyat.Pinas
         }
         void mSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
         {
-         
+            
             List<Mountain> searchedMountains = (from mountain in mMountains
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
-                                                select mountain).ToList();
-
-            //mListView.Invalidate();
-            // mAdapter.GetView(context,Resource.Layout.ml_model,searchedMountains);
-            //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
-            //mListView.Adapter = mAdapter;
-
-            //RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
-            //mListView.Adapter = mAdapter;
-
-
-            //List<Mountain> searchedMountains = (from mountain in mMountains
-            //                          where mountain.MtName.ToUpper().Contains(mSearch.Text.ToUpper())
-            //                          select mountain).ToList();
-
+                                                select mountain).ToList<Mountain>();
+           
+            mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
+            mListView.Adapter = mAdapter;
+            mMountainsTemp = searchedMountains.ToList();
+            mListView.ItemClick += SearchClick;
           
-            //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
-            mAdapter.Update(searchedMountains);
-            
-            //mListView.Adapter = mAdapter;
-            //mListView.InvalidateViews();
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -236,7 +260,7 @@ namespace Akyat.Pinas
                                                     where mountain.Island == 3
                                                     orderby mountain.MtName
                                                     select mountain).ToList();
-                //mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mAdapter.Update(filteredMountains);
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
