@@ -10,7 +10,7 @@ using Android.Graphics;
 
 namespace Akyat.Pinas
 {
-    [Activity(Label = "DetailActivity", Theme = "@style/Theme.NoTitle")]
+    [Activity(Label = "DetailActivity", Theme = "@style/Theme.NoTitle", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
     public class DetailActivity : Activity
     {
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,tttb,tsga,tsgt,tnote;

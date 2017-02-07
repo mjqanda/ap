@@ -22,7 +22,7 @@ namespace Akyat.Pinas.Activities
     public class MountainMapAct : Activity, ILocationListener, IOnInfoWindowClickListener
     {
         static readonly string TAG = "X:" + typeof(MountainMapAct).Name;
-        TextView _addressText;
+       
         Location _currentLocation;
         LocationManager _locationManager;
 
@@ -326,7 +326,7 @@ namespace Akyat.Pinas.Activities
 
 
 
-                Marker yourLocation = map.AddMarker(new MarkerOptions()
+              yourLocation = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(latitude, longitude))
                .SetTitle("Your Location")
                .SetSnippet(_locationText)
@@ -666,7 +666,7 @@ namespace Akyat.Pinas.Activities
 
 
 
-                Marker yourLocation = map.AddMarker(new MarkerOptions()
+            yourLocation = map.AddMarker(new MarkerOptions()
               .SetPosition(new LatLng(latitude, longitude))
                .SetTitle("Your Location")
                .SetSnippet(_locationText)

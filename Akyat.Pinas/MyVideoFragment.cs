@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Akyat.Pinas
 {
-    [Activity(Theme = "@style/Theme.NoTitle",Label = "MyVideoFragment")]
+    [Activity(Theme = "@style/Theme.NoTitle",Label = "MyVideoFragment",ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
     public class MyVideoFragment : DialogFragment
     {
         VideoView imgf;
