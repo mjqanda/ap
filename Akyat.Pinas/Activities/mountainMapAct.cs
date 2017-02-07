@@ -717,6 +717,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 0);
                 StartActivity(intent);
+                Finish();
 
             }
 
@@ -726,6 +727,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 1);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerArayat))
@@ -734,6 +736,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 2);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerDULANGDULANG))
@@ -742,6 +745,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 9);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerGuitingGuiting))
@@ -750,6 +754,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 10);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerHalcon))
@@ -758,6 +763,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 11);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerHamiguitan))
@@ -766,6 +772,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 12);
                 StartActivity(intent);
+                Finish();
 
             }
 
@@ -775,6 +782,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 13);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerKalatungan))
@@ -783,6 +791,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 14);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerKanlaon))
@@ -792,6 +801,7 @@ namespace Akyat.Pinas.Activities
                 intent.PutExtra("mtDataPos", 15);
                 StartActivity(intent);
 
+                Finish();
             }
 
             else if (marker.Equals(markerKitanglad))
@@ -800,6 +810,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 16);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerLubog))
@@ -808,6 +819,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 17);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerMaculot))
@@ -816,6 +828,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 18);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerMadjaas))
@@ -825,6 +838,7 @@ namespace Akyat.Pinas.Activities
                 intent.PutExtra("mtDataPos", 19);
                 StartActivity(intent);
 
+                Finish();
             }
             else if (marker.Equals(markerMakiling))
             {
@@ -832,6 +846,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 20);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerManabuPeak))
@@ -840,6 +855,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 21);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerMatalingajan))
@@ -848,6 +864,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 22);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerMatutum))
@@ -856,6 +873,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 24);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerOsmenaPeak))
@@ -864,6 +882,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 26);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerPamitinan))
@@ -872,6 +891,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 27);
                 StartActivity(intent);
+                Finish();
 
             }
 
@@ -881,6 +901,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 28);
                 StartActivity(intent);
+                Finish();
 
             }
 
@@ -890,6 +911,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 29);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerTaalVolcano))
@@ -898,6 +920,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 31);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerTalamitam))
@@ -906,6 +929,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 32);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerTarakRidge))
@@ -914,6 +938,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 34);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerCANDALAGA))
@@ -921,6 +946,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 7);
                 StartActivity(intent);
+                Finish();
             }
 
             else if (marker.Equals(markerCristobal))
@@ -929,6 +955,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 8);
                 StartActivity(intent);
+                Finish();
             }
            
             else if (marker.Equals(markerBatulao))
@@ -936,12 +963,14 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 5);
                 StartActivity(intent);
+                Finish();
             }
             else if (marker.Equals(markerBINACAYAN))
             {
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 6);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerTayakHill))
@@ -950,6 +979,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos",35);
                 StartActivity(intent);
+                Finish();
 
             }
             else if (marker.Equals(markerUlap))
@@ -958,6 +988,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 37);
                 StartActivity(intent);
+                Finish();
             }
             
 
@@ -970,6 +1001,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 3);
                 StartActivity(intent);
+                Finish();
             }
             else if (marker.Equals(markerBatolusong))
             {
@@ -977,6 +1009,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 4);
                 StartActivity(intent);
+                Finish();
             }
            
             else if (marker.Equals(markerCandalaga))
@@ -985,6 +1018,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 7);
                 StartActivity(intent);
+                Finish();
             }
             else if (marker.Equals(markerMarami))
             {
@@ -992,6 +1026,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 23);
                 StartActivity(intent);
+                Finish();
             }
 
             
@@ -1002,6 +1037,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 25);
                 StartActivity(intent);
+                Finish();
             }
             else if (marker.Equals(markerRomelo))
             {
@@ -1009,6 +1045,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 30);
                 StartActivity(intent);
+                Finish();
             }
             else if (marker.Equals(markerTalomo))
             {
@@ -1016,6 +1053,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 33);
                 StartActivity(intent);
+                Finish();
             }
             else if (marker.Equals(markerTresMarias))
             {
@@ -1023,6 +1061,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 36);
                 StartActivity(intent);
+                Finish();
             }
             else if (marker.Equals(markerVictoria))
             {
@@ -1030,6 +1069,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 38);
                 StartActivity(intent);
+                Finish();
             }
 
             else if (marker.Equals(markerWhitePeak))
@@ -1047,11 +1087,7 @@ namespace Akyat.Pinas.Activities
 
         public override void OnBackPressed()
         {
-
-
-
-
-
+            
             var intent = new Intent(this, typeof(MainMenuAct));
             StartActivity(intent);
             intent.SetFlags(ActivityFlags.ClearTop);
