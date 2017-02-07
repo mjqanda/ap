@@ -10,7 +10,7 @@
     android:id="@+id/action1"
     android:orderInCategory="100"
     android:showAsAction="never"
-    android:title="Sort Name(A-Z)"
+    android:title="Show All (Sorted A-Z)"
     />
   <item
     android:id="@+id/action2"
@@ -68,13 +68,13 @@
     android:id="@+id/action10"
     android:orderInCategory="108"
     android:showAsAction="never"
-    android:title="Sort DayHike Mountains(Minor)"
+    android:title="DayHike Mountains"
     />
   <item
    android:id="@+id/action11"
    android:orderInCategory="109"
    android:showAsAction="never"
-   android:title="Sort Overnight Mountains(Major)"
+   android:title="Overnight Mountains"
     />
  
 </menu>
