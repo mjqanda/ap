@@ -240,28 +240,47 @@ namespace Akyat.Pinas
                 List<Mountain> filteredMountains = (from mountain in mMountains
                                                     where mountain.Island == 1
                                                     orderby mountain.MtName
-                                                    select mountain).ToList();
-                mAdapter.Update(filteredMountains);
+                                                    select mountain).ToList<Mountain>();
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
+                mListView.ItemClick += SearchClick;
+
+
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             else if (id == Resource.Id.action8) //show Visayas
             {
-                List<Mountain> filteredMountains = (mMountains.Where(mountain => mountain.Island == 2)
-                    .OrderBy(mountain => mountain.MtName)).ToList();
+                List<Mountain> filteredMountains = (from mountain in mMountains
+                                                    where mountain.Island == 2
+                                                    orderby mountain.MtName
+                                                    select mountain).ToList<Mountain>();
 
-                mAdapter.Update(filteredMountains);
-                //  InvalidateOptionsMenu();
-                //mAdapter.Reinstantiate(filteredMountains);
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
+                mListView.ItemClick += SearchClick;
+
+
+             
+
+
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             else if (id == Resource.Id.action9) //show Mindanao
             {
-                List<Mountain> filteredMountains = (from mountain in mMountains 
+                List<Mountain> filteredMountains = (from mountain in mMountains
                                                     where mountain.Island == 3
                                                     orderby mountain.MtName
-                                                    select mountain).ToList();
+                                                    select mountain).ToList<Mountain>();
+
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
-                mAdapter.Update(filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
+                mListView.ItemClick += SearchClick;
+
+
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             //else if (id == Resource.Id.actionall)
