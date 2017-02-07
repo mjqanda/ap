@@ -7,6 +7,7 @@ using Akyat.Pinas;
 using Akyat.Pinas.ORM;
 using Android.Content;
 using Android.Graphics;
+using Akyat.Pinas.Activities;
 
 namespace Akyat.Pinas
 {
@@ -156,10 +157,26 @@ namespace Akyat.Pinas
         public override void OnBackPressed()
         {
 
-            var intent = new Intent(this, typeof(MountainListAct));
-            StartActivity(intent);
-            intent.SetFlags(ActivityFlags.ClearTop);
-            Finish();
+
+            string fromMap = Intent.GetStringExtra("imFromMap");
+
+            if (fromMap == "OKAY") {
+
+                var intent = new Intent(this, typeof(MountainMapAct));
+                StartActivity(intent);
+                intent.SetFlags(ActivityFlags.ClearTop);
+                Finish();
+            }
+
+            else if (fromMap == null)
+            {
+                var intent = new Intent(this, typeof(MountainListAct));
+                StartActivity(intent);
+                intent.SetFlags(ActivityFlags.ClearTop);
+                Finish();
+            }
+
+
         }
 
         private void FindViews()

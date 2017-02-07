@@ -5,6 +5,7 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System;
+using static Android.Bluetooth.BluetoothClass;
 
 namespace Akyat.Pinas.Activities
 {
@@ -78,6 +79,17 @@ namespace Akyat.Pinas.Activities
 
 
         }
+
+        public override void OnBackPressed()
+        {
+
+
+            System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
+
+
+        }
+
+       
     }
 }
 

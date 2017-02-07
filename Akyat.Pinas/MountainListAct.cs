@@ -112,6 +112,7 @@ namespace Akyat.Pinas
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
             StartActivity(i);
+            Finish();
         }
 
         private void OpenDetailForSearch(int pos)
@@ -138,10 +139,14 @@ namespace Akyat.Pinas
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
             StartActivity(i);
+            Finish();
         }
         private void OpenDetailActivitys(int pos)
         {
             mt = mMountains[pos];
+
+
+
             i = new Intent(this, typeof(DetailActivity));
 
             i.PutExtra("IMG0", mt.MtImg00);
@@ -160,7 +165,7 @@ namespace Akyat.Pinas
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
-
+            i.PutExtra("imFromMap", "OKAY");
             StartActivity(i);
             Finish();
         }

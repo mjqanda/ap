@@ -1038,10 +1038,29 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(MountainListAct));
                 intent.PutExtra("mtDataPos", 379);
                 StartActivity(intent);
+                Finish();
             }
 
 
 
         }
+
+        public override void OnBackPressed()
+        {
+
+
+
+
+
+            var intent = new Intent(this, typeof(MainMenuAct));
+            StartActivity(intent);
+            intent.SetFlags(ActivityFlags.ClearTop);
+            Finish();
+        }
+
+
+
+
+
     }
 }
