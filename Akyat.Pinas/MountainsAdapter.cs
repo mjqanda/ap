@@ -43,8 +43,10 @@ namespace Akyat.Pinas
         public  void Update(List<Mountain> mLists)
         {
             mtList.Clear();
-            mtList.AddRange(mLists);
+            
+        mtList.AddRange(mLists);
            
+
             NotifyDataSetChanged();
         }
         public void Iupdate(List<Mountain> mLists)
