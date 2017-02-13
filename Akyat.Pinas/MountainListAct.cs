@@ -374,7 +374,7 @@ namespace Akyat.Pinas
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
-                mListView.ItemClick += SearchClick;
+            //    mListView.ItemClick += SearchClick;
 
 
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
@@ -389,7 +389,7 @@ namespace Akyat.Pinas
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
-                mListView.ItemClick += SearchClick;
+             //   mListView.ItemClick += SearchClick;
 
 
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
