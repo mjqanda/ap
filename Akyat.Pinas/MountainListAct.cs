@@ -11,6 +11,8 @@ using Akyat.Pinas;
 using SQLite;
 using Akyat.Pinas.ORM;
 using System.IO;
+using Android.Renderscripts;
+using Java.Security;
 
 namespace Akyat.Pinas
 {
@@ -24,31 +26,27 @@ namespace Akyat.Pinas
         private LinearLayout mContainer;
         private Mountain mt = null;
         private Intent i = null;
-        private bool mAnimatedDown;
-        private bool mIsAnimating;
+        private bool mAnimatedDown, mIsAnimating;
         private MountainsAdapter mAdapter;
         private Context context;
-
+       
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
+            
             int position = Intent.GetIntExtra("mtDataPos" , 177);
             
            if (position == 177 )
-            { 
-                SetContentView(Resource.Layout.mountainListLayout);
-                mListView = FindViewById<ListView>(Resource.Id.listView);
-                mSearch = FindViewById<EditText>(Resource.Id.etSearch);
-                mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
-
+            {
+                //SetContentView(Resource.Layout.mountainListLayout);
+                //mListView = FindViewById<ListView>(Resource.Id.listView);
+                //mSearch = FindViewById<EditText>(Resource.Id.etSearch);
+                //mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
+                ViewHolder();
                 mSearch.TextChanged += mSearch_TextChanged;
                 //mListView.FastScrollEnabled = true;
                 mMountains = MountainsData.MountainList;
-                //
-             
                  mMountainsTemp = mMountains.ToList();
-
                 mListView.ItemClick += mListView_ItemClick;
                 //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
                 mSearch.Alpha = 0;
@@ -59,18 +57,20 @@ namespace Akyat.Pinas
             }
            else
                 {
-                SetContentView(Resource.Layout.mountainListLayout);
-                mListView = FindViewById<ListView>(Resource.Id.listView);
-                mSearch = FindViewById<EditText>(Resource.Id.etSearch);
-                mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
+                //SetContentView(Resource.Layout.mountainListLayout);
+                //mListView = FindViewById<ListView>(Resource.Id.listView);
+                //mSearch = FindViewById<EditText>(Resource.Id.etSearch);
+                //mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
+                ViewHolder();
                 mMountainsTemp = mMountains.ToList();
                 mSearch.TextChanged += mSearch_TextChanged;
-                //mListView.FastScrollEnabled = true;
+                mListView.FastScrollEnabled = true;
                 mMountains = MountainsData.MountainList;
                 mListView.ItemClick += mListView_ItemClick;
                 //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
+                
 
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
                 mListView.Adapter = mAdapter;
@@ -175,7 +175,7 @@ namespace Akyat.Pinas
             List<Mountain> searchedMountains = (from mountain in mMountains
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 select mountain).ToList<Mountain>();
-           
+
             mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
             mListView.Adapter = mAdapter;
             mMountainsTemp = searchedMountains.ToList();
@@ -251,8 +251,6 @@ namespace Akyat.Pinas
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
                 mListView.ItemClick += SearchClick;
-
-
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             else if (id == Resource.Id.action8) //show Visayas
@@ -266,10 +264,6 @@ namespace Akyat.Pinas
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
                 mListView.ItemClick += SearchClick;
-
-
-             
-
 
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
@@ -359,6 +353,18 @@ namespace Akyat.Pinas
                 default:
                     return base.OnOptionsItemSelected(item);
             }
+        }
+
+        //private void sample()
+        //{
+        //    mMountains.MountainsDat();
+        //}
+        private void ViewHolder()
+        {
+            SetContentView(Resource.Layout.mountainListLayout);
+            mListView = FindViewById<ListView>(Resource.Id.listView);
+            mSearch = FindViewById<EditText>(Resource.Id.etSearch);
+            mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
         }
         void anim_AnimationEndUp(object sender, Android.Views.Animations.Animation.AnimationEndEventArgs e)
         {

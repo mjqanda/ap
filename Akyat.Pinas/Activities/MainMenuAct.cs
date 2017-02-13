@@ -84,10 +84,9 @@ namespace Akyat.Pinas.Activities
         public override void OnBackPressed()
         {
 
-
-            System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
-
-
+            //System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
+            
+            this.Finish();
         }
 
        

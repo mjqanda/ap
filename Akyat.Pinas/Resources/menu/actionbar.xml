@@ -66,13 +66,13 @@
     android:title="Show all mountains"/>-->
     <item
     android:id="@+id/action10"
-    android:orderInCategory="108"
+    android:orderInCategory="109"
     android:showAsAction="never"
     android:title="DayHike Mountains"
     />
   <item
    android:id="@+id/action11"
-   android:orderInCategory="109"
+   android:orderInCategory="110"
    android:showAsAction="never"
    android:title="Overnight Mountains"
     />
