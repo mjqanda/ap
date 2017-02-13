@@ -47,13 +47,34 @@ namespace Akyat.Pinas
                 //mListView.FastScrollEnabled = true;
                 mMountains = MountainsData.MountainList;
                  mMountainsTemp = mMountains.ToList();
-                mListView.ItemClick += mListView_ItemClick;
+
+
+
+
+
+            
                 //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
 
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
                 mListView.Adapter = mAdapter;
+
+               
+                int start = mListView.FirstVisiblePosition;
+                int end = mListView.LastVisiblePosition;
+                int numberOfVisibleItems = end - start + 1;
+
+                if (numberOfVisibleItems == 40) {
+                mListView.ItemClick += mListView_ItemClick;
+                }
+                else
+                {
+                    mListView.ItemClick += SearchClick;
+                }
+
+
+
             }
            else
                 {
@@ -74,6 +95,23 @@ namespace Akyat.Pinas
 
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
                 mListView.Adapter = mAdapter;
+
+                int start = mListView.FirstVisiblePosition;
+                int end = mListView.LastVisiblePosition;
+                int numberOfVisibleItems = end - start + 1;
+
+                if (numberOfVisibleItems == 40)
+                {
+                    mListView.ItemClick += mListView_ItemClick;
+                }
+                else
+                {
+                    mListView.ItemClick += SearchClick;
+                }
+
+
+
+
                 OpenDetailActivitys(position);
             }
         }
@@ -179,7 +217,7 @@ namespace Akyat.Pinas
             mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
             mListView.Adapter = mAdapter;
             mMountainsTemp = searchedMountains.ToList();
-            mListView.ItemClick += SearchClick;
+       //     mListView.ItemClick += SearchClick;
           
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
         }
@@ -206,38 +244,76 @@ namespace Akyat.Pinas
             int id = item.ItemId;
             if (id == Resource.Id.action1)
             {
-                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
-                mAdapter.Update(filteredMountains);
+                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList<Mountain>();
+                //   mAdapter.Update(filteredMountains);
+
+
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             else if (id == Resource.Id.action2)
             {
-                List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.MtName).ToList());
-                mAdapter.Update(filteredMountains);
+                List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.MtName)).ToList<Mountain>();
+                //   mAdapter.Update(filteredMountains);
+
+
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             else if (id == Resource.Id.action3)
             {
-                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Masl)).ToList();
-                mAdapter.Update(filteredMountains);
+                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Masl)).ToList<Mountain>();
+                //   mAdapter.Update(filteredMountains);
+
+
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged()); 
             }
             else if (id == Resource.Id.action4)
             {
-                List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Masl)).ToList();
-                mAdapter.Update(filteredMountains);
+                List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Masl)).ToList<Mountain>();
+                //   mAdapter.Update(filteredMountains);
+
+
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged()); 
             }
             else if (id == Resource.Id.action5)
             {
-                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Difficulty)).ToList();
-                mAdapter.Update(filteredMountains);
+                List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Difficulty)).ToList<Mountain>();
+                //   mAdapter.Update(filteredMountains);
+
+
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             else if (id == Resource.Id.action6)
             {
-                List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Difficulty)).ToList();
-                mAdapter.Update(filteredMountains);
+                List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Difficulty)).ToList<Mountain>();
+                //   mAdapter.Update(filteredMountains);
+
+
+
+                mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
+                mListView.Adapter = mAdapter;
+                mMountainsTemp = filteredMountains.ToList();
+                //    mListView.ItemClick += SearchClick;
+
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             else if (id == Resource.Id.action7) //show LUZON
@@ -250,7 +326,7 @@ namespace Akyat.Pinas
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
-                mListView.ItemClick += SearchClick;
+            //    mListView.ItemClick += SearchClick;
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
             else if (id == Resource.Id.action8) //show Visayas
@@ -263,7 +339,7 @@ namespace Akyat.Pinas
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
-                mListView.ItemClick += SearchClick;
+             //   mListView.ItemClick += SearchClick;
 
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
@@ -277,7 +353,7 @@ namespace Akyat.Pinas
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
-                mListView.ItemClick += SearchClick;
+              //  mListView.ItemClick += SearchClick;
 
 
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
