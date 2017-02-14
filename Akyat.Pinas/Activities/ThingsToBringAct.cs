@@ -30,90 +30,47 @@ namespace Akyat.Pinas.Activities
             // instantiate names and values
         
             var backpackValue = "0";
-        
             var bootsValue = "0";
-           
             var plasticbagValue = "0";
-    
-             var toiletriesValue = "0";
-       
-             var outdoorclothesValue = "0";
-          
+            var toiletriesValue = "0";
+            var outdoorclothesValue = "0";
             var trailfoodValue = "0";
-     
-             var packedlunchValue = "0";
-    
+            var packedlunchValue = "0";
             var trailwaterValue = "0";
-       
             var firstaidkitValue = "0";
-            
-             var survivalkitValue = "0";
-
+            var survivalkitValue = "0";
             var messkitValue = "0";
-       
             var drinkingcupValue = "0";
-           
-             var spoonforkValue = "0";
-          
+            var spoonforkValue = "0";
             var identificationValue = "0";
-            
             var whistleValue = "0";
-            
             var raingearValue = "0";
-           
             var jacketValue = "0";
-          
             var sunprotectionValue = "0";
-      
-             var flashlightValue = "0";
-        
+            var flashlightValue = "0";
             var multitoolValue = "0";
-        
             var mobilephoneValue = "0";
-        
             var camerabatteriesValue = "0";
-         
             var trekkingpoleValue = "0";
-           
-        
-             var blanketValue = "0";
-          
+            var blanketValue = "0";
             var extraclothesValue = "0";
-      
             var sandalsValue = "0";
-         
             var campwaterValue = "0";
-          
-             var precookfoodValue = "0";
-        
+            var precookfoodValue = "0";
             var riceValue = "0";
-     
             var tyingstringValue = "0";
-         
             var stovefuelValue = "0";
-         
             var lighterValue = "0";
-          
             var matchesValue = "0";
-      
             var boloValue = "0";
-          
             var mapcompassValue = "0";
-        
-             var stoveValue = "0";
-            
+            var stoveValue = "0";
             var cooksetValue = "0";
-         
             var flagValue = "0";
-          
             var tentValue = "0";
-       
             var groundsheetValue = "0";
-        
-                var ropeValue = "0";
-     
+            var ropeValue = "0";
             var trowelValue = "0";
-          
             var othersValue = "";
 
             CheckBox cbbackpacks = FindViewById<CheckBox>(Resource.Id.cbBackpacks);
@@ -214,8 +171,6 @@ namespace Akyat.Pinas.Activities
                 ropeValue = item.ropeValue;
                 trowelValue = item.trowelValue;
                 othersValue = item.othersValue;
-                
-
 
             }
             catch (Exception ex)
@@ -1006,49 +961,47 @@ namespace Akyat.Pinas.Activities
 
                 var result = dbr.InsertRecordChecklist(name, backpackValue, bootsValue,plasticbagValue,
 
-                    toiletriesValue,
-                    outdoorclothesValue,
-                    trailfoodValue,
-                    packedlunchValue,
-                    trailwaterValue,
-                    firstaidkitValue,
-                    survivalkitValue,
-                    messkitValue,
-                    drinkingcupValue,
-                      spoonforkValue,
-                    identificationValue,
-                    whistleValue,
-                    raingearValue,
-                    jacketValue,
-                    sunprotectionValue,
-                    flashlightValue,
-                    multitoolValue,
-                    mobilephoneValue,
-                       camerabatteriesValue,
-                    trekkingpoleValue,
-                    blanketValue,
-                    extraclothesValue,
-                    sandalsValue,
-                    campwaterValue,
-                    precookfoodValue,
-                    riceValue,
-                    tyingstringValue,
-                    stovefuelValue,
-                    lighterValue,
-                    matchesValue,
-                    boloValue,
-                    mapcompassValue,
-                    stoveValue,
-                    cooksetValue,
-                    flagValue,
-                    tentValue,
-                     groundsheetValue,
-                     ropeValue,
-                     trowelValue,
-                     txtOthers.Text
-                    
+                toiletriesValue,
+                outdoorclothesValue,
+                trailfoodValue,
+                packedlunchValue,
+                trailwaterValue,
+                firstaidkitValue,
+                survivalkitValue,
+                messkitValue,
+                drinkingcupValue,
+                spoonforkValue,
+                identificationValue,
+                whistleValue,
+                raingearValue,
+                jacketValue,
+                sunprotectionValue,
+                flashlightValue,
+                multitoolValue,
+                mobilephoneValue,
+                camerabatteriesValue,
+                trekkingpoleValue,
+                blanketValue,
+                extraclothesValue,
+                sandalsValue,
+                campwaterValue,
+                precookfoodValue,
+                riceValue,
+                tyingstringValue,
+                stovefuelValue,
+                lighterValue,
+                matchesValue,
+                boloValue,
+                mapcompassValue,
+                stoveValue,
+                cooksetValue,
+                flagValue,
+                tentValue,
+                groundsheetValue,
+                ropeValue,
+                trowelValue,
+                txtOthers.Text
                     );
-             
 
                 Toast.MakeText(this, result, ToastLength.Short).Show();
                 var intent = new Intent(this, typeof(listsActivity));

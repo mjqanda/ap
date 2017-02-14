@@ -19,11 +19,9 @@ namespace Akyat.Pinas.Activities
             RequestWindowFeature(WindowFeatures.NoTitle);
          
             SetContentView(Resource.Layout.mainMenuLayout);
-            //view.playSoundEffect(SoundEffectConstants.CLICK);
 
             DBItineraryRepository dbr = new DBItineraryRepository();
             var result = dbr.CreateDB();
-
 
             Button btnMountainList = FindViewById<Button>(Resource.Id.btnMountainList);
             Button btnThingsToBring = FindViewById<Button>(Resource.Id.btnThingsToBring);
@@ -42,54 +40,36 @@ namespace Akyat.Pinas.Activities
 
             btnThingsToBring.Click += (sender, e) =>
             {
-               
                 var resultTable = dbr.CreateTableChecklist();
-
-            
                 var intent = new Intent(this, typeof(MainT2B));
-           
                 StartActivity(intent);
             };
 
-            
             btnNoTrace.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(LeaveNoTraceAct));
-        
                 StartActivity(intent);
             };
 
             btnMountainMap.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(MountainMapAct));
-          
                 StartActivity(intent);
                 Finish();
             };
 
-
             btnSettings.Click += (sender, e) =>
             {
-                
                 var resultTable = dbr.CreateTableSettings();
-            
                 var intent = new Intent(this, typeof(SettingsAct));
-               
                 StartActivity(intent);
             };
-
-
         }
-
+     
         public override void OnBackPressed()
         {
-
-            //System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
-            
             this.Finish();
         }
-
-       
     }
 }
 

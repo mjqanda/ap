@@ -66,12 +66,6 @@ namespace Akyat.Pinas.ORM
                 item.Itinerary = itinerary;
                 db.Update(item);
                 return "Itinerary Updated";
-
-
-
-
-
-
             }
         }
 
@@ -80,12 +74,8 @@ namespace Akyat.Pinas.ORM
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
             var db = new SQLiteConnection(dbPath);
             string output = "";
-
             var item = db.Get<itineraryClass>(name);
-
-           
-                output += "\n" + item.Itinerary;
-            
+            output += "\n" + item.Itinerary;
             return output;
         }
         public string UpdateRecord(string name, string itinerary)
@@ -105,7 +95,6 @@ namespace Akyat.Pinas.ORM
             var output = "";
             output += "";
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
-
             var db = new SQLiteConnection(dbPath);
             output += "";
             return output;

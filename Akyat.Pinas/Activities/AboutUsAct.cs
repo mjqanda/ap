@@ -23,7 +23,6 @@ namespace Akyat.Pinas.Activities
             Button buttoo = FindViewById<Button>(Resource.Id.button1);
             base.OnCreate(savedInstanceState);
             buttoo.Click += Buttoo_Click;
-            // Create your application here
         }
 
         private void Buttoo_Click(object sender, EventArgs e)

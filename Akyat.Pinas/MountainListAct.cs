@@ -51,32 +51,26 @@ namespace Akyat.Pinas
                 mSearch.TextChanged += mSearch_TextChanged;
                 mListView.FastScrollEnabled = true;
                 mListView.ScrollingCacheEnabled = false;
-
                 mMountains = MountainsData.MountainList;
                 mMountainsTemp = mMountains.ToList();
-
-
-                //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
-
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
                 mListView.Adapter = mAdapter;
 
+                ItemClickMethod();
+                //int start = mListView.FirstVisiblePosition;
+                //int end = mListView.LastVisiblePosition;
+                //int numberOfVisibleItems = end - start + 1;
 
-                int start = mListView.FirstVisiblePosition;
-                int end = mListView.LastVisiblePosition;
-                int numberOfVisibleItems = end - start + 1;
-
-                if (numberOfVisibleItems == 40)
-                {
-                    mListView.ItemClick += mListView_ItemClick;
-                }
-                else
-                {
-                    mListView.ItemClick += SearchClick;
-                }
-
+                //if (numberOfVisibleItems == 40)
+                //{
+                //    mListView.ItemClick += mListView_ItemClick;
+                //}
+                //else
+                //{
+                //    mListView.ItemClick += SearchClick;
+                //}
             }
             else
             {
@@ -91,28 +85,43 @@ namespace Akyat.Pinas
                 mListView.FastScrollEnabled = true;
                 mMountains = MountainsData.MountainList;
                 mListView.ItemClick += mListView_ItemClick;
-                //mAdapter.GetView(this,Resource.Layout.ml_model, mMountains);
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
-
-
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
                 mListView.Adapter = mAdapter;
 
-                int start = mListView.FirstVisiblePosition;
-                int end = mListView.LastVisiblePosition;
-                int numberOfVisibleItems = end - start + 1;
+                ItemClickMethod();
 
-                if (numberOfVisibleItems == 40)
-                {
-                    mListView.ItemClick += mListView_ItemClick;
-                }
-                else
-                {
-                    mListView.ItemClick += SearchClick;
-                }
+                //int start = mListView.FirstVisiblePosition;
+                //int end = mListView.LastVisiblePosition;
+                //int numberOfVisibleItems = end - start + 1;
+
+                //if (numberOfVisibleItems == 40)
+                //{
+                //    mListView.ItemClick += mListView_ItemClick;
+                //}
+                //else
+                //{
+                //    mListView.ItemClick += SearchClick;
+                //}
 
                 OpenDetailActivitys(position);
+            }
+        }
+
+        private void ItemClickMethod()
+        {
+            int start = mListView.FirstVisiblePosition;
+            int end = mListView.LastVisiblePosition;
+            int numberOfVisibleItems = end - start + 1;
+
+            if (numberOfVisibleItems == 40)
+            {
+                mListView.ItemClick += mListView_ItemClick;
+            }
+            else
+            {
+                mListView.ItemClick += SearchClick;
             }
         }
 
@@ -129,8 +138,6 @@ namespace Akyat.Pinas
         private void OpenDetailActivity(int pos)
         {
             mt = mMountains[pos];
-            //mt = mMountainsTemp[pos];
-
             i = new Intent(this, typeof(DetailActivity));
             
             i.PutExtra("IMG0", mt.MtImg00);
@@ -182,9 +189,6 @@ namespace Akyat.Pinas
         private void OpenDetailActivitys(int pos)
         {
             mt = mMountains[pos];
-
-
-
             i = new Intent(this, typeof(DetailActivity));
 
             i.PutExtra("IMG0", mt.MtImg00);
@@ -216,9 +220,7 @@ namespace Akyat.Pinas
 
             mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, searchedMountains);
             mListView.Adapter = mAdapter;
-           // mMountainsTemp = searchedMountains.ToList();
-       //     mListView.ItemClick += SearchClick;
-          
+            mMountainsTemp = searchedMountains.ToList();
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -228,9 +230,7 @@ namespace Akyat.Pinas
         }
         public override void OnBackPressed()
         {
-          
             var intent = new Intent(this, typeof(Activities.MainMenuAct));
-           
             StartActivity(intent);
             List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
             mAdapter.Update(filteredMountains);

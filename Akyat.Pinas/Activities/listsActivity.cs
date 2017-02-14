@@ -18,8 +18,6 @@ namespace Akyat.Pinas.Activities
     [Activity(Theme = "@style/Theme.NoTitle",Label = "listsActivity")]
     public class listsActivity : Activity
     {
-
-        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -214,14 +212,10 @@ namespace Akyat.Pinas.Activities
                 {
                     outputValue += "Towel" + "\n";
                 }
-
                  othersValue = items.othersValue;
-                
             }
-
             catch
             {
-
 
             }
 
@@ -236,16 +230,12 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(ThingsToBringAct));
                 intent.PutExtra("name", name);
                 StartActivityForResult(intent,1);
-
             };
-
-
         }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             var i = new Intent();
-
 
            string name = Intent.GetStringExtra("name");
             
@@ -260,7 +250,6 @@ namespace Akyat.Pinas.Activities
                 //    TextView txtList = FindViewById<TextView>(Resource.Id.txtList);
                 try
                 {
-
                     string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "ormItinerary.db3");
                     var db = new SQLiteConnection(dbPath);
                     
@@ -438,25 +427,15 @@ namespace Akyat.Pinas.Activities
                     }
 
                     othersValue = items.othersValue;
-
-
-
                 }
-
                 catch
                 {
-
-
+                    
                 }
-
-
                 tv.Text = outputValue;
                 TextView others = FindViewById<TextView>(Resource.Id.txtOthers);
                 others.Text = othersValue;
-
             }
         }
-
-
     }
 }

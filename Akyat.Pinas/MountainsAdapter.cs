@@ -18,7 +18,7 @@ namespace Akyat.Pinas
         private Context mContext;
         private int mRowLayout;
         private List<Mountain> mtList;
-        Activity context;
+        
 
         public MountainsAdapter(Context context, int rowLayout, List<Mountain> mList)
         {

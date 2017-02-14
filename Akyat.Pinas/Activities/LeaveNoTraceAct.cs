@@ -12,7 +12,6 @@ namespace Akyat.Pinas.Activities
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.leaveNoTrace);
-            // Create your application here
         }
     }
 }

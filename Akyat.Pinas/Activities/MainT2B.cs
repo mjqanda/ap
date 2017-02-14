@@ -278,14 +278,6 @@ namespace Akyat.Pinas.Activities
                 intent.PutExtra("name", "WhitePeak");
                 StartActivity(intent);
             };
-          
-
-
-
-
-
-
         }
-
     }
 }

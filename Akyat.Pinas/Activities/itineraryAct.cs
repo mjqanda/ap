@@ -22,16 +22,13 @@ namespace Akyat.Pinas.ORM
             
             SetContentView(Resource.Layout.itineraryLayout);
             // Create your application here
-
             string name = Intent.GetStringExtra("name");
 
             TextView txtItinerary = FindViewById<TextView>(Resource.Id.txtItineraryRecord);
             try { 
             DBItineraryRepository dbr = new DBItineraryRepository();
                 var result = dbr.GetRecord(name);
-
                 txtItinerary.Text = result;
-
             }
             catch (Exception ex)
             {
@@ -40,15 +37,11 @@ namespace Akyat.Pinas.ORM
             Button btnAddIti = FindViewById<Button>(Resource.Id.btnAddIti);
             btnAddIti.Click += ((sender, e) =>
             {
-                
                 var intent = new Intent(this, typeof(AddItineraryAct));
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivityForResult(intent, 1);
-
             });
-
-
 
             txtItinerary.Click += (sender, e) =>
             {
@@ -56,20 +49,11 @@ namespace Akyat.Pinas.ORM
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivityForResult(intent, 1);
-
             };
-           
-
-
-
     }
-
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
-
-
             //when regester activity retrun data, it will be execute 
-
             if (requestCode == 1 && resultCode == Result.Ok)
             {
 
@@ -77,12 +61,9 @@ namespace Akyat.Pinas.ORM
                 string name = data.GetStringExtra("name");
                 try
                 {
-
                     DBItineraryRepository dbr = new DBItineraryRepository();
                     var result = dbr.GetRecord(name);
-
                     txtItinerary.Text = result;
-
                 }
                 catch (Exception ex)
                 {
