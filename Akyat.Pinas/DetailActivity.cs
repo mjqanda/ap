@@ -16,32 +16,15 @@ namespace Akyat.Pinas
     {
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,tttb,tsga,tsgt,tnote;
         private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5, videoimg;
-        //private VideoView videoimg;
-
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.detailLayout);
-            //var videoView = FindViewById<VideoView>(Resource.Id.videoView1);
 
-            //var uri = Android.Net.Uri.Parse("https://ia801507.us.archive.org/6/items/Vpico_201701/Vpico.mp4");
-            //videoView.SetVideoURI(uri);
-            //videoView.Start();
+            SetContentView(Resource.Layout.detailLayout);
 
             FindViews();
-            Typeface tf = Typeface.CreateFromAsset(Assets, "REFSAN.TTF");
-            tmtname.SetTypeface(tf, TypefaceStyle.Normal);
-            tmtloc.SetTypeface(tf, TypefaceStyle.Normal);
-            tjumpoff.SetTypeface(tf, TypefaceStyle.Normal);
-            tdesc.SetTypeface(tf, TypefaceStyle.Normal);
-            tbackground.SetTypeface(tf, TypefaceStyle.Normal);
-            titinerary.SetTypeface(tf, TypefaceStyle.Normal);
-            tpracticalities.SetTypeface(tf, TypefaceStyle.Normal);
-            tattire.SetTypeface(tf, TypefaceStyle.Normal);
-            tttb.SetTypeface(tf, TypefaceStyle.Normal);
-            tsga.SetTypeface(tf, TypefaceStyle.Bold);
-            tsgt.SetTypeface(tf, TypefaceStyle.Bold);
-            tnote.SetTypeface(tf, TypefaceStyle.Normal);
+            Fonts();
 
             Android.Content.Intent i = this.Intent;
             string iname = i.Extras.GetString("MTNAME");
@@ -83,10 +66,8 @@ namespace Akyat.Pinas
             {
                 DBItineraryRepository dbr = new DBItineraryRepository();
                 var result = dbr.CreateTable();
-                
                 var intent = new Intent(this, typeof(itineraryAct));
                 intent.PutExtra("name", iname);
-              
                 StartActivity(intent);
             });
 
@@ -111,11 +92,7 @@ namespace Akyat.Pinas
             else
             {
                 Toast.MakeText(this,"Video not available", ToastLength.Short).Show();
-
             }
-
-
-
         }
         private void Mtimg0_Click(object sender, System.EventArgs e)
         {
@@ -146,7 +123,6 @@ namespace Akyat.Pinas
             Intent i = this.Intent;
             int iimg4 = i.Extras.GetInt("IMG4");
             OpenFragment(iimg4);
-
         }
         private void Mtimg5_Click(object sender, System.EventArgs e)
         {
@@ -156,18 +132,13 @@ namespace Akyat.Pinas
         }
         public override void OnBackPressed()
         {
-
-
             string fromMap = Intent.GetStringExtra("imFromMap");
-
             if (fromMap == "OKAY") {
-
                 var intent = new Intent(this, typeof(MountainMapAct));
                 StartActivity(intent);
                 intent.SetFlags(ActivityFlags.ClearTop);
                 Finish();
             }
-
             else if (fromMap == null)
             {
                 var intent = new Intent(this, typeof(MountainListAct));
@@ -175,8 +146,23 @@ namespace Akyat.Pinas
                 intent.SetFlags(ActivityFlags.ClearTop);
                 Finish();
             }
+        }
 
-
+        private void Fonts()
+        {
+            Typeface tf = Typeface.CreateFromAsset(Assets, "REFSAN.TTF");
+            tmtname.SetTypeface(tf, TypefaceStyle.Normal);
+            tmtloc.SetTypeface(tf, TypefaceStyle.Normal);
+            tjumpoff.SetTypeface(tf, TypefaceStyle.Normal);
+            tdesc.SetTypeface(tf, TypefaceStyle.Normal);
+            tbackground.SetTypeface(tf, TypefaceStyle.Normal);
+            titinerary.SetTypeface(tf, TypefaceStyle.Normal);
+            tpracticalities.SetTypeface(tf, TypefaceStyle.Normal);
+            tattire.SetTypeface(tf, TypefaceStyle.Normal);
+            tttb.SetTypeface(tf, TypefaceStyle.Normal);
+            tsga.SetTypeface(tf, TypefaceStyle.Bold);
+            tsgt.SetTypeface(tf, TypefaceStyle.Bold);
+            tnote.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void FindViews()
@@ -199,32 +185,23 @@ namespace Akyat.Pinas
             tsga = FindViewById<TextView>(Resource.Id.sgatxt);
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
-         videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
+            videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
         }
 
         private void OpenFragment(int img1)
         {
             Bundle b = new Bundle();
             b.PutInt("IMG1", img1);
-
             MyDialogFragment fragment = new MyDialogFragment();
             fragment.Arguments = b;
-
             fragment.Show(this.FragmentManager, "dialog");
         }
         private void VidFragment(string vid)
         {
             Bundle b = new Bundle();
             b.PutString("VID", vid);
-
-
-
             MyVideoFragment fragment = new MyVideoFragment();
-          //  var uri = vid;
-            //videof.SetVideoURI(uri);
-            //videof.Start();
             fragment.Arguments = b;
-
             fragment.Show(this.FragmentManager, "dialog");
         }
     }

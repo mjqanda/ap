@@ -20,7 +20,6 @@ namespace Akyat.Pinas
         private List<Mountain> mtList;
         Activity context;
 
-
         public MountainsAdapter(Context context, int rowLayout, List<Mountain> mList)
         {
             mContext = context;
@@ -37,31 +36,13 @@ namespace Akyat.Pinas
             return position;
         }
 
-
-       
-
         public  void Update(List<Mountain> mLists)
         {
             mtList.Clear();
-            
-        mtList.AddRange(mLists);
-           
-
-            NotifyDataSetChanged();
-        }
-        public void Iupdate(List<Mountain> mLists)
-        {
             mtList.AddRange(mLists);
             NotifyDataSetChanged();
         }
-        public void ShowAll(List<Mountain> mLists)
-        {
-            
-            this.mtList = mLists;
-            //mtList.Clear();
-            
-            NotifyDataSetChanged();
-        }
+  
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             Typeface tf = Typeface.CreateFromAsset(mContext.Assets, "REFSAN.TTF");
