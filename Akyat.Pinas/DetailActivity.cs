@@ -85,9 +85,13 @@ namespace Akyat.Pinas
             Intent i = this.Intent;
            string vidS =  i.Extras.GetString("VV");
 
-            if (vidS != null) { 
-                
-            VidFragment(vidS);
+            if (vidS != null) {
+
+                Toast.MakeText(this, "Please wait...", ToastLength.Short).Show();
+
+                VidFragment(vidS);
+
+
             }
             else
             {
