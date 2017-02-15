@@ -16,7 +16,7 @@ namespace Akyat.Pinas
     public class MyVideoFragment : DialogFragment
     {
         VideoView imgf;
-        MediaController media;
+       // MediaController media;
         public static MyVideoFragment newInstance()
         {
             MyVideoFragment f = new MyVideoFragment();

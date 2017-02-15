@@ -37,6 +37,7 @@
     <Debugger>Xamarin</Debugger>
     <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
     <AndroidSupportedAbis>armeabi-v7a,x86,x86_64</AndroidSupportedAbis>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -182,19 +183,19 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\btn_bg_transparent.xml" />
+    <AndroidResource Include="Resources\drawable-nodpi\btn_bg_transparent.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_action_search.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ic_action_search.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\edit_text_style.xml" />
+    <AndroidResource Include="Resources\drawable-nodpi\edit_text_style.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\actionbar.xml" />
@@ -221,43 +222,43 @@
     <AndroidResource Include="Resources\values\NoTitleTheme.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\splash.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\SplashTheme.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+    <AndroidResource Include="Resources\drawable-nodpi\splash_screen.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\jumpoff.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\jumpoff.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-nodpi\aboutus.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\addttb.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\addttb.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lnticon7.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lnticon7.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lnticon1.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lnticon1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lnticon2.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lnticon2.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lnticon3.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lnticon3.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lnticon4.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lnticon4.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lnticon5.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lnticon5.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lnticon6.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lnticon6.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-nodpi\actionbarbg.png" />
@@ -268,10 +269,10 @@
     <AndroidResource Include="Resources\drawable-nodpi\mtListBG.png" />
     <AndroidResource Include="Resources\drawable-nodpi\settingsbg.png" />
     <AndroidResource Include="Resources\drawable-nodpi\things2bbg.png" />
-    <AndroidResource Include="Resources\drawable\aboutbtn.png" />
-    <AndroidResource Include="Resources\drawable\savebtn.png" />
-    <AndroidResource Include="Resources\drawable\yourIt.png" />
-    <AndroidResource Include="Resources\drawable\ttbp.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\aboutbtn.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\savebtn.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\yourIt.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ttbp.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-nodpi\bg.png" />
@@ -301,7 +302,7 @@
     <AndroidResource Include="Resources\drawable-nodpi\halcon.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\plusButton.PNG" />
+    <AndroidResource Include="Resources\drawable-nodpi\plusButton.PNG" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-nodpi\manabu.jpg" />
@@ -946,13 +947,16 @@
     <AndroidResource Include="Resources\drawable-nodpi\pulag1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\findlocationcopy.bmp" />
+    <AndroidResource Include="Resources\drawable-nodpi\findlocationcopy.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\findlocation.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\findlocation.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\play.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />

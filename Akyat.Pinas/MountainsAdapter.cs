@@ -18,7 +18,6 @@ namespace Akyat.Pinas
         private Context mContext;
         private int mRowLayout;
         private List<Mountain> mtList;
-        
 
         public MountainsAdapter(Context context, int rowLayout, List<Mountain> mList)
         {
@@ -72,6 +71,5 @@ namespace Akyat.Pinas
             NotifyDataSetChanged();
             return row;
         }
-
     }
 }
