@@ -162,12 +162,12 @@
                     android:layout_marginTop="23.5dp"
                     android:id="@+id/textView1" />
                 <ImageView
-                  android:id="@+id/vvimg"
-                  android:layout_width="320.0dp"
-                  android:layout_height="178.5dp"
-                  android:src="@drawable/play"
-                  android:layout_gravity="center_horizontal"
-                  android:layout_marginTop="22.5dp" />
+                    android:id="@+id/vvimg"
+                    android:layout_width="320.0dp"
+                    android:layout_height="178.5dp"
+                    android:src="@drawable/play"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22.5dp" />
                 <TextView
                     android:text="Other Photos:"
                     android:textStyle="bold"
@@ -184,6 +184,13 @@
                     android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="22.5dp" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/imgdesc01" />
                 <ImageView
                     android:id="@+id/mtimg02"
                     android:layout_width="320.0dp"
@@ -191,6 +198,13 @@
                     android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/imgdesc02" />
                 <ImageView
                     android:id="@+id/mtimg03"
                     android:layout_width="320.0dp"
@@ -198,6 +212,13 @@
                     android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/imgdesc03" />
                 <ImageView
                     android:id="@+id/mtimg04"
                     android:layout_width="320.0dp"
@@ -205,6 +226,13 @@
                     android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/imgdesc04" />
                 <ImageView
                     android:id="@+id/mtimg05"
                     android:layout_width="320.0dp"
@@ -212,6 +240,13 @@
                     android:src="@drawable/ttbp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/imgdesc05" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

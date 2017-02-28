@@ -14,7 +14,8 @@ namespace Akyat.Pinas
     [Activity(Label = "DetailActivity", Theme = "@style/Theme.NoTitle", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
     public class DetailActivity : Activity
     {
-        private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,tttb,tsga,tsgt,tnote;
+        private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,
+            tttb,tsga,tsgt,tnote, timgdesc01, timgdesc02, timgdesc03, timgdesc04, timgdesc05;
         private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5, videoimg;
         
         protected override void OnCreate(Bundle savedInstanceState)
@@ -43,6 +44,12 @@ namespace Akyat.Pinas
             string iattire = i.Extras.GetString("ATTIRE");
             string ittb = i.Extras.GetString("TTB");
             string inote = i.Extras.GetString("NOTE");
+            string iimgdesc01 = i.Extras.GetString("IMGDESCRIPTION01");
+            string iimgdesc02 = i.Extras.GetString("IMGDESCRIPTION02");
+            string iimgdesc03 = i.Extras.GetString("IMGDESCRIPTION03");
+            string iimgdesc04 = i.Extras.GetString("IMGDESCRIPTION04");
+            string iimgdesc05 = i.Extras.GetString("IMGDESCRIPTION05");
+            
 
             tmtname.Text = iname;
             mtimg0.SetImageResource(iimg0);
@@ -60,6 +67,11 @@ namespace Akyat.Pinas
             tattire.Text = iattire;
             tttb.Text = ittb;
             tnote.Text = inote;
+            timgdesc01.Text = iimgdesc01;
+            timgdesc02.Text = iimgdesc02;
+            timgdesc03.Text = iimgdesc03;
+            timgdesc04.Text = iimgdesc04;
+            timgdesc05.Text = iimgdesc05;
 
             Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
             btnItinerary.Click += ((sender, e) =>
@@ -90,8 +102,6 @@ namespace Akyat.Pinas
                 Toast.MakeText(this, "Please wait...", ToastLength.Short).Show();
 
                 VidFragment(vidS);
-
-
             }
             else
             {
@@ -167,6 +177,11 @@ namespace Akyat.Pinas
             tsga.SetTypeface(tf, TypefaceStyle.Bold);
             tsgt.SetTypeface(tf, TypefaceStyle.Bold);
             tnote.SetTypeface(tf, TypefaceStyle.Normal);
+            timgdesc01.SetTypeface(tf, TypefaceStyle.Normal);
+            timgdesc02.SetTypeface(tf, TypefaceStyle.Normal);
+            timgdesc03.SetTypeface(tf, TypefaceStyle.Normal);
+            timgdesc04.SetTypeface(tf, TypefaceStyle.Normal);
+            timgdesc05.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void FindViews()
@@ -190,6 +205,11 @@ namespace Akyat.Pinas
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
             videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
+            timgdesc01 = FindViewById<TextView>(Resource.Id.imgdesc01);
+            timgdesc02 = FindViewById<TextView>(Resource.Id.imgdesc02);
+            timgdesc03 = FindViewById<TextView>(Resource.Id.imgdesc03);
+            timgdesc04 = FindViewById<TextView>(Resource.Id.imgdesc04);
+            timgdesc05 = FindViewById<TextView>(Resource.Id.imgdesc05);
         }
 
         private void OpenFragment(int img1)

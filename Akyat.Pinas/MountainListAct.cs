@@ -156,6 +156,11 @@ namespace Akyat.Pinas
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
+            i.PutExtra("IMGDESCRIPTION01", mt.ImgDesc01);
+            i.PutExtra("IMGDESCRIPTION02", mt.ImgDesc02);
+            i.PutExtra("IMGDESCRIPTION03", mt.ImgDesc03);
+            i.PutExtra("IMGDESCRIPTION04", mt.ImgDesc04);
+            i.PutExtra("IMGDESCRIPTION05", mt.ImgDesc05);
             StartActivity(i);
             Finish();
         }
@@ -183,6 +188,11 @@ namespace Akyat.Pinas
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
+            i.PutExtra("IMGDESCRIPTION01", mt.ImgDesc01);
+            i.PutExtra("IMGDESCRIPTION02", mt.ImgDesc02);
+            i.PutExtra("IMGDESCRIPTION03", mt.ImgDesc03);
+            i.PutExtra("IMGDESCRIPTION04", mt.ImgDesc04);
+            i.PutExtra("IMGDESCRIPTION05", mt.ImgDesc05);
             StartActivity(i);
             Finish();
         }
@@ -207,6 +217,11 @@ namespace Akyat.Pinas
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
+            i.PutExtra("IMGDESCRIPTION01", mt.ImgDesc01);
+            i.PutExtra("IMGDESCRIPTION02", mt.ImgDesc02);
+            i.PutExtra("IMGDESCRIPTION03", mt.ImgDesc03);
+            i.PutExtra("IMGDESCRIPTION04", mt.ImgDesc04);
+            i.PutExtra("IMGDESCRIPTION05", mt.ImgDesc05);
             i.PutExtra("imFromMap", "OKAY");
             StartActivity(i);
             Finish();
