@@ -42,6 +42,7 @@ namespace Akyat.Pinas.ORM
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivityForResult(intent, 1);
+                OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
             });
 
             txtItinerary.Click += (sender, e) =>
@@ -50,6 +51,8 @@ namespace Akyat.Pinas.ORM
                 intent.PutExtra("editThis", txtItinerary.Text);
                 intent.PutExtra("name", name);
                 StartActivityForResult(intent, 1);
+                OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
+
             };
         }
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
