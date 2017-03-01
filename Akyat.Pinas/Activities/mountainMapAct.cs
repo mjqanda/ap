@@ -369,7 +369,6 @@ namespace Akyat.Pinas.Activities
 
             }
 
-
             MapFragment mapFrag = (MapFragment)FragmentManager.FindFragmentById(Resource.Id.map);
             GoogleMap map = mapFrag.Map;
             map.SetOnInfoWindowClickListener(this);
