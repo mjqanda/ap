@@ -1008,13 +1008,16 @@ namespace Akyat.Pinas.Activities
                 intent.PutExtra("name", name);
                 SetResult(Result.Ok, intent);
                 Finish();
+                OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
             };
             
         }
 
-        private void FadeAnim()
+        public override void OnBackPressed()
         {
-            
+            Finish();
+            OverridePendingTransition(Resource.Animation.slide_left, Resource.Animation.fade_out);
         }
-    }
+
+     }
 }

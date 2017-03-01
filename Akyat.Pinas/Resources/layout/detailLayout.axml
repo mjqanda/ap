@@ -169,6 +169,15 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="22.5dp" />
                 <TextView
+                    android:text="SmallText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_marginTop="9dp"
+                    android:id="@+id/viddesc" />
+                <TextView
                     android:text="Other Photos:"
                     android:textStyle="bold"
                     android:textAppearance="?android:attr/textAppearanceMedium"

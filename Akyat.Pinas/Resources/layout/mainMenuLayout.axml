@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:background="@drawable/mainmenubg">
+    android:background="@drawable/clickables">
     <Button
         android:text=""
         android:layout_width="match_parent"
@@ -40,5 +40,4 @@
         android:layout_height="85dp"
         android:id="@+id/btnSetting"
         android:background="@drawable/btn_bg_transparent" />
-
 </LinearLayout>

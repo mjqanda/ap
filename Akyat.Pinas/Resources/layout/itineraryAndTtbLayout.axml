@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ttbitibg">
+    <Button
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTTB"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/btn_bg_transparent"
+        android:minHeight="90dp" />
+    <Button
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnITI"
+        android:background="@drawable/btn_bg_transparent"
+        android:layout_marginTop="10dp"
+        android:minHeight="90dp" />
+</LinearLayout>

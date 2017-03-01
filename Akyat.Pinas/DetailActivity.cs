@@ -15,7 +15,7 @@ namespace Akyat.Pinas
     public class DetailActivity : Activity
     {
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,
-            tttb,tsga,tsgt,tnote, timgdesc01, timgdesc02, timgdesc03, timgdesc04, timgdesc05;
+            tttb,tsga,tsgt,tnote, timgdesc01, timgdesc02, timgdesc03, timgdesc04, timgdesc05, tviddesc;
         private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5, videoimg;
         
         protected override void OnCreate(Bundle savedInstanceState)
@@ -49,7 +49,8 @@ namespace Akyat.Pinas
             string iimgdesc03 = i.Extras.GetString("IMGD3");
             string iimgdesc04 = i.Extras.GetString("IMGD4");
             string iimgdesc05 = i.Extras.GetString("IMGD5");
-            
+            string ividdesc = i.Extras.GetString("VIDD");
+
 
             tmtname.Text = iname;
             mtimg0.SetImageResource(iimg0);
@@ -72,6 +73,8 @@ namespace Akyat.Pinas
             timgdesc03.Text = iimgdesc03;
             timgdesc04.Text = iimgdesc04;
             timgdesc05.Text = iimgdesc05;
+            tviddesc.Text = ividdesc;
+        
 
             Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
             btnItinerary.Click += ((sender, e) =>
@@ -185,6 +188,7 @@ namespace Akyat.Pinas
             timgdesc03.SetTypeface(tf, TypefaceStyle.Normal);
             timgdesc04.SetTypeface(tf, TypefaceStyle.Normal);
             timgdesc05.SetTypeface(tf, TypefaceStyle.Normal);
+            tviddesc.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void FindViews()
@@ -213,6 +217,7 @@ namespace Akyat.Pinas
             timgdesc03 = FindViewById<TextView>(Resource.Id.imgdesc03);
             timgdesc04 = FindViewById<TextView>(Resource.Id.imgdesc04);
             timgdesc05 = FindViewById<TextView>(Resource.Id.imgdesc05);
+            tviddesc = FindViewById<TextView>(Resource.Id.viddesc);
         }
 
         private void OpenFragment(int img1)

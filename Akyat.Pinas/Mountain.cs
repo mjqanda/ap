@@ -17,6 +17,8 @@ namespace Akyat.Pinas
         public int MtImg03 { get; set; }
         public int MtImg04 { get; set; }
         public int MtImg05 { get; set; }
+        public string VidDesc { get; set; }
+        public string ImgDesc00 { get; set; }
         public string ImgDesc01 { get; set; }
         public string ImgDesc02 { get; set; }
         public string ImgDesc03 { get; set; }

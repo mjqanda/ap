@@ -45,6 +45,7 @@ namespace Akyat.Pinas
                     MtImg03 = Resource.Drawable.apo3,
                     MtImg04 = Resource.Drawable.apo4,
                     MtImg05 = Resource.Drawable.apo5,
+                    ImgDesc00 = "",
                     ImgDesc01 = "The mossy forest of Kapatagan Trail.",
                     ImgDesc02 = "Through the boulders of Mt. Apo, Hikers will need skills in balance and agility in this trail.",
                     ImgDesc03 = "One of the many sulfur columns present on the site.",
@@ -168,7 +169,8 @@ namespace Akyat.Pinas
                     Practicalities = "Transportation\nPublic (1) Nasugbu-bound bus, Coastal Mall to Evercrest (P104) (2) Optional Tricycle, Evercrest to Registration area (P25 per pax).\nPrivate from Manila go to Tagaytay city and then proceed to Tagaytay-Nasugbu road until Evercrest Golf Course reached. Go past the gate, follow through, turn left at the fork, and then go down the rough road to the trailhead. (Approximately 2.5 hours)\n\nRegistration\nLogbook at the first registration point before starting the hike. Also, Old and New Trail campsites. Total fees per hiker P20 per pax (dayhike); P30 per pax when camping.\n\nGuides\nAvailable (P300-P400/day); not mandatory\n\nContact Numbers\nNew Trail Campsite (Roel) +639279008496\nNasugbu Police Station – (043) 931-9952\n\nCampsites\nNew Trail Campsite\nOld Trail Campsite\n\nWater sources\nAvailable in campsites – ask from caretakers.\n\nCell phone signal\nPresent in most parts of the trail\n\nRope Segments\nFixed rope in steep part of the Old Trail and before reaching the summit from New Trail\n\nSidetrips\nLunch, Dinner at Tagaytay city after the hike, Calaruega Church near the Jump-off point\n\nAlternate trails\nToong trail from New Trail to Mt. Talamitam\n\nDayhikable\nYes (2-3 hrs to summit; 1.5-2 hrs down)\n\nFacilities at jump-off\nSari-sari store, Shower facilities or Ligo for P10 per timba, Parking P50\n\nEstimated budget\n500-900",
                     Attire = "Dryfit or Shirt\nTrekkin pants or Short\nHiking shoes or Sandals\nCap or bush hat",
                     Ttb = "Dayhike\n\nBackpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n\nOvernight\n\nBackpack 40L or 60L capacity\nHiking boots or shoes\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nTrail food\nMess kit (Spoon & fork)\nMulti-knife\nTent\nSleeping bag\nPre-cook food\nCook set\nMap or Compass\ntrekking pole\nWater for 2 days or energy drink\n",
-                    Vid = "https://ia801508.us.archive.org/7/items/batulao/batulao.mp4"
+                    Vid = "https://ia801508.us.archive.org/7/items/batulao/batulao.mp4",
+                    VidDesc =""
                 },
 
                 new Mountain()
@@ -237,6 +239,7 @@ namespace Akyat.Pinas
                     MtImg03 = Resource.Drawable.cristobal3,
                     MtImg04 = Resource.Drawable.cristobal4,
                     MtImg05 = Resource.Drawable.cristobal5,
+                    ImgDesc00 = "",
                     ImgDesc01 = "Mt. Banahaw's foot as viewed from Montelibano's house.",
                     ImgDesc02 = "Walking throught the mossy trails of Mt. Cristobal.",
                     ImgDesc03 = "Huge ferns along the trails can be seen.",
@@ -515,7 +518,7 @@ namespace Akyat.Pinas
                     Practicalities = "Transportation\nPublic (1) Lemery-bound bus from bus terminals in Cubao (MRT3: Cubao; LRT 2 Cubao) or Buendia (LRT1: Gil Puyat) (P150-P160; 2.5 hrs). Alternatively, one can take a bus to Lipa then take jeepney to Bayan ng Cuenca (P28). From there, you can either walk to the jump-off or (2) take a tricycle (P50 per pax). The tricycle will detour you to the registration area\nPrivate (1) SLEX to Lipa Batangas, turn left until you reach the way to Bayan ng Cuenca follow the road and you will see the town of Cuenca\n\nRegistration\nLogbook at brgy. outpost. P20\n\nGuides\nMandatory as of January 2015: P400/5 pax/day for the regular \n\nContact Numbers\n(1) Barangay Outpost – 09103172853/n(2) Cuenca Police Station – (043) 342-9952\n\nCampsites\nWide campsite is available before the Rockies and Summit\n\nWater sources\nAvailable in some parts of the trail\n\nCell phone signal\nPresent throughout the trail\n\nRope Segments\n(1) The slippery part of new trail going to campsite, Rockies part\n(2) Some part of the trail going to Summit from Grotto\n\nSidetrips\nTwin dayhike with Manabu Peak\nLunch or Dinner at Lipa city\n\nAlternate trails\nNone\n\nDayhikable\nYes (2-3 hrs to summit; 1.5-2 hrs down)\n\nFacilities at jump-off\nShower at the wash up area\nSari-sari store or Mountaineer store\nParking space\nBrgy\n\nEstimated budget\n600-900\n\n",
                     Attire = "Dryfit or Shirt\nTrekkin pants or Short\nHiking shoes or Sandals\nCap or bush hat",
                     Ttb = "Dayhike\n\nBackpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n\nOvernight\n\nBackpack 40L or 60L capacity\nHiking boots or shoes\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nTrail food\nMess kit (Spoon & fork)\nMulti-knife\nTent\nSleeping bag\nPre-cook food\nCook set\nMap or Compass\ntrekking pole\nWater for 2 days or energy drink\n",
-                    Vid = "https://ia801508.us.archive.org/34/items/manabu/manabu.mp4"
+                    VidDesc =""
                 },
 
                 new Mountain()
@@ -596,7 +599,9 @@ namespace Akyat.Pinas
                     Itinerary = "Dayhike\n\n0600 ETD Lucena or Lipa Batangas bound bus at Gil Puyat\n0730 ETA Fiesta Mall, Sto. Tomas Take trycicle to \"Sulok\"\n0830 ETA \"Sulok\", Brgy. Sta. Cruz\n0900 Start Trek\n1000 Reach Mang Pirying's hut\n1100 ETA Summit\n1130 Start decent\n1300 Lunch at Rose and Grace (famous for Bulalo)\n1500 ETD Sto. Tomas bus bacl to Manila\n1700 ETA Manila",
                     Practicalities = "Transportation\nPublic (1) Bus, Buendia or Lipa, Batangas (approximately 2 hrs) (2) Take Multi-cab to Fiesta Mall P12 (3) Tricycle, Fiesta Mall to Sulok, Brgy. Sta Cruz (approximately 30 mins) P100 per trip *the tricycle terminal is at Fiesta Mall junction.\nPrivate from Manila go to Tagaytay city and then proceed to Tagaytay-Nasugbu road until Evercrest Golf Course reached. Go past the gate, follow through, turn left at the fork, and then go down the rough road to the trailhead. (Approximately 2.5 hours)\n\nRegistration\nLogbook at the brgy hall. P20 fee per pax\n\nGuides\nAvailable at the brgy. But it is not required (P500 for dayhike, P1250 for overnight camping)\n\nContact Numbers\nMario (Guide) - 09994106990\n\nCampsites\nThe campsite is located before the summit accent. Can fit up to 20 tents\n\nWater sources\nSeveral; available at the rest stops\n\nCell phone signal\nPresent through most parts of the trail\n\nRiver crossing\nSmall stream near the starting point with minimal risk of flooding\n\nRope Segments\nNone\n\nSidetrips\nHikers usually done a Twin dayhike with Mt. Manabu and Mt. Maculot\n\nAlternate trails\nPossible to do a traverse to or from Mt. Malipunyo\n\nDayhikable\nYes (2.5-4 hrs to summit; 1.5-3 hrs down)\n\nFacilities at jump-off\nSari-sari store\nWash up/ shower places\nParking\n\nEstimated budget\n500-700 (dayhike)\n800-1000 (overnight)\n\n",
                     Attire = "Dryfit or Shirt\nTrekkin pants or Short\nHiking shoes or Sandals\nCap or bush hat",
-                    Ttb = "Dayhike\n\nBackpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n\nOvernight\n\nBackpack 40L or 60L capacity\nHiking boots or shoes\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nTrail food\nMess kit (Spoon & fork)\nMulti-knife\nTent\nSleeping bag\nPre-cook food\nCook set\nMap or Compass\ntrekking pole\nWater for 2 days or energy drink\n"
+                    Ttb = "Dayhike\n\nBackpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n\nOvernight\n\nBackpack 40L or 60L capacity\nHiking boots or shoes\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nTrail food\nMess kit (Spoon & fork)\nMulti-knife\nTent\nSleeping bag\nPre-cook food\nCook set\nMap or Compass\ntrekking pole\nWater for 2 days or energy drink\n",
+                    Vid = "https://ia801508.us.archive.org/34/items/manabu/manabu.mp4",
+                    VidDesc = ""
                 },
 
                 new Mountain()
@@ -649,7 +654,8 @@ namespace Akyat.Pinas
                     Practicalities = "Transportation\nPublic (1) Bus, Coastal to Naic (P60, 2 hrs) (2) Jeep, Naic to Magallanes (P35, 45 mins – 1 hr) (3) Tricycle, Magallanes Police Station to trailhead (P30 per pax; 20 mins) *last trip of jeepney from Magallanes to Naic is 5 pm\nPrivatetake CAVITEX or Aguinaldo highway all the way to Naic, Cavite, then follow the signs to Magallanes. Ask directions for Brgy. Ramirez\n\nRegistration\nRegister at barangay hall. Logbook P25\n\nGuides\nAvailable; assigned at the barangay hall or by prior arrangement P100 per pax.\n\nContact Numbers\nGuides – 09267122198\nGuides – 09083246967\nGuides – 09982421045\n\nCampsites\n(1) Campsite 1 before the bamboo forest\n(2) Summit campsite\n\nWater sources\nPresent near the streams at the initial\n\nCell phone signal\nSporadic at the lower reaches\nPresent from 600m up to the peak\n\nRope Segments\nNone\n\nSidetrips\nNearby mountains include Pico de Loro, Mt. Buntis, and other mountains of Maragondon, as well as some historical sites in the area\nPuerto Azul in Ternate\n\nAlternate trails\nPossible to Traverse in Pico De Loro\n\nDayhikable\nYes (2.5-4 hours to summit; 1.5-3 hours down)\n\nFacilities at jump-off\nBrgy hall\nSari-sari stores\nWash-up / shower places\n\nEstimated budget\n500-700 (dayhike)\n800-1000 (overnight)\n\n",
                     Attire = "Dryfit or Shirt\nTrekkin pants or Short\nHiking shoes or Sandals\nCap or bush hat",
                     Ttb = "Dayhike\n\nBackpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n\nOvernight\n\nBackpack 40L or 60L capacity\nHiking boots or shoes\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nTrail food\nMess kit (Spoon & fork)\nMulti-knife\nTent\nSleeping bag\nPre-cook food\nCook set\nMap or Compass\ntrekking pole\nWater for 2 days or energy drink\n",
-                    Vid = "https://ia801507.us.archive.org/25/items/IMG6485/IMG_6485.mp4"
+                    Vid = "https://ia801507.us.archive.org/25/items/IMG6485/IMG_6485.mp4",
+                    VidDesc =""
                 },
 
                 new Mountain()
@@ -762,6 +768,7 @@ namespace Akyat.Pinas
                     MtImg03 = Resource.Drawable.pico3,
                     MtImg04 = Resource.Drawable.pico4,
                     MtImg05 = Resource.Drawable.pico5,
+                    ImgDesc00 = "",
                     ImgDesc01 = "Hiking through Pico De Loro's forest.",
                     ImgDesc02 = "The trail of Pico De Loro is easy and already established.",
                     ImgDesc03 = "At the summit of Pico De Loro",
@@ -775,7 +782,8 @@ namespace Akyat.Pinas
                     Practicalities = "Transportation\nPublic (1) Bus, Coastal Mall to Ternate terminal (P82 1.5 hrs) (2) Tricycle or rent a jeep, Ternate terminal to DENR trailhead (P250 way for tricycle)\n\nPrivate take CAVITEX or Aguinaldo Highway all the way to Naic, Cavite. Then follow the way to Naic, then follow the signs to Puerto Azul, go past the resort, and park at the DENR Outpost you can see on the lest parking space is available at the outpost.\n\nRegistration\nLogbook at DENR; P25\n\nGuides\nAvailable but not required\n\nContact Numbers\nJeep Rental – 09175956140\n\nCampsites\nAt the base of the summit\n\nWater sources\n(1) At the brook during the initial part of New Trail\n(2) At view deck near campsite (weak) \n\nCell phone signal\nNo signal in DENR and forested area, Present in the campsite and summit\n\nRope Segments\nAt the the Monolith\n\nSidetrips\nNasugbu beach for those traversing (Puerto Azul, Caylabne or Hamilo Coast); those going in the regular trail can explore Maragondon for Mt. Buntis and Nagpatong.\n\nAlternate trails\nThere are trails going to Mt. Marami\n\nDayhikable\nYes (3-4 hours to summit; 2 hours down for both regular and traverse routes)\n\nFacilities at jump-off\nSari-sari store\nWash up places\nParking\n\nEstimated budget\n700-800\n\n",
                     Attire = "Dryfit or Shirt\nTrekkin pants or Short\nHiking shoes or Sandals\nCap or bush hat",
                     Ttb = "Dayhike\n\nBackpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n\nOvernight\n\nBackpack 40L or 60L capacity\nHiking boots or shoes\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nTrail food\nMess kit (Spoon & fork)\nMulti-knife\nTent\nSleeping bag\nPre-cook food\nCook set\nMap or Compass\ntrekking pole\nWater for 2 days or energy drink\n",
-                    Vid = "https://ia801504.us.archive.org/32/items/IMG1714/IMG_1714.mp4"
+                    Vid = "https://ia801504.us.archive.org/32/items/IMG1714/IMG_1714.mp4",
+                    VidDesc =""
                 },
              
                 new Mountain()
@@ -855,7 +863,8 @@ namespace Akyat.Pinas
                     Practicalities = "Transportation\nPublic (1) Bus to Lemery (P120 3 hrs) (2) Boatride to Volcano Island (P1000 30 mins)\n\nRegistration\nP50 registration in the Registration area\n\nGuides\nGuides are mandatory P500 per day\n\nContact Numbers\nTaal Lake Yacht Club that offers package tours to Taal Volcano including boat ride – 09437730192\n\nCampsites\nNot prohibited\n\nWater sources\nNone\n\nCell phone signal\nPresent all throughout the trail to the summit\n\nRiver crossing\nNone\n\nRope Segments\nNone\n\nSidetrips\nTagaytay City\nPicnic grove\n\nAlternate trails\nNone\n\nDayhikable\nYes (1 hr to the summit, 45 mins down)\n\nFacilities at jump-off\nSari-sari store\nSouvenir store\nCarinderias\n\nEstimated budget\n600-800\n\n",
                     Attire = "Dryfit or Shirt\nTrekkin pants or Short\nHiking shoes or Sandals\nCap or bush hat",
                     Ttb = "Backpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n",
-                    Vid = "https://ia801500.us.archive.org/26/items/mj_anda_yahoo_Taal/taal.mp4"
+                    Vid = "https://ia801500.us.archive.org/26/items/mj_anda_yahoo_Taal/taal.mp4",
+                    VidDesc =""
                 },
 
                 new Mountain()
@@ -881,7 +890,8 @@ namespace Akyat.Pinas
                     Practicalities = "Transportation\nPublic (1) Bus, Coastal Mall to KM. 83 or Talamitam (P120, 2.5 hrs) isang sakay lang!\nPrivate(1) Head to Tagaytay either via SLEX-ETON Greenfield –Sta. Rosa or via Cavite (2) Follow through the road to Batangas, until you reach KM. 83. Make a right turn at the small side street past the school and look for parking space.\n\nRegistration\nLogbook at Brgy. Aga (P20 per pax)\n\nGuides\nAvailable P300 per day. Hiker are required to get a guide\n\nContact Numbers\nTed Calimag (Brgy. Aga) – 09477118513\nNick Wijangco – 09278248475\nNasugbu Police Station – (043) 931-9952\n\nCampsites\nAt the base of the summit and at the summit itself\n\nWater sources\nNone in normal course of trail except near the trailhead\n\nCell phone signal\nPresent throughout trail\n\nRope Segments\nNone\n\nSidetrips\nNasugbu beaches or Tagaytay city; Twin dayhike with Mt. Batulao\n\nAlternate trails\nThere are new open Traverse trail to Mt. Apayang wich is located beside the mountain itself\n\nDayhikable\nYes (1.5-3 hrs to summit; 1-2 hrs down)\n\nFacilities at jump-off\nSari-sari store\nShower at the Jump-off\nParking space\n\nEstimated budget\n500-600\n\n",
                     Attire = "Dryfit or Shirt\nTrekkin pants or Short\nHiking shoes or Sandals\nCap or bush hat",
                     Ttb = "Dayhike\n\nBackpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n\nOvernight\n\nBackpack 40L or 60L capacity\nHiking boots or shoes\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nTrail food\nMess kit (Spoon & fork)\nMulti-knife\nTent\nSleeping bag\nPre-cook food\nCook set\nMap or Compass\ntrekking pole\nWater for 2 days or energy drink\n",
-                    Vid = "https://ia601500.us.archive.org/26/items/mj_anda_yahoo_Taal/talamitam.mp4"
+                    Vid = "https://ia601500.us.archive.org/26/items/mj_anda_yahoo_Taal/talamitam.mp4",
+                    VidDesc =""
                 },
 
                 new Mountain()
@@ -1011,7 +1021,8 @@ namespace Akyat.Pinas
                     Practicalities = "Transportation\nPublic (1) Bus, Cubao or Pasay to Baguio (P500-P750; 4-6 hrs) (2) Jeepney, Baguio City to Brgy. Ampucao via Philes-Bound route (P50; 40 mins) Approximately 40 minutes travel time from Baguio City\n\nRegistration\nLogbook at the Igbaras police station P100 per pax\n\nGuides\nAvailable and required P300/ day\n\nContact Numbers\nBrgy. Ampucao Tourism – 0998-9589549\n\nCampsites\nAmbunao Paoay campsite\n\nWater sources\nNot available during the hike\n\nCell phone signal\nPresent in most parts of the trails\n\nRope Segments\nNone\n\nSidetrips\nBaguio City or other dayhikes Mt. Timbak and Mt. Sto Tomas\n\nAlternate trails\nNone\n\nDayhikable\nYes (4-6 hrs for the entire traverse)\n\nFacilities at jump-off\nSari-sari stores\nRestrooms\nParking\n\nEstimated budget\n1200-1500 from Manila\n300-400 from Baguio\n\n",
                     Attire = "Jacket, Windbreaker or Shirt\nTrekking Pants\nHiking Shoes\nCap or bush hat",
                     Ttb = "Dayhike\n\nBackpack 28L capacity\nHiking shoes or sandals\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nPacked lunch\nTrail food\nMess kit (Spoon & fork)\nMulti-tool (swiss knife)\nMap or Compass\nWater or energy drink\ngloves (optional) \n\nOvernight\n\nBackpack 40L or 60L capacity\nHiking boots or shoes\nTrashbag\nOutdoor clothes (Dri-fit, Hiking pants)\nFirst Aid kit\nTrail food\nMess kit (Spoon & fork)\nMulti-knife\nTent\nSleeping bag\nPre-cook food\nCook set\nMap or Compass\ntrekking pole\nWater for 2 days or energy drink\n",
-                    Vid = "https://ia601500.us.archive.org/26/items/mj_anda_yahoo_Taal/ulap.mp4"
+                    Vid = "https://ia601500.us.archive.org/26/items/mj_anda_yahoo_Taal/ulap.mp4",
+                    VidDesc =""
                 },
 
                 new Mountain()

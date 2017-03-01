@@ -161,6 +161,8 @@ namespace Akyat.Pinas
             i.PutExtra("IMGD3", mt.ImgDesc03);
             i.PutExtra("IMGD4", mt.ImgDesc04);
             i.PutExtra("IMGD5", mt.ImgDesc05);
+            i.PutExtra("VIDD", mt.VidDesc);
+            i.PutExtra("IMGD0", mt.ImgDesc00);
             StartActivity(i);
             OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
             Finish();
@@ -194,6 +196,8 @@ namespace Akyat.Pinas
             i.PutExtra("IMGD3", mt.ImgDesc03);
             i.PutExtra("IMGD4", mt.ImgDesc04);
             i.PutExtra("IMGD5", mt.ImgDesc05);
+            i.PutExtra("VIDD", mt.VidDesc);
+            i.PutExtra("IMGD0", mt.ImgDesc00);
             StartActivity(i);
             OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
             Finish();
@@ -224,6 +228,8 @@ namespace Akyat.Pinas
             i.PutExtra("IMGD3", mt.ImgDesc03);
             i.PutExtra("IMGD4", mt.ImgDesc04);
             i.PutExtra("IMGD5", mt.ImgDesc05);
+            i.PutExtra("VIDD", mt.VidDesc);
+            i.PutExtra("IMGD0", mt.ImgDesc00);
             i.PutExtra("imFromMap", "OKAY");
             StartActivity(i);
             OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);

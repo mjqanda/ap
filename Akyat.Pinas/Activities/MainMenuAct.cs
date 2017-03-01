@@ -42,16 +42,17 @@ namespace Akyat.Pinas.Activities
             btnThingsToBring.Click += (sender, e) =>
             {
                 var resultTable = dbr.CreateTableChecklist();
-                var intent = new Intent(this, typeof(MainT2B));
+                var resultTableIti = dbr.CreateTable();
+                var intent = new Intent(this, typeof(ItiAndTtbActivity));
                 StartActivity(intent);
-                OverridePendingTransition(Resource.Animation.slide_left, Resource.Animation.fade_out);
+                OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
             };
 
             btnNoTrace.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(LeaveNoTraceAct));
+                var intent = new Intent(this, typeof(EssentialsAct));
                 StartActivity(intent);
-                OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
+                OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
 
             };
 
@@ -68,7 +69,7 @@ namespace Akyat.Pinas.Activities
                 var resultTable = dbr.CreateTableSettings();
                 var intent = new Intent(this, typeof(SettingsAct));
                 StartActivity(intent);
-                OverridePendingTransition(Resource.Animation.fade_out, Resource.Animation.fade_out);
+                OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
             };
         }
      
@@ -76,6 +77,7 @@ namespace Akyat.Pinas.Activities
         {
             this.Finish();
         }
+        
     }
 }
 

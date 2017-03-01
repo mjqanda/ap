@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firstaid"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fillViewport="false"
+        android:layout_marginTop="120.0dp"
+        android:layout_marginLeft="13.0dp"
+        android:layout_marginRight="13.0dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="HOW TO DO FIRST AID BANDAGE"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView2"
+                android:textColor="#000"
+                android:textStyle="bold" />
+            <TextView
+                android:text="BANDAGING HAND/FOOT"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="17.0dp"
+                android:id="@+id/textView3" />
+            <ImageView
+                android:src="@drawable/hand1"
+                android:layout_width="130.5dp"
+                android:layout_height="81.0dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView1" />
+            <TextView
+                android:text="1. Two straight turn at wrist; inside to outside."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView4" />
+            <ImageView
+                android:src="@drawable/hand2"
+                android:layout_width="130.5dp"
+                android:layout_height="81.0dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView2" />
+            <TextView
+                android:text="2. Diagonal bandage from thumb to little finger."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:textColor="#000"
+                android:id="@+id/textView5" />
+            <ImageView
+                android:src="@drawable/hand3"
+                android:layout_width="130.5dp"
+                android:layout_height="81.0dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView3" />
+            <TextView
+                android:text="3. Bandage across front of fingers."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView6" />
+            <ImageView
+                android:src="@drawable/hand4"
+                android:layout_width="130.5dp"
+                android:layout_height="81.0dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView4" />
+            <TextView
+                android:text="4. Bandage across back of hand"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView7" />
+            <TextView
+                android:text="5. Repeat turns."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView8" />
+            <TextView
+                android:text="BANDAGING HEAD"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="17.0dp"
+                android:id="@+id/textView9" />
+            <ImageView
+                android:src="@drawable/head1"
+                android:layout_width="137.0dp"
+                android:layout_height="96.5dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView5" />
+            <TextView
+                android:text="1. Triangular bandage with longest edge over forehead."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView10" />
+            <ImageView
+                android:src="@drawable/head2"
+                android:layout_width="137.0dp"
+                android:layout_height="96.5dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView6" />
+            <TextView
+                android:text="2. Cross over &quot;long tails&quot; using firm pressure."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:textColor="#000"
+                android:id="@+id/textView11" />
+            <ImageView
+                android:src="@drawable/head3"
+                android:layout_width="137.0dp"
+                android:layout_height="96.5dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView7" />
+            <TextView
+                android:text="3. Tie in middle of forehead"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView12" />
+            <ImageView
+                android:src="@drawable/head4"
+                android:layout_width="137.0dp"
+                android:layout_height="96.5dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView8" />
+            <TextView
+                android:text="4. Secure spare end with safety pin."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView13" />
+            <TextView
+                android:text="BANDAGING ARM/SLING"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="17.0dp"
+                android:id="@+id/textView14" />
+            <ImageView
+                android:src="@drawable/arm1"
+                android:layout_width="143.0dp"
+                android:layout_height="100.5dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView9" />
+            <TextView
+                android:text="1. Bandage between body and arm; straight edge lies on uninjured side."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView15" />
+            <ImageView
+                android:src="@drawable/arm2"
+                android:layout_width="143.0dp"
+                android:layout_height="100.5dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView10" />
+            <TextView
+                android:text="2. Tie lower end to upper end."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:textColor="#000"
+                android:id="@+id/textView16" />
+            <ImageView
+                android:src="@drawable/arm3"
+                android:layout_width="143.0dp"
+                android:layout_height="100.5dp"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/imageView11" />
+            <TextView
+                android:text="3. Casualty let go of arm once ends secured."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView17" />
+            <TextView
+                android:text="4. Fold over pointed end"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/textView18" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

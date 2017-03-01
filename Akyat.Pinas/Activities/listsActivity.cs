@@ -230,6 +230,7 @@ namespace Akyat.Pinas.Activities
                 var intent = new Intent(this, typeof(ThingsToBringAct));
                 intent.PutExtra("name", name);
                 StartActivityForResult(intent,1);
+                OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
             };
         }
 
@@ -436,6 +437,11 @@ namespace Akyat.Pinas.Activities
                 TextView others = FindViewById<TextView>(Resource.Id.txtOthers);
                 others.Text = othersValue;
             }
+        }
+        public override void OnBackPressed()
+        {
+            Finish();
+            OverridePendingTransition(Resource.Animation.slide_left, Resource.Animation.fade_out);
         }
     }
 }

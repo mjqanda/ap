@@ -9,8 +9,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:background="@drawable/ttbp"
         android:fillViewport="false"
-        android:layout_marginTop="112.0dp">
+        android:layout_marginTop="120.0dp"
+        android:layout_marginLeft="13.0dp"
+        android:layout_marginRight="13.0dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,7 +30,7 @@
                 android:textColor="#000"
                 android:textStyle="bold" />
             <TextView
-                android:text="Outdoor Ethics for Hikers"
+                android:text="Outdoor Ethics for Hikers to provide guidance to enjoy the natural world in a sustainable way that avoids human created impacts."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
