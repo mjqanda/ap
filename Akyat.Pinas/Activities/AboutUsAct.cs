@@ -28,6 +28,14 @@ namespace Akyat.Pinas.Activities
         private void Buttoo_Click(object sender, EventArgs e)
         {
             Finish();
+            OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
+        }
+
+        public override void OnBackPressed()
+        {
+            Finish();
+            OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
+            
         }
     }
 }

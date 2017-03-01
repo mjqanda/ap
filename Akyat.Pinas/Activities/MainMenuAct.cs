@@ -32,9 +32,10 @@ namespace Akyat.Pinas.Activities
 
             btnMountainList.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof (MountainListAct));
-               
+                var intent = new Intent(this, typeof(MountainListAct));
+
                 StartActivity(intent);
+                OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
                 Finish();
             };
 
@@ -43,18 +44,22 @@ namespace Akyat.Pinas.Activities
                 var resultTable = dbr.CreateTableChecklist();
                 var intent = new Intent(this, typeof(MainT2B));
                 StartActivity(intent);
+                OverridePendingTransition(Resource.Animation.slide_left, Resource.Animation.fade_out);
             };
 
             btnNoTrace.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(LeaveNoTraceAct));
                 StartActivity(intent);
+                OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
+
             };
 
             btnMountainMap.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(MountainMapAct));
                 StartActivity(intent);
+                OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
                 Finish();
             };
 
@@ -63,6 +68,7 @@ namespace Akyat.Pinas.Activities
                 var resultTable = dbr.CreateTableSettings();
                 var intent = new Intent(this, typeof(SettingsAct));
                 StartActivity(intent);
+                OverridePendingTransition(Resource.Animation.fade_out, Resource.Animation.fade_out);
             };
         }
      

@@ -40,7 +40,7 @@ namespace Akyat.Pinas.Activities
             RadioButton rbHybrid = FindViewById<RadioButton>(Resource.Id.rbHybrid);
             Button aboutbuttonn = FindViewById<Button>(Resource.Id.btnAbout);
 
-            aboutbuttonn.Click += Aboutbuttonn_Click;    
+            aboutbuttonn.Click += Aboutbuttonn_Click;
             //CheckBox cbsounds = FindViewById<CheckBox>(Resource.Id.sound);
 
             //cbsounds.Click += (o,e) => {
@@ -139,6 +139,14 @@ namespace Akyat.Pinas.Activities
         private void Aboutbuttonn_Click(object sender, EventArgs e)
         {
             StartActivity(typeof(AboutUsAct));
+            OverridePendingTransition(Resource.Animation.slide_down, Resource.Animation.fade_out);
+        }
+
+        public override void OnBackPressed()
+        {
+            Finish();
+            OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
+
         }
     }
 }

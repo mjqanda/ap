@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Akyat.Pinas.ORM;
 using System.IO;
+using Java.Security;
 using SQLite;
 
 namespace Akyat.Pinas.Activities
@@ -279,5 +280,13 @@ namespace Akyat.Pinas.Activities
                 StartActivity(intent);
             };
         }
+
+        public override void OnBackPressed()
+        {
+            Finish();
+            OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
+        }
+
+        
     }
 }

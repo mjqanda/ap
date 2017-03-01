@@ -156,7 +156,13 @@ namespace Akyat.Pinas
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
+            i.PutExtra("IMGD1", mt.ImgDesc01);
+            i.PutExtra("IMGD2", mt.ImgDesc02);
+            i.PutExtra("IMGD3", mt.ImgDesc03);
+            i.PutExtra("IMGD4", mt.ImgDesc04);
+            i.PutExtra("IMGD5", mt.ImgDesc05);
             StartActivity(i);
+            OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
             Finish();
         }
 
@@ -183,7 +189,13 @@ namespace Akyat.Pinas
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
+            i.PutExtra("IMGD1", mt.ImgDesc01);
+            i.PutExtra("IMGD2", mt.ImgDesc02);
+            i.PutExtra("IMGD3", mt.ImgDesc03);
+            i.PutExtra("IMGD4", mt.ImgDesc04);
+            i.PutExtra("IMGD5", mt.ImgDesc05);
             StartActivity(i);
+            OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
             Finish();
         }
         private void OpenDetailActivitys(int pos)
@@ -207,8 +219,14 @@ namespace Akyat.Pinas
             i.PutExtra("ATTIRE", mt.Attire);
             i.PutExtra("TTB", mt.Ttb);
             i.PutExtra("VV", mt.Vid);
+            i.PutExtra("IMGD1", mt.ImgDesc01);
+            i.PutExtra("IMGD2", mt.ImgDesc02);
+            i.PutExtra("IMGD3", mt.ImgDesc03);
+            i.PutExtra("IMGD4", mt.ImgDesc04);
+            i.PutExtra("IMGD5", mt.ImgDesc05);
             i.PutExtra("imFromMap", "OKAY");
             StartActivity(i);
+            OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
             Finish();
         }
         void mSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
@@ -232,6 +250,7 @@ namespace Akyat.Pinas
         {
             var intent = new Intent(this, typeof(Activities.MainMenuAct));
             StartActivity(intent);
+            OverridePendingTransition(Resource.Animation.slide_left, Resource.Animation.fade_out);
             List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList();
             mAdapter.Update(filteredMountains);
             RunOnUiThread(() => mAdapter.NotifyDataSetChanged());

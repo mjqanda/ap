@@ -1011,5 +1011,10 @@ namespace Akyat.Pinas.Activities
             };
             
         }
+
+        private void FadeAnim()
+        {
+            
+        }
     }
 }

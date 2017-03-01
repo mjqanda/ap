@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Akyat.Pinas.Activities;
+using Java.Security;
 
 namespace Akyat.Pinas.ORM
 {
@@ -50,7 +51,7 @@ namespace Akyat.Pinas.ORM
                 intent.PutExtra("name", name);
                 StartActivityForResult(intent, 1);
             };
-    }
+        }
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             //when regester activity retrun data, it will be execute 
@@ -70,6 +71,12 @@ namespace Akyat.Pinas.ORM
                     Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
                 }
             }
+        }
+
+        public override void OnBackPressed()
+        {
+            Finish();
+            OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
         }
     }
 }

@@ -1033,6 +1033,7 @@ namespace Akyat.Pinas.Activities
         {
             var intent = new Intent(this, typeof(MainMenuAct));
             StartActivity(intent);
+            OverridePendingTransition(Resource.Animation.fade_in, Resource.Animation.fade_out);
             intent.SetFlags(ActivityFlags.ClearTop);
             Finish();
         }
