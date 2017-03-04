@@ -35,6 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
+                android:gravity="center"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
                 android:layout_marginTop="17.0dp"
@@ -42,16 +43,18 @@
             <ImageView
                 android:src="@drawable/hand1"
                 android:layout_width="130.5dp"
+                android:gravity="center"
                 android:layout_height="81.0dp"
-                android:layout_marginLeft="24.0dp"
                 android:layout_marginTop="11.0dp"
-                android:id="@+id/imageView1" />
+                android:id="@+id/imageView1"
+                android:layout_gravity="center" />
             <TextView
                 android:text="1. Two straight turn at wrist; inside to outside."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
+                android:gravity="center"
                 android:paddingTop="10dp"
                 android:layout_marginTop="0.0dp"
                 android:id="@+id/textView4" />
@@ -59,7 +62,8 @@
                 android:src="@drawable/hand2"
                 android:layout_width="130.5dp"
                 android:layout_height="81.0dp"
-                android:layout_marginLeft="24.0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_marginTop="11.0dp"
                 android:id="@+id/imageView2" />
             <TextView
@@ -67,14 +71,15 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|left"
+                android:gravity="center"
                 android:textColor="#000"
                 android:id="@+id/textView5" />
             <ImageView
                 android:src="@drawable/hand3"
                 android:layout_width="130.5dp"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_height="81.0dp"
-                android:layout_marginLeft="24.0dp"
                 android:layout_marginTop="11.0dp"
                 android:id="@+id/imageView3" />
             <TextView
@@ -82,6 +87,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:layout_marginTop="0.0dp"
@@ -90,7 +96,8 @@
                 android:src="@drawable/hand4"
                 android:layout_width="130.5dp"
                 android:layout_height="81.0dp"
-                android:layout_marginLeft="24.0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_marginTop="11.0dp"
                 android:id="@+id/imageView4" />
             <TextView
@@ -98,6 +105,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:layout_marginTop="0.0dp"
@@ -108,6 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
+                android:gravity="center"
                 android:paddingTop="10dp"
                 android:layout_marginTop="0.0dp"
                 android:id="@+id/textView8" />
@@ -118,6 +127,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:paddingTop="10dp"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:layout_marginTop="17.0dp"
                 android:id="@+id/textView9" />
@@ -125,7 +135,8 @@
                 android:src="@drawable/head1"
                 android:layout_width="137.0dp"
                 android:layout_height="96.5dp"
-                android:layout_marginLeft="24.0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:layout_marginTop="11.0dp"
                 android:id="@+id/imageView5" />
             <TextView
@@ -135,28 +146,31 @@
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:paddingTop="10dp"
+                android:gravity="center"
                 android:layout_marginTop="0.0dp"
                 android:id="@+id/textView10" />
             <ImageView
                 android:src="@drawable/head2"
                 android:layout_width="137.0dp"
+                android:layout_gravity="center"
                 android:layout_height="96.5dp"
-                android:layout_marginLeft="24.0dp"
                 android:layout_marginTop="11.0dp"
+                android:gravity="center"
                 android:id="@+id/imageView6" />
             <TextView
                 android:text="2. Cross over &quot;long tails&quot; using firm pressure."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|left"
+                android:gravity="center"
                 android:textColor="#000"
                 android:id="@+id/textView11" />
             <ImageView
                 android:src="@drawable/head3"
                 android:layout_width="137.0dp"
                 android:layout_height="96.5dp"
-                android:layout_marginLeft="24.0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_marginTop="11.0dp"
                 android:id="@+id/imageView7" />
             <TextView
@@ -164,6 +178,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:layout_marginTop="0.0dp"
@@ -172,7 +187,8 @@
                 android:src="@drawable/head4"
                 android:layout_width="137.0dp"
                 android:layout_height="96.5dp"
-                android:layout_marginLeft="24.0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_marginTop="11.0dp"
                 android:id="@+id/imageView8" />
             <TextView
@@ -181,6 +197,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
+                android:gravity="center"
                 android:paddingTop="10dp"
                 android:layout_marginTop="0.0dp"
                 android:id="@+id/textView13" />
@@ -192,14 +209,16 @@
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
+                android:gravity="center"
                 android:layout_marginTop="17.0dp"
                 android:id="@+id/textView14" />
             <ImageView
                 android:src="@drawable/arm1"
                 android:layout_width="143.0dp"
                 android:layout_height="100.5dp"
-                android:layout_marginLeft="24.0dp"
                 android:layout_marginTop="11.0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:id="@+id/imageView9" />
             <TextView
                 android:text="1. Bandage between body and arm; straight edge lies on uninjured side."
@@ -208,28 +227,31 @@
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:paddingTop="10dp"
+                android:gravity="center"
                 android:layout_marginTop="0.0dp"
                 android:id="@+id/textView15" />
             <ImageView
                 android:src="@drawable/arm2"
+                android:layout_gravity="center"
                 android:layout_width="143.0dp"
                 android:layout_height="100.5dp"
-                android:layout_marginLeft="24.0dp"
                 android:layout_marginTop="11.0dp"
+                android:gravity="center"
                 android:id="@+id/imageView10" />
             <TextView
                 android:text="2. Tie lower end to upper end."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|left"
                 android:textColor="#000"
+                android:gravity="center"
                 android:id="@+id/textView16" />
             <ImageView
                 android:src="@drawable/arm3"
                 android:layout_width="143.0dp"
                 android:layout_height="100.5dp"
-                android:layout_marginLeft="24.0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_marginTop="11.0dp"
                 android:id="@+id/imageView11" />
             <TextView
@@ -238,6 +260,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
+                android:gravity="center"
                 android:paddingTop="10dp"
                 android:layout_marginTop="0.0dp"
                 android:id="@+id/textView17" />
@@ -248,6 +271,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:paddingTop="10dp"
+                android:gravity="center"
                 android:layout_marginTop="0.0dp"
                 android:id="@+id/textView18" />
         </LinearLayout>

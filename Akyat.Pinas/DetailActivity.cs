@@ -15,7 +15,7 @@ namespace Akyat.Pinas
     public class DetailActivity : Activity
     {
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,
-            tttb,tsga,tsgt,tnote, timgdesc01, timgdesc02, timgdesc03, timgdesc04, timgdesc05, tviddesc;
+            tttb,tsga,tsgt,tnote, timgdesc00, timgdesc01, timgdesc02, timgdesc03, timgdesc04, timgdesc05, tviddesc;
         private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5, videoimg;
         
         protected override void OnCreate(Bundle savedInstanceState)
@@ -44,6 +44,7 @@ namespace Akyat.Pinas
             string iattire = i.Extras.GetString("ATTIRE");
             string ittb = i.Extras.GetString("TTB");
             string inote = i.Extras.GetString("NOTE");
+            string iimgdesc00 = i.Extras.GetString("IMGD0");
             string iimgdesc01 = i.Extras.GetString("IMGD1");
             string iimgdesc02 = i.Extras.GetString("IMGD2");
             string iimgdesc03 = i.Extras.GetString("IMGD3");
@@ -68,6 +69,7 @@ namespace Akyat.Pinas
             tattire.Text = iattire;
             tttb.Text = ittb;
             tnote.Text = inote;
+            timgdesc00.Text = iimgdesc00;
             timgdesc01.Text = iimgdesc01;
             timgdesc02.Text = iimgdesc02;
             timgdesc03.Text = iimgdesc03;
@@ -189,6 +191,7 @@ namespace Akyat.Pinas
             timgdesc04.SetTypeface(tf, TypefaceStyle.Normal);
             timgdesc05.SetTypeface(tf, TypefaceStyle.Normal);
             tviddesc.SetTypeface(tf, TypefaceStyle.Normal);
+            timgdesc00.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
         private void FindViews()
@@ -212,6 +215,7 @@ namespace Akyat.Pinas
             tsgt = FindViewById<TextView>(Resource.Id.sgttxt);
             tnote = FindViewById<TextView>(Resource.Id.notetxt);
             videoimg = FindViewById<ImageView>(Resource.Id.vvimg);
+            timgdesc00 = FindViewById<TextView>(Resource.Id.imgdesc00);
             timgdesc01 = FindViewById<TextView>(Resource.Id.imgdesc01);
             timgdesc02 = FindViewById<TextView>(Resource.Id.imgdesc02);
             timgdesc03 = FindViewById<TextView>(Resource.Id.imgdesc03);
