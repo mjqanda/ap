@@ -14,12 +14,13 @@ using System.IO;
 using Android.Renderscripts;
 using Java.Security;
 
+
 namespace Akyat.Pinas
 {
     [Activity(Label = "MountainList!")]
     public class MountainListAct : Activity
     {
-        private List<Mountain> mMountains = new List<Mountain>();
+        private List<Mountain> mMountains;
         private List<Mountain> mMountainsTemp = new List<Mountain>();
         private ListView mListView;
         private EditText mSearch;
@@ -51,7 +52,7 @@ namespace Akyat.Pinas
                 mSearch.TextChanged += mSearch_TextChanged;
                 mListView.FastScrollEnabled = true;
                 mListView.ScrollingCacheEnabled = false;
-                mMountains = MountainsData.MountainList;
+                mMountains = MountainsData.Mountains;
                 mMountainsTemp = mMountains.ToList();
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
@@ -59,18 +60,6 @@ namespace Akyat.Pinas
                 mListView.Adapter = mAdapter;
 
                 ItemClickMethod();
-                //int start = mListView.FirstVisiblePosition;
-                //int end = mListView.LastVisiblePosition;
-                //int numberOfVisibleItems = end - start + 1;
-
-                //if (numberOfVisibleItems == 40)
-                //{
-                //    mListView.ItemClick += mListView_ItemClick;
-                //}
-                //else
-                //{
-                //    mListView.ItemClick += SearchClick;
-                //}
             }
             else
             {
@@ -83,7 +72,7 @@ namespace Akyat.Pinas
                 mSearch.TextChanged += mSearch_TextChanged;
                 mListView.ScrollingCacheEnabled = false;
                 mListView.FastScrollEnabled = true;
-                mMountains = MountainsData.MountainList;
+                mMountains = MountainsData.Mountains;
                 mListView.ItemClick += mListView_ItemClick;
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
@@ -92,18 +81,6 @@ namespace Akyat.Pinas
 
                 ItemClickMethod();
 
-                //int start = mListView.FirstVisiblePosition;
-                //int end = mListView.LastVisiblePosition;
-                //int numberOfVisibleItems = end - start + 1;
-
-                //if (numberOfVisibleItems == 40)
-                //{
-                //    mListView.ItemClick += mListView_ItemClick;
-                //}
-                //else
-                //{
-                //    mListView.ItemClick += SearchClick;
-                //}
 
                 OpenDetailActivitys(position);
             }

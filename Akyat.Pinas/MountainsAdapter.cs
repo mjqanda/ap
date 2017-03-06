@@ -1,25 +1,19 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Android;
-using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Graphics;
+using Akyat.Pinas.Utility;
 
 namespace Akyat.Pinas
 {
-    sealed class MountainsAdapter : BaseAdapter<Mountain>
+    public class MountainsAdapter : BaseAdapter<Mountain>
     {
         private Context mContext;
         private int mRowLayout;
         private List<Mountain> mtList;
-
-        public MountainsAdapter(Context context, int rowLayout, List<Mountain> mList)
+    
+        public MountainsAdapter(Context context, int rowLayout, List<Mountain> mList):base()
         {
             mContext = context;
             mRowLayout = rowLayout;
@@ -28,7 +22,14 @@ namespace Akyat.Pinas
 
         public override int Count => mtList.Count;
 
-        public override Mountain this[int position] => mtList[position];
+        public override Mountain this[int position]
+        {
+            get
+            {
+                return mtList[position];
+            }
+        }
+
 
         public override long GetItemId(int position)
         {
@@ -44,8 +45,10 @@ namespace Akyat.Pinas
   
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
+            var item = mtList[position];
             Typeface tf = Typeface.CreateFromAsset(mContext.Assets, "REFSAN.TTF");
             View row = convertView;
+            var imageBitmap = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + item.MtImg00 + ".jpg");
             //added txt to every mountain
             if (row == null)
             {
@@ -53,16 +56,14 @@ namespace Akyat.Pinas
                 //convertView = context.LayoutInflater.Inflate(Resource.Layout.ml_model, null);
             }
             TextView mtnametxt = row.FindViewById<TextView>(Resource.Id.mtnametxt);
-            mtnametxt.Text = "Mt. " + mtList[position].MtName;
-
             TextView Masltxt = row.FindViewById<TextView>(Resource.Id.masltxt);
-            Masltxt.Text = mtList[position].Masl + " MASL";
-
             TextView Difficultytxt = row.FindViewById<TextView>(Resource.Id.difficultytxt);
-            Difficultytxt.Text = "Difficulty: " + mtList[position].Difficulty + "/9";
-
             ImageView Mtimg = row.FindViewById<ImageView>(Resource.Id.mtimg);
-            Mtimg.SetImageResource(mtList[position].MtImg00);
+
+            mtnametxt.Text = "Mt. " + item.MtName;
+            Masltxt.Text = item.Masl + " MASL";
+            Difficultytxt.Text = "Difficulty: " + item.Difficulty + "/9";
+            Mtimg.SetImageBitmap(imageBitmap);
 
             mtnametxt.SetTypeface(tf, TypefaceStyle.Bold);
             Masltxt.SetTypeface(tf, TypefaceStyle.Bold);

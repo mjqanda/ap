@@ -5,18 +5,18 @@ using System.Text;
 
 namespace Akyat.Pinas
 {
-    class Mountain
+    public class Mountain
     {
         public string MtName { get; set; }
         public int Masl { get; set; }
         public int Difficulty { get; set; }
         public int Island { get; set; }
-        public int MtImg00 { get; set; }
-        public int MtImg01 { get; set; }
-        public int MtImg02 { get; set; }
-        public int MtImg03 { get; set; }
-        public int MtImg04 { get; set; }
-        public int MtImg05 { get; set; }
+        public string MtImg00 { get; set; }
+        public string MtImg01 { get; set; }
+        public string MtImg02 { get; set; }
+        public string MtImg03 { get; set; }
+        public string MtImg04 { get; set; }
+        public string MtImg05 { get; set; }
         public string VidDesc { get; set; }
         public string ImgDesc00 { get; set; }
         public string ImgDesc01 { get; set; }
