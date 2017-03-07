@@ -30,6 +30,8 @@ namespace Akyat.Pinas
 
             Android.Content.Intent i = this.Intent;
             string iname = i.Extras.GetString("MTNAME");
+
+
             string iimg0 = i.Extras.GetString("IMG0");
             string iimg1 = i.Extras.GetString("IMG1");
             string iimg2 = i.Extras.GetString("IMG2");
@@ -53,21 +55,21 @@ namespace Akyat.Pinas
             string iimgdesc05 = i.Extras.GetString("IMGD5");
             string ividdesc = i.Extras.GetString("VIDD");
 
-            
+
             var imageBitmap0 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg0 + ".jpg");
             var imageBitmap1 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg1 + ".jpg");
             var imageBitmap2 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg2 + ".jpg");
             var imageBitmap3 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg3 + ".jpg");
             var imageBitmap4 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg4 + ".jpg");
-            var imageBitmap5 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg5 + ".jpg");
+       //  var imageBitmap5 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg5 + ".jpg");
 
             tmtname.Text = iname;
             mtimg0.SetImageBitmap(imageBitmap0);
             mtimg1.SetImageBitmap(imageBitmap1);
             mtimg2.SetImageBitmap(imageBitmap2);
             mtimg3.SetImageBitmap(imageBitmap3);
-            mtimg4.SetImageBitmap(imageBitmap4);
-            mtimg5.SetImageBitmap(imageBitmap5);
+          mtimg4.SetImageBitmap(imageBitmap4);
+         //  mtimg5.SetImageBitmap(imageBitmap5);
             tmtloc.Text = ilocation;
             tjumpoff.Text = ijumpoff;
             tdesc.Text = idescription;
@@ -82,7 +84,7 @@ namespace Akyat.Pinas
             timgdesc02.Text = iimgdesc02;
             timgdesc03.Text = iimgdesc03;
             timgdesc04.Text = iimgdesc04;
-            timgdesc05.Text = iimgdesc05;
+          //  timgdesc05.Text = iimgdesc05;
             tviddesc.Text = ividdesc;
         
 
@@ -102,7 +104,7 @@ namespace Akyat.Pinas
             mtimg2.Click += Mtimg2_Click;
             mtimg3.Click += Mtimg3_Click;
             mtimg4.Click += Mtimg4_Click;
-            mtimg5.Click += Mtimg5_Click;
+           // mtimg5.Click += Mtimg5_Click;
             videoimg.Click += Videoimg_Click;
         }
 
@@ -125,39 +127,51 @@ namespace Akyat.Pinas
         private void Mtimg0_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
-            int iimg0 = i.Extras.GetInt("IMG0");
+           string iimg0 = i.Extras.GetString("IMG0");
+
+
+           
             OpenFragment(iimg0);
         }
         private void Mtimg1_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
-            int iimg1 = i.Extras.GetInt("IMG1");
+            string iimg1 = i.Extras.GetString("IMG1");
+
+
+            
             OpenFragment(iimg1);
         }
         private void Mtimg2_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
-            int iimg2 = i.Extras.GetInt("IMG2");
+            string iimg2 = i.Extras.GetString("IMG2");
+
+           
             OpenFragment(iimg2);
         }
         private void Mtimg3_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
-            int iimg3 = i.Extras.GetInt("IMG3");
+            string iimg3 = i.Extras.GetString("IMG3");
+
+            
             OpenFragment(iimg3);
         }
         private void Mtimg4_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
-            int iimg4 = i.Extras.GetInt("IMG4");
+          string iimg4 = i.Extras.GetString("IMG4");
+
+           
             OpenFragment(iimg4);
         }
-        private void Mtimg5_Click(object sender, System.EventArgs e)
-        {
-            Intent i = this.Intent;
-            int iimg5 = i.Extras.GetInt("IMG5");
-            OpenFragment(iimg5);
-        }
+        //private void Mtimg5_Click(object sender, System.EventArgs e)
+        //{
+        //    Intent i = this.Intent;
+        //    int iimg5 = i.Extras.GetInt("IMG5");
+        //    OpenFragment(iimg5);
+        //}
         public override void OnBackPressed()
         {
             string fromMap = Intent.GetStringExtra("imFromMap");
@@ -232,10 +246,10 @@ namespace Akyat.Pinas
             tviddesc = FindViewById<TextView>(Resource.Id.viddesc);
         }
 
-        private void OpenFragment(int img1)
+        private void OpenFragment(string img1)
         {
             Bundle b = new Bundle();
-            b.PutInt("IMG1", img1);
+            b.PutString("IMG1", img1);
             MyDialogFragment fragment = new MyDialogFragment();
             fragment.Arguments = b;
             fragment.Show(this.FragmentManager, "dialog");

@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Akyat.Pinas.Utility;
 
 namespace Akyat.Pinas
 {
@@ -36,9 +37,11 @@ namespace Akyat.Pinas
 
             imgf = v.FindViewById<ImageView>(Resource.Id.imageFragment);
 
-            int image = this.Arguments.GetInt("IMG1");
+           string image = this.Arguments.GetString("IMG1");
 
-            imgf.SetImageResource(image);
+            var imageBitmap0 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + image + ".jpg");
+
+            imgf.SetImageBitmap(imageBitmap0);
 
             return v;
         }

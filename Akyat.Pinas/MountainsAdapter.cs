@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Android.Content;
 using Android.Views;
@@ -22,13 +23,7 @@ namespace Akyat.Pinas
 
         public override int Count => mtList.Count;
 
-        public override Mountain this[int position]
-        {
-            get
-            {
-                return mtList[position];
-            }
-        }
+        public override Mountain this[int position] => mtList[position];
 
 
         public override long GetItemId(int position)
@@ -48,7 +43,8 @@ namespace Akyat.Pinas
             var item = mtList[position];
             Typeface tf = Typeface.CreateFromAsset(mContext.Assets, "REFSAN.TTF");
             View row = convertView;
-            var imageBitmap = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + item.MtImg00 + ".jpg");
+            var imageBitmap = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + item.MtImg00 +".jpg");
+            
             //added txt to every mountain
             if (row == null)
             {
@@ -58,12 +54,12 @@ namespace Akyat.Pinas
             TextView mtnametxt = row.FindViewById<TextView>(Resource.Id.mtnametxt);
             TextView Masltxt = row.FindViewById<TextView>(Resource.Id.masltxt);
             TextView Difficultytxt = row.FindViewById<TextView>(Resource.Id.difficultytxt);
-            ImageView Mtimg = row.FindViewById<ImageView>(Resource.Id.mtimg);
+            row.FindViewById<ImageView>(Resource.Id.mtimg).SetImageBitmap(imageBitmap);
 
             mtnametxt.Text = "Mt. " + item.MtName;
             Masltxt.Text = item.Masl + " MASL";
             Difficultytxt.Text = "Difficulty: " + item.Difficulty + "/9";
-            Mtimg.SetImageBitmap(imageBitmap);
+           
 
             mtnametxt.SetTypeface(tf, TypefaceStyle.Bold);
             Masltxt.SetTypeface(tf, TypefaceStyle.Bold);

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Net.Http;
@@ -8,9 +9,10 @@ namespace Akyat.Pinas
 {
     public class MountainsData
     {
-        string url = "https://ia801507.us.archive.org/10/items/mountainsData/mountainsData.json";
+        string url = "https://ia601507.us.archive.org/10/items/mountainsData/mountainsData.json";
 
-        public static List<Mountain> Mountains = new List<Mountain>();
+        private static List<Mountain> Mountains = new List<Mountain>();
+        
 
         public MountainsData()
         {
@@ -36,14 +38,21 @@ namespace Akyat.Pinas
                     }
                     catch (Exception ex)
                     {
-                        //handle any errors here, not part of the sample app
                         string message = ex.Message;
                     }
                 }
+
             }
         }
-      
-
+         public List<Mountain> GetAllMountains()
+        {
+            IEnumerable<Mountain> mountainsss = (Mountains.OrderBy(mountain => mountain.MtName)).ToList<Mountain>();
+            return mountainsss.ToList<Mountain>();
+        }
+        //  public List<Mountain> GetGroupedHotDogs()
+        // {
+        //     return Mountains;
+        // }
         //public static List<Mountain> MountainList = new List<Mountain>()
         //    {
 

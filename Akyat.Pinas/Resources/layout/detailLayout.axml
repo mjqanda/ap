@@ -202,7 +202,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="22.5dp" />
                 <TextView
-                    android:text="Image Description txt"
+                    android:text=""
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -218,7 +218,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
                 <TextView
-                    android:text="Image Description txt"
+                    android:text=""
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -234,7 +234,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
                 <TextView
-                    android:text="Image Description txt"
+                    android:text=""
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -250,7 +250,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
                 <TextView
-                    android:text="Image Description txt"
+                    android:text=""
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -266,7 +266,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="29.0dp" />
                 <TextView
-                    android:text="Image Description txt"
+                    android:text=""
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
