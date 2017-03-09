@@ -9,6 +9,7 @@ using Android.Content;
 using Android.Graphics;
 using Akyat.Pinas.Activities;
 using Akyat.Pinas.Utility;
+using Square.Picasso;
 
 namespace Akyat.Pinas
 {
@@ -18,7 +19,7 @@ namespace Akyat.Pinas
         private TextView tmtname, tmtloc, tjumpoff, tdesc, tbackground, titinerary, tpracticalities,tattire,
             tttb,tsga,tsgt,tnote, timgdesc00, timgdesc01, timgdesc02, timgdesc03, timgdesc04, timgdesc05, tviddesc;
         private ImageView mtimg0, mtimg1, mtimg2, mtimg3, mtimg4, mtimg5, videoimg;
-        
+        Context mContext;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -56,20 +57,35 @@ namespace Akyat.Pinas
             string ividdesc = i.Extras.GetString("VIDD");
 
 
-            var imageBitmap0 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg0 + ".jpg");
-            var imageBitmap1 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg1 + ".jpg");
-            var imageBitmap2 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg2 + ".jpg");
-            var imageBitmap3 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg3 + ".jpg");
-            var imageBitmap4 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg4 + ".jpg");
-       //  var imageBitmap5 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg5 + ".jpg");
+            //var imageBitmap0 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg0 + ".jpg");
+            //var imageBitmap1 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg1 + ".jpg");
+            //var imageBitmap2 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg2 + ".jpg");
+            //var imageBitmap3 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg3 + ".jpg");
+            //var imageBitmap4 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg4 + ".jpg");
+            //var imageBitmap5 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg5 + ".jpg");
+
+            var imageBitmap0 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg0 + ".jpg");
+            var imageBitmap1 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg1 + ".jpg");
+            var imageBitmap2 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg2 + ".jpg");
+            var imageBitmap3 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg3 + ".jpg");
+            var imageBitmap4 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg4 + ".jpg");
+            var imageBitmap5 = "https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg5 + ".jpg";
+
+
+            Picasso.With(mContext).Load(imageBitmap0).Into(mtimg0);
+            Picasso.With(mContext).Load(imageBitmap1).Into(mtimg1);
+            Picasso.With(mContext).Load(imageBitmap2).Into(mtimg2);
+            Picasso.With(mContext).Load(imageBitmap3).Into(mtimg3);
+            Picasso.With(mContext).Load(imageBitmap4).Into(mtimg4);
+            Picasso.With(mContext).Load(imageBitmap5).Into(mtimg5);
 
             tmtname.Text = iname;
-            mtimg0.SetImageBitmap(imageBitmap0);
-            mtimg1.SetImageBitmap(imageBitmap1);
-            mtimg2.SetImageBitmap(imageBitmap2);
-            mtimg3.SetImageBitmap(imageBitmap3);
-          mtimg4.SetImageBitmap(imageBitmap4);
-         //  mtimg5.SetImageBitmap(imageBitmap5);
+           // mtimg0.SetImageBitmap(imageBitmap0);
+           // mtimg1.SetImageBitmap(imageBitmap1);
+           // mtimg2.SetImageBitmap(imageBitmap2);
+           // mtimg3.SetImageBitmap(imageBitmap3);
+           // mtimg4.SetImageBitmap(imageBitmap4);
+           // mtimg5.SetImageBitmap(imageBitmap5);
             tmtloc.Text = ilocation;
             tjumpoff.Text = ijumpoff;
             tdesc.Text = idescription;
@@ -84,7 +100,7 @@ namespace Akyat.Pinas
             timgdesc02.Text = iimgdesc02;
             timgdesc03.Text = iimgdesc03;
             timgdesc04.Text = iimgdesc04;
-          //  timgdesc05.Text = iimgdesc05;
+            timgdesc05.Text = iimgdesc05;
             tviddesc.Text = ividdesc;
         
 
