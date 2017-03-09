@@ -95,7 +95,7 @@ namespace Akyat.Pinas
             int end = mListView.LastVisiblePosition;
             int numberOfVisibleItems = end - start + 1;
 
-            if (numberOfVisibleItems == 40)
+            if (numberOfVisibleItems >= 40)
             {
                 mListView.ItemClick += mListView_ItemClick;
             }

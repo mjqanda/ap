@@ -11,6 +11,7 @@ namespace Akyat.Pinas
         public int Masl { get; set; }
         public int Difficulty { get; set; }
         public int Island { get; set; }
+        public string MtImgthumb { get; set; }
         public string MtImg00 { get; set; }
         public string MtImg01 { get; set; }
         public string MtImg02 { get; set; }

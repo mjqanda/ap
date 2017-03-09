@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Akyat.Pinas.Utility;
+using Square.Picasso;
 
 namespace Akyat.Pinas
 {
@@ -17,7 +18,7 @@ namespace Akyat.Pinas
     public class MyDialogFragment : DialogFragment
     {
         ImageView imgf;
-
+        Context mContext;
         public static MyDialogFragment newInstance()
         {
             MyDialogFragment f = new MyDialogFragment();
@@ -39,9 +40,10 @@ namespace Akyat.Pinas
 
            string image = this.Arguments.GetString("IMG1");
 
-            var imageBitmap0 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + image + ".jpg");
-
-            imgf.SetImageBitmap(imageBitmap0);
+            //var imageBitmap0 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + image + ".jpg");
+            var imageBitmap0 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + image + ".jpg");
+            Picasso.With(mContext).Load(imageBitmap0).Into(imgf);
+            //imgf.SetImageBitmap(imageBitmap0);
 
             return v;
         }
