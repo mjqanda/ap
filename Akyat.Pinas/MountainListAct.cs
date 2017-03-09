@@ -71,11 +71,12 @@ namespace Akyat.Pinas
                 //mSearch = FindViewById<EditText>(Resource.Id.etSearch);
                 //mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
                 ViewHolder();
-                mMountainsTemp = mMountains.ToList();
+             
                 mSearch.TextChanged += mSearch_TextChanged;
                 mListView.ScrollingCacheEnabled = false;
                 mListView.FastScrollEnabled = true;
                 mMountains = mountainsRepository.GetAllMountains();
+                mMountainsTemp = mMountains.ToList();
                 mListView.ItemClick += mListView_ItemClick;
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
