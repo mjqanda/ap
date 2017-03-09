@@ -21,7 +21,8 @@ namespace Akyat.Pinas
     public class MountainListAct : Activity
     {
         private List<Mountain> mMountains;
-        private List<Mountain> mMountainsTemp = new List<Mountain>();
+        private List<Mountain> mMountainsTemp;
+//        private List<Mountain> mMountainsTemp = new List<Mountain>();
         private ListView mListView;
         private EditText mSearch;
         private LinearLayout mContainer;
@@ -30,20 +31,21 @@ namespace Akyat.Pinas
         private bool mAnimatedDown, mIsAnimating;
         private MountainsAdapter mAdapter;
         private Context context;
+        protected MountainsService mountainsRepository;
        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             oncreate();
-
         }
 
         private void oncreate()
         {
             int position = Intent.GetIntExtra("mtDataPos", 177);
-
+            mountainsRepository = new MountainsService();
             if (position == 177)
             {
+                
                 //SetContentView(Resource.Layout.mountainListLayout);
                 //mListView = FindViewById<ListView>(Resource.Id.listView);
                 //mSearch = FindViewById<EditText>(Resource.Id.etSearch);
@@ -52,7 +54,7 @@ namespace Akyat.Pinas
                 mSearch.TextChanged += mSearch_TextChanged;
                 mListView.FastScrollEnabled = true;
                 mListView.ScrollingCacheEnabled = false;
-                mMountains = MountainsData.Mountains;
+                mMountains = mountainsRepository.GetAllMountains();
                 mMountainsTemp = mMountains.ToList();
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
@@ -63,6 +65,7 @@ namespace Akyat.Pinas
             }
             else
             {
+                
                 //SetContentView(Resource.Layout.mountainListLayout);
                 //mListView = FindViewById<ListView>(Resource.Id.listView);
                 //mSearch = FindViewById<EditText>(Resource.Id.etSearch);
@@ -72,7 +75,7 @@ namespace Akyat.Pinas
                 mSearch.TextChanged += mSearch_TextChanged;
                 mListView.ScrollingCacheEnabled = false;
                 mListView.FastScrollEnabled = true;
-                mMountains = MountainsData.Mountains;
+                mMountains = mountainsRepository.GetAllMountains();
                 mListView.ItemClick += mListView_ItemClick;
                 mSearch.Alpha = 0;
                 mContainer.BringToFront();
@@ -85,7 +88,7 @@ namespace Akyat.Pinas
                 OpenDetailActivitys(position);
             }
         }
-
+        
         private void ItemClickMethod()
         {
             int start = mListView.FirstVisiblePosition;

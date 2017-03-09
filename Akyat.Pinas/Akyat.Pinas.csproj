@@ -128,6 +128,7 @@
     <Compile Include="Activities\MountainMapAct.cs" />
     <Compile Include="MountainsAdapter.cs" />
     <Compile Include="MountainsData.cs" />
+    <Compile Include="MountainsService.cs" />
     <Compile Include="MyAnimation.cs" />
     <Compile Include="Activities\itineraryAct.cs" />
     <Compile Include="MyDialogFragment.cs" />
