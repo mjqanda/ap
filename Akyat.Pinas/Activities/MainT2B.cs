@@ -34,15 +34,14 @@ namespace Akyat.Pinas.Activities
             {
                if (button == "ttb") { 
                 var intent = new Intent(this, typeof(listsActivity));
-                    intent.PutExtra("name", "Apo");
+                    intent.PutExtra("name", "APO");
                     StartActivity(intent);
                 }
 
                else if (button == "iti")
                {
-
                     var intent = new Intent(this, typeof(itineraryAct));
-                    intent.PutExtra("name", "Apo");
+                    intent.PutExtra("name", "APO");
                     StartActivity(intent);
                 }
                
