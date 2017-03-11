@@ -72,7 +72,7 @@ namespace Akyat.Pinas
             var imageBitmap5 = "https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg5 + ".jpg";
 
 
-            Picasso.With(mContext).Load(imageBitmap0).Into(mtimg0);
+            Picasso.With(this).Load(imageBitmap0).Into(mtimg0);
             Picasso.With(mContext).Load(imageBitmap1).Into(mtimg1);
             Picasso.With(mContext).Load(imageBitmap2).Into(mtimg2);
             Picasso.With(mContext).Load(imageBitmap3).Into(mtimg3);
@@ -120,7 +120,7 @@ namespace Akyat.Pinas
             mtimg2.Click += Mtimg2_Click;
             mtimg3.Click += Mtimg3_Click;
             mtimg4.Click += Mtimg4_Click;
-           // mtimg5.Click += Mtimg5_Click;
+           mtimg5.Click += Mtimg5_Click;
             videoimg.Click += Videoimg_Click;
         }
 
@@ -182,12 +182,12 @@ namespace Akyat.Pinas
            
             OpenFragment(iimg4);
         }
-        //private void Mtimg5_Click(object sender, System.EventArgs e)
-        //{
-        //    Intent i = this.Intent;
-        //    int iimg5 = i.Extras.GetInt("IMG5");
-        //    OpenFragment(iimg5);
-        //}
+        private void Mtimg5_Click(object sender, System.EventArgs e)
+        {
+            Intent i = this.Intent;
+           string iimg5 = i.Extras.GetString("IMG5");
+            OpenFragment(iimg5);
+        }
         public override void OnBackPressed()
         {
             string fromMap = Intent.GetStringExtra("imFromMap");
