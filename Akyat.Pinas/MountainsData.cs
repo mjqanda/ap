@@ -9,8 +9,8 @@ namespace Akyat.Pinas
 {
     public class MountainsData
     {
-        string url = "https://ia601507.us.archive.org/10/items/mountainsData/mountainsData.json";
-
+        const string url = "https://ia601507.us.archive.org/10/items/mountainsData/mountainsData.json";
+        //string url = "https://akyat-pinas.firebaseio.com/";
         private static List<Mountain> Mountains = new List<Mountain>();
         
 
@@ -44,11 +44,17 @@ namespace Akyat.Pinas
 
             }
         }
-         public List<Mountain> GetAllMountains()
+        public List<Mountain> GetAllMountains()
         {
             IEnumerable<Mountain> mountainsss = (Mountains.OrderBy(mountain => mountain.MtName)).ToList<Mountain>();
             return mountainsss.ToList<Mountain>();
         }
+
+        public List<Mountain> GetData()
+        {
+            return Mountains;
+        }
+
         //  public List<Mountain> GetGroupedHotDogs()
         // {
         //     return Mountains;

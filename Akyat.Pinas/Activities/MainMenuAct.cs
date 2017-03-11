@@ -32,7 +32,9 @@ namespace Akyat.Pinas.Activities
 
             btnMountainList.Click += (sender, e) =>
             {
+                const string message ="Data Fetching, Please wait.";
                 var intent = new Intent(this, typeof(MountainListAct));
+                Toast.MakeText(this, message, ToastLength.Short).Show();
 
                 StartActivity(intent);
                 OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);

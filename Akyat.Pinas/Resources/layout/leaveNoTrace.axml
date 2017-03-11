@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:id="@+id/textView2"
+                android:id="@+id/title"
                 android:textColor="#000"
                 android:textStyle="bold" />
             <TextView
@@ -35,13 +35,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:id="@+id/desc" />
             <ImageView
                 android:src="@drawable/lnticon1"
                 android:layout_width="145px"
                 android:layout_height="145px"
                 android:layout_marginLeft="24.0dp"
-                android:layout_marginTop="11.0dp" />
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/icon1" />
             <TextView
                 android:text="1. PLAN AHEAD AND PREPARE"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -50,20 +52,23 @@
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:layout_marginTop="0.0dp" />
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/lntdesc1" />
             <TextView
                 android:text="&quot;Know before you go!&quot; Learn everything you can about the area you plan to visit and the regulation for its use."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:id="@+id/lntdesc11" />
             <ImageView
                 android:src="@drawable/lnticon2"
                 android:layout_width="145px"
                 android:layout_height="145px"
                 android:layout_marginLeft="24.0dp"
-                android:layout_marginTop="11.0dp" />
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/icon2" />
             <TextView
                 android:text="2. TRAVEL AND CAMP ON DURABLE SURFACES"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -72,20 +77,23 @@
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:layout_marginTop="0.0dp" />
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/lntdesc2" />
             <TextView
                 android:text="Use established campsites and trails, where available. Avoid sites just beginning to show impacts. Keep camps small and at least 200 feet from water, occupied campsites, and trails."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:id="@+id/lntdesc22" />
             <ImageView
                 android:src="@drawable/lnticon3"
                 android:layout_width="145px"
                 android:layout_height="145px"
                 android:layout_marginLeft="24.0dp"
-                android:layout_marginTop="11.0dp" />
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/icon3" />
             <TextView
                 android:text="3. DISPOSE OF WASTE PROPERLY"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -94,20 +102,23 @@
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:layout_marginTop="0.0dp" />
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/lntdesc3" />
             <TextView
                 android:text="&quot;Pack it in, pack it out&quot;! Bury human waste in a cathole 6-8 inches deep and at least 200 feet from water. Wash yourself and your dishes at least 200 feet from water."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:id="@+id/lntdesc33" />
             <ImageView
                 android:src="@drawable/lnticon4"
                 android:layout_width="145px"
                 android:layout_height="145px"
                 android:layout_marginLeft="24.0dp"
-                android:layout_marginTop="11.0dp" />
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/icon4" />
             <TextView
                 android:text="4. LEAVE WHAT YOU FIND"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -116,20 +127,23 @@
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:layout_marginTop="0.0dp" />
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/lntdesc4" />
             <TextView
                 android:text="Do not damage, deface, or remove natural objects or cultural artifacts. Leave them for others to enjoy. Don't build structures, dig trenches, or alter natural features."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:id="@+id/lntdesc44" />
             <ImageView
                 android:src="@drawable/lnticon5"
                 android:layout_width="145px"
                 android:layout_height="145px"
                 android:layout_marginLeft="24.0dp"
-                android:layout_marginTop="11.0dp" />
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/icon5" />
             <TextView
                 android:text="5. MINIMIZE USE AND IMPACTS OF FIRE"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -138,20 +152,23 @@
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:layout_marginTop="0.0dp" />
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/lntdesc5" />
             <TextView
                 android:text="Use a lightweight stove, instead of a fire. If you build a fire, use only small dead wood found the ground and use existing fire rings."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:id="@+id/lntdesc55" />
             <ImageView
                 android:src="@drawable/lnticon6"
                 android:layout_width="145px"
                 android:layout_height="145px"
                 android:layout_marginLeft="24.0dp"
-                android:layout_marginTop="11.0dp" />
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/icon6" />
             <TextView
                 android:text="6. RESPECT WILDLIFE"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -160,20 +177,23 @@
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:layout_marginTop="0.0dp" />
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/lntdesc6" />
             <TextView
                 android:text="Watch wildlife from a distance and never approach, feed, or follow it. Seal food tightly and store it out of reach. Control pets at all times or consider leaving them at home."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:id="@+id/lntdesc66" />
             <ImageView
                 android:src="@drawable/lnticon7"
                 android:layout_width="145px"
                 android:layout_height="145px"
                 android:layout_marginLeft="24.0dp"
-                android:layout_marginTop="11.0dp" />
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/icon7" />
             <TextView
                 android:text="7. BE CONSIDERATE OF OTHER VISITORS"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -182,14 +202,40 @@
                 android:textColor="#000"
                 android:paddingTop="10dp"
                 android:textStyle="bold"
-                android:layout_marginTop="0.0dp" />
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/lntdesc7" />
             <TextView
                 android:text="Don't disturb others. Preserve the natural quiet. When you meet horses on the trail, step off the downhill side and speak softly as they pass."
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:id="@+id/lntdesc77" />
+            <ImageView
+                android:layout_width="145px"
+                android:layout_height="145px"
+                android:layout_marginLeft="24.0dp"
+                android:layout_marginTop="11.0dp"
+                android:id="@+id/icon8" />
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0.0dp"
+                android:id="@+id/lntdesc8" />
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:textColor="#000"
+                android:id="@+id/lntdesc88" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

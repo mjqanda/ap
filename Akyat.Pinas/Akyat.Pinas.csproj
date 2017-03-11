@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -133,8 +133,12 @@
     <Compile Include="Activities\SettingsAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Activities\ThingsToBringAct.cs" />
+    <Compile Include="Data\FirstAidData.cs" />
+    <Compile Include="Data\LeaveNoTraceData.cs" />
     <Compile Include="DetailActivity.cs" />
     <Compile Include="ExtMethods.cs" />
+    <Compile Include="Models\FirstAid.cs" />
+    <Compile Include="Models\LeaveNoTrace.cs" />
     <Compile Include="MountainListAct.cs" />
     <Compile Include="Mountain.cs" />
     <Compile Include="Activities\MountainMapAct.cs" />
