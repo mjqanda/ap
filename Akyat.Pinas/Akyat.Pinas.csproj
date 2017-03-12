@@ -125,21 +125,25 @@
     <Compile Include="Activities\addItineraryAct.cs" />
     <Compile Include="Activities\EssentialsAct.cs" />
     <Compile Include="Activities\FirstAidAct.cs" />
+    <Compile Include="Activities\FirstAidMenu.cs" />
     <Compile Include="Activities\ItiAndTtbActivity.cs" />
     <Compile Include="Activities\listsActivity.cs" />
     <Compile Include="Activities\MainMenuAct.cs" />
     <Compile Include="Activities\LeaveNoTraceAct.cs" />
     <Compile Include="Activities\MainT2B.cs" />
     <Compile Include="Activities\SettingsAct.cs" />
+    <Compile Include="Activities\SnakeBiteAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Activities\ThingsToBringAct.cs" />
     <Compile Include="Data\FirstAidData.cs" />
     <Compile Include="Data\LeaveNoTraceData.cs" />
+    <Compile Include="Data\SnakeBiteData.cs" />
     <Compile Include="DetailActivity.cs" />
     <Compile Include="ExtMethods.cs" />
     <Compile Include="FirstAidService.cs" />
     <Compile Include="Models\FirstAid.cs" />
     <Compile Include="Models\LeaveNoTrace.cs" />
+    <Compile Include="Models\SnakeBite.cs" />
     <Compile Include="MountainListAct.cs" />
     <Compile Include="Mountain.cs" />
     <Compile Include="Activities\MountainMapAct.cs" />
@@ -213,13 +217,13 @@
     <AndroidResource Include="Resources\layout\essentials.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\firstaidLayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\firstaidModel.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\lntModel.axml">
+    <AndroidResource Include="Resources\layout\snakebiteLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\firstaidmenuLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -1073,6 +1077,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-nodpi\hand1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\bandagebg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\firstaidbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\snakebg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />

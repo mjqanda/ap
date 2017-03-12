@@ -18,6 +18,7 @@ namespace Akyat.Pinas
         private static MountainsData mountainsRepository = new MountainsData();
         private static FirstAidData firstaidRepository = new FirstAidData();
         private static LeaveNoTraceData leavenotraceRepository = new LeaveNoTraceData();
+        private static SnakeBiteData snakebiteRepository = new SnakeBiteData();
         public List<Mountain> GetAllMountains()
         {
             return mountainsRepository.GetAllMountains();
@@ -31,25 +32,9 @@ namespace Akyat.Pinas
         {
             return leavenotraceRepository.GetLeaveNoTraceData();
         }
-
-        ////public List<HotDogGroup> GetGroupedHotDogs()
-        ////{
-        ////    return hotDogRepository.GetGroupedHotDogs();
-        ////}
-
-        //public List<HotDog> GetHotDogsForGroup(int hotDogGroupId)
-        //{
-        //    return hotDogRepository.GetHotDogsForGroup(hotDogGroupId);
-        //}
-
-        //public List<HotDog> GetFavoriteHotDogs()
-        //{
-        //    return hotDogRepository.GetFavoriteHotDogs();
-        //}
-
-        //public HotDog GetHotDogById(int hotDogId)
-        //{
-        //    return hotDogRepository.GetHotDogById(hotDogId);
-        //}
+        public SnakeBite GetSnakeBiteData()
+        {
+            return snakebiteRepository.GetSnakeBiteData();
+        }
     }
 }

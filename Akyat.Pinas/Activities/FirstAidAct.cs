@@ -23,28 +23,16 @@ namespace Akyat.Pinas.Activities
         ImageView vimg001, vimg002, vimg003, vimg004, vimg005, vimg006,
             vimg011, vimg012, vimg013, vimg014, vimg015,
             vimg021, vimg022, vimg023, vimg024, vimg025;
-        //private ListView _mListView;
-        //private FirstAid mFirstAid;
-        //private FirstAidAdapter mAdapter;
       
 
-        Activity activity = new Activity();
-        protected FirstAidService firstaidRepository;
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            firstaidRepository = new FirstAidService();
             
-           // activity = firstaidRepository.GetFirstAidData();
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
-            //SetContentView(Resource.Layout.firstaidLayout);
             SetContentView(Resource.Layout.firstaidModel);
-            //_mListView = FindViewById<ListView>(Resource.Id.faidlistview);
-           ViewHolder();
-            // Create your application here
-            //mFirstAid = firstaidRepository.GetFirstAidData();
-            //mAdapter = new FirstAidAdapter(this, Resource.Layout.firstaidModel, mFirstAid);
-            //_mListView.Adapter = mAdapter;
+            ViewHolder();
+           
             Android.Content.Intent i = this.Intent;
 
 
