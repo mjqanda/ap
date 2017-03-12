@@ -135,7 +135,7 @@ namespace Akyat.Pinas.Adapters
             //Picasso.With(mContext).Load(imageBitmap).Into(Img);
 
 
-            NotifyDataSetChanged();
+           // NotifyDataSetChanged();
             return convertView;
         }
     }

@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Org.Apache.Http.Impl.IO;
 
 namespace Akyat.Pinas.Activities
 {
@@ -22,26 +23,27 @@ namespace Akyat.Pinas.Activities
         //ImageView vimg001, vimg002, vimg003, vimg004, vimg005,
         //    vimg011, vimg012, vimg013, vimg014, vimg015,
         //    vimg021, vimg022, vimg023, vimg024, vimg025;
-        private ListView mListView;
+        private ListView _mListView;
         private List<FirstAid> mFirstAid;
         private FirstAidAdapter mAdapter;
-        protected MountainsService mountainsRepository;
+      
 
         Activity activity = new Activity();
-        protected MountainsService firstaidRepository;
+        protected FirstAidService firstaidRepository;
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            firstaidRepository = new FirstAidService();
             
            // activity = firstaidRepository.GetFirstAidData();
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.firstaidLayout);
-            mListView = FindViewById<ListView>(Resource.Id.faidlistview);
+            _mListView = FindViewById<ListView>(Resource.Id.faidlistview);
             //ViewHolder();
             // Create your application here
-            mFirstAid = mountainsRepository.GetFirstAidData();
+            mFirstAid = firstaidRepository.GetFirstAidData();
             mAdapter = new FirstAidAdapter(this, Resource.Layout.firstaidModel, mFirstAid);
-            mListView.Adapter = mAdapter;
+            _mListView.Adapter = mAdapter;
         }
         public override void OnBackPressed()
         {
