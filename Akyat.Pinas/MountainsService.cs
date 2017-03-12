@@ -20,10 +20,10 @@ namespace Akyat.Pinas
         private static LeaveNoTraceData leavenotraceRepository = new LeaveNoTraceData();
         public List<Mountain> GetAllMountains()
         {
-            return mountainsRepository.GetData();
+            return mountainsRepository.GetAllMountains();
         }
 
-        public List<FirstAid> GetFirstAidData()
+        public FirstAid GetFirstAidData()
         {
             return firstaidRepository.GetFirstAidData();
         }

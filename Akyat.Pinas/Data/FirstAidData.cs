@@ -18,7 +18,7 @@ namespace Akyat.Pinas.Data
     public class FirstAidData
     {
         const string url = "https://ia801507.us.archive.org/10/items/mountainsData/FirstAidData.json";
-        private static List<FirstAid> Firstaids = new List<FirstAid>();
+        private static FirstAid Firstaids = new FirstAid();
 
 
         public FirstAidData()
@@ -42,7 +42,7 @@ namespace Akyat.Pinas.Data
                         HttpResponseMessage response = await getResponse;
 
                         responseJsonString = await response.Content.ReadAsStringAsync();
-                        Firstaids = JsonConvert.DeserializeObject<List<FirstAid>>(responseJsonString);
+                        Firstaids = JsonConvert.DeserializeObject<FirstAid>(responseJsonString);
                     }
                     catch (Exception ex)
                     {
@@ -53,7 +53,7 @@ namespace Akyat.Pinas.Data
             }
         }
 
-        public List<FirstAid> GetFirstAidData()
+        public FirstAid GetFirstAidData()
         {
             return Firstaids;
         }

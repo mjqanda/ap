@@ -23,7 +23,7 @@ namespace Akyat.Pinas
         //    return mountainsRepository.GetData();
         //}
 
-        public List<FirstAid> GetFirstAidData()
+        public FirstAid GetFirstAidData()
         {
             return firstaidRepository.GetFirstAidData();
         }

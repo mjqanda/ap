@@ -31,8 +31,6 @@ namespace Akyat.Pinas
 
             Android.Content.Intent i = this.Intent;
             string iname = i.Extras.GetString("MTNAME");
-
-
             string iimg0 = i.Extras.GetString("IMG0");
             string iimg1 = i.Extras.GetString("IMG1");
             string iimg2 = i.Extras.GetString("IMG2");
@@ -56,13 +54,6 @@ namespace Akyat.Pinas
             string iimgdesc05 = i.Extras.GetString("IMGD5");
             string ividdesc = i.Extras.GetString("VIDD");
 
-
-            //var imageBitmap0 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg0 + ".jpg");
-            //var imageBitmap1 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg1 + ".jpg");
-            //var imageBitmap2 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg2 + ".jpg");
-            //var imageBitmap3 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg3 + ".jpg");
-            //var imageBitmap4 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg4 + ".jpg");
-            //var imageBitmap5 = ImageHelper.GetImageBitmapFromUrl("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg5 + ".jpg");
 
             var imageBitmap0 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg0 + ".jpg");
             var imageBitmap1 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg1 + ".jpg");
