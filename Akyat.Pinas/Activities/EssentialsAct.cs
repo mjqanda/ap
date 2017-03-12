@@ -17,7 +17,9 @@ namespace Akyat.Pinas.Activities
     {
      //   List<FirstAid> fa;
         private FirstAid mFirstAid = new FirstAid();
-        protected MountainsService firstaidRepository;
+        private LeaveNoTrace mLnt = new LeaveNoTrace();
+        protected MountainsService mountainService;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,16 +35,41 @@ namespace Akyat.Pinas.Activities
             btnLnt.Click += BtnLnt_Click;
             btnFirstaid.Click += BtnFirstaid_Click;
 
-            // Create your application here
         }
 
         private void BtnLnt_Click(object sender, EventArgs e)
         {
-          
+            mountainService = new MountainsService();
+            mLnt = mountainService.GetLeaveNoTraceData();
             var intent = new Intent(this, typeof(LeaveNoTraceAct));
-            
 
+            intent.PutExtra("Title", mLnt.Title);
+            intent.PutExtra("Desc", mLnt.Desc);
+            intent.PutExtra("Desc1", mLnt.Desc1);
+            intent.PutExtra("Desc11", mLnt.Desc11);
+            intent.PutExtra("Desc2", mLnt.Desc2);
+            intent.PutExtra("Desc22", mLnt.Desc22);
+            intent.PutExtra("Desc3", mLnt.Desc3);
+            intent.PutExtra("Desc33", mLnt.Desc33);
+            intent.PutExtra("Desc4", mLnt.Desc4);
+            intent.PutExtra("Desc44", mLnt.Desc44);
+            intent.PutExtra("Desc5", mLnt.Desc5);
+            intent.PutExtra("Desc55", mLnt.Desc55);
+            intent.PutExtra("Desc6", mLnt.Desc6);
+            intent.PutExtra("Desc66", mLnt.Desc66);
+            intent.PutExtra("Desc7", mLnt.Desc7);
+            intent.PutExtra("Desc77", mLnt.Desc77);
+            intent.PutExtra("Desc8", mLnt.Desc8);
+            intent.PutExtra("Desc88", mLnt.Desc88);
 
+            intent.PutExtra("Icon1", mLnt.Icon1);
+            intent.PutExtra("Icon2", mLnt.Icon2);
+            intent.PutExtra("Icon3", mLnt.Icon3);
+            intent.PutExtra("Icon4", mLnt.Icon4);
+            intent.PutExtra("Icon5", mLnt.Icon5);
+            intent.PutExtra("Icon6", mLnt.Icon6);
+            intent.PutExtra("Icon7", mLnt.Icon7);
+            intent.PutExtra("Icon8", mLnt.Icon8);
 
             StartActivity(intent);
             OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
@@ -50,9 +77,8 @@ namespace Akyat.Pinas.Activities
 
         private void BtnFirstaid_Click(object sender, EventArgs e)
         {
-            firstaidRepository = new MountainsService();
-            mFirstAid = firstaidRepository.GetFirstAidData();
-
+            mountainService = new MountainsService();
+            mFirstAid = mountainService.GetFirstAidData();
             var intent = new Intent(this, typeof(FirstAidAct));
             intent.PutExtra("TITLE", mFirstAid.Title);
             intent.PutExtra("Desc00", mFirstAid.Desc00);
@@ -60,6 +86,7 @@ namespace Akyat.Pinas.Activities
             intent.PutExtra("Desc001", mFirstAid.Desc001);
             intent.PutExtra("Img002", mFirstAid.Img002);
             intent.PutExtra("Desc002", mFirstAid.Desc002);
+            intent.PutExtra("Img003", mFirstAid.Img003);
             intent.PutExtra("Desc003", mFirstAid.Desc003);
             intent.PutExtra("Img004", mFirstAid.Img004);
             intent.PutExtra("Desc004", mFirstAid.Desc004);
@@ -93,6 +120,7 @@ namespace Akyat.Pinas.Activities
             intent.PutExtra("Desc024", mFirstAid.Desc024);
             intent.PutExtra("Img025", mFirstAid.Img025);
             intent.PutExtra("Desc025", mFirstAid.Desc025);
+
             StartActivity(intent);
             OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
         }

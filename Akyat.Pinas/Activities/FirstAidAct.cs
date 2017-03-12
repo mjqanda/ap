@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Akyat.Pinas.Adapters;
 using Akyat.Pinas.Models;
 using Android.App;
 using Android.Content;
@@ -64,7 +63,6 @@ namespace Akyat.Pinas.Activities
             string desc013 = i.Extras.GetString("Desc013");
             string desc014 = i.Extras.GetString("Desc014");
             string desc015 = i.Extras.GetString("Desc015");
-            string desc016 = i.Extras.GetString("Desc016");
 
             string desc02 = i.Extras.GetString("Desc02");
             string desc021 = i.Extras.GetString("Desc021");
@@ -118,24 +116,24 @@ namespace Akyat.Pinas.Activities
             vdesc024.Text = desc024;
             vdesc025.Text = desc025;
 
-            var bmimg001 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img001 + ".jpg");
-            var bmimg002 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img002 + ".jpg");
-            var bmimg003 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img003 + ".jpg");
-            var bmimg004 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img004 + ".jpg");
-            var bmimg005 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img005 + ".jpg");
-            var bmimg006 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img006 + ".jpg");
+            var bmimg001 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img001 + ".png");
+            var bmimg002 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img002 + ".png");
+            var bmimg003 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img003 + ".png");
+            var bmimg004 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img004 + ".png");
+            var bmimg005 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img005 + ".png");
+            var bmimg006 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img006 + ".png");
 
-            var bmimg011 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img011 + ".jpg");
-            var bmimg012 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img012 + ".jpg");
-            var bmimg013 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img013 + ".jpg");
-            var bmimg014 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img014 + ".jpg");
-            var bmimg015 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img015 + ".jpg");
+            var bmimg011 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img011 + ".png");
+            var bmimg012 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img012 + ".png");
+            var bmimg013 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img013 + ".png");
+            var bmimg014 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img014 + ".png");
+            var bmimg015 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img015 + ".png");
 
-            var bmimg021 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img021 + ".jpg");
-            var bmimg022 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img022 + ".jpg");
-            var bmimg023 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img023 + ".jpg");
-            var bmimg024 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img024 + ".jpg");
-            var bmimg025 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img025 + ".jpg");
+            var bmimg021 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img021 + ".png");
+            var bmimg022 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img022 + ".png");
+            var bmimg023 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img023 + ".png");
+            var bmimg024 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img024 + ".png");
+            var bmimg025 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + img025 + ".png");
             
 
             Picasso.With(this).Load(bmimg001).Into(vimg001);

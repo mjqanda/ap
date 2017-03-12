@@ -27,7 +27,7 @@ namespace Akyat.Pinas
         {
             return firstaidRepository.GetFirstAidData();
         }
-        public static List<LeaveNoTrace> GetLeaveNoTraceData()
+        public LeaveNoTrace GetLeaveNoTraceData()
         {
             return leavenotraceRepository.GetLeaveNoTraceData();
         }

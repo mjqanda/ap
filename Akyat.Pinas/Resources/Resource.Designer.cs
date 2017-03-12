@@ -2509,164 +2509,164 @@ namespace Akyat.Pinas
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b00ce
-			public const int AltoPeak = 2131427534;
-			
 			// aapt resource value: 0x7f0b00cf
-			public const int Apo = 2131427535;
+			public const int AltoPeak = 2131427535;
 			
 			// aapt resource value: 0x7f0b00d0
-			public const int Arayat = 2131427536;
+			public const int Apo = 2131427536;
 			
 			// aapt resource value: 0x7f0b00d1
-			public const int Banoi = 2131427537;
+			public const int Arayat = 2131427537;
 			
 			// aapt resource value: 0x7f0b00d2
-			public const int Batolusong = 2131427538;
+			public const int Banoi = 2131427538;
 			
 			// aapt resource value: 0x7f0b00d3
-			public const int Batulao = 2131427539;
+			public const int Batolusong = 2131427539;
 			
 			// aapt resource value: 0x7f0b00d4
-			public const int Binacayan = 2131427540;
+			public const int Batulao = 2131427540;
 			
 			// aapt resource value: 0x7f0b00d5
-			public const int Candalaga = 2131427541;
+			public const int Binacayan = 2131427541;
 			
 			// aapt resource value: 0x7f0b00d6
-			public const int Cristobal = 2131427542;
+			public const int Candalaga = 2131427542;
 			
 			// aapt resource value: 0x7f0b00d7
-			public const int DulangDulang = 2131427543;
+			public const int Cristobal = 2131427543;
 			
 			// aapt resource value: 0x7f0b00d8
-			public const int GuitingGuiting = 2131427544;
+			public const int DulangDulang = 2131427544;
 			
 			// aapt resource value: 0x7f0b00d9
-			public const int Halcon = 2131427545;
+			public const int GuitingGuiting = 2131427545;
 			
 			// aapt resource value: 0x7f0b00da
-			public const int Hamiguitan = 2131427546;
+			public const int Halcon = 2131427546;
 			
 			// aapt resource value: 0x7f0b00db
-			public const int HibokHibok = 2131427547;
+			public const int Hamiguitan = 2131427547;
 			
 			// aapt resource value: 0x7f0b00dc
-			public const int Kalatungan = 2131427548;
+			public const int HibokHibok = 2131427548;
 			
 			// aapt resource value: 0x7f0b00dd
-			public const int Kanlaon = 2131427549;
+			public const int Kalatungan = 2131427549;
 			
 			// aapt resource value: 0x7f0b00de
-			public const int Kitanglad = 2131427550;
+			public const int Kanlaon = 2131427550;
 			
 			// aapt resource value: 0x7f0b00df
-			public const int Lubog = 2131427551;
+			public const int Kitanglad = 2131427551;
 			
 			// aapt resource value: 0x7f0b00e0
-			public const int Maculot = 2131427552;
+			public const int Lubog = 2131427552;
 			
 			// aapt resource value: 0x7f0b00e1
-			public const int Madjaas = 2131427553;
+			public const int Maculot = 2131427553;
 			
 			// aapt resource value: 0x7f0b00e2
-			public const int Makiling = 2131427554;
+			public const int Madjaas = 2131427554;
 			
 			// aapt resource value: 0x7f0b00e3
-			public const int ManabuPeak = 2131427555;
-			
-			// aapt resource value: 0x7f0b00e5
-			public const int Marami = 2131427557;
+			public const int Makiling = 2131427555;
 			
 			// aapt resource value: 0x7f0b00e4
-			public const int Matalingajan = 2131427556;
+			public const int ManabuPeak = 2131427556;
 			
 			// aapt resource value: 0x7f0b00e6
-			public const int Matutum = 2131427558;
+			public const int Marami = 2131427558;
+			
+			// aapt resource value: 0x7f0b00e5
+			public const int Matalingajan = 2131427557;
 			
 			// aapt resource value: 0x7f0b00e7
-			public const int Napulak = 2131427559;
+			public const int Matutum = 2131427559;
 			
 			// aapt resource value: 0x7f0b00e8
-			public const int OsmenaPeak = 2131427560;
+			public const int Napulak = 2131427560;
 			
 			// aapt resource value: 0x7f0b00e9
-			public const int Pamitinan = 2131427561;
+			public const int OsmenaPeak = 2131427561;
 			
 			// aapt resource value: 0x7f0b00ea
-			public const int PicoDeLoro = 2131427562;
+			public const int Pamitinan = 2131427562;
 			
 			// aapt resource value: 0x7f0b00eb
-			public const int Pulag = 2131427563;
+			public const int PicoDeLoro = 2131427563;
 			
 			// aapt resource value: 0x7f0b00ec
-			public const int Romelo = 2131427564;
+			public const int Pulag = 2131427564;
 			
 			// aapt resource value: 0x7f0b00ed
-			public const int Taal = 2131427565;
+			public const int Romelo = 2131427565;
 			
 			// aapt resource value: 0x7f0b00ee
-			public const int Talamitam = 2131427566;
+			public const int Taal = 2131427566;
 			
 			// aapt resource value: 0x7f0b00ef
-			public const int Talomo = 2131427567;
+			public const int Talamitam = 2131427567;
 			
 			// aapt resource value: 0x7f0b00f0
-			public const int TarakRidge = 2131427568;
+			public const int Talomo = 2131427568;
 			
 			// aapt resource value: 0x7f0b00f1
-			public const int TayakHill = 2131427569;
+			public const int TarakRidge = 2131427569;
 			
 			// aapt resource value: 0x7f0b00f2
-			public const int TresMarias = 2131427570;
+			public const int TayakHill = 2131427570;
 			
 			// aapt resource value: 0x7f0b00f3
-			public const int Ulap = 2131427571;
+			public const int TresMarias = 2131427571;
 			
 			// aapt resource value: 0x7f0b00f4
-			public const int Victoria = 2131427572;
+			public const int Ulap = 2131427572;
 			
 			// aapt resource value: 0x7f0b00f5
-			public const int WhitePeak = 2131427573;
+			public const int Victoria = 2131427573;
+			
+			// aapt resource value: 0x7f0b00f6
+			public const int WhitePeak = 2131427574;
 			
 			// aapt resource value: 0x7f0b005b
 			public const int aboutusImg = 2131427419;
 			
-			// aapt resource value: 0x7f0b00fe
-			public const int action0 = 2131427582;
-			
-			// aapt resource value: 0x7f0b013d
-			public const int action1 = 2131427645;
-			
-			// aapt resource value: 0x7f0b0146
-			public const int action10 = 2131427654;
-			
-			// aapt resource value: 0x7f0b0147
-			public const int action11 = 2131427655;
+			// aapt resource value: 0x7f0b00ff
+			public const int action0 = 2131427583;
 			
 			// aapt resource value: 0x7f0b013e
-			public const int action2 = 2131427646;
+			public const int action1 = 2131427646;
+			
+			// aapt resource value: 0x7f0b0147
+			public const int action10 = 2131427655;
+			
+			// aapt resource value: 0x7f0b0148
+			public const int action11 = 2131427656;
 			
 			// aapt resource value: 0x7f0b013f
-			public const int action3 = 2131427647;
+			public const int action2 = 2131427647;
 			
 			// aapt resource value: 0x7f0b0140
-			public const int action4 = 2131427648;
+			public const int action3 = 2131427648;
 			
 			// aapt resource value: 0x7f0b0141
-			public const int action5 = 2131427649;
+			public const int action4 = 2131427649;
 			
 			// aapt resource value: 0x7f0b0142
-			public const int action6 = 2131427650;
+			public const int action5 = 2131427650;
 			
 			// aapt resource value: 0x7f0b0143
-			public const int action7 = 2131427651;
+			public const int action6 = 2131427651;
 			
 			// aapt resource value: 0x7f0b0144
-			public const int action8 = 2131427652;
+			public const int action7 = 2131427652;
 			
 			// aapt resource value: 0x7f0b0145
-			public const int action9 = 2131427653;
+			public const int action8 = 2131427653;
+			
+			// aapt resource value: 0x7f0b0146
+			public const int action9 = 2131427654;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int action_bar = 2131427404;
@@ -2692,8 +2692,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b004d
 			public const int action_context_bar = 2131427405;
 			
-			// aapt resource value: 0x7f0b0102
-			public const int action_divider = 2131427586;
+			// aapt resource value: 0x7f0b0103
+			public const int action_divider = 2131427587;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -2737,8 +2737,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0023
 			public const int beginning = 2131427363;
 			
-			// aapt resource value: 0x7f0b010b
-			public const int btnAbout = 2131427595;
+			// aapt resource value: 0x7f0b010c
+			public const int btnAbout = 2131427596;
 			
 			// aapt resource value: 0x7f0b005d
 			public const int btnAdd = 2131427421;
@@ -2752,167 +2752,167 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b006e
 			public const int btnItinerary = 2131427438;
 			
-			// aapt resource value: 0x7f0b00ca
-			public const int btnLeaveNoTrace = 2131427530;
-			
-			// aapt resource value: 0x7f0b00c8
-			public const int btnMountainList = 2131427528;
-			
 			// aapt resource value: 0x7f0b00cb
-			public const int btnMountainMap = 2131427531;
+			public const int btnLeaveNoTrace = 2131427531;
 			
-			// aapt resource value: 0x7f0b0111
-			public const int btnSave = 2131427601;
+			// aapt resource value: 0x7f0b00c9
+			public const int btnMountainList = 2131427529;
 			
 			// aapt resource value: 0x7f0b00cc
-			public const int btnSetting = 2131427532;
+			public const int btnMountainMap = 2131427532;
+			
+			// aapt resource value: 0x7f0b0112
+			public const int btnSave = 2131427602;
+			
+			// aapt resource value: 0x7f0b00cd
+			public const int btnSetting = 2131427533;
 			
 			// aapt resource value: 0x7f0b00a6
 			public const int btnTTB = 2131427494;
 			
-			// aapt resource value: 0x7f0b00c9
-			public const int btnThingsToBring = 2131427529;
+			// aapt resource value: 0x7f0b00ca
+			public const int btnThingsToBring = 2131427530;
 			
 			// aapt resource value: 0x7f0b0036
 			public const int buttonPanel = 2131427382;
 			
-			// aapt resource value: 0x7f0b00ff
-			public const int cancel_action = 2131427583;
-			
-			// aapt resource value: 0x7f0b0112
-			public const int cbBackpacks = 2131427602;
-			
-			// aapt resource value: 0x7f0b0129
-			public const int cbBlanket = 2131427625;
-			
-			// aapt resource value: 0x7f0b0133
-			public const int cbBolo = 2131427635;
+			// aapt resource value: 0x7f0b0100
+			public const int cancel_action = 2131427584;
 			
 			// aapt resource value: 0x7f0b0113
-			public const int cbBoots = 2131427603;
-			
-			// aapt resource value: 0x7f0b0127
-			public const int cbCameraBatteries = 2131427623;
-			
-			// aapt resource value: 0x7f0b012c
-			public const int cbCampWater = 2131427628;
-			
-			// aapt resource value: 0x7f0b0136
-			public const int cbCookset = 2131427638;
-			
-			// aapt resource value: 0x7f0b011d
-			public const int cbDrinkingCup = 2131427613;
+			public const int cbBackpacks = 2131427603;
 			
 			// aapt resource value: 0x7f0b012a
-			public const int cbExtraClothes = 2131427626;
-			
-			// aapt resource value: 0x7f0b011a
-			public const int cbFirstAidKit = 2131427610;
-			
-			// aapt resource value: 0x7f0b0137
-			public const int cbFlag = 2131427639;
-			
-			// aapt resource value: 0x7f0b0124
-			public const int cbFlashlight = 2131427620;
-			
-			// aapt resource value: 0x7f0b0139
-			public const int cbGroundsheet = 2131427641;
-			
-			// aapt resource value: 0x7f0b011f
-			public const int cbIdentification = 2131427615;
-			
-			// aapt resource value: 0x7f0b0122
-			public const int cbJacket = 2131427618;
-			
-			// aapt resource value: 0x7f0b0131
-			public const int cbLighter = 2131427633;
+			public const int cbBlanket = 2131427626;
 			
 			// aapt resource value: 0x7f0b0134
-			public const int cbMapCompass = 2131427636;
-			
-			// aapt resource value: 0x7f0b0132
-			public const int cbMatches = 2131427634;
-			
-			// aapt resource value: 0x7f0b011c
-			public const int cbMessKit = 2131427612;
-			
-			// aapt resource value: 0x7f0b0126
-			public const int cbMobilePhone = 2131427622;
-			
-			// aapt resource value: 0x7f0b0125
-			public const int cbMultitool = 2131427621;
-			
-			// aapt resource value: 0x7f0b0116
-			public const int cbOutdoorClothes = 2131427606;
-			
-			// aapt resource value: 0x7f0b0118
-			public const int cbPackedLunch = 2131427608;
+			public const int cbBolo = 2131427636;
 			
 			// aapt resource value: 0x7f0b0114
-			public const int cbPlasticBags = 2131427604;
-			
-			// aapt resource value: 0x7f0b012d
-			public const int cbPrecookedFood = 2131427629;
-			
-			// aapt resource value: 0x7f0b0121
-			public const int cbRainGear = 2131427617;
-			
-			// aapt resource value: 0x7f0b012e
-			public const int cbRiceEggs = 2131427630;
-			
-			// aapt resource value: 0x7f0b013a
-			public const int cbRope = 2131427642;
-			
-			// aapt resource value: 0x7f0b012b
-			public const int cbSandals = 2131427627;
-			
-			// aapt resource value: 0x7f0b011e
-			public const int cbSpoonFork = 2131427614;
-			
-			// aapt resource value: 0x7f0b0135
-			public const int cbStove = 2131427637;
-			
-			// aapt resource value: 0x7f0b0130
-			public const int cbStoveFuel = 2131427632;
-			
-			// aapt resource value: 0x7f0b0123
-			public const int cbSunProtection = 2131427619;
-			
-			// aapt resource value: 0x7f0b011b
-			public const int cbSurvivalKit = 2131427611;
-			
-			// aapt resource value: 0x7f0b0138
-			public const int cbTent = 2131427640;
-			
-			// aapt resource value: 0x7f0b0115
-			public const int cbToiletries = 2131427605;
-			
-			// aapt resource value: 0x7f0b0117
-			public const int cbTrailFood = 2131427607;
-			
-			// aapt resource value: 0x7f0b0119
-			public const int cbTrailWater = 2131427609;
+			public const int cbBoots = 2131427604;
 			
 			// aapt resource value: 0x7f0b0128
-			public const int cbTrekkingPole = 2131427624;
+			public const int cbCameraBatteries = 2131427624;
 			
-			// aapt resource value: 0x7f0b013b
-			public const int cbTrowel = 2131427643;
+			// aapt resource value: 0x7f0b012d
+			public const int cbCampWater = 2131427629;
 			
-			// aapt resource value: 0x7f0b012f
-			public const int cbTyingString = 2131427631;
+			// aapt resource value: 0x7f0b0137
+			public const int cbCookset = 2131427639;
+			
+			// aapt resource value: 0x7f0b011e
+			public const int cbDrinkingCup = 2131427614;
+			
+			// aapt resource value: 0x7f0b012b
+			public const int cbExtraClothes = 2131427627;
+			
+			// aapt resource value: 0x7f0b011b
+			public const int cbFirstAidKit = 2131427611;
+			
+			// aapt resource value: 0x7f0b0138
+			public const int cbFlag = 2131427640;
+			
+			// aapt resource value: 0x7f0b0125
+			public const int cbFlashlight = 2131427621;
+			
+			// aapt resource value: 0x7f0b013a
+			public const int cbGroundsheet = 2131427642;
 			
 			// aapt resource value: 0x7f0b0120
-			public const int cbWhistle = 2131427616;
+			public const int cbIdentification = 2131427616;
+			
+			// aapt resource value: 0x7f0b0123
+			public const int cbJacket = 2131427619;
+			
+			// aapt resource value: 0x7f0b0132
+			public const int cbLighter = 2131427634;
+			
+			// aapt resource value: 0x7f0b0135
+			public const int cbMapCompass = 2131427637;
+			
+			// aapt resource value: 0x7f0b0133
+			public const int cbMatches = 2131427635;
+			
+			// aapt resource value: 0x7f0b011d
+			public const int cbMessKit = 2131427613;
+			
+			// aapt resource value: 0x7f0b0127
+			public const int cbMobilePhone = 2131427623;
+			
+			// aapt resource value: 0x7f0b0126
+			public const int cbMultitool = 2131427622;
+			
+			// aapt resource value: 0x7f0b0117
+			public const int cbOutdoorClothes = 2131427607;
+			
+			// aapt resource value: 0x7f0b0119
+			public const int cbPackedLunch = 2131427609;
+			
+			// aapt resource value: 0x7f0b0115
+			public const int cbPlasticBags = 2131427605;
+			
+			// aapt resource value: 0x7f0b012e
+			public const int cbPrecookedFood = 2131427630;
+			
+			// aapt resource value: 0x7f0b0122
+			public const int cbRainGear = 2131427618;
+			
+			// aapt resource value: 0x7f0b012f
+			public const int cbRiceEggs = 2131427631;
+			
+			// aapt resource value: 0x7f0b013b
+			public const int cbRope = 2131427643;
+			
+			// aapt resource value: 0x7f0b012c
+			public const int cbSandals = 2131427628;
+			
+			// aapt resource value: 0x7f0b011f
+			public const int cbSpoonFork = 2131427615;
+			
+			// aapt resource value: 0x7f0b0136
+			public const int cbStove = 2131427638;
+			
+			// aapt resource value: 0x7f0b0131
+			public const int cbStoveFuel = 2131427633;
+			
+			// aapt resource value: 0x7f0b0124
+			public const int cbSunProtection = 2131427620;
+			
+			// aapt resource value: 0x7f0b011c
+			public const int cbSurvivalKit = 2131427612;
+			
+			// aapt resource value: 0x7f0b0139
+			public const int cbTent = 2131427641;
+			
+			// aapt resource value: 0x7f0b0116
+			public const int cbToiletries = 2131427606;
+			
+			// aapt resource value: 0x7f0b0118
+			public const int cbTrailFood = 2131427608;
+			
+			// aapt resource value: 0x7f0b011a
+			public const int cbTrailWater = 2131427610;
+			
+			// aapt resource value: 0x7f0b0129
+			public const int cbTrekkingPole = 2131427625;
+			
+			// aapt resource value: 0x7f0b013c
+			public const int cbTrowel = 2131427644;
+			
+			// aapt resource value: 0x7f0b0130
+			public const int cbTyingString = 2131427632;
+			
+			// aapt resource value: 0x7f0b0121
+			public const int cbWhistle = 2131427617;
 			
 			// aapt resource value: 0x7f0b0044
 			public const int checkbox = 2131427396;
 			
-			// aapt resource value: 0x7f0b00cd
-			public const int choose = 2131427533;
+			// aapt resource value: 0x7f0b00ce
+			public const int choose = 2131427534;
 			
-			// aapt resource value: 0x7f0b0105
-			public const int chronometer = 2131427589;
+			// aapt resource value: 0x7f0b0106
+			public const int chronometer = 2131427590;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int collapseActionView = 2131427367;
@@ -2935,8 +2935,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0032
 			public const int default_activity_button = 2131427378;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int desc = 2131427498;
+			// aapt resource value: 0x7f0b00ab
+			public const int desc = 2131427499;
 			
 			// aapt resource value: 0x7f0b0081
 			public const int desc00 = 2131427457;
@@ -2998,8 +2998,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0067
 			public const int descriptiontxt = 2131427431;
 			
-			// aapt resource value: 0x7f0b00f9
-			public const int difficultytxt = 2131427577;
+			// aapt resource value: 0x7f0b00fa
+			public const int difficultytxt = 2131427578;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int disableHome = 2131427352;
@@ -3010,11 +3010,11 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0024
 			public const int end = 2131427364;
 			
-			// aapt resource value: 0x7f0b010a
-			public const int end_padder = 2131427594;
+			// aapt resource value: 0x7f0b010b
+			public const int end_padder = 2131427595;
 			
-			// aapt resource value: 0x7f0b00fc
-			public const int etSearch = 2131427580;
+			// aapt resource value: 0x7f0b00fd
+			public const int etSearch = 2131427581;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int expand_activities_button = 2131427376;
@@ -3043,29 +3043,29 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0034
 			public const int icon = 2131427380;
 			
-			// aapt resource value: 0x7f0b00ab
-			public const int icon1 = 2131427499;
+			// aapt resource value: 0x7f0b00ac
+			public const int icon1 = 2131427500;
 			
-			// aapt resource value: 0x7f0b00ae
-			public const int icon2 = 2131427502;
+			// aapt resource value: 0x7f0b00af
+			public const int icon2 = 2131427503;
 			
-			// aapt resource value: 0x7f0b00b1
-			public const int icon3 = 2131427505;
+			// aapt resource value: 0x7f0b00b2
+			public const int icon3 = 2131427506;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int icon4 = 2131427508;
+			// aapt resource value: 0x7f0b00b5
+			public const int icon4 = 2131427509;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int icon5 = 2131427511;
+			// aapt resource value: 0x7f0b00b8
+			public const int icon5 = 2131427512;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int icon6 = 2131427514;
+			// aapt resource value: 0x7f0b00bb
+			public const int icon6 = 2131427515;
 			
-			// aapt resource value: 0x7f0b00bd
-			public const int icon7 = 2131427517;
+			// aapt resource value: 0x7f0b00be
+			public const int icon7 = 2131427518;
 			
-			// aapt resource value: 0x7f0b00c0
-			public const int icon8 = 2131427520;
+			// aapt resource value: 0x7f0b00c1
+			public const int icon8 = 2131427521;
 			
 			// aapt resource value: 0x7f0b0010
 			public const int icon_only = 2131427344;
@@ -3076,8 +3076,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0031
 			public const int image = 2131427377;
 			
-			// aapt resource value: 0x7f0b00c3
-			public const int imageButtonAdd = 2131427523;
+			// aapt resource value: 0x7f0b00c4
+			public const int imageButtonAdd = 2131427524;
 			
 			// aapt resource value: 0x7f0b00a4
 			public const int imageFragment = 2131427492;
@@ -3151,8 +3151,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b007c
 			public const int imgdesc05 = 2131427452;
 			
-			// aapt resource value: 0x7f0b0109
-			public const int info = 2131427593;
+			// aapt resource value: 0x7f0b010a
+			public const int info = 2131427594;
 			
 			// aapt resource value: 0x7f0b006f
 			public const int itinerarytxt = 2131427439;
@@ -3160,17 +3160,17 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0066
 			public const int jumpofftxt = 2131427430;
 			
-			// aapt resource value: 0x7f0b00c4
-			public const int layoutList = 2131427524;
+			// aapt resource value: 0x7f0b00c5
+			public const int layoutList = 2131427525;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int light = 2131427349;
 			
-			// aapt resource value: 0x7f0b0103
-			public const int line1 = 2131427587;
+			// aapt resource value: 0x7f0b0104
+			public const int line1 = 2131427588;
 			
-			// aapt resource value: 0x7f0b0107
-			public const int line3 = 2131427591;
+			// aapt resource value: 0x7f0b0108
+			public const int line3 = 2131427592;
 			
 			// aapt resource value: 0x7f0b0063
 			public const int linearLayout1 = 2131427427;
@@ -3181,83 +3181,86 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0016
 			public const int listMode = 2131427350;
 			
-			// aapt resource value: 0x7f0b00fb
-			public const int listView = 2131427579;
+			// aapt resource value: 0x7f0b00fc
+			public const int listView = 2131427580;
 			
 			// aapt resource value: 0x7f0b0033
 			public const int list_item = 2131427379;
 			
-			// aapt resource value: 0x7f0b00fa
-			public const int llContainer = 2131427578;
+			// aapt resource value: 0x7f0b00fb
+			public const int llContainer = 2131427579;
 			
 			// aapt resource value: 0x7f0b007d
 			public const int lntBtn = 2131427453;
 			
-			// aapt resource value: 0x7f0b00ac
-			public const int lntdesc1 = 2131427500;
-			
 			// aapt resource value: 0x7f0b00ad
-			public const int lntdesc11 = 2131427501;
+			public const int lntdesc1 = 2131427501;
 			
-			// aapt resource value: 0x7f0b00af
-			public const int lntdesc2 = 2131427503;
+			// aapt resource value: 0x7f0b00ae
+			public const int lntdesc11 = 2131427502;
 			
 			// aapt resource value: 0x7f0b00b0
-			public const int lntdesc22 = 2131427504;
+			public const int lntdesc2 = 2131427504;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int lntdesc3 = 2131427506;
+			// aapt resource value: 0x7f0b00b1
+			public const int lntdesc22 = 2131427505;
 			
 			// aapt resource value: 0x7f0b00b3
-			public const int lntdesc33 = 2131427507;
+			public const int lntdesc3 = 2131427507;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int lntdesc4 = 2131427509;
+			// aapt resource value: 0x7f0b00b4
+			public const int lntdesc33 = 2131427508;
 			
 			// aapt resource value: 0x7f0b00b6
-			public const int lntdesc44 = 2131427510;
+			public const int lntdesc4 = 2131427510;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int lntdesc5 = 2131427512;
+			// aapt resource value: 0x7f0b00b7
+			public const int lntdesc44 = 2131427511;
 			
 			// aapt resource value: 0x7f0b00b9
-			public const int lntdesc55 = 2131427513;
+			public const int lntdesc5 = 2131427513;
 			
-			// aapt resource value: 0x7f0b00bb
-			public const int lntdesc6 = 2131427515;
+			// aapt resource value: 0x7f0b00ba
+			public const int lntdesc55 = 2131427514;
 			
 			// aapt resource value: 0x7f0b00bc
-			public const int lntdesc66 = 2131427516;
+			public const int lntdesc6 = 2131427516;
 			
-			// aapt resource value: 0x7f0b00be
-			public const int lntdesc7 = 2131427518;
+			// aapt resource value: 0x7f0b00bd
+			public const int lntdesc66 = 2131427517;
 			
 			// aapt resource value: 0x7f0b00bf
-			public const int lntdesc77 = 2131427519;
+			public const int lntdesc7 = 2131427519;
 			
-			// aapt resource value: 0x7f0b00c1
-			public const int lntdesc8 = 2131427521;
+			// aapt resource value: 0x7f0b00c0
+			public const int lntdesc77 = 2131427520;
 			
 			// aapt resource value: 0x7f0b00c2
-			public const int lntdesc88 = 2131427522;
+			public const int lntdesc8 = 2131427522;
+			
+			// aapt resource value: 0x7f0b00c3
+			public const int lntdesc88 = 2131427523;
+			
+			// aapt resource value: 0x7f0b00aa
+			public const int lnttitle = 2131427498;
 			
 			// aapt resource value: 0x7f0b0065
 			public const int locationtxt = 2131427429;
 			
-			// aapt resource value: 0x7f0b00fd
-			public const int map = 2131427581;
+			// aapt resource value: 0x7f0b00fe
+			public const int map = 2131427582;
 			
-			// aapt resource value: 0x7f0b00f8
-			public const int masltxt = 2131427576;
+			// aapt resource value: 0x7f0b00f9
+			public const int masltxt = 2131427577;
 			
-			// aapt resource value: 0x7f0b0101
-			public const int media_actions = 2131427585;
+			// aapt resource value: 0x7f0b0102
+			public const int media_actions = 2131427586;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int middle = 2131427365;
 			
-			// aapt resource value: 0x7f0b00f6
-			public const int mtimg = 2131427574;
+			// aapt resource value: 0x7f0b00f7
+			public const int mtimg = 2131427575;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int mtimg00 = 2131427425;
@@ -3280,8 +3283,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0064
 			public const int mtname = 2131427428;
 			
-			// aapt resource value: 0x7f0b00f7
-			public const int mtnametxt = 2131427575;
+			// aapt resource value: 0x7f0b00f8
+			public const int mtnametxt = 2131427576;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int multiply = 2131427358;
@@ -3313,20 +3316,20 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0046
 			public const int radio = 2131427398;
 			
-			// aapt resource value: 0x7f0b010c
-			public const int radioGroup1 = 2131427596;
+			// aapt resource value: 0x7f0b010d
+			public const int radioGroup1 = 2131427597;
 			
-			// aapt resource value: 0x7f0b0110
-			public const int rbHybrid = 2131427600;
-			
-			// aapt resource value: 0x7f0b010e
-			public const int rbNormal = 2131427598;
+			// aapt resource value: 0x7f0b0111
+			public const int rbHybrid = 2131427601;
 			
 			// aapt resource value: 0x7f0b010f
-			public const int rbSatellite = 2131427599;
+			public const int rbNormal = 2131427599;
 			
-			// aapt resource value: 0x7f0b010d
-			public const int rbTerrain = 2131427597;
+			// aapt resource value: 0x7f0b0110
+			public const int rbSatellite = 2131427600;
+			
+			// aapt resource value: 0x7f0b010e
+			public const int rbTerrain = 2131427598;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int satellite = 2131427340;
@@ -3343,8 +3346,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b003e
 			public const int scrollView = 2131427390;
 			
-			// aapt resource value: 0x7f0b013c
-			public const int search = 2131427644;
+			// aapt resource value: 0x7f0b013d
+			public const int search = 2131427645;
 			
 			// aapt resource value: 0x7f0b0050
 			public const int search_badge = 2131427408;
@@ -3415,8 +3418,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b0011
 			public const int standard = 2131427345;
 			
-			// aapt resource value: 0x7f0b0100
-			public const int status_bar_latest_event_content = 2131427584;
+			// aapt resource value: 0x7f0b0101
+			public const int status_bar_latest_event_content = 2131427585;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int submit_area = 2131427415;
@@ -3427,11 +3430,11 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b000d
 			public const int terrain = 2131427341;
 			
-			// aapt resource value: 0x7f0b0108
-			public const int text = 2131427592;
+			// aapt resource value: 0x7f0b0109
+			public const int text = 2131427593;
 			
-			// aapt resource value: 0x7f0b0106
-			public const int text2 = 2131427590;
+			// aapt resource value: 0x7f0b0107
+			public const int text2 = 2131427591;
 			
 			// aapt resource value: 0x7f0b003f
 			public const int textSpacerNoButtons = 2131427391;
@@ -3439,8 +3442,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b005e
 			public const int textView1 = 2131427422;
 			
-			// aapt resource value: 0x7f0b0104
-			public const int time = 2131427588;
+			// aapt resource value: 0x7f0b0105
+			public const int time = 2131427589;
 			
 			// aapt resource value: 0x7f0b0035
 			public const int title = 2131427381;
@@ -3454,8 +3457,8 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b006d
 			public const int ttbtxt = 2131427437;
 			
-			// aapt resource value: 0x7f0b00c6
-			public const int txt = 2131427526;
+			// aapt resource value: 0x7f0b00c7
+			public const int txt = 2131427527;
 			
 			// aapt resource value: 0x7f0b005f
 			public const int txtItinerary = 2131427423;
@@ -3463,11 +3466,11 @@ namespace Akyat.Pinas
 			// aapt resource value: 0x7f0b00a9
 			public const int txtItineraryRecord = 2131427497;
 			
-			// aapt resource value: 0x7f0b00c5
-			public const int txtLists = 2131427525;
+			// aapt resource value: 0x7f0b00c6
+			public const int txtLists = 2131427526;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int txtOthers = 2131427527;
+			// aapt resource value: 0x7f0b00c8
+			public const int txtOthers = 2131427528;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;

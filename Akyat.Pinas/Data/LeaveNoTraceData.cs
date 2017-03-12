@@ -18,7 +18,7 @@ namespace Akyat.Pinas.Data
     class LeaveNoTraceData
     {
         const string url = "https://ia601507.us.archive.org/10/items/mountainsData/LeaveNoTraceData.json";
-        private static List<LeaveNoTrace> _leaveNoTraces = new List<LeaveNoTrace>();
+        private static LeaveNoTrace _leaveNoTraces = new LeaveNoTrace();
 
 
         public LeaveNoTraceData()
@@ -42,7 +42,7 @@ namespace Akyat.Pinas.Data
                         HttpResponseMessage response = await getResponse;
 
                         responseJsonString = await response.Content.ReadAsStringAsync();
-                        _leaveNoTraces = JsonConvert.DeserializeObject<List<LeaveNoTrace>>(responseJsonString);
+                        _leaveNoTraces = JsonConvert.DeserializeObject<LeaveNoTrace>(responseJsonString);
                     }
                     catch (Exception ex)
                     {
@@ -53,7 +53,7 @@ namespace Akyat.Pinas.Data
             }
         }
 
-        public List<LeaveNoTrace> GetLeaveNoTraceData()
+        public LeaveNoTrace GetLeaveNoTraceData()
         {
             return _leaveNoTraces;
         }

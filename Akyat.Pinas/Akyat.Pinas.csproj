@@ -133,8 +133,6 @@
     <Compile Include="Activities\SettingsAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Activities\ThingsToBringAct.cs" />
-    <Compile Include="Adapters\FirstAidAdapter.cs" />
-    <Compile Include="Adapters\LeaveNoTraceAdapter.cs" />
     <Compile Include="Data\FirstAidData.cs" />
     <Compile Include="Data\LeaveNoTraceData.cs" />
     <Compile Include="DetailActivity.cs" />
