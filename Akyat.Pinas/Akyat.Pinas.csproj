@@ -133,6 +133,8 @@
     <Compile Include="Activities\SettingsAct.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Activities\ThingsToBringAct.cs" />
+    <Compile Include="Adapters\FirstAidAdapter.cs" />
+    <Compile Include="Adapters\LeaveNoTraceAdapter.cs" />
     <Compile Include="Data\FirstAidData.cs" />
     <Compile Include="Data\LeaveNoTraceData.cs" />
     <Compile Include="DetailActivity.cs" />
@@ -213,6 +215,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\firstaidLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\firstaidModel.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\lntModel.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

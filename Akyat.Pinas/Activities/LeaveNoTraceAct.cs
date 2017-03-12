@@ -1,21 +1,28 @@
+using System.Collections.Generic;
+using Akyat.Pinas.Models;
 using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using Geolocator.Plugin.Abstractions;
 
 namespace Akyat.Pinas.Activities
 {
     [Activity( Label = "LeaveNoTraceAct", NoHistory = true)]
     public class LeaveNoTraceAct : Activity
     {
-        TextView vdesc, vdesc1, vdesc11, vdesc2, vdesc22, vdesc3, vdesc33, vdesc4, vdesc44, vdesc5, vdesc55, vdesc6, vdesc66, vdesc7, vdesc77, vdesc8, vdesc88;
+        TextView vtitle,vdesc, vdesc1, vdesc11, vdesc2, vdesc22, vdesc3, vdesc33, vdesc4, vdesc44, vdesc5, vdesc55, vdesc6, vdesc66, vdesc7, vdesc77, vdesc8, vdesc88;
         ImageView vicon1, vicon2, vicon3, vicon4, vicon5, vicon6, vicon7, vicon8;
+        private List<LeaveNoTrace> lnt;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            lnt = MountainsService.GetLeaveNoTraceData();
             base.OnCreate(savedInstanceState);
             RequestWindowFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.leaveNoTrace);
             FindViews();
+
         }
 
         public override void OnBackPressed()
@@ -26,6 +33,7 @@ namespace Akyat.Pinas.Activities
 
         private void FindViews()
         {
+            vtitle = FindViewById<TextView>(Resource.Id.title);
             vdesc = FindViewById<TextView>(Resource.Id.desc);
             vdesc1 = FindViewById<TextView>(Resource.Id.lntdesc1);
             vdesc11 = FindViewById<TextView>(Resource.Id.lntdesc11);
