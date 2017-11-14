@@ -1,15 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Akyat.Pinas.Models;
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Org.Apache.Http.Impl.IO;
 using Square.Picasso;
 
 namespace Akyat.Pinas.Activities

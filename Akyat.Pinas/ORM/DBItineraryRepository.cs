@@ -1,7 +1,4 @@
 using System;
-
-
-using System.Data;
 using System.IO;
 using SQLite;
 
@@ -217,10 +214,6 @@ namespace Akyat.Pinas.ORM
                 item.ropeValue = ropeValue;
                 item.trowelValue = trowelValue;
                 item.othersValue = othersValue;
-
-
-
-
                 db.Insert(item);
                 return "Checklist Saved";
             }
@@ -286,13 +279,8 @@ namespace Akyat.Pinas.ORM
         {
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
             var db = new SQLiteConnection(dbPath);
-          string outputValue= "";
-
+            string outputValue= "";
             var item = db.Get<ChecklistClass>(name);
-
-
-       //     outputValue = item.Value;
-
             return item;
         }
         public object GetRecordPapel()
@@ -302,20 +290,6 @@ namespace Akyat.Pinas.ORM
             string outputValue = "";
 
             var items = db.Table<ChecklistClass>();
-            // var items = db.Query<ChecklistClass>("SELECT ChecklistName FROM Checklist");
-         //   var other = db.Query<ChecklistClass>("SELECT Value From Checklist WHERE ChecklistName = ?", "others");
-            
-
-          //  foreach (var item in items)
-          //  {
-          //    outputValue += item.ChecklistName + "\n";
-               
-         //   }
-        //    foreach(var item in other)
-        //    { 
-         //   outputValue += "Others: " + "\n" + item.Value;
-        //    }
-
             return items;
         }
 
@@ -352,7 +326,6 @@ namespace Akyat.Pinas.ORM
         {
             try
             {
-
                 string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormItinerary.db3");
 
                 var db = new SQLiteConnection(dbPath);
@@ -390,26 +363,5 @@ namespace Akyat.Pinas.ORM
 
             return outputValue;
         }
-
-
-       
-            
-        }
-        
-
-
-
-
-
-
-
-
-
-
-    
+      }
 }
-
-
-
-
-

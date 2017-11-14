@@ -1,13 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Akyat.Pinas.ORM;
 
@@ -20,11 +13,10 @@ namespace Akyat.Pinas.Activities
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.AddItiLayout);
-            // Create your application here
             string name = Intent.GetStringExtra("name");
             string editThis = "";
 
-          editThis = Intent.GetStringExtra("editThis");
+            editThis = Intent.GetStringExtra("editThis");
 
             EditText editItinerary = FindViewById<EditText>(Resource.Id.txtItinerary);
             editItinerary.Text = editThis;

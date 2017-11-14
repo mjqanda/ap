@@ -4,15 +4,13 @@ using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using System;
-using static Android.Bluetooth.BluetoothClass;
 
 namespace Akyat.Pinas.Activities
 {
     [Activity( Theme = "@style/Theme.NoTitle", Label="AP")]
     public class MainMenuAct : Activity
     {
-
+        //Our Main Menu Activity
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

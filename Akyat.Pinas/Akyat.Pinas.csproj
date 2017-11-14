@@ -140,7 +140,6 @@
     <Compile Include="Data\SnakeBiteData.cs" />
     <Compile Include="DetailActivity.cs" />
     <Compile Include="ExtMethods.cs" />
-    <Compile Include="FirstAidService.cs" />
     <Compile Include="Models\FirstAid.cs" />
     <Compile Include="Models\LeaveNoTrace.cs" />
     <Compile Include="Models\SnakeBite.cs" />

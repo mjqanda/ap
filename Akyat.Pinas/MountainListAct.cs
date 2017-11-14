@@ -7,12 +7,6 @@ using Android.OS;
 using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
-using Akyat.Pinas;
-using SQLite;
-using Akyat.Pinas.ORM;
-using System.IO;
-using Android.Renderscripts;
-using Java.Security;
 
 
 namespace Akyat.Pinas
@@ -22,7 +16,6 @@ namespace Akyat.Pinas
     {
         private List<Mountain> mMountains;
         private List<Mountain> mMountainsTemp;
-//        private List<Mountain> mMountainsTemp = new List<Mountain>();
         private ListView mListView;
         private EditText mSearch;
         private LinearLayout mContainer;
@@ -45,11 +38,6 @@ namespace Akyat.Pinas
             mountainsRepository = new MountainsService();
             if (position == 177)
             {
-                
-                //SetContentView(Resource.Layout.mountainListLayout);
-                //mListView = FindViewById<ListView>(Resource.Id.listView);
-                //mSearch = FindViewById<EditText>(Resource.Id.etSearch);
-                //mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
                 ViewHolder();
                 mSearch.TextChanged += mSearch_TextChanged;
                 mListView.FastScrollEnabled = true;
@@ -60,18 +48,11 @@ namespace Akyat.Pinas
                 mContainer.BringToFront();
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
                 mListView.Adapter = mAdapter;
-
                 ItemClickMethod();
             }
             else
             {
-                
-                //SetContentView(Resource.Layout.mountainListLayout);
-                //mListView = FindViewById<ListView>(Resource.Id.listView);
-                //mSearch = FindViewById<EditText>(Resource.Id.etSearch);
-                //mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer);
                 ViewHolder();
-             
                 mSearch.TextChanged += mSearch_TextChanged;
                 mListView.ScrollingCacheEnabled = false;
                 mListView.FastScrollEnabled = true;
@@ -82,10 +63,7 @@ namespace Akyat.Pinas
                 mContainer.BringToFront();
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, mMountains);
                 mListView.Adapter = mAdapter;
-
                 ItemClickMethod();
-
-
                 OpenDetailActivitys(position);
             }
         }
@@ -120,7 +98,6 @@ namespace Akyat.Pinas
         {
             mt = mMountains[pos];
             i = new Intent(this, typeof(DetailActivity));
-            
             i.PutExtra("IMG0", mt.MtImg00);
             i.PutExtra("IMG1", mt.MtImg01);
             i.PutExtra("IMG2", mt.MtImg02);
@@ -151,11 +128,8 @@ namespace Akyat.Pinas
 
         private void OpenDetailForSearch(int pos)
         {
-            //mt = mMountains[pos];
             mt = mMountainsTemp[pos];
-
             i = new Intent(this, typeof(DetailActivity));
-
             i.PutExtra("IMG0", mt.MtImg00);
             i.PutExtra("IMG1", mt.MtImg01);
             i.PutExtra("IMG2", mt.MtImg02);
@@ -187,7 +161,6 @@ namespace Akyat.Pinas
         {
             mt = mMountains[pos];
             i = new Intent(this, typeof(DetailActivity));
-
             i.PutExtra("IMG0", mt.MtImg00);
             i.PutExtra("IMG1", mt.MtImg01);
             i.PutExtra("IMG2", mt.MtImg02);
@@ -218,7 +191,6 @@ namespace Akyat.Pinas
         }
         void mSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
         {
-            
             List<Mountain> searchedMountains = (from mountain in mMountains
                                                 where mountain.MtName.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                 select mountain).ToList<Mountain>();
@@ -246,37 +218,32 @@ namespace Akyat.Pinas
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-
             int id = item.ItemId;
-            if (id == Resource.Id.action1)
+            if (id == Resource.Id.action1) //Show all mountains
             {
                 List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.MtName)).ToList<Mountain>();
-               
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
-            else if (id == Resource.Id.action2)
+            else if (id == Resource.Id.action2) //Show mountains Z-A
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.MtName)).ToList<Mountain>();
-               
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
-            else if (id == Resource.Id.action3)
+            else if (id == Resource.Id.action3) //Sort Elevation (lowest to highest)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Masl)).ToList<Mountain>();
-              
-
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged()); 
             }
-            else if (id == Resource.Id.action4)
+            else if (id == Resource.Id.action4) //Sort Elevation (highest to lowest)
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Masl)).ToList<Mountain>();
          
@@ -285,21 +252,17 @@ namespace Akyat.Pinas
                 mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged()); 
             }
-            else if (id == Resource.Id.action5)
+            else if (id == Resource.Id.action5) //Sort Difficulty from easiest
             {
                 List<Mountain> filteredMountains = (mMountains.OrderBy(mountain => mountain.Difficulty)).ToList<Mountain>();
-               
-
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
-            else if (id == Resource.Id.action6)
+            else if (id == Resource.Id.action6) //Sort Difficulty from most difficult
             {
                 List<Mountain> filteredMountains = (mMountains.OrderByDescending(mountain => mountain.Difficulty)).ToList<Mountain>();
-           
-
                 mAdapter = new MountainsAdapter(this, Resource.Layout.ml_model, filteredMountains);
                 mListView.Adapter = mAdapter;
                 mMountainsTemp = filteredMountains.ToList();
@@ -344,7 +307,7 @@ namespace Akyat.Pinas
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
         
-            else if (id == Resource.Id.action10)
+            else if (id == Resource.Id.action10) // show dayhike mountains
             {
                 List<Mountain> filteredMountains = (from mountain in mMountains
                                                     where mountain.Difficulty <= 4
@@ -356,7 +319,7 @@ namespace Akyat.Pinas
                 mMountainsTemp = filteredMountains.ToList();
                 RunOnUiThread(() => mAdapter.NotifyDataSetChanged());
             }
-            else if (id == Resource.Id.action11)
+            else if (id == Resource.Id.action11) // show overnight mountains
             {
                 List<Mountain> filteredMountains = (from mountain in mMountains
                                                     where mountain.Difficulty >= 4

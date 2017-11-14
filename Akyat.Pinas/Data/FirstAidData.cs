@@ -1,16 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using Akyat.Pinas.Models;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Newtonsoft.Json;
 
 namespace Akyat.Pinas.Data
@@ -19,7 +10,6 @@ namespace Akyat.Pinas.Data
     {
         const string url = "https://ia801507.us.archive.org/10/items/mountainsData/FirstAidData.json";
         private static FirstAid Firstaids = new FirstAid();
-
 
         public FirstAidData()
         {
@@ -30,9 +20,7 @@ namespace Akyat.Pinas.Data
         {
             if (Firstaids != null)
             {
-
                 string responseJsonString = null;
-
                 using (var httpClient = new HttpClient())
                 {
                     try
@@ -52,7 +40,6 @@ namespace Akyat.Pinas.Data
 
             }
         }
-
         public FirstAid GetFirstAidData()
         {
             return Firstaids;

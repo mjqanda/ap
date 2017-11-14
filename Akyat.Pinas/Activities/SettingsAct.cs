@@ -1,13 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Akyat.Pinas.ORM;
 
@@ -41,15 +34,6 @@ namespace Akyat.Pinas.Activities
             Button aboutbuttonn = FindViewById<Button>(Resource.Id.btnAbout);
 
             aboutbuttonn.Click += Aboutbuttonn_Click;
-            //CheckBox cbsounds = FindViewById<CheckBox>(Resource.Id.sound);
-
-            //cbsounds.Click += (o,e) => {
-            //    if (cbsounds.Checked)
-            //        Toast.MakeText(this, "All Sounds Enabled!", ToastLength.Short).Show();
-            //    else
-            //        Toast.MakeText(this, "All Sounds Disabled", ToastLength.Short).Show();
-            //};
-            //getting record from database
             try
             {
                 var terrainResult = dbr.GetRecordSettings(terrain);
@@ -66,7 +50,6 @@ namespace Akyat.Pinas.Activities
             {
                 
             }
-
 
             //implementing the value
             if (terrainValue == "1")

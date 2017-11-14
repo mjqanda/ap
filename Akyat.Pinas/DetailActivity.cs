@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
+// Detail Activity of our every mountain
 using Android.App;
 using Android.OS;
 using Android.Widget;
-using Akyat.Pinas;
 using Akyat.Pinas.ORM;
 using Android.Content;
 using Android.Graphics;
 using Akyat.Pinas.Activities;
-using Akyat.Pinas.Utility;
 using Square.Picasso;
 
 namespace Akyat.Pinas
@@ -25,7 +22,6 @@ namespace Akyat.Pinas
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.detailLayout);
-
             FindViews();
             Fonts();
 
@@ -54,14 +50,12 @@ namespace Akyat.Pinas
             string iimgdesc05 = i.Extras.GetString("IMGD5");
             string ividdesc = i.Extras.GetString("VIDD");
 
-
             var imageBitmap0 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg0 + ".jpg");
             var imageBitmap1 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg1 + ".jpg");
             var imageBitmap2 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg2 + ".jpg");
             var imageBitmap3 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg3 + ".jpg");
             var imageBitmap4 = ("https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg4 + ".jpg");
             var imageBitmap5 = "https://ia801506.us.archive.org/35/items/mj_anda_yahoo_Pics/" + iimg5 + ".jpg";
-
 
             Picasso.With(this).Load(imageBitmap0).Into(mtimg0);
             Picasso.With(mContext).Load(imageBitmap1).Into(mtimg1);
@@ -71,12 +65,6 @@ namespace Akyat.Pinas
             Picasso.With(mContext).Load(imageBitmap5).Into(mtimg5);
 
             tmtname.Text = iname;
-           // mtimg0.SetImageBitmap(imageBitmap0);
-           // mtimg1.SetImageBitmap(imageBitmap1);
-           // mtimg2.SetImageBitmap(imageBitmap2);
-           // mtimg3.SetImageBitmap(imageBitmap3);
-           // mtimg4.SetImageBitmap(imageBitmap4);
-           // mtimg5.SetImageBitmap(imageBitmap5);
             tmtloc.Text = ilocation;
             tjumpoff.Text = ijumpoff;
             tdesc.Text = idescription;
@@ -93,7 +81,6 @@ namespace Akyat.Pinas
             timgdesc04.Text = iimgdesc04;
             timgdesc05.Text = iimgdesc05;
             tviddesc.Text = ividdesc;
-        
 
             Button btnItinerary = FindViewById<Button>(Resource.Id.btnItinerary);
             btnItinerary.Click += ((sender, e) =>
@@ -111,11 +98,11 @@ namespace Akyat.Pinas
             mtimg2.Click += Mtimg2_Click;
             mtimg3.Click += Mtimg3_Click;
             mtimg4.Click += Mtimg4_Click;
-           mtimg5.Click += Mtimg5_Click;
+            mtimg5.Click += Mtimg5_Click;
             videoimg.Click += Videoimg_Click;
         }
 
-        private void Videoimg_Click(object sender, System.EventArgs e)
+        private void Videoimg_Click(object sender, System.EventArgs e) //Click handler for our video fragment
         {
             Intent i = this.Intent;
            string vidS =  i.Extras.GetString("VV");
@@ -131,52 +118,40 @@ namespace Akyat.Pinas
                 Toast.MakeText(this,"Video not available", ToastLength.Short).Show();
             }
         }
-        private void Mtimg0_Click(object sender, System.EventArgs e)
+        private void Mtimg0_Click(object sender, System.EventArgs e) //Enlarge image on click
         {
             Intent i = this.Intent;
-           string iimg0 = i.Extras.GetString("IMG0");
-
-
-           
+            string iimg0 = i.Extras.GetString("IMG0"); 
             OpenFragment(iimg0);
         }
         private void Mtimg1_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
             string iimg1 = i.Extras.GetString("IMG1");
-
-
-            
             OpenFragment(iimg1);
         }
         private void Mtimg2_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
             string iimg2 = i.Extras.GetString("IMG2");
-
-           
             OpenFragment(iimg2);
         }
         private void Mtimg3_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
             string iimg3 = i.Extras.GetString("IMG3");
-
-            
             OpenFragment(iimg3);
         }
         private void Mtimg4_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
-          string iimg4 = i.Extras.GetString("IMG4");
-
-           
+            string iimg4 = i.Extras.GetString("IMG4");
             OpenFragment(iimg4);
         }
         private void Mtimg5_Click(object sender, System.EventArgs e)
         {
             Intent i = this.Intent;
-           string iimg5 = i.Extras.GetString("IMG5");
+            string iimg5 = i.Extras.GetString("IMG5");
             OpenFragment(iimg5);
         }
         public override void OnBackPressed()
@@ -199,7 +174,7 @@ namespace Akyat.Pinas
             }
         }
 
-        private void Fonts()
+        private void Fonts() //set fonts
         {
             Typeface tf = Typeface.CreateFromAsset(Assets, "REFSAN.TTF");
             tmtname.SetTypeface(tf, TypefaceStyle.Normal);
@@ -223,7 +198,7 @@ namespace Akyat.Pinas
             timgdesc00.SetTypeface(tf, TypefaceStyle.Normal);
         }
 
-        private void FindViews()
+        private void FindViews() //Hold views
         {
             tmtname = FindViewById<TextView>(Resource.Id.mtname);
             mtimg0 = FindViewById<ImageView>(Resource.Id.mtimg00); 
@@ -253,7 +228,7 @@ namespace Akyat.Pinas
             tviddesc = FindViewById<TextView>(Resource.Id.viddesc);
         }
 
-        private void OpenFragment(string img1)
+        private void OpenFragment(string img1) //open fragments of every image
         {
             Bundle b = new Bundle();
             b.PutString("IMG1", img1);
@@ -261,7 +236,7 @@ namespace Akyat.Pinas
             fragment.Arguments = b;
             fragment.Show(this.FragmentManager, "dialog");
         }
-        private void VidFragment(string vid)
+        private void VidFragment(string vid) //open fragment that contains video
         {
             Bundle b = new Bundle();
             b.PutString("VID", vid);

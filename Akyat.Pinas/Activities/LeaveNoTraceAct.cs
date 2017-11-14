@@ -4,7 +4,6 @@ using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using Geolocator.Plugin.Abstractions;
 using Square.Picasso;
 
 namespace Akyat.Pinas.Activities
